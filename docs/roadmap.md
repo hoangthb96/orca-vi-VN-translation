@@ -3,7 +3,7 @@
 Cách chụp before/after: bật `vi`, mở màn hình → chụp; dịch batch → reload → chụp lại.
 Check coverage từng batch: `node tools/check-catalog.mjs --missing`.
 
-## Tiến độ theo key group (v0.1.8 — 15.607/17.308 = **90,2%**; mẫu số hợp lệ ~17.100 sau khi trừ 180 key `settings.plugin*` Orca cấm → **~91%**)
+## Tiến độ theo key group (v0.1.0 — 15.607/17.308 = **90,2%**; mẫu số hợp lệ ~17.100 sau khi trừ 180 key `settings.plugin*` Orca cấm → **~91%**)
 
 > Wave fan-out + tail sweep đã phủ gần như toàn bộ key dịch được. 1.701 key còn lại gần như toàn bộ CỐ Ý giữ EN: 180 key security copy Orca cấm (fail-closed), ~80 enum status khớp `is:` query/badge API, search keyword, tên riêng/proper noun, lệnh git, tên ngôn ngữ (中文/한국어…), URL/path/code mẫu, placeholder thuần. Dịch thêm = vi phạm rule.
 
@@ -102,9 +102,9 @@ Không còn nhóm nào ≥10 key toàn chuỗi dịch được — nếu muốn 
 - **5 key cần xóa khỏi `vi.json`** (Rule 0 — fallback EN tốt hơn):
   - 3 key trùng English: `right.sidebar.Search.fileCount_one`, `right.sidebar.source.control.discard.dialog.fileCount_one`, `right.sidebar.AiVaultScanProgressStrip.fileCount_one` (checker flag IDENTICAL EN; locale `vi` chỉ dùng `_other` nên xóa `_one` không đổi render).
   - 2 key đảo từ English trong DevToolsPane: `nativeActionToast` ("Toast action native"), `behindBaseRefToast` ("Toast behind base ref") — lọt qua checker vì khác thứ tự từ.
-- **Manifest thiếu `"capabilities": []`** — pack mẫu launch `stablyai.orca-portuguese` có field này.
+- ~~Manifest thiếu `"capabilities": []`~~ — đã thêm (commit `3e8dced`). Lưu ý: install `#main` thực nghiệm OK cả khi thiếu field — schema có vẻ default, nhưng giữ field cho khớp pack mẫu `stablyai.orca-portuguese`.
 - **`reference/en.json` là snapshot giữa chừng main (29/10), không khớp tag release nào.** Với main hiện tại: +1.183 / −135 / ~61 key đổi → 57 key trong `vi.json` trỏ vào key EN đã xóa (dead key), vài bản dịch mô tả text cũ (vd `settings.agents.permissionsSearchDescription`). Pin snapshot theo tag release (`v1.4.245`), prune dead key, cập nhật bản dịch key đổi nghĩa.
-- Repo chưa có git tag — tạo tag `v0.1.8` khi release để URL install `#v0.1.8` trong README hoạt động.
+- Repo chưa có git tag — tạo tag `v0.1.0` khi release để URL install `#v0.1.0` trong README hoạt động.
 
 ## Quy ước mỗi batch
 

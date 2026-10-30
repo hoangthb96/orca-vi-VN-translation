@@ -22,7 +22,7 @@ Settings → Plugins → Install → chọn thư mục repo này (chứa `orca-p
 https://github.com/hoangthb96/orca-vi-VN-translation#main
 ```
 
-Muốn pin một bản cố định thay vì `main`, dùng tag release hoặc commit SHA: `…#v0.1.8`, `…#6b177ac`.
+Muốn pin một bản cố định thay vì `main`, dùng tag release hoặc commit SHA: `…#v0.1.0`, `…#6b177ac`.
 
 Repo đang **public** — ai cũng cài được, không cần tài khoản GitHub.
 
@@ -32,7 +32,7 @@ Sau khi cài: **Settings → Appearance → Language** → chọn `Tiếng Việ
 
 | Phiên bản | Keys | Phạm vi |
 |---|---|---|
-| v0.1.8 | 15.607 / 17.308 (90,2%) | Toàn bộ màn hình chính: Settings, sidebar trái/phải, editor, status bar, terminal, native chat, automations, skills, tasks, GitHub/PR, workspace, accounts, keybindings, browser, mobile, WSL, onboarding… (chi tiết `docs/roadmap.md`) |
+| v0.1.0 | 15.607 / 17.308 (90,2%) | Toàn bộ màn hình chính: Settings, sidebar trái/phải, editor, status bar, terminal, native chat, automations, skills, tasks, GitHub/PR, workspace, accounts, keybindings, browser, mobile, WSL, onboarding… (chi tiết `docs/roadmap.md`) |
 
 ~1.700 key còn lại **cố ý giữ tiếng Anh** (sparse catalog hợp lệ, fallback tự động): security copy `settings.plugin*` Orca cấm override (fail-closed), enum status khớp query `is:`/badge API, search keyword, tên riêng, lệnh git, tên ngôn ngữ, URL/path/code mẫu. Dịch thêm sẽ vi phạm rule — xem `AGENTS.md` và `docs/glossary.md`.
 
