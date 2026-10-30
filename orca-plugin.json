@@ -14,6 +14,7 @@
     "orca": ">=1.4.0"
   },
   "pluginApi": 1,
+  "capabilities": [],
   "contributes": {
     "languagePacks": [
       {
