@@ -14,13 +14,17 @@ Settings → Plugins → mục dev paths: thêm đường dẫn tới thư mục
 
 Settings → Plugins → Install → chọn thư mục repo này (chứa `orca-plugin.json`).
 
-**3. Install từ Git URL** (khi repo đã public)
+**3. Install từ Git URL**
 
-`Settings → Plugins → Install → Git URL`, dán URL kèm tag release (Orca yêu cầu `#ref` tường minh để pin bản cài):
+`Settings → Plugins → Install → Git URL`, dán URL kèm ref (Orca bắt buộc `#tag` hoặc `#commit`/`#branch` tường minh — thiếu sẽ báo "Add a #tag or #commit"):
 
 ```
-https://github.com/hoangthb96/orca-vi-VN-translation#v0.1.8
+https://github.com/hoangthb96/orca-vi-VN-translation#main
 ```
+
+Muốn pin một bản cố định thay vì `main`, dùng tag release hoặc commit SHA: `…#v0.1.8`, `…#6b177ac`.
+
+Repo đang **public** — ai cũng cài được, không cần tài khoản GitHub.
 
 Sau khi cài: **Settings → Appearance → Language** → chọn `Tiếng Việt`.
 
