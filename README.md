@@ -26,6 +26,10 @@ Muốn pin một bản cố định thay vì `main`, dùng tag release hoặc co
 
 Repo đang **public** — ai cũng cài được, không cần tài khoản GitHub.
 
+**4. Qua marketplace source (xem plugin trong Marketplace browser)**
+
+Repo chứa sẵn `orca-marketplace.json` (catalog tự host). Settings → Plugins → mục marketplace sources → add source bằng Git URL repo này — plugin `hoangthb96.vi` sẽ hiện trong Marketplace để cài một click.
+
 Sau khi cài: **Settings → Appearance → Language** → chọn `Tiếng Việt`.
 
 ## Trạng thái dịch
