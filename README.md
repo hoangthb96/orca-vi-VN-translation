@@ -49,6 +49,7 @@ reference/en.json       # snapshot en.json upstream (nguồn dịch)
 docs/glossary.md        # thuật ngữ & style chuẩn
 docs/roadmap.md         # tiến độ dịch theo màn hình
 tools/check-catalog.mjs # validator — port rule fail-closed của Orca + so key với en.json
+tools/resync-en.mjs     # đồng bộ en.json theo tag release + ghi docs/en-sync-changelog.md
 tools/find-mixed.mjs    # quét value lẫn EN+VI
 tools/merge-stage.mjs   # merge file stage vào vi.json
 tools/serve.mjs         # workbench dịch (hot reload)
@@ -65,7 +66,7 @@ AGENTS.md               # rule dịch cho agent (Rule 0: chất lượng > cover
 node tools/check-catalog.mjs --missing   # exit≠0 nếu extra key / placeholder lệch / vi phạm rule Orca
 ```
 
-4. Cập nhật nguồn khi Orca ra bản mới: tải lại `reference/en.json` từ `stablyai/orca` (`src/renderer/src/i18n/locales/en.json`) — nên lấy theo **tag release** (`v1.4.x`) thay vì `main` để snapshot khớp bản người dùng chạy — rồi chạy lại checker: `missing` = key mới cần dịch, `extra` = key upstream đã xóa.
+4. Cập nhật nguồn khi Orca ra bản mới: `node tools/resync-en.mjs` (tự lấy tag release mới nhất, ghi `docs/en-sync-changelog.md`; thêm `--prune` để xóa key vi đã bị upstream xóa) — rồi chạy lại checker: `missing` = key mới cần dịch, `extra` = key upstream đã xóa.
 
 ## License
 
