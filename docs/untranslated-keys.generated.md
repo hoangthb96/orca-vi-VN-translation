@@ -1,0 +1,2808 @@
+# Untranslated keys — generated report
+
+> GENERATED bởi `tools/dump-untranslated.mjs` (2026-11-02) — KHÔNG sửa tay, chạy lại script sau mỗi lần resync en.json.
+> Quyết định "không dịch" nằm trong `docs/no-translate.md`. Tổng: **2758** key chưa dịch.
+
+## Protected plugin security copy — Orca fail-closed, CẤM dịch — 347 key
+
+- `auto.components.settings.PluginConsentDialog.reconsent` — Changed since you approved it
+- `auto.components.settings.PluginConsentDialog.instructionalWarning` — Its commands can act for you or your agents
+- `auto.components.settings.PluginConsentDialog.declarativeWarning` — Content only. No code runs.
+- `auto.components.settings.PluginConsentDialog.enable` — Enable plugin
+- `auto.components.settings.PluginConsentDialog.capability.workspaceRead` — Read workspace names, branches, and terminals
+- `auto.components.settings.PluginConsentDialog.capability.notificationsShow` — Show desktop notifications
+- `auto.components.settings.PluginConsentDialog.capability.storage` — Store its own data
+- `auto.components.settings.PluginConsentDialog.capability.secrets` — Store its own encrypted secrets
+- `auto.components.settings.PluginConsentDialog.capability.settingsOwn` — Read and change its own settings
+- `auto.components.settings.PluginConsentDialog.capability.agentsRead` — Get notified when agent status changes
+- `auto.components.settings.PluginConsentDialog.capability.terminalRun` — Run commands in your terminals, including SSH
+- `auto.components.settings.PluginConsentDialog.decisionFailed` — Could not save the permission decision. Try again.
+- `auto.components.settings.PluginConsentDialog.fullAccessWarning` — Full access: runs as a normal program and can read your files, use the network and run other programs.
+- `auto.components.settings.PluginConsentDialog.uiWarning` — Runs the publisher's code inside Orca to draw its view. Orca shows what it can access and asks before enabling it.
+- `auto.components.settings.PluginConsentProvenance.official` — Official
+- `auto.components.settings.PluginConsentProvenance.bundled` — Bundled with Orca
+- `auto.components.settings.PluginConsentProvenance.local` — Local folder
+- `auto.components.settings.PluginConsentProvenance.community` — Community
+- `auto.components.settings.PluginConsentProvenance.source` — Source
+- `auto.components.settings.PluginConsentProvenance.sourceLabel` — Source
+- `auto.components.settings.PluginConsentProvenance.commit` — Pinned commit
+- `auto.components.settings.PluginConsentProvenance.localCommit` — Local folder — no commit
+- `auto.components.settings.PluginConsentProvenance.indexCommit` — Index commit
+- `auto.components.settings.PluginDevelopmentSection.saveFailed` — Could not save development plugin paths.
+- `auto.components.settings.PluginDevelopmentSection.placeholder` — Path to a plugin folder
+- `auto.components.settings.PluginDevelopmentSection.dialogTitle` — Development folders
+- `auto.components.settings.PluginDevelopmentSection.reviewHelp` — Reviewed once. Later code edits run without asking.
+- `auto.components.settings.PluginInstallDialog.localRequired` — Enter the plugin folder path.
+- `auto.components.settings.PluginInstallDialog.gitUrlRequired` — Enter a repository URL.
+- `auto.components.settings.PluginInstallDialog.gitUrlInvalid` — Use an HTTPS or SSH Git URL.
+- `auto.components.settings.PluginInstallDialog.gitRefRequired` — Add a #tag or #commit, like #v0.1.0.
+- `auto.components.settings.PluginInstallDialog.title` — Install plugin
+- `auto.components.settings.PluginInstallDialog.description` — Nothing runs until you enable it.
+- `auto.components.settings.PluginInstallDialog.source` — Install source
+- `auto.components.settings.PluginInstallDialog.localTab` — Local folder
+- `auto.components.settings.PluginInstallDialog.gitTab` — Git URL
+- `auto.components.settings.PluginInstallDialog.localLabel` — Plugin folder path
+- `auto.components.settings.PluginInstallDialog.localPlaceholder` — Path to a plugin folder
+- `auto.components.settings.PluginInstallDialog.localHelp` — The folder with orca-plugin.json
+- `auto.components.settings.PluginInstallDialog.gitLabel` — Repository URL
+- `auto.components.settings.PluginInstallDialog.gitPlaceholder` — https://git.example/acme/orca-notes#v0.1.0
+- `auto.components.settings.PluginInstallDialog.gitHelp` — End with #tag or #commit to pin a version
+- `auto.components.settings.PluginInstallDialog.cancel` — Cancel
+- `auto.components.settings.PluginInstallDialog.installing` — Installing…
+- `auto.components.settings.PluginInstallDialog.install` — Install
+- `auto.components.settings.PluginInstallDialog.installFailed` — Plugin installation failed. Check the source and try again.
+- `auto.components.settings.PluginKeybindingConsentPreview.worktree` — Only in a workspace
+- `auto.components.settings.PluginMarketplaceBrowser.loadFailed` — Could not load catalog plugins.
+- `auto.components.settings.PluginMarketplaceBrowser.refreshFailed` — Couldn't refresh catalogs. Try again.
+- `auto.components.settings.PluginMarketplaceListingRow.blocked` — Blocked by Orca's safety list: {{value0}}
+- `auto.components.settings.PluginMarketplaceListingRow.install` — Install
+- `auto.components.settings.PluginMarketplaceSourceDialog.addFailed` — Couldn’t add this catalog. Check the URL and ref.
+- `auto.components.settings.PluginMarketplaceSourceDialog.refreshFailed` — Couldn't refresh this catalog. Try again.
+- `auto.components.settings.PluginMarketplaceSourceDialog.removeFailed` — Could not remove this catalog.
+- `auto.components.settings.PluginMarketplaceSourceDialog.title` — Catalog sources
+- `auto.components.settings.PluginMarketplaceSourceDialog.description` — Git repositories that list plugins
+- `auto.components.settings.PluginMarketplaceSourceDialog.urlLabel` — Git URL
+- `auto.components.settings.PluginMarketplaceSourceDialog.urlDescription` — HTTPS or SSH, with an orca-catalog.json
+- `auto.components.settings.PluginMarketplaceSourceDialog.urlPlaceholder` — https://git.example.com/team/plugins.git
+- `auto.components.settings.PluginMarketplaceSourceDialog.refLabel` — Git ref
+- `auto.components.settings.PluginMarketplaceSourceDialog.refDescription` — Branch, tag, or commit
+- `auto.components.settings.PluginMarketplaceSourceDialog.adding` — Adding…
+- `auto.components.settings.PluginMarketplaceSourceDialog.add` — Add source
+- `auto.components.settings.PluginMarketplaceSourceDialog.configured` — Sources
+- `auto.components.settings.PluginMarketplaceSourceDialog.empty` — No sources yet
+- `auto.components.settings.PluginMarketplaceSourceDialog.official` — Official
+- `auto.components.settings.PluginMarketplaceSourceDialog.owner` — Owner: {{value0}}
+- `auto.components.settings.PluginMarketplaceSourceDialog.pinnedCommit` — Pinned at {{value0}}
+- `auto.components.settings.PluginMarketplaceSourceDialog.stale` — Couldn’t refresh. May be out of date.
+- `auto.components.settings.PluginMarketplaceSourceDialog.refreshLabel` — Refresh {{value0}}
+- `auto.components.settings.PluginMarketplaceSourceDialog.removeLabel` — Remove {{value0}}
+- `auto.components.settings.PluginMarketplaceSourceDialog.done` — Done
+- `auto.components.settings.PluginRemoveDialog.title` — Remove {{value0}}?
+- `auto.components.settings.PluginRemoveDialog.description` — Its data is removed too.
+- `auto.components.settings.PluginRemoveDialog.cancel` — Cancel
+- `auto.components.settings.PluginRemoveDialog.remove` — Remove
+- `auto.components.settings.PluginRollbackDialog.title` — Roll back {{value0}}?
+- `auto.components.settings.PluginRollbackDialog.description` — Restores the previous version.
+- `auto.components.settings.PluginRollbackDialog.cancel` — Cancel
+- `auto.components.settings.PluginRollbackDialog.confirm` — Roll back
+- `auto.components.settings.PluginRollbackDialog.descriptionVersion` — Restores version {{value0}}.
+- `auto.components.settings.PluginsSettingsSection.loadFailed` — Could not load plugins.
+- `auto.components.settings.PluginsSettingsSection.settingsUpdateFailed` — Could not save plugin settings.
+- `auto.components.settings.PluginsSettingsSection.alpha` — Alpha
+- `auto.components.settings.PluginsSettingsSection.description` — Themes, languages, commands, and more.
+- `auto.components.settings.PluginsSettingsSection.logsFailed` — Could not load plugin logs.
+- `auto.components.settings.PluginsSettingsSection.rollbackFailed` — Couldn't roll back this plugin.
+- `auto.components.settings.PluginsSettingsSection.fileTypeSuggestionsLabel` — Suggest plugins for unknown files
+- `auto.components.settings.PluginsSettingsSection.restartFailed` — Couldn't restart {{value0}}.
+- `auto.components.settings.PluginSettingsRow.loadingLogs` — Loading logs…
+- `auto.components.settings.PluginSettingsRow.noLogs` — No logs yet
+- `auto.components.settings.PluginSettingsRow.logCount` — Last {{value0}} lines
+- `auto.components.settings.PluginSettingsRow.bundled` — Bundled
+- `auto.components.settings.PluginSettingsRow.killListMessage` — Orca's safety list disabled this plugin: {{value0}}
+- `auto.components.settings.PluginSettingsRow.moreActions` — More actions for {{value0}}
+- `auto.components.settings.PluginSettingsRow.viewLogs` — View logs
+- `auto.components.settings.PluginSettingsRow.disableLabel` — Disable {{value0}}
+- `auto.components.settings.PluginSettingsRow.enableLabel` — Enable {{value0}}
+- `auto.components.settings.PluginSettingsRow.invalidPluginError` — This plugin's files are invalid. Fix them, then refresh.
+- `auto.components.settings.PluginSettingsRow.syntaxFailed` — Highlighting stopped: this grammar failed.
+- `auto.components.settings.PluginVmRecipeConsentPreview.create` — Create
+- `auto.components.settings.PluginVmRecipeConsentPreview.suspend` — Suspend
+- `auto.components.settings.PluginVmRecipeConsentPreview.resume` — Resume
+- `auto.components.settings.PluginVmRecipeConsentPreview.destroy` — Destroy
+- `auto.components.settings.PluginVmRecipeConsentPreview.heading` — VM recipe commands
+- `auto.components.settings.PluginVmRecipeConsentPreview.commandLabel` — {{value0}} · {{value1}} command
+- `auto.components.settings.pluginError.installManifestMissing` — No readable orca-plugin.json was found. Choose the plugin's root folder.
+- `auto.components.settings.pluginError.installManifestInvalid` — orca-plugin.json is invalid. Ask the plugin author to fix the manifest.
+- `auto.components.settings.pluginError.incompatible` — This plugin requires a different Orca version.
+- `auto.components.settings.pluginError.installUnsafePath` — The plugin contains an unsafe file path or symlink and was not installed.
+- `auto.components.settings.pluginError.installLimit` — The plugin exceeds Orca's install size or file-count limits.
+- `auto.components.settings.pluginError.installGit` — Couldn't fetch this Git revision. Check the URL, #ref, and access.
+- `auto.components.settings.pluginError.invalidManifestMissing` — The plugin root is missing orca-plugin.json. Add it, then refresh plugins.
+- `auto.components.settings.pluginError.invalidManifest` — orca-plugin.json is invalid. Fix it, then refresh plugins.
+- `auto.components.settings.pluginError.installedManifestUnloadable` — This version can't load in this Orca. Update or reinstall it.
+- `auto.components.settings.pluginError.invalidArtifact` — A worker or panel file is missing or unsafe. Fix it, then refresh.
+- `auto.components.settings.pluginError.consentChanged` — This plugin changed while you were reviewing it. Review it again.
+- `auto.components.settings.plugins.search.aliases` — plugins mods extensions
+- `auto.components.settings.PluginAddMenu.add` — Add plugin
+- `auto.components.settings.PluginAddMenu.folder` — From a folder…
+- `auto.components.settings.PluginAddMenu.git` — From a Git URL…
+- `auto.components.settings.PluginAddMenu.sources` — Catalog sources…
+- `auto.components.settings.PluginManager.verified` — verified
+- `auto.components.settings.PluginManager.unverified` — unverified
+- `auto.components.settings.PluginManager.catalogLoading` — Catalog
+- `auto.components.settings.PluginManager.catalogFailedTitle` — Couldn’t load the plugin catalog.
+- `auto.components.settings.PluginManager.catalogFailedBody` — Your installed plugins keep working.
+- `auto.components.settings.PluginManager.retry` — Retry
+- `auto.components.settings.PluginManager.sourceFailedTitle` — Couldn’t load this catalog.
+- `auto.components.settings.PluginManager.sourceFailedBody` — Your installed plugins keep working.
+- `auto.components.settings.PluginManager.sources` — Sources…
+- `auto.components.settings.PluginManager.sourceStaleTitle` — Couldn’t refresh this catalog.
+- `auto.components.settings.PluginManager.sourceStaleBody` — Showing the copy from {{value0}}.
+- `auto.components.settings.PluginManager.shownOf` — {{value0}} of {{value1}}
+- `auto.components.settings.PluginManager.installed` — Installed
+- `auto.components.settings.PluginManager.installedFailedTitle` — Couldn’t read your installed plugins.
+- `auto.components.settings.PluginManager.updatesTitle` — Updates
+- `auto.components.settings.PluginManager.refreshLabel` — Refresh catalogs
+- `auto.components.settings.PluginManager.noResultsTitle` — No plugins match “{{value0}}”
+- `auto.components.settings.PluginManager.noneInstalledTitle` — No plugins installed
+- `auto.components.settings.PluginManager.browseAll` — Browse all plugins
+- `auto.components.settings.PluginManager.resultCount` — {{value0}} plugins match
+- `auto.components.settings.PluginManager.resultCountOne` — 1 plugin matches
+- `auto.components.settings.PluginManager.updateAll` — Update all…
+- `auto.components.settings.PluginManager.notFromCatalog` — not from a catalog
+- `auto.components.settings.PluginManager.allInstalledTitle` — Every catalog plugin is installed
+- `auto.components.settings.PluginManager.showInstalled` — Show installed plugins
+- `auto.components.settings.PluginDetailPage.bundled` — Bundled with Orca
+- `auto.components.settings.PluginDetailPage.localFolder` — Local folder
+- `auto.components.settings.PluginDetailPage.gitUrl` — Git URL
+- `auto.components.settings.PluginDetailPage.stoppedTitle` — Stopped after an error
+- `auto.components.settings.PluginDetailPage.stoppedBody` — It kept crashing. Restart to try again.
+- `auto.components.settings.PluginDetailPage.invalidTitle` — Orca can’t load this plugin
+- `auto.components.settings.PluginDetailPage.needsOrcaTitle` — Needs Orca {{value0}} or later
+- `auto.components.settings.PluginDetailPage.needsOrcaBody` — You have Orca {{value0}}.
+- `auto.components.settings.PluginDetailPage.back` — Plugins
+- `auto.components.settings.PluginDetailPage.info` — Info
+- `auto.components.settings.PluginDetailPage.version` — Version
+- `auto.components.settings.PluginDetailPage.latest` — Latest
+- `auto.components.settings.PluginDetailPage.requires` — Requires
+- `auto.components.settings.PluginDetailPage.requiresValue` — Orca {{value0}} or later
+- `auto.components.settings.PluginDetailPage.categories` — Categories
+- `auto.components.settings.PluginDetailPage.pluginId` — Plugin ID
+- `auto.components.settings.PluginDetailPage.repository` — Repository
+- `auto.components.settings.PluginDetailPage.newerTitle` — Newer version available
+- `auto.components.settings.PluginDetailPage.newerBody` — The catalog changed while you were here.
+- `auto.components.settings.PluginDetailPage.showNewer` — Show newer
+- `auto.components.settings.PluginDetailPage.stoppedDataBody` — Couldn’t load its files. Restart to try again.
+- `auto.components.settings.PluginDetailPage.alsoListedBy` — Also listed by {{value0}}. Updates come only from the catalog it was installed from; to switch, remove it and install it again.
+- `auto.components.settings.PluginDetailSections.typeLanguagePack` — Interface language
+- `auto.components.settings.PluginDetailSections.typeAppTheme` — App theme
+- `auto.components.settings.PluginDetailSections.typeTerminalTheme` — Terminal theme
+- `auto.components.settings.PluginDetailSections.typeIconTheme` — File icon theme
+- `auto.components.settings.PluginDetailSections.typeSyntax` — Syntax highlighting
+- `auto.components.settings.PluginDetailSections.typeInstructions` — Agent instructions
+- `auto.components.settings.PluginDetailSections.typePanel` — Sidebar panel
+- `auto.components.settings.PluginDetailSections.typeWorker` — Background code
+- `auto.components.settings.PluginDetailSections.adds` — Adds to Orca
+- `auto.components.settings.PluginDetailSections.replaces` — Replaces your shortcut for {{value0}}
+- `auto.components.settings.PluginDetailSections.changeShortcuts` — Change in Shortcuts
+- `auto.components.settings.PluginDetailSections.command` — Command
+- `auto.components.settings.PluginDetailSections.panel` — Sidebar panel
+- `auto.components.settings.PluginDetailSections.recipe` — Machine recipe
+- `auto.components.settings.PluginDetailSections.access` — Can access
+- `auto.components.settings.PluginDetailSections.accessLoading` — Reading the plugin…
+- `auto.components.settings.PluginDetailSections.logs` — Logs
+- `auto.components.settings.PluginDetailSections.copyLogs` — Copy
+- `auto.components.settings.PluginDetailSections.accessFailed` — Couldn’t read its access
+- `auto.components.settings.PluginDetailSections.retry` — Retry
+- `auto.components.settings.PluginDetailSections.noAccessReach` — Nothing outside its own files
+- `auto.components.settings.PluginDetailSections.customEditor` — Editor
+- `auto.components.settings.PluginManagerRows.reinstall` — Reinstall
+- `auto.components.settings.PluginManagerRows.crashedCount` — Crashed {{value0}} times in a row
+- `auto.components.settings.PluginManagerRows.crashed` — Crashed while starting
+- `auto.components.settings.PluginManagerRows.remove` — Remove…
+- `auto.components.settings.PluginManagerRows.review` — Review
+- `auto.components.settings.PluginManagerRows.restart` — Restart
+- `auto.components.settings.PluginManagerRows.viewError` — View error
+- `auto.components.settings.PluginManagerRows.copyId` — Copy plugin ID
+- `auto.components.settings.PluginManagerRows.checkUpdate` — Check for update
+- `auto.components.settings.PluginManagerRows.bundledWithOrca` — Bundled with Orca
+- `auto.components.settings.PluginManagerRows.installName` — Install {{value0}}
+- `auto.components.settings.PluginManagerRows.copied` — Plugin ID copied
+- `auto.components.settings.PluginManagerRows.copyFailed` — Couldn't copy the plugin ID.
+- `auto.components.settings.PluginManagerRows.details` — Details
+- `auto.components.settings.PluginManagerRows.unverified` — Unverified
+- `auto.components.settings.PluginManagerRows.crashedOnce` — Crashed once
+- `auto.components.settings.PluginManagerRows.updateAvailable` — update {{value0}} available
+- `auto.components.settings.PluginManagerRows.updateLabel` — Update {{value0}} to {{value1}}
+- `auto.components.settings.PluginManagerRows.update` — Update {{value0}}
+- `auto.components.settings.PluginManagerRows.needsOrca` — Needs Orca {{value0}}
+- `auto.components.settings.PluginManagerRows.rollbackTo` — Roll back to {{value0}}…
+- `auto.components.settings.PluginManagerRows.copyContentHash` — Copy content hash
+- `auto.components.settings.PluginManagerRows.reviewUpdate` — Review update
+- `auto.components.settings.PluginManagerRows.updateNeedsReview` — update {{value0}} needs review
+- `auto.components.settings.PluginManagerRows.updatedTo` — updated to {{value0}}
+- `auto.components.settings.PluginManagerRows.dataLoadFailed` — Couldn’t load its files
+- `auto.components.settings.PluginSettingsOverview.offTitle` — Plugins are off
+- `auto.components.settings.PluginFilterPopover.kind` — Category
+- `auto.components.settings.PluginFilterPopover.catalog` — Catalog
+- `auto.components.settings.PluginFilterPopover.clear` — Clear filters
+- `auto.components.settings.PluginFilterPopover.themes` — Themes
+- `auto.components.settings.PluginFilterPopover.languages` — Languages
+- `auto.components.settings.PluginFilterPopover.icons` — Icons
+- `auto.components.settings.PluginFilterPopover.commands` — Commands & panels
+- `auto.components.settings.PluginFilterPopover.catalogLabel` — Filter by catalog
+- `auto.components.settings.PluginFilterPopover.editors` — Editors
+- `auto.components.settings.PluginFilterPopover.remoteVms` — Remote/VMs
+- `auto.components.settings.PluginUpdateAllDialog.previewError` — Couldn’t read this update
+- `auto.components.settings.PluginUpdateAllDialog.newAccess` — New: {{value0}}
+- `auto.components.settings.PluginUpdateAllDialog.failed` — Couldn’t update {{value0}}. The others were updated.
+- `auto.components.settings.PluginUpdateAllDialog.cancel` — Cancel
+- `auto.components.settings.PluginUpdateAllDialog.updateOne` — Update 1 plugin
+- `auto.components.settings.PluginUpdateAllDialog.updateMany` — Update {{value0}} plugins
+- `auto.components.settings.PluginUpdateAllDialog.failedAll` — Couldn’t update {{value0}}. Nothing was updated.
+- `auto.components.settings.PluginUpdateAllDialog.close` — Close
+- `auto.components.settings.PluginUpdateAllDialog.retry` — Try again
+- `auto.components.settings.PluginUpdateAllDialog.updated` — Updated
+- `auto.components.settings.PluginUpdateAllDialog.needsOrca` — Needs Orca {{value0}} or later
+- `auto.components.settings.PluginUpdateAllDialog.current` — Already installed
+- `auto.components.settings.PluginUpdateAllDialog.sourceMoved` — New source: {{value0}} (was {{value1}})
+- `auto.components.settings.PluginUpdateAllDialog.newShortcuts` — Keyboard shortcuts
+- `auto.components.settings.PluginUpdateAllDialog.newCommands` — Commands
+- `auto.components.settings.PluginUpdateAllDialog.newPanels` — Panels
+- `auto.components.settings.PluginUpdateAllDialog.newEvents` — More events
+- `auto.components.settings.PluginUpdateAllDialog.newRecipes` — Machine recipes
+- `auto.components.settings.PluginUpdateAllDialog.newContributions` — Features that act for you
+- `auto.components.settings.PluginUpdateAllDialog.allAccess` — See all access
+- `auto.components.settings.PluginUpdateAllDialog.update` — Update
+- `auto.components.settings.PluginDetailInfo.previous` — Previous
+- `auto.components.settings.PluginDetailInfo.updated` — Updated
+- `auto.components.settings.PluginDetailInfo.license` — License
+- `auto.components.settings.PluginDetailInfo.homepage` — Homepage
+- `auto.components.settings.PluginDetailInfo.whatsNew` — What’s new
+- `auto.components.settings.PluginDetailInfo.hashCopied` — Content hash copied
+- `auto.components.settings.PluginDetailInfo.hashCopyFailed` — Couldn't copy the hash.
+- `auto.components.settings.PluginListEmptyStates.noFilterMatches` — No plugins match these filters
+- `auto.components.settings.PluginListEmptyStates.clearBoth` — Clear search and filters
+- `auto.components.settings.PluginListEmptyStates.pageGone` — This plugin is no longer installed or listed.
+- `auto.components.settings.pluginContributions.dark` — Dark
+- `auto.components.settings.pluginContributions.light` — Light
+- `auto.components.settings.pluginContributions.languageIncomplete` — {{value0}}% translated, too incomplete to use as Orca’s language
+- `auto.components.settings.pluginContributions.languageCoverage` — Interface language · {{value0}}% translated
+- `auto.components.settings.pluginContributions.newFileMenu` — Adds to the + menu
+- `auto.components.settings.PluginCardAction.installed` — Installed
+- `auto.components.settings.PluginCardAction.installing` — Installing…
+- `auto.components.settings.PluginCardAction.reviewLabel` — Review and install {{value0}}
+- `auto.components.settings.PluginCardAction.review` — Review & install
+- `auto.components.settings.PluginCardAction.retry` — Try again
+- `auto.components.settings.PluginInstallConsent.install` — Install & enable
+- `auto.components.settings.PluginInstallConsent.noOtherAccess` — No other access
+- `auto.components.settings.PluginInstallConsent.keepOff` — Keep off
+- `auto.components.settings.PluginInstallConsent.replacesShortcut` — {{value0}} ({{value1}}) replaces your shortcut for {{value2}}.
+- `auto.components.settings.PluginInstallConsent.updatesKeepApproval` — Updates ask again only for new access
+- `auto.components.settings.PluginInstallConsent.fullAccessUpdates` — Updates can change its code without asking
+- `auto.components.settings.PluginInstallConsent.editsFileTypes` — Opens and edits {{value0}} files in Orca. It can read the files it opens.
+- `auto.components.settings.PluginPageAction.failedTitle` — Couldn’t install {{value0}}
+- `auto.components.settings.PluginPageAction.contentOnly` — Content only
+- `auto.components.settings.PluginSettingsMenu.label` — Plugin settings
+- `auto.components.settings.PluginSettingsMenu.development` — Development folders…
+- `auto.components.settings.PluginSettingsMenu.autoUpdateLabel` — Update plugins automatically
+- `auto.components.settings.PluginSettingsMenu.autoUpdateHint` — Asks again only for new access
+- `auto.components.settings.PluginThemeUseNow.label` — Use now:
+- `auto.components.settings.PluginThemeUseNow.useName` — Use now: {{value0}}
+- `auto.components.settings.PluginThemeUseNow.useForLight` — Use for light:
+- `auto.components.settings.PluginThemeUseNow.useForDark` — Use for dark:
+- `auto.components.settings.PluginPageHero.screenshots` — Screenshots
+- `auto.components.settings.PluginPageHero.openScreenshot` — Open screenshot: {{value0}}
+- `auto.components.settings.PluginPageHero.position` — {{value0}} of {{value1}}
+- `auto.components.settings.PluginPageHero.previous` — Previous screenshot
+- `auto.components.settings.PluginPageHero.next` — Next screenshot
+- `auto.components.settings.pluginConsentCopy.addsCommands` — Adds commands
+- `auto.components.settings.pluginConsentCopy.addsPanel` — Adds a panel
+- `auto.components.settings.pluginConsentCopy.contentOnly` — Content only
+- `auto.components.settings.pluginConsentCopy.fullAccess` — Full access
+- `auto.components.settings.pluginConsentCopy.addsVmRecipes` — Adds VM recipes
+- `auto.components.settings.pluginConsentCopy.opensAndEditsFiles` — Opens and edits files
+- `auto.components.settings.pluginConsentCopy.runsPluginCode` — Runs plugin code
+- `auto.components.settings.PluginContributionActionCommand.run` — Run
+- `auto.components.settings.PluginContributionActionCommand.runName` — Run {{value0}}
+- `auto.components.settings.PluginContributionActionCommand.ran` — Ran {{value0}}
+- `auto.components.settings.PluginContributionActionCommand.failed` — {{value0}} failed
+- `auto.components.settings.PluginContributionActionCommand.seeLogs` — See Logs below
+- `auto.components.settings.PluginContributionActionCommand.needsWorkspace` — Needs an open workspace
+- `auto.components.settings.PluginContributionActionPanel.open` — Open panel
+- `auto.components.settings.PluginContributionActionPanel.openName` — Open panel: {{value0}}
+- `auto.components.settings.PluginContributionActionPanel.needsWorkspace` — Needs an open workspace
+- `auto.components.settings.PluginContributionActionLanguage.switch` — Switch language
+- `auto.components.settings.PluginContributionActionLanguage.switchTo` — Switch language to {{value0}}
+- `auto.components.settings.PluginContributionActionLanguage.switchBack` — Switch back
+- `auto.components.settings.PluginContributionActionLanguage.switchBackFrom` — Switch back from {{value0}}
+- `auto.components.settings.PluginContributionActionLanguage.failed` — Could not switch language
+- `auto.components.settings.PluginContributionActionSyntax.openExtension` — Open any {{value0}} file
+- `auto.components.settings.PluginContributionActionSyntax.openFilename` — Open {{value0}}
+- `auto.components.settings.PluginContributionActionEvents.worktreeCreated` — When a workspace is created
+- `auto.components.settings.PluginContributionActionEvents.worktreeRemoved` — When a workspace is removed
+- `auto.components.settings.PluginContributionActionEvents.agentStatusChanged` — When an agent’s status changes
+- `auto.components.settings.PluginContributionActionEvents.detail` — Background code runs
+- `auto.components.settings.pluginInstallAction.installed` — {{value0}} installed
+- `auto.components.settings.pluginInstallAction.tryIt` — Try it
+- `auto.components.settings.pluginInstallAction.mismatch` — Download didn’t match the catalog. Nothing installed.
+- `auto.components.settings.pluginInstallAction.catalogChanged` — The catalog changed. Refresh and try again.
+- `auto.components.settings.pluginInstallAction.blocked` — Orca’s safety list blocks this plugin.
+- `auto.components.settings.pluginInstallAction.downloadFailed` — Couldn’t download. Check your connection.
+- `auto.components.settings.pluginThemeApply.nowUsing` — Now using {{value0}}
+- `auto.components.settings.pluginThemeApply.switchBack` — Switch back
+- `auto.components.settings.PluginChips.updateNeedsReview` — Update needs review
+- `auto.components.settings.PluginChips.updatedTo` — Updated to {{value0}}
+- `auto.components.settings.PluginChips.devUnverified` — Dev · unverified
+- `auto.components.settings.PluginInUseAction.inUseDark` — In use · Dark
+- `auto.components.settings.PluginInUseAction.inUseLight` — In use · Light
+- `auto.components.settings.PluginInUseAction.inUse` — In use
+- `auto.components.settings.PluginInUseAction.useName` — Use {{value0}}
+- `auto.components.settings.PluginInUseAction.use` — Use
+- `auto.components.settings.PluginsAlphaNotice.label` — Alpha:
+- `auto.components.settings.PluginsAlphaNotice.body` — The plugin interface may change. Expect nuances.
+- `auto.components.settings.PluginsAlphaNotice.dismiss` — Dismiss Alpha notice
+- `auto.components.settings.PluginStatus.needsReview` — Needs review
+- `auto.components.settings.PluginStatus.restarting` — Restarting
+- `auto.components.settings.PluginStatus.stopped` — Stopped
+- `auto.components.settings.PluginStatus.cantLoad` — Can’t load
+- `auto.components.settings.PluginStatus.off` — Off
+- `auto.components.settings.PluginStatus.running` — Running
+- `auto.components.settings.PluginStatus.on` — On
+- `auto.components.settings.PluginStatus.blocked` — Blocked
+- `auto.components.settings.PluginContributionActionNewFile.create` — Create
+- `auto.components.settings.pluginTryAction.incompleteLanguage` — This language pack is too incomplete to switch to.
+
+## Search keyword trong settings — giữ EN để tìm kiếm khớp — 521 key
+
+- `settings.terminal.limit.search.limit` — limit
+- `settings.terminal.limit.search.maximum` — maximum
+- `settings.terminal.limit.search.pty` — pty
+- `settings.terminal.limit.search.capacity` — capacity
+- `settings.browser.sitePermissions.search.camera` — camera
+- `auto.hooks.useSettingsNavigationMetadata.devSearchKeywordSonner` — sonner
+- `auto.components.stats.stats.search.cb6a9f0334` — cache
+- `auto.components.stats.stats.search.eaf251e183` — tokens
+- `auto.components.stats.stats.search.6953af58e6` — opencode
+- `auto.components.stats.stats.search.b77826fca3` — codex
+- `auto.components.stats.stats.search.e9dc37d889` — claude
+- `auto.components.stats.stats.search.ef8bbf7739` — prs
+- `auto.components.stats.stats.search.f8a1b2c3d4` — grok
+- `auto.components.stats.stats.search.9f2a3b4c5d` — xai
+- `auto.components.stats.stats.search.museKeyword` — muse
+- `auto.components.settings.accounts.search.7e67d7d1b6` — wrk
+- `auto.components.settings.accounts.search.421c6be25e` — id
+- `auto.components.settings.accounts.search.be8b621bdc` — workspace
+- `auto.components.settings.accounts.search.8dcbef1856` — opencode
+- `auto.components.settings.accounts.search.61f7d1fcbe` — cookie
+- `auto.components.settings.accounts.search.37020a02c2` — console
+- `auto.components.settings.accounts.search.933deaf732` — oauth
+- `auto.components.settings.accounts.search.8630464352` — cli
+- `auto.components.settings.accounts.search.e8e1ff3887` — gemini
+- `auto.components.settings.accounts.search.70d1b8def5` — codex
+- `auto.components.settings.accounts.search.e14049e1a8` — claude
+- `auto.components.settings.accounts.search.9f70aa706c` — provider
+- `auto.components.settings.accounts.search.488a7e9206` — linux
+- `auto.components.settings.accounts.search.0b4d948eb5` — wsl
+- `auto.components.settings.accounts.search.bdbd1e668e` — windows
+- `auto.components.settings.accounts.search.d2c6a0e8f1` — grok
+- `auto.components.settings.accounts.search.c1b5f9d7e0` — xai
+- `auto.components.settings.accounts.search.b0a4e8c6d9` — oauth
+- `auto.components.settings.accounts.search.d16378a88f` — minimax
+- `auto.components.settings.accounts.search.b2c4e7f1a8` — endpoint
+- `auto.components.settings.accounts.search.cursor.kw.cursor` — cursor
+- `auto.components.settings.accounts.search.zcodePlan.title` — GLM Coding Plan
+- `auto.components.settings.accounts.search.zcodePlan.kw.glm` — glm
+- `auto.components.settings.accounts.search.zcodePlan.kw.zai` — zai
+- `auto.components.settings.accounts.search.zcodePlan.kw.zhipu` — zhipu
+- `auto.components.settings.accounts.search.zcodePlan.kw.bigmodel` — bigmodel
+- `auto.components.settings.accounts.search.zcodePlan.kw.codingPlan` — coding plan
+- `auto.components.settings.advanced.search.4383251647` — vpn
+- `auto.components.settings.advanced.search.f98a60af11` — proxy
+- `auto.components.settings.advanced.search.621233008b` — http/1.1
+- `auto.components.settings.advanced.search.f8ff125ebe` — http1
+- `auto.components.settings.advanced.search.a0f71bd909` — http/2
+- `auto.components.settings.advanced.search.4b4ae4345a` — http2
+- `auto.components.settings.advanced.search.48a1c8f534` — http
+- `auto.components.settings.agents.search.f622b8eb2a` — linux
+- `auto.components.settings.agents.search.d608654c03` — wsl
+- `auto.components.settings.agents.search.77c02fa3c3` — windows
+- `auto.components.settings.agents.search.96ba2373b6` — agent
+- `auto.components.settings.agents.search.bb9ad95777` — Agents
+- `auto.components.settings.agents.search.e2b7c0dcd7` — github
+- `auto.components.settings.agents.search.0d752916f8` — hooks
+- `auto.components.settings.agents.search.agent-trust-worktree` — worktree
+- `auto.components.settings.agents.search.f412abbba5` — claude
+- `auto.components.settings.agents.search.5ded38b843` — codex
+- `auto.components.settings.agents.search.ff457e1e7b` — daemon
+- `auto.components.settings.agents.search.be7ea3553b` — tab
+- `auto.components.settings.agents.search.c64059f50d` — prompt
+- `auto.components.settings.agents.search.runtime` — runtime
+- `auto.components.settings.agents.search.yolo` — yolo
+- `auto.components.settings.appearance.search.468448bba4` — watercolor
+- `auto.components.settings.appearance.search.d18b54ca90` — dock
+- `auto.components.settings.appearance.search.1f2880a9d5` — orca
+- `auto.components.settings.appearance.search.839fb1e3ed` — toolbox
+- `auto.components.settings.appearance.search.6b846424cc` — linear
+- `auto.components.settings.appearance.search.2ee4810f38` — github
+- `auto.components.settings.appearance.search.c1bca1885a` — file explorer
+- `auto.components.settings.appearance.search.08c86bf58e` — gitignore
+- `auto.components.settings.appearance.search.bce3ac317a` — git
+- `auto.components.settings.appearance.search.2f12e1aa3a` — ui
+- `auto.components.settings.appearance.search.fab91464dd` — ide
+- `auto.components.settings.appearance.search.24094af355` — font
+- `auto.components.settings.appearance.search.dc02c8759d` — workspace
+- `auto.components.settings.appearance.search.46d21eef62` — localhost
+- `auto.components.settings.appearance.search.96b4fb0064` — terminal
+- `auto.components.settings.appearance.search.4ddbde4999` — cpu
+- `auto.components.settings.appearance.search.7cf005b29f` — Resource Manager
+- `auto.components.settings.appearance.search.fe192b060e` — host
+- `auto.components.settings.appearance.search.a278406ed5` — remote
+- `auto.components.settings.appearance.search.6ecad74eb3` — ssh
+- `auto.components.settings.appearance.search.35565867cb` — moonshot
+- `auto.components.settings.appearance.search.40e5c3c285` — kimi
+- `auto.components.settings.appearance.search.d9e7cef86f` — cookie
+- `auto.components.settings.appearance.search.d16378a88f` — minimax
+- `auto.components.settings.appearance.search.d77537b580` — opencode-go
+- `auto.components.settings.appearance.search.a9d56852eb` — opencode
+- `auto.components.settings.appearance.search.51b0ccd6a2` — google
+- `auto.components.settings.appearance.search.2804a920ad` — gemini
+- `auto.components.settings.appearance.search.97957e374e` — openai
+- `auto.components.settings.appearance.search.8dfd676c28` — codex
+- `auto.components.settings.appearance.search.dea0a9a665` — anthropic
+- `auto.components.settings.appearance.search.c9fe3a7876` — claude
+- `auto.components.settings.appearance.search.language.i18n` — i18n
+- `auto.components.settings.appearance.search.leftSidebarAppearance.terminal` — terminal
+- `auto.components.settings.appearance.search.leftSidebarAppearance.tint` — tint
+- `auto.components.settings.appearance.search.showPinnedWorktreesInGroups.worktree` — worktree
+- `auto.components.settings.appearance.search.showPinnedWorktreesInGroups.workspace` — workspace
+- `auto.components.settings.appearance.search.showPinnedWorktreesInGroups.pr` — pr
+- `auto.components.settings.appearance.search.antigravityKeyword` — antigravity
+- `auto.components.settings.appearance.search.d6c0a9e2f4` — grok
+- `auto.components.settings.appearance.search.c5b9f8d1e3` — xai
+- `auto.components.settings.appearance.search.zcode` — zcode
+- `auto.components.settings.appearance.search.zai` — zai
+- `auto.components.settings.appearance.search.glm` — glm
+- `auto.components.settings.appearance.search.cursor.kw.cursor` — cursor
+- `auto.components.settings.auto.rename.branch.search.0971762141` — kebab-case
+- `auto.components.settings.auto.rename.branch.search.a482f6a423` — slug
+- `auto.components.settings.auto.rename.branch.search.40d21f2efc` — prompt
+- `auto.components.settings.auto.rename.branch.search.ed677944cc` — worktree
+- `auto.components.settings.auto.rename.branch.search.3ef3cbe98c` — agent
+- `auto.components.settings.auto.rename.branch.search.f0acf64301` — creature name
+- `auto.components.settings.auto.rename.branch.search.9319bd9827` — branch
+- `auto.components.settings.browser.search.7539f6336c` — profile
+- `auto.components.settings.browser.search.1c1e097985` — arc
+- `auto.components.settings.browser.search.533a253deb` — edge
+- `auto.components.settings.browser.search.75a0d435b7` — chrome
+- `auto.components.settings.browser.search.96afedcb5c` — Session & Cookies
+- `auto.components.settings.browser.search.68d1db8929` — markdown
+- `auto.components.settings.browser.search.90425d313c` — shift
+- `auto.components.settings.browser.search.linkRoutingBackground.tab` — tab
+- `auto.components.settings.browser.search.terminalLinkActions.terminal` — terminal
+- `auto.components.settings.browser.search.terminalLinkActions.chat` — chat
+- `auto.components.settings.browser.search.terminalLinkActions.popover` — popover
+- `auto.components.settings.browser.search.terminalLinkActions.menu` — menu
+- `auto.components.settings.browser.search.72c58f7792` — webview
+- `auto.components.settings.browser.search.82ba1c80ea` — localhost
+- `auto.components.settings.browser.search.8b8ed06e4b` — omnibox
+- `auto.components.settings.browser.search.3538b3aaeb` — token
+- `auto.components.settings.browser.search.e1c2a57f07` — kagi
+- `auto.components.settings.browser.search.ad40e75d13` — bing
+- `auto.components.settings.browser.search.1f8153acfb` — duckduckgo
+- `auto.components.settings.browser.search.8a489aab8d` — google
+- `auto.components.settings.browser.search.4fda4fb066` — url
+- `auto.components.settings.browser.search.8f036ea11f` — worktree
+- `auto.components.settings.browser.search.a8c55c9c91` — favicon
+- `auto.components.settings.browser.search.clientHostedRemote.remote` — remote
+- `auto.components.settings.browser.search.clientHostedRemote.client` — client
+- `auto.components.settings.browser.search.clientHostedRemote.host` — host
+- `auto.components.settings.browser.search.clientHostedRemote.desktop` — desktop
+- `auto.components.settings.browser.search.sshWorkspaceRouting.ssh` — ssh
+- `auto.components.settings.browser.search.sshWorkspaceRouting.proxy` — proxy
+- `auto.components.settings.browser.search.sshWorkspaceRouting.tunnel` — tunnel
+- `auto.components.settings.browser.search.userAgent.userAgent` — user agent
+- `auto.components.settings.browser.search.userAgent.native` — native
+- `auto.components.settings.browser.search.userAgent.cleaned` — cleaned
+- `auto.components.settings.browser.use.search.20c1323d1e` — computer use
+- `auto.components.settings.browser.use.search.ab349a2dd0` — arc
+- `auto.components.settings.browser.use.search.2e1b09897b` — edge
+- `auto.components.settings.browser.use.search.088e7a9012` — chrome
+- `auto.components.settings.browser.use.search.ba4eb53b72` — browser use
+- `auto.components.settings.browser.use.search.a57c2172dc` — agent-browser
+- `auto.components.settings.browser.use.search.f5b8fdddf5` — orca-cli
+- `auto.components.settings.browser.use.search.9d97446873` — agent
+- `auto.components.settings.browser.use.search.a2d489263e` — skill
+- `auto.components.settings.commit.message.ai.search.3766941527` — agent
+- `auto.components.settings.commit.message.ai.search.b261c88609` — pr
+- `auto.components.settings.commit.message.ai.search.110be48b81` — pull request
+- `auto.components.settings.commit.message.ai.search.d32936bb2a` — branch
+- `auto.components.settings.commit.message.ai.search.127d512e75` — commit
+- `auto.components.settings.commit.message.ai.search.53e8504fb2` — ci
+- `auto.components.settings.commit.message.ai.search.402f101af8` — prompt
+- `auto.components.settings.commit.message.ai.search.57c851a68c` — cli
+- `auto.components.settings.commit.message.ai.search.82109d627d` — source control
+- `auto.components.settings.commit.message.ai.search.542e1a00a7` — codex
+- `auto.components.settings.commit.message.ai.search.f121bec167` — claude
+- `auto.components.settings.commit.message.ai.search.c33cb1b982` — ai
+- `auto.components.settings.computer.use.search.6e88da3508` — skill
+- `auto.components.settings.computer.use.search.fefb452f5b` — computer use
+- `auto.components.settings.computer.use.search.442bec10fe` — Computer Use
+- `auto.components.settings.developer.permissions.search.11653d3f42` — mdns
+- `auto.components.settings.developer.permissions.search.78a10b826f` — bonjour
+- `auto.components.settings.developer.permissions.search.e3fbc48083` — bluetooth
+- `auto.components.settings.developer.permissions.search.c4a4a02ea4` — usb
+- `auto.components.settings.developer.permissions.search.87620e6416` — lan
+- `auto.components.settings.developer.permissions.search.3e0131e45d` — icloud
+- `auto.components.settings.developer.permissions.search.ce07159ff5` — desktop
+- `auto.components.settings.developer.permissions.search.00e954319e` — whisper
+- `auto.components.settings.developer.permissions.search.1e6e27b202` — ffmpeg
+- `auto.components.settings.developer.permissions.search.f061f08b7b` — sox
+- `auto.components.settings.developer.permissions.search.a765112513` — video
+- `auto.components.settings.developer.permissions.search.259b829b84` — camera
+- `auto.components.settings.developer.permissions.search.6db4fca386` — macos
+- `auto.components.settings.developer.permissions.search.0c13b249e3` — tcc
+- `auto.components.settings.experimental.search.5f067ba0f9` — agent
+- `auto.components.settings.experimental.search.edc49480a1` — pane
+- `auto.components.settings.experimental.search.268e99d957` — highlight
+- `auto.components.settings.experimental.search.9bb3bd5098` — terminal
+- `auto.components.settings.experimental.search.agentHibernation.agent` — agent
+- `auto.components.settings.experimental.search.agentHibernation.agents` — agents
+- `auto.components.settings.experimental.search.agentHibernation.terminal` — terminal
+- `auto.components.settings.experimental.search.newWorktreeCardStyle.menu` — menu
+- `auto.components.settings.experimental.search.newWorktreeCardStyle.metadata` — metadata
+- `auto.components.settings.experimental.search.newWorktreeCardStyle.worktree` — worktree
+- `auto.components.settings.experimental.search.newWorktreeCardStyle.worktrees` — worktrees
+- `auto.components.settings.experimental.search.051203d37c` — pet
+- `auto.components.settings.experimental.search.87d99e634b` — Pet
+- `auto.components.settings.experimental.search.nativeChat.grok` — grok
+- `auto.components.settings.experimental.search.nativeChat.native` — native
+- `auto.components.settings.experimental.search.nativeChat.chat` — chat
+- `auto.components.settings.experimental.search.nativeChat.claude` — claude
+- `auto.components.settings.experimental.search.nativeChat.codex` — codex
+- `auto.components.settings.experimental.search.nativeChat.openclaude` — openclaude
+- `auto.components.settings.experimental.search.nativeChat.omp` — omp
+- `auto.components.settings.experimental.search.nativeChat.terminal` — terminal
+- `auto.components.settings.experimental.search.nativeChat.agent` — agent
+- `auto.components.settings.experimental.search.agentDashboard.agent` — agent
+- `auto.components.settings.experimental.search.agentDashboard.kanban` — kanban
+- `auto.components.settings.experimental.search.agentDashboard.worktrees` — worktrees
+- `auto.components.settings.experimental.search.browserExtensions.extension` — extension
+- `auto.components.settings.experimental.search.browserExtensions.chrome` — chrome
+- `auto.components.settings.floating.workspace.search.884e5e6132` — markdown
+- `auto.components.settings.floating.workspace.search.6410fe83d8` — terminal
+- `auto.components.settings.general.search.06ea5a69a6` — github
+- `auto.components.settings.general.search.95b63edde7` — claude
+- `auto.components.settings.general.search.3462308bd3` — tokens
+- `auto.components.settings.general.search.585beac3f8` — ttl
+- `auto.components.settings.general.search.0efc9d96ad` — prompt
+- `auto.components.settings.general.search.b2601a778c` — cache
+- `auto.components.settings.general.search.baa263d6d8` — agents
+- `auto.components.settings.general.search.bda108e66c` — skill
+- `auto.components.settings.general.search.2d9f7b42df` — Agent skill
+- `auto.components.settings.general.search.88d3df9ce9` — terminal
+- `auto.components.settings.general.search.924a660a78` — cli
+- `auto.components.settings.general.search.327e3fa70d` — Orca CLI
+- `auto.components.settings.general.search.12ecc640a8` — mru
+- `auto.components.settings.general.search.750420dd9a` — control
+- `auto.components.settings.general.search.fe62b3f09f` — ctrl
+- `auto.components.settings.general.search.2a254b725e` — tab
+- `auto.components.settings.general.search.explorer` — explorer
+- `auto.components.settings.general.search.4dd5684836` — review
+- `auto.components.settings.general.search.d05f629d2c` — markdown
+- `auto.components.settings.general.search.9c72990db8` — minimap
+- `auto.components.settings.general.search.6f584fcb48` — Minimap
+- `auto.components.settings.general.search.3b5733573e` — diff
+- `auto.components.settings.general.search.0a5fa65926` — inline
+- `auto.components.settings.general.search.nodeDistMirror` — mirror
+- `auto.components.settings.general.search.nodeDistNodejs` — nodejs
+- `auto.components.settings.general.search.3566fce83f` — localhost
+- `auto.components.settings.general.search.91a46caafc` — no_proxy
+- `auto.components.settings.general.search.20b711ac9e` — proxy
+- `auto.components.settings.general.search.b9096a44cf` — https_proxy
+- `auto.components.settings.general.search.8f03d44672` — http_proxy
+- `auto.components.settings.general.search.6c2ce8457c` — file explorer
+- `auto.components.settings.general.search.c9d9636f24` — finder
+- `auto.components.settings.general.search.68d03d9980` — vscode
+- `auto.components.settings.general.search.ebf8f056b5` — zed
+- `auto.components.settings.general.search.0cb3d94f00` — cursor
+- `auto.components.settings.general.search.df10666259` — worktree
+- `auto.components.settings.general.search.7baf524b04` — workspace
+- `auto.components.settings.general.search.editorFontKw` — font
+- `auto.components.settings.general.search.runtime` — runtime
+- `auto.components.settings.general.search.wsl` — wsl
+- `auto.components.settings.general.search.distro` — distro
+- `auto.components.settings.general.search.terminal` — terminal
+- `auto.components.settings.general.search.agent` — agent
+- `auto.components.settings.general.search.omp` — OMP
+- `auto.components.settings.git.search.16f53f7323` — gh
+- `auto.components.settings.git.search.d088806071` — github
+- `auto.components.settings.git.search.ead733645f` — glab
+- `auto.components.settings.git.search.4808f065b3` — gitlab
+- `auto.components.settings.git.search.65b69d9f80` — graphql
+- `auto.components.settings.git.search.035134fcd9` — worktree
+- `auto.components.settings.git.search.6ee3cfff02` — git diff
+- `auto.components.settings.git.search.564942ffc5` — origin/main
+- `auto.components.settings.git.search.28192e3a63` — master
+- `auto.components.settings.git.search.e3e9adde59` — main
+- `auto.components.settings.git.search.sourceControl` — source control
+- `auto.components.settings.git.search.upstream` — upstream
+- `auto.components.settings.git.search.originMaster` — origin/master
+- `auto.components.settings.git.search.jira` — jira
+- `auto.components.settings.input.search.886597d6b3` — macos
+- `auto.components.settings.input.search.26c83b06c5` — linux
+- `auto.components.settings.input.search.71905435dd` — x11
+- `auto.components.settings.integrations.search.7319e3015b` — linear
+- `auto.components.settings.integrations.search.2ec2bd328c` — api token
+- `auto.components.settings.integrations.search.7345b7c3e6` — atlassian
+- `auto.components.settings.integrations.search.e1263dd748` — jira
+- `auto.components.settings.integrations.search.8c568d761c` — pull request
+- `auto.components.settings.integrations.search.33180e8c10` — self-hosted
+- `auto.components.settings.integrations.search.129fc59aa8` — gitea
+- `auto.components.settings.integrations.search.03a7b275be` — ado
+- `auto.components.settings.integrations.search.ed63380247` — azure repos
+- `auto.components.settings.integrations.search.b38b5d27f1` — azure devops
+- `auto.components.settings.integrations.search.50d20817f7` — bitbucket
+- `auto.components.settings.integrations.search.371ee914d2` — merge request
+- `auto.components.settings.integrations.search.581844769a` — mr
+- `auto.components.settings.integrations.search.b40cbe5de4` — glab
+- `auto.components.settings.integrations.search.b939695c69` — gitlab
+- `auto.components.settings.integrations.search.41ccade05c` — gh
+- `auto.components.settings.integrations.search.b79c21bd42` — github
+- `auto.components.settings.integrations.search.af5ae87847` — access token
+- `auto.components.settings.machine.name.search.hostname` — hostname
+- `auto.components.settings.mobile.emulator.search.2bb2e09225` — mobile skill
+- `auto.components.settings.mobile.emulator.search.64494f03c3` — emulator attach
+- `auto.components.settings.mobile.emulator.search.6f728f1456` — emulator tap
+- `auto.components.settings.mobile.emulator.search.f8b871d655` — agent cli
+- `auto.components.settings.mobile.emulator.search.8ef0f08d36` — runtime
+- `auto.components.settings.mobile.emulator.search.27397fe8e9` — xcode command line tools
+- `auto.components.settings.mobile.emulator.search.7650063d17` — simctl
+- `auto.components.settings.mobile.emulator.search.3211e7acf9` — xcrun
+- `auto.components.settings.mobile.emulator.search.25d7bfbcd4` — udid
+- `auto.components.settings.mobile.emulator.search.b8ddd13195` — agent emulator
+- `auto.components.settings.mobile.emulator.search.ac0a985873` — emulator skill
+- `auto.components.settings.mobile.emulator.search.9353854ff3` — orca emulator
+- `auto.components.settings.mobile.emulator.search.d4b7833894` — orca cli
+- `auto.components.settings.mobile.emulator.search.84e5706975` — serve-sim
+- `auto.components.settings.mobile.emulator.search.7c5a8a2bee` — xcode
+- `auto.components.settings.mobile.emulator.search.bec7231663` — ipad
+- `auto.components.settings.mobile.emulator.search.49727355a3` — iphone
+- `auto.components.settings.mobile.emulator.search.2d67f708ce` — simulator
+- `auto.components.settings.mobile.emulator.search.c5eca29310` — ios simulator
+- `auto.components.settings.mobile.pane.search.b34ad5b3a7` — terminal
+- `auto.components.settings.mobile.pane.search.126afc5dbd` — remote
+- `auto.components.settings.mobile.pane.search.70f505f3c3` — lan
+- `auto.components.settings.mobile.pane.search.1802188b5d` — wifi
+- `auto.components.settings.mobile.pane.search.1f70d63998` — ip
+- `auto.components.settings.mobile.pane.search.87711f4b8f` — vpn
+- `auto.components.settings.mobile.pane.search.16bff559a0` — tailnet
+- `auto.components.settings.mobile.pane.search.c690e3ee38` — tailscale
+- `auto.components.settings.mobile.pane.search.3c1807a81a` — qr
+- `auto.components.settings.mobile.settings.search.8d4ba0ef09` — beta
+- `auto.components.settings.mobile.settings.search.6bfa001752` — apk
+- `auto.components.settings.mobile.settings.search.a7eececc1d` — android
+- `auto.components.settings.mobile.settings.search.7e801801ac` — remote
+- `auto.components.settings.mobile.settings.search.87816d1c59` — qr
+- `auto.components.settings.mobile.settings.search.e4f4daea0e` — relay
+- `auto.components.settings.mobile.settings.search.5d5af8e041` — iphone
+- `auto.components.settings.notifications.search.ef86a782cc` — bong
+- `auto.components.settings.notifications.search.3014ad1b8f` — ding
+- `auto.components.settings.notifications.search.079c29aeb5` — flac
+- `auto.components.settings.notifications.search.722face52f` — aac
+- `auto.components.settings.notifications.search.6ecb8418cb` — m4a
+- `auto.components.settings.notifications.search.d16ae23645` — ogg
+- `auto.components.settings.notifications.search.57e34a31cd` — wav
+- `auto.components.settings.notifications.search.5362074f19` — mp3
+- `auto.components.settings.notifications.search.c638ae989d` — terminal
+- `auto.components.settings.notifications.search.7fa07e9600` — agent
+- `auto.components.settings.notifications.search.adbc3a0fcf` — native
+- `auto.components.settings.notifications.search.51ae2183e1` — desktop
+- `auto.components.settings.notifications.search.host` — host
+- `auto.components.settings.notifications.search.remote` — remote
+- `auto.components.settings.notifications.search.ssh` — ssh
+- `auto.components.settings.orchestration.search.c766a01978` — handoff
+- `auto.components.settings.orchestration.search.f278fd04db` — codex
+- `auto.components.settings.orchestration.search.32c5098e7b` — claude
+- `auto.components.settings.orchestration.search.741dfc03fa` — worker
+- `auto.components.settings.orchestration.search.ca54c69806` — DAG
+- `auto.components.settings.orchestration.search.eee028ae14` — dispatch
+- `auto.components.settings.orchestration.search.13ba5c6cbd` — agents
+- `auto.components.settings.privacy.search.94e04427f6` — env
+- `auto.components.settings.privacy.search.5854a5c752` — ci
+- `auto.components.settings.privacy.search.69637f4dc4` — orca_telemetry_disabled
+- `auto.components.settings.privacy.search.058550f6bc` — do_not_track
+- `auto.components.settings.privacy.search.77d3180def` — telemetry
+- `auto.components.settings.privacy.search.2b5a5c312f` — posthog
+- `auto.components.settings.quick.commands.search.3c316e6ef8` — yarn
+- `auto.components.settings.quick.commands.search.b86c727100` — npm
+- `auto.components.settings.quick.commands.search.b949a7c0a0` — pnpm
+- `auto.components.settings.quick.commands.search.89d2a9ad9f` — repo
+- `auto.components.settings.quick.commands.search.a26ecdb77b` — snippet
+- `auto.components.settings.quick.commands.search.0073cf8ce9` — terminal
+- `auto.components.settings.repository.search.bc7e504b8e` — .orca/issue-command
+- `auto.components.settings.repository.search.603c68b68c` — orca.yaml
+- `auto.components.settings.repository.search.9dc60d7f6d` — github
+- `auto.components.settings.repository.search.5e9445bbfd` — authoritative
+- `auto.components.settings.repository.search.0432d2fb7c` — local
+- `auto.components.settings.repository.search.bf460fded8` — yaml
+- `auto.components.settings.repository.search.8655e3387b` — hooks
+- `auto.components.settings.repository.search.d73fb47b45` — .claude/mcp.json
+- `auto.components.settings.repository.search.db11b337c4` — .claude.json
+- `auto.components.settings.repository.search.26f42fe773` — .cursor/mcp.json
+- `auto.components.settings.repository.search.e760e3fae7` — .mcp.json
+- `auto.components.settings.repository.search.16dc7a4637` — model context protocol
+- `auto.components.settings.repository.search.343f0a508c` — mcp
+- `auto.components.settings.repository.search.84da7fa2d7` — node_modules
+- `auto.components.settings.repository.search.0a3a582794` — env
+- `auto.components.settings.repository.search.f1c53f2820` — worktree
+- `auto.components.settings.repository.search.7e228fc439` — symlinks
+- `auto.components.settings.repository.search.c06adcf136` — symlink
+- `auto.components.settings.repository.search.clone` — clone
+- `auto.components.settings.repository.search.apfs` — apfs
+- `auto.components.settings.repository.search.fff8834983` — prompt
+- `auto.components.settings.repository.search.8068d8d0f1` — pr
+- `auto.components.settings.repository.search.5ff7fe1ade` — pull request
+- `auto.components.settings.repository.search.cfad7ce5f3` — ai
+- `auto.components.settings.repository.search.a47f51127e` — source control
+- `auto.components.settings.repository.search.4b9a18a56d` — monorepo
+- `auto.components.settings.repository.search.9f5ae26ccd` — presets
+- `auto.components.settings.repository.search.095fca94fe` — preset
+- `auto.components.settings.repository.search.aa42616e3d` — checkout
+- `auto.components.settings.repository.search.4f3c0230c2` — sparse
+- `auto.components.settings.repository.search.4733ec2395` — ../worktrees
+- `auto.components.settings.repository.search.9811f3d152` — branch
+- `auto.components.settings.repository.search.27733eb6c1` — favicon
+- `auto.components.settings.repository.search.1e73e840ff` — emoji
+- `auto.components.settings.repository.search.c1075178cf` — badge
+- `auto.components.settings.repository.search.6d8de2f090` — hex
+- `auto.components.settings.repository.search.token` — token
+- `auto.components.settings.repository.search.fork` — fork
+- `auto.components.settings.repository.search.upstream` — upstream
+- `auto.components.settings.repository.search.fastForward` — fast-forward
+- `auto.components.settings.repository.search.origin` — origin
+- `auto.components.settings.repository.search.runtime` — runtime
+- `auto.components.settings.repository.search.wsl` — wsl
+- `auto.components.settings.repository.search.distro` — distro
+- `auto.components.settings.runtime.environments.search.772e3b4753` — vm
+- `auto.components.settings.runtime.environments.search.5cd7dca3b8` — remote
+- `auto.components.settings.runtime.environments.search.d760866285` — client
+- `auto.components.settings.runtime.environments.search.d198440ce3` — runtime
+- `auto.components.settings.runtime.environments.search.c6e5a03aa0` — dev box
+- `auto.components.settings.runtime.environments.search.f1575f1e09` — web client
+- `auto.components.settings.shortcuts.search.0f8cb15582` — agent
+- `auto.components.settings.shortcuts.search.f1adebbe8c` — shell
+- `auto.components.settings.shortcuts.search.7f1b38f59a` — tui
+- `auto.components.settings.shortcuts.search.7e3fc707aa` — terminal
+- `auto.components.settings.ssh.search.d41f296f64` — ping
+- `auto.components.settings.ssh.search.7efd17e816` — ssh
+- `auto.components.settings.ssh.search.2cd40ba0d0` — hosts
+- `auto.components.settings.ssh.search.8fb1cc87cc` — host
+- `auto.components.settings.ssh.search.09395490af` — target
+- `auto.components.settings.ssh.search.d4bcd497c7` — remote
+- `auto.components.settings.tasks.search.604d8e4089` — atlassian
+- `auto.components.settings.tasks.search.5430396e11` — jira
+- `auto.components.settings.tasks.search.412ec3c702` — linear
+- `auto.components.settings.tasks.search.11f001cdd4` — gitlab
+- `auto.components.settings.tasks.search.c10ac2125e` — github
+- `auto.components.settings.tasks.search.cf0e3e0c2f` — provider
+- `auto.components.settings.tasks.search.skill` — skill
+- `auto.components.settings.terminal.clipboard.search.d106f44fb4` — remote
+- `auto.components.settings.terminal.clipboard.search.043b32faa1` — ssh
+- `auto.components.settings.terminal.clipboard.search.9fda309db9` — fzf
+- `auto.components.settings.terminal.clipboard.search.64533e30cc` — nvim
+- `auto.components.settings.terminal.clipboard.search.2061d8db1a` — neovim
+- `auto.components.settings.terminal.clipboard.search.5ffcd13c90` — tmux
+- `auto.components.settings.terminal.clipboard.search.9dfc125cd3` — osc52
+- `auto.components.settings.terminal.clipboard.search.62d1208b90` — osc 52
+- `auto.components.settings.terminal.clipboard.search.4043e294d2` — gnome
+- `auto.components.settings.terminal.clipboard.search.cf83ac3dbd` — linux
+- `auto.components.settings.terminal.clipboard.search.737cef6de1` — x11
+- `auto.components.settings.terminal.clipboard.search.zellij` — zellij
+- `auto.components.settings.terminal.clipboard.search.grok` — grok
+- `auto.components.settings.terminal.search.0ce176909a` — theme
+- `auto.components.settings.terminal.search.11fd3fbcf2` — ansi
+- `auto.components.settings.terminal.search.6c2f9f05c8` — vibrancy
+- `auto.components.settings.terminal.search.7db59c4738` — alpha
+- `auto.components.settings.terminal.search.f66a7cf715` — terminal
+- `auto.components.settings.terminal.search.a3e5297c10` — kill
+- `auto.components.settings.terminal.search.9f2dda133c` — pty
+- `auto.components.settings.terminal.search.f35400f7e8` — daemon
+- `auto.components.settings.terminal.search.6f5d486a68` — Manage Sessions
+- `auto.components.settings.terminal.search.warp_import.keyword_warp` — warp
+- `auto.components.settings.terminal.search.warp_import.keyword_themes` — themes
+- `auto.components.settings.terminal.search.warp_import.keyword_yaml` — yaml
+- `auto.components.settings.terminal.search.yaml_import.keyword_yaml` — yaml
+- `auto.components.settings.terminal.search.4cec42dbf7` — intl
+- `auto.components.settings.terminal.search.b495dc6a9f` — jis
+- `auto.components.settings.terminal.search.d8d6f7a3c5` — macos
+- `auto.components.settings.terminal.search.1ab57a0fbd` — mac
+- `auto.components.settings.terminal.search.fae142a354` — readline
+- `auto.components.settings.terminal.search.983d45cf4c` — compose
+- `auto.components.settings.terminal.search.7ace5beec9` — meta
+- `auto.components.settings.terminal.search.c4427dc5ff` — alt
+- `auto.components.settings.terminal.search.b37edfc65a` — option
+- `auto.components.settings.terminal.search.846a7a1204` — pane
+- `auto.components.settings.terminal.search.1abcf4d7de` — linux
+- `auto.components.settings.terminal.search.fffa9ab980` — renderer
+- `auto.components.settings.terminal.search.6cddc858ba` — webgl
+- `auto.components.settings.terminal.search.db82cb13b0` — gpu
+- `auto.components.settings.terminal.search.a16224d16a` — calt
+- `auto.components.settings.terminal.search.6ded6297fe` — iosevka
+- `auto.components.settings.terminal.search.e3aeea308e` — cascadia code
+- `auto.components.settings.terminal.search.35c2311a33` — jetbrains mono
+- `auto.components.settings.terminal.search.7f7640c29e` — fira code
+- `auto.components.settings.terminal.search.7ab424c4d3` — ligature
+- `auto.components.settings.terminal.search.afc8d5f790` — ligatures
+- `auto.components.settings.terminal.search.b0bb76ae6b` — font
+- `auto.components.settings.terminal.search.theme_target.keyword_target` — target
+- `auto.components.settings.terminal.search.39ea7c0d28` — terminal
+- `auto.components.settings.terminal.search.tui` — tui
+- `auto.components.settings.terminal.search.agent` — agent
+- `auto.components.settings.terminal.search.prompt` — prompt
+- `auto.components.settings.terminal.search.minimumContrast.wcag` — wcag
+- `auto.components.settings.terminal.search.minimumContrast.powerline` — powerline
+- `auto.components.settings.terminal.search.d31ed1ac1c` — rcfile
+- `auto.components.settings.terminal.search.d9e29543a1` — wrapper
+- `auto.components.settings.terminal.search.7c3ede6f12` — nushell
+- `auto.components.settings.terminal.search.bf09070e31` — bash
+- `auto.components.settings.terminal.search.d26257a80d` — zsh
+- `auto.components.settings.terminal.search.454df22a5e` — fish
+- `auto.components.settings.terminal.search.ddd5efe113` — shell
+- `auto.components.settings.terminal.windows.search.28ff08ed35` — windows
+- `auto.components.settings.terminal.windows.search.e7d2793b03` — terminal
+- `auto.components.settings.terminal.windows.search.d414022016` — pwsh
+- `auto.components.settings.terminal.windows.search.768613e483` — powershell 7
+- `auto.components.settings.terminal.windows.search.f9162f0b8e` — windows powershell
+- `auto.components.settings.terminal.windows.search.2d99cd91be` — powershell
+- `auto.components.settings.terminal.windows.search.07ec155fb6` — bash.exe
+- `auto.components.settings.terminal.windows.search.5a2db98d23` — bash
+- `auto.components.settings.terminal.windows.search.591912177b` — git bash
+- `auto.components.settings.terminal.windows.search.12519edb5d` — command prompt
+- `auto.components.settings.terminal.windows.search.6cd20b9e64` — cmd
+- `auto.components.settings.terminal.windows.search.7c7056940a` — shell
+- `auto.components.settings.voice.pane.search.04c25a6fb0` — openai
+- `auto.components.settings.voice.pane.search.10d45a9fce` — stt
+- `auto.components.settings.voice.pane.search.ebfd0b32e5` — OpenAI Transcription
+- `auto.components.settings.voice.pane.search.micAirpods` — airpods
+- `auto.components.settings.ephemeralVms.search.keywordVm` — vm
+- `auto.components.settings.ephemeralVms.search.keywordSandbox` — sandbox
+- `auto.components.settings.ephemeralVms.search.keywordRecipe` — recipe
+- `auto.components.settings.linear.agent.skill.search.title` — Linear
+- `auto.components.settings.linear.agent.skill.search.linear` — linear
+- `auto.components.settings.linear.agent.skill.search.skill` — skill
+- `auto.components.settings.linear.agent.skill.search.orcaLinear` — orca-linear
+- `auto.components.settings.managedServers.search.keywordSsh` — ssh
+- `auto.components.settings.claudeSubagentNavigation.search.subagent` — subagent
+- `auto.components.settings.claudeSubagentNavigation.search.plugin` — plugin
+- `auto.components.settings.claudeSubagentNavigation.search.mod` — mod
+
+## Value chỉ là placeholder/định dạng — không có chữ để dịch — 19 key
+
+- `sidebar.agentSummary.agentIdentityState` — {{agent}} {{status}}
+- `auto.components.TaskPage.cd171f3391` — ...
+- `auto.components.settings.AutoRenameBranchFromWorkSetting.c71770c455` — {basePrompt}
+- `auto.components.settings.BrowserUseExamples.b84807f228` — "
+- `auto.components.settings.BrowserUseExamples.59722f31b4` — "
+- `auto.components.settings.CommitMessageAiPane.b8b6fd55b4` — {prompt}
+- `auto.components.settings.MobileEmulatorExamples.d151e25078` — "
+- `auto.components.settings.MobileEmulatorExamples.b525ff2b12` — "
+- `auto.components.feature.wall.BrowserAnimatedVisual.f2034c4930` — >
+- `auto.components.feature.wall.WorkbenchAnimatedVisual.932c4b3a97` — >
+- `auto.components.feature.wall.ConnectIntegrationsList.list_mid` — , 
+- `auto.components.feature.tips.CliFeatureTipVisual.badb4fc342` — >
+- `auto.components.editor.CheckRunJobs.5a8e1d4f23` —  · 
+- `auto.components.browser.pane.GrabConfirmationSheet.accessibleNameOpenQuote` — "
+- `auto.components.browser.pane.GrabConfirmationSheet.eb98a0971a` — "
+- `auto.components.automations.automation.list.last.run.statusWithRelative` — {{status}} {{relative}}
+- `auto.components.taskSourceContextSummary.hostStatus` — {{host}} {{status}}
+- `components.native-chat.composer.pillAccessibleName` — {{value0}} {{value1}}
+- `components.native-chat.tool.runListSeparator` — , 
+
+## URL/path/token — dịch sẽ hỏng — 24 key
+
+- `auto.web.WebConnect.27393856e4` — orca://pair?code=...
+- `auto.components.github.GitHubMarkdownComposer.f24783f470` — https://...
+- `auto.components.skills.SkillInstallReviewContent.66cff7a804` — https://app.orca.dev/skills/share/…
+- `auto.components.sidebar.AddRepoRemoteStep.6680289908` — /home/user/project
+- `auto.components.sidebar.AddRepoServerStartStep.92d25420a0` — /home/user/project
+- `auto.components.sidebar.AddRepoSteps.2ce3f6edf8` — /path/to/destination
+- `auto.components.sidebar.AddRepoSteps.b698a4a29d` — https://github.com/user/repo.git
+- `auto.components.sidebar.AddRepoSteps.remoteCloneParentPlaceholder` — /home/user/projects
+- `auto.components.sidebar.CreateProjectLocationField.2a20a603a3` — /home/user/projects
+- `auto.components.sidebar.AddRemoteHostDialog.pairingCodePlaceholder` — orca://pair?code=...
+- `auto.components.settings.BrowserHomePageSetting.37a30c5bfd` — https://google.com
+- `auto.components.settings.AdvancedNetworkSettingsSection.476f302aca` — http://proxy.example.com:8080
+- `auto.components.settings.AdvancedNetworkSettingsSection.nodeDistMirrorPlaceholder` — https://mirror.example.com/nodejs/dist
+- `auto.components.settings.KagiSessionLinkForm.e383683485` — https://kagi.com/search?token=...
+- `auto.components.settings.RepositoryPane.setupExistingFolderPathPlaceholder` — /path/to/project/on/host
+- `auto.components.settings.RepositoryPane.cloneDestinationPlaceholder` — /destination/on/host
+- `auto.components.settings.ShortcutsPane.d8c988dab4` — ~/.orca/keybindings.json
+- `auto.components.settings.RuntimeHostAccessForm.accessLinkPlaceholder` — orca://pair?code=...
+- `auto.components.settings.bitbucket.credentials.dialog.baseUrlPlaceholder` — https://api.bitbucket.org/2.0
+- `auto.components.feature.wall.BrowserAnimatedVisual.73bbb46073` — /pricing
+- `auto.components.feature.wall.BrowserAnimatedVisual.f39be6ca14` — /signup
+- `auto.components.automations.AutomationEditorDialog.a4ac8fcc62` — /goal
+- `auto.components.jira.connect.dialog.70fcd360c4` — https://example.atlassian.net
+- `auto.components.jira.connect.dialog.cbc27fa599` — https://jira.example.com
+
+## Lệnh mẫu (shell/CLI) — code mẫu giữ nguyên — 36 key
+
+- `csv.error.tooManyCells` — CSV contains too many cells to preview safely.
+- `csv.error.copyTooManyCells` — Select fewer cells to copy at once.
+- `csv.error.copyTooLarge` — Selected cells are too large to copy safely.
+- `csv.error.pasteTooManyCells` — Select fewer cells to paste at once.
+- `sidebar.createProject.errors.gitInitFailed` — Failed to initialize git repository: {{detail}}
+- `editor.pdfExport.errors.timedOut` — Export timed out
+- `settings.browser.sshWorkspaceRouting.optionHost` — SSH host
+- `auto.hooks.useSettingsNavigationMetadata.09607cb0fe` — Git & Source Control
+- `auto.components.WorktreeJumpPalette.34c8fbb46e` — SSH remote
+- `auto.components.terminal.quick.commands.TerminalQuickCommandDialog.79af0c0841` — npm run dev
+- `auto.components.tab.bar.TabBar.efb33546ff` — Git Bash
+- `auto.components.status.bar.SshTargetStatusRow.sshHost` — SSH Host
+- `auto.components.sidebar.AddRepoSteps.3d4acbe693` — Git URL
+- `auto.components.sidebar.NonGitFolderDialog.sshConnectionUnavailable` — SSH connection "{{connection}}" not found or not connected
+- `auto.components.sidebar.RemoveFolderDialog.openTerminalWarning_other` — {{count}} open terminals in this project will be closed.
+- `auto.components.settings.Settings.70100f94c7` — Git & Source Control
+- `auto.components.settings.SshTargetForm.f42d844544` — e.g. cloudflared access ssh --hostname %h
+- `auto.components.settings.TerminalPane.f61ac77f16` — Git Bash
+- `auto.components.settings.cli.source.control.integration.cards.707180d09c` — glab auth login
+- `auto.components.settings.cli.source.control.integration.cards.8d90249d22` — gh auth login
+- `auto.components.settings.managedServers.deploy.host` — SSH host
+- `auto.components.onboarding.WindowsTerminalStep.gitBash` — Git Bash
+- `auto.components.mobile.slides.TerminalSlide.a6e7cdc688` — pnpm test --filter mobile
+- `auto.components.feature.wall.FeatureWallSetupWorkflowActions.5c5b65044e` — pnpm install
+- `auto.components.feature.wall.WorkbenchAnimatedVisual.4371cc9931` — pnpm playwright test
+- `auto.components.feature.wall.agents.orchestration.StatusesPage.7b26349cb2` — pnpm migrate latest
+- `auto.components.automations.AutomationPrecheckFields.99a577306c` — gh pr list --json number -q '.[0].number'
+- `auto.components.automations.externalDisplay.sshHost` — SSH host
+- `auto.components.plainSshTerminal.title` — Plain SSH · {{host}}
+- `dashboardPopout.host.sshNamed` — SSH host · {{host}}
+- `dashboardPopout.host.ssh` — SSH host
+- `featureTips.voice.cta` — Set up voice dictation
+- `sourceControl.textGeneration.errors.pullRequestDetailsUnparseable` — Generated pull request details could not be parsed.
+- `automations.extraAgentArgs.errors.modelRepeated` — Extra arguments set the model more than once.
+- `automations.extraAgentArgs.errors.effortRepeated` — Extra arguments set the effort more than once.
+- `ephemeralVm.errors.sshTargetRemoveFailed` — Failed to remove the hidden SSH target.
+
+## Nội dung code/CSS/demo — giữ nguyên — 448 key
+
+- `sidebar.createProject.errors.targetInaccessible` — Cannot access target path: {{detail}}
+- `sidebar.createProject.errors.targetNotEmpty` — "{{name}}" already exists at this location and is not empty.
+- `sidebar.createProject.errors.targetNotFolder` — "{{name}}" already exists at this location and is not a folder.
+- `sidebar.createProject.errors.readDirectoryFailed` — Failed to read directory: {{detail}}
+- `sidebar.createProject.errors.createDirectoryFailed` — Failed to create directory: {{detail}}
+- `sidebar.createProject.errors.prepareDirectoryFailed` — Failed to prepare directory: {{detail}}
+- `sidebar.createProject.errors.initialCommitFailed` — Failed to create initial commit: {{detail}}
+- `sidebar.wslHosts.addErrors.alreadyAdded` — {{distro}} is already a host.
+- `sidebar.wslHosts.addErrors.distroStopped` — {{distro}} stopped since the list was read. Choose Start and add to start it.
+- `sidebar.wslHosts.addErrors.wsl1` — {{distro}} runs WSL 1, which Orca no longer supports. Convert it to WSL 2 in a Windows terminal with: {{command}}
+- `sidebar.wslHosts.addErrors.notRegistered` — {{distro}} is not an installed WSL distro. Run {{command}} in a Windows terminal to see the installed ones, or reinstall it and try again.
+- `sidebar.wslHosts.addErrors.sshManaged` — {{distro}} already runs the Orca server for “{{server}}”, which this computer reaches over SSH. Remove that server first; moving it to a WSL host isn’t supported yet.
+- `sidebar.wslHosts.statusDetails.restartGaveUp_one` — Could not restart the Orca server in {{distro}} after {{count}} attempt
+- `sidebar.wslHosts.statusDetails.restartGaveUp_other` — Could not restart the Orca server in {{distro}} after {{count}} attempts
+- `sidebar.wslHosts.statusDetails.peerCheckFailed` — Orca couldn’t ask the WSL host whether another Orca on this computer still uses it: {{detail}}
+- `sidebar.wslHosts.statusDetails.removalUnrecorded` — Orca couldn’t record what this Remove left running: {{detail}}
+- `sidebar.agentSummary.mixedStates` — {{subject}}: {{states}}
+- `sidebar.agentSummary.agentCount_one` — {{count}} agent
+- `sidebar.agentSummary.agentCount_other` — {{count}} agents
+- `sidebar.agentSummary.stateCount.waiting_one` — {{count}} waiting
+- `sidebar.agentSummary.stateCount.waiting_other` — {{count}} waiting
+- `sidebar.agentSummary.stateCount.blocked_one` — {{count}} blocked
+- `sidebar.agentSummary.stateCount.blocked_other` — {{count}} blocked
+- `sidebar.agentSummary.stateCount.interrupted_one` — {{count}} interrupted
+- `sidebar.agentSummary.stateCount.interrupted_other` — {{count}} interrupted
+- `sidebar.agentSummary.stateCount.failed_one` — {{count}} failed
+- `sidebar.agentSummary.stateCount.failed_other` — {{count}} failed
+- `sidebar.agentSummary.stateCount.working_one` — {{count}} working
+- `sidebar.agentSummary.stateCount.working_other` — {{count}} working
+- `sidebar.agentSummary.stateCount.monitoring_one` — {{count}} monitoring
+- `sidebar.agentSummary.stateCount.monitoring_other` — {{count}} monitoring
+- `sidebar.agentSummary.stateCount.done_one` — {{count}} done
+- `sidebar.agentSummary.stateCount.done_other` — {{count}} done
+- `sidebar.agentSummary.stateCount.idle_one` — {{count}} idle
+- `sidebar.agentSummary.stateCount.idle_other` — {{count}} idle
+- `sidebar.agentSummary.stateCount.notReporting_one` — {{count}} not reporting
+- `sidebar.agentSummary.stateCount.notReporting_other` — {{count}} not reporting
+- `sidebar.agentSummary.stateCount.unconfirmed_one` — {{count}} unconfirmed
+- `sidebar.agentSummary.stateCount.unconfirmed_other` — {{count}} unconfirmed
+- `sidebar.agentSummary.stateCount.needsAttention_one` — {{count}} needs attention
+- `sidebar.agentSummary.stateCount.needsAttention_other` — {{count}} needs attention
+- `sidebar.agentSummary.allInState.waiting_one` — {{count}} agent waiting
+- `sidebar.agentSummary.allInState.waiting_other` — All {{count}} agents waiting
+- `sidebar.agentSummary.allInState.blocked_one` — {{count}} agent blocked
+- `sidebar.agentSummary.allInState.blocked_other` — All {{count}} agents blocked
+- `sidebar.agentSummary.allInState.interrupted_one` — {{count}} agent interrupted
+- `sidebar.agentSummary.allInState.interrupted_other` — All {{count}} agents interrupted
+- `sidebar.agentSummary.allInState.failed_one` — {{count}} agent failed
+- `sidebar.agentSummary.allInState.failed_other` — All {{count}} agents failed
+- `sidebar.agentSummary.allInState.working_one` — {{count}} agent working
+- `sidebar.agentSummary.allInState.working_other` — All {{count}} agents working
+- `sidebar.agentSummary.allInState.monitoring_one` — {{count}} agent monitoring
+- `sidebar.agentSummary.allInState.monitoring_other` — All {{count}} agents monitoring
+- `sidebar.agentSummary.allInState.done_one` — {{count}} agent done
+- `sidebar.agentSummary.allInState.done_other` — All {{count}} agents done
+- `sidebar.agentSummary.allInState.idle_one` — {{count}} agent idle
+- `sidebar.agentSummary.allInState.idle_other` — All {{count}} agents idle
+- `sidebar.agentSummary.allInState.notReporting_one` — {{count}} agent not reporting
+- `sidebar.agentSummary.allInState.notReporting_other` — All {{count}} agents not reporting
+- `sidebar.agentSummary.allInState.unconfirmed_one` — {{count}} agent unconfirmed
+- `sidebar.agentSummary.allInState.unconfirmed_other` — All {{count}} agents unconfirmed
+- `sidebar.agentSummary.allInState.needsAttention_one` — {{count}} agent needs attention
+- `sidebar.agentSummary.allInState.needsAttention_other` — All {{count}} agents needs attention
+- `browser.cookieImport.errors.browserProfileDatabaseMissing` — No cookies database found for profile "{{profile}}".
+- `browser.cookieImport.errors.fileNoValidCookies_one` — No valid cookies found. {{count}} entry was skipped due to missing or invalid fields.
+- `browser.cookieImport.errors.fileNoValidCookies_other` — No valid cookies found. {{count}} entries were skipped due to missing or invalid fields.
+- `browser.cookieImport.errors.databaseNotFound` — {{browser}} cookies database not found.
+- `browser.cookieImport.errors.databaseCopyFailed` — Could not copy {{browser}} cookies database. Try closing {{browser}} first.
+- `browser.cookieImport.errors.noCookies` — No cookies found in {{browser}}.
+- `browser.cookieImport.errors.noValidCookies` — No valid cookies found in {{browser}}.
+- `browser.cookieImport.errors.allCookiesExpired` — All {{browser}} cookies are expired.
+- `browser.cookieImport.errors.encryptionKeyDenied` — Could not access {{browser}} encryption key. The OS may have denied access.
+- `browser.cookieImport.errors.readFailed` — Could not read {{browser}} cookies.
+- `browser.cookieImport.errors.importFailed` — Could not import cookies from {{browser}}.
+- `browser.cookieImport.errors.importFailedTryClosing` — Could not import cookies from {{browser}}. Try closing {{browser}} first.
+- `browser.cookieImport.errors.importFailedWithLog` — Could not import cookies from {{browser}}: {{detail}}. Details were written to {{logPath}}.
+- `browser.cookieImport.notice.importedMore_one` — Imported {{count}} cookie for {{domains}} +{{more}} more. Reload the page to use them.
+- `browser.cookieImport.notice.importedMore_other` — Imported {{count}} cookies for {{domains}} +{{more}} more. Reload the page to use them.
+- `browser.cookieImport.notice.imported_one` — Imported {{count}} cookie for {{domains}}. Reload the page to use them.
+- `browser.cookieImport.notice.imported_other` — Imported {{count}} cookies for {{domains}}. Reload the page to use them.
+- `browser.cookieImport.notice.failed` — Cookie import failed: {{reason}}
+- `settings.chat.names.configuredCliAgent` — Use configured CLI agent ({{agent}})
+- `settings.terminal.limit.system` — System PTY limit: {{value}}
+- `settings.terminal.limit.savedUnreadable` — Couldn’t read this host’s saved terminal limit. Using {{value}}. Enter a value and press Enter to replace it.
+- `settings.appearance.language.portuguese` — Português (Brasil)
+- `settings.browser.profileScope.repoProfileLabel` — Repo: {{name}}
+- `settings.browser.profileScope.worktreeProfileLabel` — Workspace: {{name}}
+- `settings.agents.choiceChipRemove` — Remove {{flag}}
+- `settings.agents.choiceChipTooltip` — Added by {{choice}}. Remove it to use the default.
+- `settings.agents.codexHistorySharing.unsupported` — Update Orca on {{host}} to change this setting there.
+- `settings.agents.codexHistorySharing.updateFailed` — Could not update the setting on {{host}}.
+- `settings.shortcuts.diagnostics.sectionNotObject` — {{section}} must be an object.
+- `settings.shortcuts.diagnostics.unknownAction` — Unknown keybinding action "{{actionId}}" was ignored.
+- `settings.shortcuts.diagnostics.shortcutIgnored` — Shortcut for "{{actionId}}" was ignored: {{reason}}
+- `settings.shortcuts.diagnostics.unknownPlatform` — Unknown platform "{{platform}}" was ignored.
+- `settings.shortcuts.diagnostics.conflictingOverrides` — Conflicting custom shortcuts were ignored: {{actions}}.
+- `settings.shortcuts.diagnostics.readFailed` — Could not read keybindings file: {{reason}}
+- `settings.mcp.serverCount_one` — {{count}} server
+- `settings.voice.modelDescriptions.paraformerBilingual` — Chinese (Mandarin + dialects) + English. Strong on accented and regional Chinese.
+- `settings.diagnostics.errors.expiredBeforeSending` — review file has expired; create a new one before sending
+- `settings.diagnostics.errors.expiredBeforeOpening` — review file has expired; create a new one before opening
+- `worktreeJumpPalette.filter.ariaActiveCount_one` — Filter: {{count}} active.
+- `worktreeJumpPalette.filter.ariaActiveCount_other` — Filter: {{count}} active.
+- `auto.store.pluginAutoUpdates.one` — {{value0}} updated to {{value1}}
+- `auto.store.pluginAutoUpdates.many` — {{value0}} plugins updated
+- `auto.store.pluginNewFile.unavailable` — {{value0}} is no longer available. Turn its plugin back on.
+- `auto.components.GitHubItemDialog.136542c9ba` — :L{{value0}}
+- `auto.components.GitHubItemDialog.d1c0dad471` — -L{{value0}}
+- `auto.components.GitHubItemDialog.timeline.pullRequestReference` — PR #{{number}}
+- `auto.components.GitHubItemDialog.timeline.issueReference` — issue #{{number}}
+- `auto.components.PullRequestPage.34b9f7c264` — :L{{value0}}
+- `auto.components.TaskPage.e9b6955dcd` — Issue #{{value0}}
+- `auto.components.TaskPage.a0544fb653` — MR !{{value0}}
+- `auto.components.TaskPage.issueNumber` — Issue #{{number}}
+- `auto.components.TaskPage.linearViewContext` — View: {{name}}
+- `auto.components.WorktreeJumpPalette.paletteHostBadge` — Host: {{value0}}
+- `auto.components.github.project.ProjectCell.linkedPullRequestsOverflow` — +{{count}} more
+- `auto.components.github.project.ProjectRoadmapBar.cd68ccc17a` — {{value0}} — {{value1}}
+- `auto.components.github.PRFilterSections.labelCount_one` — {{count}} label
+- `auto.components.linear.scope.selector.teamCount_one` — {{count}} team
+- `auto.components.terminal.quick.commands.TerminalQuickCommandDialog.size_count` — {{value0}} / {{value1}}
+- `auto.components.terminal.pane.stale.agent.row.090d607412` — stale-agent-row-{{value0}}
+- `auto.components.tab.bar.QuickLaunchButton.cliTag` — (CLI)
+- `auto.components.status.bar.PetStatusSegment.petHiddenLabel` — {{pet}} hidden
+- `auto.components.status.bar.SshStatusSegment.connectedHostCount_one` — {{count}} host
+- `auto.components.status.bar.StatusBar.4fba7dc1e7` — {{value0}} bal
+- `auto.components.status.bar.usagePercentageLabel.bare` — {{value0}}%
+- `auto.components.status.bar.resource.manager.terminal.copy.tooltipSummary` — Resource Manager - {{memory}} - {{sessions}}
+- `auto.components.status.bar.resource.manager.terminal.copy.ariaLabel` — Resource Manager, {{sessions}}
+- `auto.components.status.bar.resource.manager.terminal.copy.ariaLabelWithSpaceScan` — Resource Manager, {{sessions}}, {{spaceScan}}
+- `auto.components.status.bar.CaffeinateStatusSegment.ariaLabel` — {{title}}, {{status}}
+- `auto.components.status.bar.resourceSessionLabels.terminalNumber` — Terminal {{number}}
+- `auto.components.status.bar.resourceSessionLabels.pid` — pid {{pid}}
+- `auto.components.status.bar.workspaceSpaceDecision.activeAndCompletedAgents` — {{active}}, {{completed}}
+- `auto.components.stats.usage.overview.sections.sessionsAndActivity` — {{sessions}} - {{activity}}
+- `auto.components.stats.GrokUsagePane.h9i0j1k2l3` —  • {{value0}}
+- `auto.components.skills.SkillFreshnessNudge.title_one` — {{count}} installed Orca skill is out of date
+- `auto.components.skills.SkillFreshnessUpdateDialog.upToDate_one` — {{count}} skill is up to date.
+- `auto.components.skills.count.deleteLink_one` — {{count}} link
+- `auto.components.skills.count.skill_one` — {{count}} skill
+- `auto.components.skills.count.link_one` — {{count}} link
+- `auto.components.skills.share.script_one` — {{count}} script
+- `auto.components.skills.share.executable_one` — {{count}} executable
+- `auto.components.skills.install.agentCount_one` — {{count}} agent
+- `auto.components.skills.managedInstall.titleMore` — {{name}} +{{count}}
+- `auto.components.skills.SkillDelete.blockedLine` — {{count}} × {{reason}}
+- `auto.components.skills.SkillDelete.resultLine` — {{count}} × {{label}}
+- `auto.components.skills.SkillDelete.nothing_one` — The {{count}} selected skill cannot be deleted from here.
+- `auto.components.sidebar.RemoveFolderDialog.openTerminalWarning_one` — {{count}} open terminal in this project will be closed.
+- `auto.components.sidebar.SidebarRepositoryFilterSection.selectedProjects_one` — {{count}} project
+- `auto.components.sidebar.SidebarRepositoryFilterSection.selectedProjects_other` — {{count}} projects
+- `auto.components.sidebar.sidebarHostOptions.visibleHosts_one` — {{count}} host
+- `auto.components.sidebar.SidebarWorkspaceOptionsMenu.optionsActiveFilters_one` — Workspace options ({{count}} filter active)
+- `auto.components.sidebar.SidebarWorkspaceOptionsMenu.optionsActiveFilters_other` — Workspace options ({{count}} filters active)
+- `auto.components.sidebar.SidebarWorkspaceOptionsMenu.optionsFilterCount_one` — Workspace options ({{count}} filter)
+- `auto.components.sidebar.SidebarWorkspaceOptionsMenu.optionsFilterCount_other` — Workspace options ({{count}} filters)
+- `auto.components.sidebar.WorktreeCardMeta.5e982e6128` — Linear {{value0}}
+- `auto.components.sidebar.WorktreeCardMeta.e97d8f2876` — Issue #{{value0}}
+- `auto.components.sidebar.WorktreeCardMeta.jiraIssue` — Jira {{value0}}
+- `auto.components.sidebar.preserved.branch.batch.toast.4cf75caab7` — {{value0}}, {{value1}}
+- `auto.components.sidebar.RepoScanUnavailableIndicator.wslStoppedTitle` — WSL distro {{value0}} is stopped
+- `auto.components.sidebar.RepoScanUnavailableIndicator.wslUnverifiableTitle` — Couldn't confirm WSL distro {{value0}} is running
+- `auto.components.sidebar.HostSectionHeader.workspaceCount_one` — {{count}} workspace
+- `auto.components.settings.AccountsPane.37b4b4a3f7` — auth=…; __Host-console_session=…
+- `auto.components.settings.ComputerUsePane.794807aa21` — Queued macOS Privacy & Security; a newer request or a reset may replace it
+- `auto.components.settings.RepositoryHooksSection.issueCommandWslStopped` — WSL distro {{distro}} is stopped. Open a terminal in it to see or edit this command.
+- `auto.components.settings.VoicePane.91980ce124` — {{value0}} MB
+- `auto.components.settings.ProviderHostScopeControl.scope_label` — {{value0}}: {{value1}}
+- `auto.components.settings.MobileEmulatorSdkStatus.76eb88b88e` — iOS Simulator (Xcode)
+- `auto.components.settings.GrokAccountsSection.a1b2c3d4e5` — Grok (xAI)
+- `auto.components.settings.ReleaseChannelSection.willSwitch` — {{value0}} → {{value1}}
+- `auto.components.settings.CursorAccountsSection.source.keychain` — macOS Keychain (cursor-agent)
+- `auto.components.settings.ZcodePlanAccountsSection.site.bigmodel` — Zhipu · BigModel (open.bigmodel.cn)
+- `auto.components.settings.ZcodePlanAccountsSection.site.zai` — Z.AI (z.ai)
+- `auto.components.settings.serverList.version` — v{{version}}
+- `auto.components.settings.networkAddress.tailscale` — Tailscale · {{address}}
+- `auto.components.right.sidebar.BulkActionBar.stageCount` — Stage ({{count}})
+- `auto.components.right.sidebar.PortsPanel.472054d94c` — Port :{{value0}}
+- `auto.components.right.sidebar.SourceControl.b8c2e1a904` — {{value0}} → {{value1}}
+- `auto.components.right.sidebar.source.control.dropdown.items.pushCount_one` — Push {{count}} commit
+- `auto.components.right.sidebar.source.control.dropdown.items.pullCount_one` — Pull {{count}} commit
+- `auto.components.right.sidebar.source.control.dropdown.items.fastForwardCount_one` — Fast-forward {{count}} commit
+- `auto.components.right.sidebar.source.control.dropdown.items.syncCounts` — Pull {{behind}}, push {{ahead}}
+- `auto.components.right.sidebar.useFileDeletion.deleteItems_one` — Delete {{count}} item?
+- `auto.components.right.sidebar.useFileDeletion.permanentlyDeleteItems_one` — Permanently delete {{count}} item?
+- `auto.components.right.sidebar.github.pr.stack.confirmation.mergeConfirm_one` — Merge {{count}} PR
+- `auto.components.right.sidebar.github.pr.stack.confirmation.mergeConfirm_other` — Merge {{count}} PRs
+- `auto.components.right.sidebar.GitHubPRStackMap.e3ee2daa32` — Stack #{{value0}}
+- `auto.components.repo.NestedRepoScanLimitNotice.milliseconds` — {{count}} ms
+- `auto.components.repo.NestedRepoScanLimitNotice.repositories_one` — {{count}} repository
+- `auto.components.mobile.relayClockSkewMessage.message` — Your computer's clock is off by about {{seconds}} seconds. Turn on automatic time, then retry.
+- `auto.components.feature.wall.BrowserAnimatedVisual.d8856b604a` — div.pricing-grid > div.card.starter:nth-of-type(1) > a.cta
+- `auto.components.feature.wall.BrowserAnimatedVisual.1bec24acc1` — @keyframes browserFlash { 0% { opacity: 0; } 20% { opacity: 0.85; } 100% { opacity: 0; } } @keyframes browserTabIn { from { opacity: 0; transform: translateY(-2px); } to { opacity: 1; transform: none; } } @keyframes browserViewIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+- `auto.components.feature.wall.EditorAnimatedVisual.e16479c1c5` — [data-slash-menu] [data-slash-row].slash-active { background: rgba(24,24,27,0.07); box-shadow: inset 0 0 0 1px rgba(24,24,27,0.06); } [data-md-active-line][data-role="active"] { color: rgb(113 113 122); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12.5px; } [data-md-active-line][data-role="h1"] { color: inherit; font-family: inherit; font-size: 18px; font-weight: 700; letter-spacing: -0.01em; line-height: 1.2; margin-top: 6px; } [data-md-caret] { display: inline-block; width: 1.5px; height: 1em; background: currentColor; vertical-align: -2px; margin-left: 1px; animation: md-caret-blink 1.05s steps(1) infinite; } @keyframes md-caret-blink { 0%, 50% { opacity: 1 } 51%, 100% { opacity: 0 } } @keyframes md-block-in { from { opacity: 0; transform: translateY(-2px); } to { opacity: 1; transform: none; } } @keyframes md-cursor-ripple { 0% { transform: scale(0.4); opacity: 0.9; } 100% { transform: scale(1.4); opacity: 0; } } [data-clicking="1"] [data-cursor-ripple] { animation: md-cursor-ripple 460ms ease-out forwards; }
+- `auto.components.feature.wall.ReviewNotesAnimatedVisual.1eee3a397e` — src/server/migrate.ts (diff)
+- `auto.components.feature.wall.WorkbenchAnimatedVisual.7d9f1d5f7d` — (0.8s)
+- `auto.components.feature.wall.WorkbenchAnimatedVisual.5c5cbd783f` — (1.2s)
+- `auto.components.editor.IpynbViewer.cellCount_one` — {{count}} cell
+- `auto.components.editor.editorLabels.diff` — {{name}} (diff)
+- `auto.components.editor.editorLabels.commitWithSubject` — Commit {{ref}}: {{subject}}
+- `auto.components.editor.editorLabels.commit` — Commit {{ref}}
+- `auto.components.editor.PluginFileTypeSuggestion.message` — A plugin can open .{{value0}} files: {{value1}}
+- `auto.components.editor.PluginFileTypeSuggestion.never` — Don't suggest for .{{value0}}
+- `auto.components.editor.PluginFileTypeSuggestion.editorMessage` — A plugin adds an editor for .{{value0}} files: {{value1}}
+- `auto.components.editor.PluginCustomEditorFrame.unresponsive` — {{value0}} stopped responding. Switch to Source to keep editing.
+- `auto.components.editor.PluginCustomEditorFrame.loadFailed` — {{value0}} could not be loaded. Switch to Source to edit this file.
+- `auto.components.editor.PluginCustomEditorFrame.editTooLarge` — This file is too large for {{value0}} to save changes. Use Source instead.
+- `auto.components.editor.PluginCustomEditorFrame.saveBlocked` — Couldn't save the latest changes from {{value0}}.
+- `auto.components.editor.PluginCustomEditorFrame.editsHeld` — {{value0}} is sending changes too quickly; Orca applies the latest one shortly.
+- `auto.components.editor.PluginBytesCustomEditorSurface.tooLarge` — {{value0}} is too large to open in {{value1}} ({{value2}}; the limit is {{value3}}).
+- `auto.components.editor.PluginBytesCustomEditorSurface.unsupported` — {{value0}} can't read this file from where it is stored. Update the Orca server that hosts it, or switch to Source.
+- `auto.components.editor.PluginBytesCustomEditorSurface.readFailed` — {{value0}} couldn't be read for {{value1}}. {{value2}}
+- `auto.components.cmd.j.pluginQuickActions.newFileDescription` — Create an untitled {{value0}} file in the active workspace.
+- `auto.components.browser.pane.annotate.use.browser.page.grab.annotations.limitReached` — Limit of {{limit}} annotations reached. Send, delete or clear some to add more.
+- `auto.components.automations.AutomationRunsDashboard.historyUnavailable_one` — Run history is unavailable for {{count}} automation. Counts include available history only.
+- `auto.components.automations.AutomationRunsDashboard.historyUnavailable_other` — Run history is unavailable for {{count}} automations. Counts include available history only.
+- `auto.components.automations.usage.tokensAndCost_one` — {{tokens}} token · {{cost}}
+- `auto.components.automations.usage.tokensAndCost_other` — {{tokens}} tokens · {{cost}}
+- `auto.components.automations.hostSummary.partialFailureOfHosts_one` — {{failed}} of {{count}} host could not be loaded
+- `auto.components.automations.hostSummary.partialFailureOfHosts_other` — {{failed}} of {{count}} hosts could not be loaded
+- `auto.components.activity.ActivityPrototypePage.threadListOptionsActiveFilters_one` — Thread list options ({{count}} filter active)
+- `auto.components.activity.ActivityPrototypePage.threadListOptionsActiveFilters_other` — Thread list options ({{count}} filters active)
+- `auto.components.activity.ActivityPrototypePage.activityOptionsFilterCount_one` — Activity options ({{count}} filter)
+- `auto.components.activity.ActivityPrototypePage.activityOptionsFilterCount_other` — Activity options ({{count}} filters)
+- `auto.components.rightSidebar.FolderWorkspacePrChecksPanel.worktreeCountLabel_one` — {{count}} worktree
+- `auto.components.task.project.source.combobox.hostCount_one` — {{count}} host
+- `auto.components.taskSourceContextSummary.hostTitle` — Host: {{hosts}}
+- `auto.components.browser-pane.markup.widthOption` — {{value0}} px
+- `auto.components.pluginCatalog.PluginListGroup.showAll` — Show {{value0}} more
+- `auto.components.pluginCatalog.PluginListGroup.showAllTotal` — Show all {{value0}} plugins
+- `auto.components.NativeChatResumeOutcomeRow.statusFor` — {{value0}}: {{value1}}
+- `auto.components.NativeChatResumeRunStatusIcon.inFlight` — {{value0}} · {{value1}}
+- `auto.components.plugins.PluginCatalogLinkDialog.title` — Add catalog {{value0}}?
+- `auto.components.plugins.PluginCatalogLinkDialog.body` — A link asked to show {{value0}} from this catalog. Add catalogs only from people you trust.
+- `components.native-chat.failureWords.cliMissingInWslDistro` — {{agent}} isn't installed in the WSL distro {{distro}}. Install it inside {{distro}}, or check its Command in Settings → Agents.
+- `components.native-chat.failureWords.modelUnavailable` — {{agent}} couldn't use {{detail}}. Pick another model and send again.
+- `components.native-chat.tool.exitCode` — exit {{value0}}
+- `components.native-chat.tool.milliseconds` — {{value0}}ms
+- `components.native-chat.tool.runBrowser_one` — Used the browser {{count}} time
+- `components.native-chat.tool.runPlan_one` — Updated the plan {{count}} time
+- `components.native-chat.tool.runLiveBrowser_one` — Using the browser {{count}} time
+- `components.native-chat.tool.runLivePlan_one` — Updating the plan {{count}} time
+- `components.native-chat.providerFrame.byteCount_one` — {{count}} byte
+- `components.native-chat.backgroundTasks.countAgents_one` — {{count}} agent
+- `components.native-chat.backgroundTasks.countShell_one` — {{count}} shell
+- `components.native-chat.backgroundTasks.countMonitors_one` — {{count}} monitor
+- `components.native-chat.backgroundTasks.countWorkflows_one` — {{count}} workflow
+- `components.native-chat.backgroundTasks.countTasks_one` — {{count}} task
+- `components.native-chat.backgroundTasks.headerTotal_one` — {{count}} background task
+- `components.native-chat.hostOutage.startFailed` — Couldn’t start {{distro}}. Check it in Settings → Remote Orca Servers.
+- `components.native-chat.hostOutage.unverifiable` — Orca couldn't check whether {{distro}} is running
+- `components.native-chat.hostOutage.startToSend` — Start {{distro}} to send.
+- `components.native-chat.sessionOptionErrors.modelUnverified` — Could not verify the model change; open the terminal to check.
+- `components.native-chat.sessionOptionErrors.unknownOption` — Unknown session option: {{id}}
+- `components.native-chat.sessionOptionErrors.toggleBaselineUnknown` — Current value is unknown; use the Toggle action instead.
+- `components.native-chat.sessionOptionErrors.toggleValueKnown` — This option has a known value; choose On or Off instead.
+- `components.native-chat.composerErrors.commandUnavailable` — /{{name}} is not available in chat sessions. Use the slash menu to see available commands.
+- `components.native-chat.composerErrors.commandTakesNoArguments` — Use /{{name}} without arguments.
+- `components.native-chat.composerErrors.commandUnsupportedByHost` — /{{name}} is not supported by this chat host.
+- `components.native-chat.composerErrors.modelApplyFailed` — Could not apply model {{value}}.
+- `components.native-chat.composerErrors.effortApplyFailed` — Could not apply effort {{value}}.
+- `components.native-chat.githubPeek.updated` — updated {{time}}
+- `components.native-chat.githubPeek.comments` — {{count}} comments
+- `components.workspace.cleanup.presentation.gitlabMergeRequestNumber` — MR #{{value0}}
+- `components.workspace.cleanup.presentation.githubPullRequestNumber` — PR #{{value0}}
+- `components.workspace.cleanup.browse.chip.list` — {{value0}}: {{value1}}
+- `components.workspace.cleanup.browse.chip.triState` — {{value0}}: {{value1}}
+- `components.workspace.cleanup.browse.chip.branchQuery` — Branch: {{value0}}
+- `components.workspace.cleanup.browse.chip.presence` — {{value0}}: {{value1}}
+- `components.workspace.cleanup.browse.lastActive` — Last active {{value0}}
+- `components.workspace.cleanup.host.label` — Host: {{value0}}
+- `dashboardPopout.card.time.minutes` — {{count}}m
+- `dashboardPopout.card.time.hours` — {{count}}h
+- `dashboardPopout.card.time.days` — {{count}}d
+- `dashboardPopout.card.subagents_one` — {{count}} subagent
+- `dashboardPopout.card.subagents_other` — {{count}} subagents
+- `dashboardPopout.filters.reviewChip` — Review: {{state}}
+- `sourceControl.discard.deleteUntrackedFilesDescription_one` — This will permanently delete {{count}} untracked file. This cannot be undone.
+- `sourceControl.discard.unstagedFilesIncludingUntrackedDescription_one` — This will revert unstaged changes and permanently delete any untracked files among {{count}} file. This cannot be undone.
+- `sourceControl.createReviewFailure.stacked.stackParentWithoutReview` — The parent branch {{base}} does not have an open pull request. Create that pull request first.
+- `sourceControl.createReviewFailure.stacked.stackParentAmbiguous` — Orca found multiple open pull requests for the parent branch {{base}}.
+- `sourceControl.createReviewFailure.stacked.stackHeadAmbiguous` — Orca found multiple open pull requests for the current branch {{head}}.
+- `sourceControl.textGeneration.errors.promptTooLargeForWindows` — {{label}} prompt is too large for the Windows command line. Stage fewer changes and try again.
+- `sourceControl.textGeneration.errors.promptTooLargeForArgument` — {{label}} prompt is too large to pass as a single command-line argument. Stage fewer changes and try again.
+- `sourceControl.textGeneration.errors.agentCouldNotStart` — {{label}} could not be started. Check the agent command in Settings and try again.
+- `sourceControl.textGeneration.errors.agentFailedToStart` — {{label}} failed to start. Check the agent command in Settings and try again.
+- `sourceControl.textGeneration.errors.agentBinaryNotFound` — {{binary}} not found on PATH. Install {{label}} to use AI commit messages.
+- `sourceControl.textGeneration.errors.timedOut` — Generation timed out after {{seconds}}s.
+- `sourceControl.textGeneration.errors.outputTooLarge` — {{label}} CLI command produced too much output. Check the agent CLI configuration and try again.
+- `sourceControl.textGeneration.errors.windowsBatchUnsafeArguments` — {{label}} runs through a Windows batch script that cannot take the multi-line prompt as an argument. Point Settings at the agent's executable, or use a custom command without {prompt} so Orca sends the prompt on stdin.
+- `sourceControl.textGeneration.errors.cliTerminated` — {{label}} CLI command was terminated before exiting.
+- `sourceControl.textGeneration.errors.cliTerminatedWithDetail` — {{label}} CLI command was terminated before exiting: {{detail}}
+- `sourceControl.textGeneration.errors.cliFailed` — {{label}} CLI command failed with code {{exitCode}}.
+- `sourceControl.textGeneration.errors.cliFailedWithDetail` — {{label}} CLI command failed with code {{exitCode}}: {{detail}}
+- `sourceControl.textGeneration.errors.agentReportedError` — {{label}} reported an error.
+- `sourceControl.textGeneration.errors.emptyCommitMessage` — {{label}} returned an empty message.
+- `sourceControl.textGeneration.errors.emptyCommitMessageWithDetail` — {{label}} returned an empty message. CLI output: {{detail}}
+- `sourceControl.textGeneration.errors.emptyPullRequestDetails` — {{label}} returned an empty details.
+- `sourceControl.textGeneration.errors.emptyPullRequestDetailsWithDetail` — {{label}} returned an empty details. CLI output: {{detail}}
+- `sourceControl.textGeneration.errors.emptyJiraSummary` — {{label}} returned an empty summary.
+- `sourceControl.textGeneration.errors.emptyJiraSummaryWithDetail` — {{label}} returned an empty summary. CLI output: {{detail}}
+- `sourceControl.textGeneration.errors.sourceControlAgentUnsupported` — Choose a supported Source Control AI agent for this action in Settings -> Git -> Source Control AI. Supported agents: {{agents}}, or Custom command.
+- `sourceControl.textGeneration.errors.chatNameAgentUnsupported` — Choose a supported chat name agent for this action in Settings -> Chat -> Chat names. Supported agents: {{agents}}, or Custom command.
+- `sourceControl.textGeneration.errors.agentCannotGenerateCommitMessage` — Agent "{{agent}}" does not support Source Control AI commit messages. Supported agents: {{agents}}, or Custom command.
+- `sourceControl.textGeneration.errors.agentCannotGeneratePullRequest` — Agent "{{agent}}" does not support Source Control AI pull request details. Supported agents: {{agents}}, or Custom command.
+- `sourceControl.textGeneration.errors.agentCannotGenerateBranchName` — Agent "{{agent}}" does not support Source Control AI branch names. Supported agents: {{agents}}, or Custom command.
+- `sourceControl.textGeneration.errors.agentCannotGenerateChatName` — Agent "{{agent}}" does not support chat names. Supported agents: {{agents}}, or Custom command.
+- `sourceControl.textGeneration.errors.noModelForAgent` — No model is available for {{label}}.
+- `sourceControl.textGeneration.errors.planAgentUnsupported` — Agent "{{agent}}" does not support AI commit messages.
+- `sourceControl.textGeneration.errors.planModelUnavailable` — Model "{{model}}" is not available for {{label}}.
+- `sourceControl.textGeneration.errors.planModelWithoutThinking` — Model "{{model}}" does not support a thinking effort level.
+- `sourceControl.textGeneration.errors.planThinkingLevelInvalid` — Thinking level "{{level}}" is not valid for {{model}}.
+- `sourceControl.textGeneration.errors.kimiConflictingOptions` — Kimi received conflicting options: {{option}} with {{otherOption}}. Correct the generation recipe or CLI arguments before retrying.
+- `sourceControl.remoteError.submodule.namedRemoteChanged` — Submodule '{{name}}' has remote changes. Pull inside the submodule, then try again.
+- `sourceControl.remoteError.submodule.namedPushFailed` — Submodule '{{name}}' could not be pushed. Resolve the submodule push error, then try again.
+- `sourceControl.remoteError.failedWithDetail.publish` — Publish Branch failed. {{detail}}
+- `sourceControl.remoteError.failedWithDetail.sync` — Sync failed. {{detail}}
+- `sourceControl.remoteError.failedWithDetail.forcePush` — Force Push failed. {{detail}}
+- `sourceControl.remoteError.failedWithDetail.push` — Push failed. {{detail}}
+- `sourceControl.remoteError.failedWithDetail.fetch` — Fetch failed. {{detail}}
+- `sourceControl.remoteError.failedWithDetail.fastForward` — Fast-forward failed. {{detail}}
+- `sourceControl.remoteError.failedWithDetail.rebase` — Rebase failed. {{detail}}
+- `sourceControl.remoteError.failedWithDetail.pull` — Pull failed. {{detail}}
+- `sourceControl.remoteError.hookBlocked.detail.publish` — Publish Branch blocked — {{detail}}
+- `sourceControl.remoteError.hookBlocked.detail.sync` — Sync blocked — {{detail}}
+- `sourceControl.remoteError.hookBlocked.detail.forcePush` — Force Push blocked — {{detail}}
+- `sourceControl.remoteError.hookBlocked.detail.push` — Push blocked — {{detail}}
+- `sourceControl.remoteError.remoteAccessWithDetail.publish` — Publish Branch failed. {{detail}}. Check your remote access and try again.
+- `sourceControl.remoteError.remoteAccessWithDetail.sync` — Sync failed. {{detail}}. Check your remote access and try again.
+- `sourceControl.remoteError.remoteAccessWithDetail.forcePush` — Force Push failed. {{detail}}. Check your remote access and try again.
+- `sourceControl.remoteError.remoteAccessWithDetail.push` — Push failed. {{detail}}. Check your remote access and try again.
+- `sourceControl.submodule.worktreeOnlyTooltip` — The parent repo (including Stage All) cannot stage file changes inside a submodule
+- `sessionHistory.settings.serverVersion` — Orca v{{version}}
+- `aiVault.scanIssues.openCodeScannerUnavailable` — OpenCode history was skipped because its background scanner could not start; the app remains responsive.
+- `aiVault.scanIssues.openCodeScanIncomplete` — OpenCode history scan did not complete: {{detail}}
+- `aiVault.scanIssues.openCodeDatabaseBusy` — {{label}} is writing to {{name}} right now, so its history was skipped. It is read again on the next refresh.
+- `aiVault.scanIssues.openCodeDatabaseUnreadable` — {{label}} history in {{name}} could not be read: {{detail}}
+- `aiVault.scanIssues.openCodeWslDatabaseUnsupported` — {{label}} sessions inside WSL can't be searched from Windows yet.
+- `aiVault.scanIssues.openCodeWriteAheadLogUnreadable` — {{label}} history in {{name}} could not be read. Its write-ahead log cannot be opened read-only on this filesystem. Exit {{label}} cleanly to flush the log.
+- `aiVault.scanIssues.wslTranscriptFsProcessFailed` — WSL transcript files are temporarily unavailable because the filesystem helper process failed ({{detail}}). Try again shortly or restart Orca if the issue continues.
+- `aiVault.scanIssues.wslDistroNotRunning` — WSL transcript files are unavailable because WSL distro '{{distro}}' is not running. Open a terminal in it to start it.
+- `aiVault.scanIssues.wslDistroUnverifiable` — WSL transcript files are unavailable because WSL didn't answer whether '{{distro}}' is running. Try again shortly.
+- `aiVault.scanIssues.wslSessionsFromLastScan` — WSL could not be checked; its sessions are from the last scan.
+- `aiVault.scanIssues.scopePathsTruncated` — Only the first {{limit}} project paths were scanned.
+- `aiVault.scanIssues.invalidResultsSkipped_one` — Skipped {{count}} invalid Agent Session History result entry.
+- `aiVault.scanIssues.invalidResultsSkipped_other` — Skipped {{count}} invalid Agent Session History result entries.
+- `aiVault.scanIssues.scanTimedOutOnSshHost` — Session scan timed out after {{seconds}}s on this SSH host. Refresh to try again.
+- `aiVault.scanIssues.scanTimedOut` — Session scan timed out after {{seconds}}s — the machine may be busy. Refresh to try again.
+- `accounts.claude.systemDefaultNamed` — System default: {{value0}}
+- `projectBoardCard.itemLabel` — {{number}} — {{title}}
+- `workspace.links.mrReference` — MR !{{number}}
+- `workspace.links.prReference` — PR #{{number}}
+- `workspace.links.issueReference` — Issue #{{number}}
+- `updates.installBlock.processId` — PID {{pid}}
+- `updates.failure.channelUnsupportedPlatform` — {{channel}} builds are produced only for macOS and Windows.
+- `updates.failure.unsignedDevChannel` — {{channel}} builds are unsigned, and this signed build only installs updates signed by Orca's publisher. Download the installer from the release page and run it once — updates work normally from there, including back to Stable.
+- `updates.failure.unknownReleaseChannel` — Unknown release channel "{{channel}}".
+- `updates.failure.invalidReleaseTag` — "{{tag}}" is not a valid release tag.
+- `updates.failure.releaseRepoNotFound` — No releases repository found at {{repo}}.
+- `updates.failure.releaseListFailed` — Could not list {{channel}} builds (HTTP {{status}}).
+- `updates.failure.releaseListUnreadable` — Could not read the {{channel}} release list.
+- `updates.failure.rateLimitedInMinutes_one` — GitHub rate limit reached. Try again in about {{count}} minute.
+- `updates.failure.rateLimitedInMinutes_other` — GitHub rate limit reached. Try again in about {{count}} minutes.
+- `updates.failure.rateLimitedInMinutesSignedOut_one` — GitHub rate limit reached. Try again in about {{count}} minute, or run `gh auth login` so Orca can use your account's higher limit.
+- `updates.failure.rateLimitedInMinutesSignedOut_other` — GitHub rate limit reached. Try again in about {{count}} minutes, or run `gh auth login` so Orca can use your account's higher limit.
+- `wslMove.orchestrator.blocker` — {{title}}. {{hint}}
+- `profileState.startupFailure.noneFound` — (none found)
+- `profileState.startupFailure.sqlitePath` — SQLite path: {{path}}
+- `profileState.startupFailure.sectionsDamaged` — Part of this profile's saved state is damaged: {{sections}}. Everything else is intact.
+- `profileState.startupFailure.repairCommand` — Stop Orca, then run `{{command}}` to replace only the damaged parts from backups and keep everything else. Orca keeps a copy of the damaged file.
+- `profileState.startupFailure.restoreWholeBackup` — To restore a whole backup instead, run `{{exportsCommand}}`, then `{{rollbackCommand}}`.
+- `profileState.startupFailure.legacyJsonPath` — Legacy JSON path: {{path}}
+- `profileState.startupFailure.chooseRecoveryArtifact` — Stop Orca, then run `{{command}}` and choose a known-good recovery artifact.
+- `profileState.startupFailure.restoreCommands` — Restore SQLite with `{{backupCommand}}`, or restore a JSON export with `{{revisionCommand}}`.
+- `profileState.startupFailure.authorityAmbiguous` — Orca cannot safely choose a profile-state authority: {{detail}}
+- `profileState.startupFailure.authorityBothPreserved` — An older build may have changed the JSON file. Both copies are preserved; neither is selected automatically.
+- `profileState.startupFailure.authorityKeepJson` — To keep the current JSON, including edits from an older build, run `{{command}}`. This archives both copies and does not merge their contents.
+- `profileState.startupFailure.authorityInspect` — Run `{{command}}` to inspect retained recovery points.
+- `profileState.startupFailure.authorityRestore` — Use `{{backupCommand}}` or `{{revisionCommand}}` only after selecting the state you want to restore.
+- `profileState.startupFailure.writerUnavailable` — Orca could not start profile persistence. Restart Orca; if the problem continues, repair or reinstall this build.
+- `profileState.startupFailure.publicationUnavailable` — Orca could not safely publish profile state in {{directory}}.
+- `startupFailure.finishFailed` — Orca could not finish starting: {{detail}}
+- `wslDriveUnc.description` — Orca opens this project through WSL. Open it at {{drivePath}} instead: Git runs on Windows, which is much faster here, and terminals and agents stay in {{distro}}.
+- `wslDriveUnc.convert` — Open at {{drivePath}}
+- `wslDriveUnc.review` — Orca pauses this project’s terminals, restarts, and reopens it at {{drivePath}}. Tabs, terminals with their history, chats and settings come along, and paused terminals pick up where they were.
+- `wslDriveUnc.blocker.duplicate` — {{drivePath}} is already a project in Orca.
+- `wslDriveUnc.blocker.notDriveMount` — In this distro, that folder isn’t {{drivePath}}: it isn’t mounted from that Windows drive.
+- `wslDriveUnc.blocker.differingState` — Orca saved different details for this folder under both its WSL path and {{drivePath}}, so nothing changed.
+- `runtime.remoteServerPairingErrors.managedDeployment` — Orca runs this server on an SSH host for you; its pairing cannot be replaced or removed here. To decommission it, run `orca environment stop --environment <name> --yes` or use Settings > Orca on your SSH hosts; for a host that is gone, run `orca environment forget --environment <name> --yes`.
+- `runtime.remoteServerPairingErrors.alreadyPairedCloudWorkspace` — This server is already paired as "{{name}}". It belongs to a cloud workspace, which pairs it again when it resumes.
+- `runtime.remoteServerPairingErrors.alreadyPairedCloudIdentity` — This server is already paired as "{{name}}". The cloud workspace's server reuses that server's identity, so it was not saved.
+- `runtime.remoteServerPairingErrors.alreadyPairedWslHost` — This server is already paired as "{{name}}". Orca manages it as a WSL host, so its pairing cannot be replaced here.
+- `runtime.remoteServerPairingErrors.alreadyPairedManagedDeployment` — This server is already paired as "{{name}}". Orca runs this server on an SSH host for you; its pairing cannot be replaced or removed here. To decommission it, run `orca environment stop --environment <name> --yes` or use Settings > Orca on your SSH hosts; for a host that is gone, run `orca environment forget --environment <name> --yes`.
+- `runtime.remoteServerPairingErrors.alreadyPairedSshAccessChangePending` — This server is already paired as "{{name}}". This server's SSH access change didn't finish. Retry or cancel it under Settings > Remote Orca Servers > SSH access for paired servers before replacing its pairing or removing it.
+- `runtime.remoteServerPairingErrors.alreadyPairedSshAccessLinked` — This server is already paired as "{{name}}". Unlink this server's SSH access under Settings > Remote Orca Servers > SSH access for paired servers before replacing its pairing or removing it.
+- `runtime.remoteServerPairingErrors.alreadyPairedAddAgain` — This server is already paired as "{{name}}". To update its connection, add it again under Settings > Remote Orca Servers.
+- `runtime.remoteServerPairingErrors.alreadyPairedUnreadable` — This server is already paired as "{{name}}", whose saved settings this version of Orca cannot read.
+- `runtime.remoteServerPairingErrors.nameTaken` — A server named "{{name}}" already exists.
+- `automations.runFailures.hooksReviewBlocked` — The agent is waiting for someone to review new or changed hooks ("Hooks need review"). Open this run and trust them, or remove them. Scheduled runs keep going and succeed once nothing needs review.
+- `automations.runFailures.wslDistroStopped` — The WSL distro {{distro}} is stopped, so this scheduled run did not start it. Start the distro or use Run now; later runs go ahead while it runs.
+- `automations.extraAgentArgs.errors.invalid` — Extra arguments are invalid: {{detail}}
+- `automations.extraAgentArgs.errors.shellSyntax` — {{text}} uses shell syntax that extra arguments don't allow.
+- `automations.extraAgentArgs.errors.notAnOption` — "{{token}}" isn't an option. Extra arguments for {{agent}} accept only: {{allowed}}.
+- `automations.extraAgentArgs.errors.optionNotAllowed` — "{{option}}" isn't allowed in extra arguments for {{agent}}. Allowed: {{allowed}}.
+- `automations.extraAgentArgs.errors.missingValue` — "{{option}}" needs a value.
+- `automations.extraAgentArgs.errors.valueNotAllowed` — "{{option}} {{value}}" isn't allowed. {{agent}} extra arguments accept only "{{option}} {{prefix}}<level>".
+- `codeHost.errors.invalidUpdate` — Invalid update — {{detail}}
+- `codeHost.errors.invalidRequest` — Invalid request — {{detail}}
+- `codeHost.errors.issueUpdateFailed` — Failed to update issue: {{detail}}
+- `codeHost.errors.github.pullRequestUpdateFailed` — Failed to update pull request: {{detail}}
+- `codeHost.errors.github.autoMergeEnableFailed` — Failed to enable auto-merge for pull request: {{detail}}
+- `codeHost.errors.github.autoMergeDisableFailed` — Failed to disable auto-merge for pull request: {{detail}}
+- `codeHost.errors.github.mergeQueueAddFailed` — Failed to add pull request to the merge queue: {{detail}}
+- `codeHost.errors.github.rerunRejected` — Could not rerun checks — {{detail}}
+- `codeHost.errors.github.rerunFailed` — Failed to rerun checks: {{detail}}
+- `codeHost.errors.gitlab.jobLogFailed` — Failed to load the job log: {{detail}}
+- `codeHost.startPoint.fetchFailed` — Failed to fetch {{ref}}: {{detail}}
+- `codeHost.startPoint.remoteRefMissing` — Remote ref {{ref}} does not exist after fetch.
+- `codeHost.startPoint.github.prNotFound` — PR #{{number}} not found.
+- `codeHost.startPoint.github.prHeadBranchMissing` — PR #{{number}} has no head branch.
+- `codeHost.startPoint.github.forkHeadUnresolved` — Could not resolve fork PR #{{number}} head after fetch.
+- `codeHost.startPoint.github.headShaEmpty` — Empty SHA resolving PR #{{number}} head.
+- `codeHost.startPoint.gitlab.mrNotFound` — MR !{{number}} not found.
+- `codeHost.startPoint.gitlab.mrSourceBranchMissing` — MR !{{number}} has no source branch.
+- `codeHost.startPoint.gitlab.forkHeadUnresolved` — Could not resolve fork MR !{{number}} head after fetch.
+- `emulator.errors.simulatorNotFound` — Simulator {{udid}} not found. Create one via Xcode > Window > Devices and Simulators.
+- `emulator.errors.androidDeviceNotRunning` — Android device "{{device}}" is not running. Boot it first.
+- `emulator.errors.unknownDeviceOrAvd` — "{{device}}" is not a running device or a known AVD.
+- `emulator.errors.avdBootTimeout` — AVD "{{avdName}}" did not finish booting in time.
+- `emulator.errors.scrcpyDownloadFailed` — Could not download scrcpy server: {{detail}}
+- `emulator.pane.startFailed` — Could not start the emulator. Make sure Xcode (iOS) or Android Studio (Android) is set up, then try another device.
+- `ephemeralVm.errors.repoNotFound` — Repo not found: {{repoId}}
+- `ephemeralVm.errors.recipeNotFound` — Recipe not found: {{recipeId}}
+- `ephemeralVm.errors.runtimeNotFound` — Unknown ephemeral VM runtime: {{runtimeId}}
+- `ephemeralVm.errors.runtimeRepoMissing` — Ephemeral VM runtime has no repo id: {{runtimeId}}
+- `ephemeralVm.errors.startRefUnresolved` — Could not resolve provisioned-root start ref: {{ref}}
+- `ephemeralVm.errors.recipeExited` — Recipe exited with code {{exitCode}}.
+- `ephemeralVm.errors.destroyExited` — Destroy exited with code {{exitCode}}.
+- `pet.importErrors.fileTooLarge` — File is too large ({{size}} MB). Max is {{max}} MB.
+- `pet.importErrors.manifestParseFailed` — Invalid pet.json: {{detail}}
+- `pet.importErrors.sheetTooLarge` — Spritesheet is too large ({{size}} MB).
+- `pet.importErrors.sheetFrameMismatch` — Spritesheet {{sheetWidth}}×{{sheetHeight}} is not a clean multiple of frame {{frameWidth}}×{{frameHeight}}.
+- `pet.importErrors.animationRowOutOfRange` — Animation "{{name}}" references row {{row}} but sheet has {{rows}}.
+- `pet.importErrors.animationTooManyFrames` — Animation "{{name}}" has {{frames}} frames but sheet only has {{columns}} columns.
+- `pet.importErrors.animationDurationMismatch` — Animation "{{name}}" declares {{durations}} frame durations but {{frames}} frames.
+- `pet.importErrors.defaultAnimationMissing` — defaultAnimation "{{name}}" not in animations.
+- `diffComments.lineRangeMeta` — lines {{start}}-{{end}}
+- `diffComments.lineMeta` — line {{line}}
+
+## Tên phím — quy ước UI giữ EN — 29 key
+
+- `browser.history.enterKey` — Enter
+- `browser.history.escKey` — Esc
+- `settings.network.proxyUrlErrors.invalid` — Enter a valid proxy URL.
+- `worktreeJumpPalette.filter.tabKey` — Tab
+- `auto.lib.agent.catalog.6f8056a565` — Command Code
+- `auto.components.QuickOpen.95fccbae88` — Esc
+- `auto.components.QuickOpen.250e5b2dfb` — Enter
+- `auto.components.WorktreeJumpPalette.66b5a67bee` — Esc
+- `auto.components.WorktreeJumpPalette.f65d992a11` — Enter
+- `auto.components.tab.bar.TabBar.1a8af49530` — CMD Prompt
+- `auto.components.status.bar.WorkspaceSpaceCompactPanel.8ff597593d` — Space
+- `auto.components.skills.sourceKind.home` — Home
+- `auto.components.settings.QuickCommandsPane.9b3e338d62` — Enter
+- `auto.components.settings.TerminalPane.0f1b8669e6` — Command Prompt
+- `auto.components.right.sidebar.FileExplorerRow.a06551beee` — Enter
+- `auto.components.onboarding.WindowsTerminalStep.commandPrompt` — Command Prompt
+- `auto.components.mobile.slides.TerminalSlide.817090af40` — Ctrl+C
+- `auto.components.mobile.slides.TerminalSlide.53ff909568` — Tab
+- `auto.components.mobile.slides.TerminalSlide.4930eaaae7` — Esc
+- `auto.components.emulator.pane.emulator.pane.toolbar.e7a0d1897e` — Home
+- `auto.components.editor.CsvViewer.delimiterTab` — Tab
+- `sourceControl.textGeneration.errors.commandTemplateEmptyCommitMessage` — Command template is empty for commit messages.
+- `sourceControl.textGeneration.errors.commandTemplateEmptyPullRequest` — Command template is empty for pull request details.
+- `sourceControl.textGeneration.errors.commandTemplateEmptyBranchName` — Command template is empty for branch names.
+- `sourceControl.textGeneration.errors.commandTemplateEmptyChatName` — Command template is empty for chat names.
+- `resourceManager.pty.binding` — Tab
+- `codeHost.errors.github.reviewerRequired` — Enter at least one reviewer
+- `codeHost.bitbucketConnect.accessTokenRequired` — Enter an access token.
+- `codeHost.bitbucketConnect.emailAndApiTokenRequired` — Enter both an email and an API token.
+
+## Tên ngôn ngữ — hiển thị tên bản địa — 12 key
+
+- `settings.appearance.language.english` — English
+- `settings.appearance.language.chinese` — 中文（简体）
+- `settings.appearance.language.chineseTraditional` — 繁體中文（台灣）
+- `settings.appearance.language.korean` — 한국어
+- `settings.appearance.language.japanese` — 日本語
+- `settings.appearance.language.spanish` — Español
+- `settings.appearance.language.french` — Français
+- `settings.appearance.language.russian` — Русский
+- `settings.appearance.language.turkish` — Türkçe
+- `settings.appearance.language.german` — Deutsch
+- `settings.voice.modelDescriptions.parakeetV2` — English only. Faster than v3 with similar accuracy. Punctuation and capitalization.
+- `settings.voice.modelDescriptions.zipformerStreamingEn` — English only. Lightweight 20M-param model, good balance of speed and size.
+
+## Enum status/mode — khớp badge/query `is:`/API — 75 key
+
+- `sidebar.agentSummary.state.blocked` — blocked
+- `sidebar.agentSummary.state.failed` — failed
+- `sidebar.agentSummary.state.done` — done
+- `sidebar.agentSummary.state.idle` — idle
+- `browser.newTab.state.closed` — Closed
+- `browser.newTab.state.draft` — Draft
+- `browser.newTab.state.merged` — Merged
+- `browser.newTab.state.open` — Open
+- `settings.terminal.limit.unknown` — Unavailable
+- `auto.components.GitHubItemDialog.ab050dffec` — Closed
+- `auto.components.GitHubItemDialog.dc1ca081a8` — Open
+- `auto.components.GitLabItemDialog.22511537d2` — Approved
+- `auto.components.PullRequestPage.b936cc51a4` — Closed
+- `auto.components.PullRequestPage.7b8f6bf6d8` — Open
+- `auto.components.TaskPage.606a85c774` — Open
+- `auto.components.TaskPage.054bf695cc` — Draft
+- `auto.components.TaskPage.d09bf34db7` — Closed
+- `auto.components.TaskPage.524f095d55` — Needs review
+- `auto.components.TaskPage.37a82eaaf8` — Merged
+- `auto.components.github.pr.merge.state.c606463dc2` — Changes requested
+- `auto.components.github.pr.merge.state.ec8e2cebaa` — Draft
+- `auto.components.github.pr.merge.state.4f976d3450` — Closed
+- `auto.components.github.pr.merge.state.83ecdbb4a6` — Merged
+- `auto.components.github.project.ProjectCell.6efdc0d920` — Draft
+- `auto.components.github.PRFilterSections.0fd3249e2e` — Closed
+- `auto.components.github.PRFilterSections.d78b60b5c2` — Open
+- `auto.components.github.PRFilterSections.bd162b7d5a` — Merged
+- `auto.components.github.PRFilterSections.draft` — Draft
+- `auto.components.status.bar.WorkspaceSpaceManagerPanel.39801484e0` — Failed
+- `auto.components.status.bar.workspaceSpaceFormat.status.failed` — Failed
+- `auto.components.sidebar.workspace.status.52e3c6e2a4` — Neutral
+- `auto.components.sidebar.worktree.list.groups.682ed5d551` — Closed
+- `auto.components.sidebar.AddWslHostFormPanel.running` — Running
+- `auto.components.sidebar.WorktreeCardHelpers.checksPending` — Pending
+- `auto.components.sidebar.titleDerivedAgentRows.running` — Running
+- `auto.components.settings.AgentsPane.92033495ff` — Auto
+- `auto.components.right.sidebar.checks.panel.content.b4e8a1c902` — Queued
+- `auto.components.right.sidebar.gitlab.mr.merge.state.b2715092c6` — Draft
+- `auto.components.right.sidebar.gitlab.mr.merge.state.88d044c42f` — Closed
+- `auto.components.right.sidebar.gitlab.mr.merge.state.fae95ae20d` — Merged
+- `auto.components.right.sidebar.gitlab.mr.merge.state.893a999c8c` — Changes requested
+- `auto.components.new.workspace.SmartWorkspaceNameField.6fad211c66` — Closed
+- `auto.components.new.workspace.SmartWorkspaceNameField.2319d87718` — Merged
+- `auto.components.new.workspace.SmartWorkspaceNameField.622864b52a` — Open
+- `auto.components.feature.wall.ReviewPRViewAnimatedVisual.8ed213397c` — Running
+- `auto.components.editor.CheckRunDetailsPanel.4c8e1b2d73` — Failed
+- `auto.components.editor.CheckRunDetailsPanel.91a4c7e2b0` — Cancelled
+- `auto.components.editor.CheckRunDetailsPanel.7b3e9d4f12` — Skipped
+- `auto.components.editor.CheckRunDetailsPanel.5a1c8e3d67` — Neutral
+- `auto.components.editor.CheckRunDetailsPanel.3d9f2b8e14` — Pending
+- `auto.components.automations.automation.list.last.run.failed` — Failed
+- `auto.components.automations.AutomationListFilterMenu.failed` — Failed
+- `auto.components.automations.automationPageParts.runStatusPending` — Queued
+- `auto.components.automations.automationPageParts.runStatusSkippedMissed` — Skipped
+- `auto.components.automations.automationPageParts.runStatusDispatchFailed` — Failed
+- `auto.components.activity.ActivityPrototypePage.state.failed` — Failed
+- `auto.components.rightSidebar.parentPrChecks.rowSummary.merged` — Merged
+- `auto.components.rightSidebar.parentPrChecks.groups.pending` — Pending
+- `auto.components.rightSidebar.parentPrChecks.groups.merged` — Merged
+- `auto.components.AgentStateDot.failed` — Failed
+- `components.workspace.cleanup.browse.review.open` — Open
+- `components.workspace.cleanup.browse.review.draft` — Draft
+- `components.workspace.cleanup.browse.review.merged` — Merged
+- `components.workspace.cleanup.browse.review.closed` — Closed
+- `components.workspace.cleanup.candidateRow.gitChip.unknown` — Unknown
+- `dashboardPopout.filters.review.open` — Open
+- `dashboardPopout.filters.review.draft` — Draft
+- `dashboardPopout.filters.review.merged` — Merged
+- `dashboardPopout.filters.review.closed` — Closed
+- `featureTips.eyebrowNew` — New
+- `sourceControl.model.auto` — Auto
+- `workspace.links.checksFailed` — Failed
+- `workspace.links.checksPending` — Pending
+- `workspace.links.checksNeutral` — Neutral
+- `workspace.activity.failed` — Failed
+
+## Thuật ngữ git — glossary quy định giữ EN — 32 key
+
+- `auto.components.GitLabItemDialog.16b3412570` — Merge
+- `auto.components.NewWorkspaceComposerCard.d861de981b` — Sparse checkout
+- `auto.components.TaskPage.443f7dd928` — Merge
+- `auto.components.github.pr.merge.state.bd4f27b50e` — Merge
+- `auto.components.workspace.cleanup.WorkspaceCleanupDialog.bef0adef9b` — Branch
+- `auto.components.status.bar.WorkspaceSpaceManagerPanel.b9b4a3a25d` — Branch
+- `auto.components.sidebar.WorktreeCardStatusSlot.branchIdentity` — Branch
+- `auto.components.settings.CommitMessageAiPane.ca433708cb` — commit
+- `auto.components.settings.SourceControlAiActionRecipeDefaults.e5b24893ba` — commit
+- `auto.components.right.sidebar.SourceControl.8cde1a2fb0` — Stage
+- `auto.components.right.sidebar.SourceControl.c56ba7fa06` — Diff
+- `auto.components.right.sidebar.checks.panel.content.operation.rebase` — Rebase
+- `auto.components.right.sidebar.checks.panel.content.operation.merge` — Merge
+- `auto.components.right.sidebar.checks.panel.content.operation.cherryPick` — Cherry-pick
+- `auto.components.right.sidebar.source.control.dropdown.items.226b85a3a7` — Fetch
+- `auto.components.right.sidebar.source.control.dropdown.items.2b8e6595fd` — Commit
+- `auto.components.right.sidebar.source.control.dropdown.items.commitForcePush` — Commit & Force Push
+- `auto.components.right.sidebar.source.control.dropdown.items.commitPush` — Commit & Push
+- `auto.components.right.sidebar.source.control.primary.action.ed93b4f14f` — Commit
+- `auto.components.right.sidebar.source.control.primary.action.95550cff15` — Push
+- `auto.components.right.sidebar.source.control.primary.action.d64292a938` — Pull
+- `auto.components.right.sidebar.source.control.primary.action.390abeab93` — Force Push
+- `auto.components.right.sidebar.pull.policy.notice.merge` — Merge
+- `auto.components.right.sidebar.pull.policy.notice.rebase` — Rebase
+- `auto.components.new.workspace.SmartWorkspaceNameField.2e4c7c95fe` — Branch
+- `auto.components.feature.wall.ReviewShipAnimatedVisual.a079083a6c` — Commit
+- `auto.components.editor.RichMarkdownCodeBlock.bf6ee5caaa` — Diff
+- `components.workspace.cleanup.browse.sort.branch` — Branch
+- `fileExplorer.root.sparseStatus` — Sparse checkout
+- `workspace.branchChoice.existing` — Existing branch
+- `workspace.branchChoice.new` — New branch
+- `workspace.branchChoice.newHint` — Create a new local branch
+
+## Tên riêng/sản phẩm/đơn vị kỹ thuật — never-translate — 241 key
+
+- `csv.error.recordTooLarge` — CSV record is too large to preview safely.
+- `csv.error.tooManyPages` — CSV has too many pages to preview safely.
+- `csv.error.previewRecordLimit` — CSV record exceeds the 1 MB preview limit.
+- `csv.error.previewColumnLimit` — CSV exceeds the 4,096 column preview limit.
+- `csv.error.changedOnDisk` — CSV changed on disk. Reload the file to refresh the preview.
+- `csv.error.pageBoundaryMismatch` — CSV page boundary mismatch. Reload the preview.
+- `csv.error.canceled` — CSV preview was canceled
+- `csv.error.workerFailed` — CSV preview worker failed. Reload the file to retry.
+- `csv.error.workerUnreadableResponse` — CSV preview worker returned an unreadable response.
+- `csv.error.columnLimit` — CSV exceeds the 4,096 column limit.
+- `csv.error.recordLimit` — CSV record exceeds the 1 MB limit.
+- `csv.error.editConflict` — CSV changed while this cell was being edited. Cancel and try again.
+- `csv.error.saveFailed` — CSV could not be saved. Your edits remain in the draft.
+- `csv.error.pasteConflict` — CSV changed before paste completed. Try again.
+- `sidebar.wslHosts.statusDetails.runningListUnavailable` — Windows didn’t report whether the distro is running.
+- `sidebar.wslHosts.statusDetails.orcadUnanswered` — Orca’s server in the distro didn’t answer.
+- `browser.cookieImport.errors.safariFullDiskAccess` — macOS denied access to Safari cookies. Grant Full Disk Access to Orca in System Settings → Privacy & Security → Full Disk Access.
+- `settings.browser.extensions.sourceWebStore` — Chrome Web Store
+- `settings.openInApp.preset.devinDesktop` — Devin Desktop
+- `auto.App.5096cbbc86` — Orca
+- `auto.web.web.runtime.environment.07f788de83` — WebSocket
+- `auto.lib.agent.catalog.8a9ba743cc` — Hermes
+- `auto.lib.agent.catalog.28810273af` — Kimi
+- `auto.lib.agent.catalog.667c104cff` — Cursor
+- `auto.lib.agent.catalog.691dd11789` — Antigravity
+- `auto.lib.agent.catalog.12e6baa4f7` — Gemini
+- `auto.lib.agent.catalog.e7a4ca5103` — OpenCode
+- `auto.lib.agent.catalog.706b0fe68b` — GitHub Copilot
+- `auto.lib.agent.catalog.0baad2d5d2` — Grok
+- `auto.lib.agent.catalog.760bc6883d` — Codex
+- `auto.lib.agent.catalog.bf53f09bf8` — Claude Agent Teams
+- `auto.lib.agent.catalog.0708ed89f1` — Claude
+- `auto.lib.agent.catalog.fc80296033` — Devin
+- `auto.lib.agent.catalog.qoder_label` — Qoder CLI
+- `auto.lib.agent.catalog.zcode_label` — ZCode
+- `auto.lib.agent.catalog.opencode2_label` — OpenCode 2
+- `auto.lib.agent.catalog.qoder_cn_label` — Qoder CLI China
+- `auto.lib.open.in.app.catalog.f8b8ca2711` — Zed
+- `auto.lib.open.in.app.catalog.d62b12e98a` — Cursor
+- `auto.lib.open.in.app.catalog.173553f73a` — VS Code
+- `auto.lib.claudeAgentRowView.parentViewFailed` — Claude could not open the parent conversation. Try again in the Claude pane.
+- `auto.lib.claudeAgentRowView.childViewFailed` — Claude could not open this agent. Try again in the Claude pane.
+- `auto.lib.claudeAgentRowView.parentNavigationSetup` — Claude could not open the parent conversation. Enable subagent navigation in Settings → Agents, then restart Claude in this pane.
+- `auto.hooks.useSettingsNavigationMetadata.linearTitle` — Linear
+- `auto.components.LinearIssueWorkspace.61f424f8ca` — Linear issue
+- `auto.components.LinearIssueWorkspace.65239a714b` — Linear
+- `auto.components.LinearItemDrawer.39883467f4` — Linear issue
+- `auto.components.NativeChatResumeOnRestartModal.sshHost` — SSH
+- `auto.components.TaskPage.8675cd6188` — Linear
+- `auto.components.TaskPage.9cd11ba218` — Jira
+- `auto.components.TaskPage.11a828abf8` — GitLab
+- `auto.components.TaskPage.acef77f7ca` — GitHub
+- `auto.components.linear.project.view.surfaces.7b147907dc` — Linear
+- `auto.components.tab.bar.TabBar.d1afac112b` — WSL
+- `auto.components.tab.bar.shell.icons.e9b2e70613` — WSL
+- `auto.components.status.bar.ResourceUsageStatusSegment.298f4be7f2` — CPU
+- `auto.components.status.bar.ResourceUsageStatusSegment.288a4dd177` — Orca
+- `auto.components.status.bar.tooltip.zcode.mcp` — MCP
+- `auto.components.stats.ShareUsageCard.0eb31e79ee` — Orca IDE
+- `auto.components.stats.StatsPane.1e696db2f6` — OpenCode
+- `auto.components.stats.StatsPane.7d26110cea` — Codex
+- `auto.components.stats.StatsPane.85457c02fe` — Claude
+- `auto.components.stats.StatsPane.grokUsageTab` — Grok
+- `auto.components.stats.usage.overview.model.bc474051e5` — OpenCode
+- `auto.components.stats.usage.overview.model.eb220d193b` — Codex
+- `auto.components.stats.usage.overview.model.544d6d4c16` — Claude
+- `auto.components.skills.SkillInstallTargetFields.0c10a406fb` — WSL ·
+- `auto.components.sidebar.SidebarFeedbackDialog.c9e5ea0791` — GitHub:
+- `auto.components.sidebar.SidebarFilter.81ded53722` — SSH
+- `auto.components.sidebar.SidebarNav.1b5c41caee` — Orca Mobile
+- `auto.components.sidebar.SidebarRepositoryFilterSection.2656053db4` — SSH
+- `auto.components.sidebar.SidebarSettingsHelpMenu.eb9884e55b` — Discord
+- `auto.components.sidebar.SidebarSettingsHelpMenu.5687ab246a` — GitHub
+- `auto.components.sidebar.SidebarWorkspaceOptionsMenu.cli` — Orca CLI
+- `auto.components.sidebar.WorktreeCardMeta.cliHeader` — Orca CLI
+- `auto.components.sidebar.WorktreeOpenInMenu.wsl` — WSL
+- `auto.components.sidebar.WorktreeVisibilitySourceList.claude` — Claude Code
+- `auto.components.sidebar.wslHostRowStatus.kind` — WSL distro
+- `auto.components.settings.AccountsPane.4ac10b4d08` — OpenCode Go
+- `auto.components.settings.AccountsPane.ef91cfa06b` — Codex
+- `auto.components.settings.AccountsPane.26ef4b55be` — Claude
+- `auto.components.settings.AccountsPane.8619f9afa9` — WSL
+- `auto.components.settings.AccountsPane.5d63bbfbec` — MiniMax
+- `auto.components.settings.CliSection.c5c0f2641d` — Orca CLI
+- `auto.components.settings.MobileSettingsPane.b5a2ed83ff` — App Store
+- `auto.components.settings.MobileSettingsPane.androidApkLabel` — Android APK
+- `auto.components.settings.OpenAiTranscriptionKeyDialog.439e91879e` — OpenAI Transcription
+- `auto.components.settings.OpenAiTranscriptionSettingsRow.27e0cb656d` — OpenAI Transcription
+- `auto.components.settings.Settings.linearTitle` — Linear
+- `auto.components.settings.SettingsSidebar.e0900f83e7` — SSH
+- `auto.components.settings.TasksPane.6b23a34f6d` — Jira
+- `auto.components.settings.TasksPane.09ae2d7c51` — Linear
+- `auto.components.settings.TasksPane.7c5d7fdc20` — GitLab
+- `auto.components.settings.TasksPane.e14063e727` — GitHub
+- `auto.components.settings.TerminalPane.d26174e1dd` — Windows PowerShell
+- `auto.components.settings.TerminalPane.b637dd57a7` — WSL
+- `auto.components.settings.TerminalPane.17ad899ba4` — bash
+- `auto.components.settings.TerminalPane.c9bc93d343` — zsh
+- `auto.components.settings.TerminalPane.0cbe5ad727` — fish
+- `auto.components.settings.DefaultWindowsProjectRuntimeSetting.windows` — Windows
+- `auto.components.settings.DefaultWindowsProjectRuntimeSetting.wsl` — WSL
+- `auto.components.settings.ProjectWindowsRuntimeSetting.windows` — Windows
+- `auto.components.settings.ProjectWindowsRuntimeSetting.wsl` — WSL
+- `auto.components.settings.AgentRuntimeSetting.wsl` — WSL
+- `auto.components.settings.MobileEmulatorSdkStatus.027cbf668a` — Android SDK
+- `auto.components.settings.DevToolsPane.orcaCloud` — Orca Cloud
+- `auto.components.settings.MobilePairingConnectionOptions.anywhereTitle` — Orca Relay
+- `auto.components.settings.LinearAgentSkillPane.title` — Linear
+- `auto.components.settings.artifacts.keywordHtml` — HTML
+- `auto.components.settings.orcaAccount.relayTitle` — Orca Relay
+- `auto.components.settings.bitbucket.credentials.dialog.apiToken` — API token
+- `auto.components.settings.bitbucket.credentials.dialog.apiTokenPlaceholder` — Atlassian API token
+- `auto.components.settings.bitbucket.integration.card.accountUnknown` — Bitbucket Cloud
+- `auto.components.settings.CursorAccountsSection.source.desktop` — Cursor IDE
+- `auto.components.settings.CursorAccountsSection.title` — Cursor
+- `auto.components.settings.ZcodePlanAccountsSection.title` — GLM Coding Plan
+- `auto.components.settings.wslHosts.chip` — WSL
+- `auto.components.repo.RepoCombobox.3639fd9da2` — SSH
+- `auto.components.repo.repo.icon.31826b712e` — API
+- `auto.components.pet.pet.models.a84d5677ff` — OpenCode
+- `auto.components.onboarding.IntegrationsStep.27743304b1` — Linear
+- `auto.components.onboarding.IntegrationsStep.217beb0658` — GitHub
+- `auto.components.onboarding.OnboardingFlow.a249f81538` — Orca
+- `auto.components.onboarding.WindowsTerminalStep.wsl` — WSL
+- `auto.components.new.workspace.SmartWorkspaceNameField.2cfc6be192` — GitLab
+- `auto.components.new.workspace.SmartWorkspaceNameField.7a47af0565` — Linear
+- `auto.components.new.workspace.SmartWorkspaceNameField.0a180280bd` — GitHub
+- `auto.components.new.workspace.SmartWorkspaceNameField.jiraMode` — Jira
+- `auto.components.mobile.MobileHero.ac1eb64952` — Android
+- `auto.components.mobile.MobileHero.711e6f4b47` — iOS
+- `auto.components.mobile.MobileHero.5410d55d79` — Orca Mobile
+- `auto.components.mobile.slides.HomeSlide.d047197480` — GitHub · Linear
+- `auto.components.mobile.slides.HomeSlide.5d94e8ddcc` — Orca
+- `auto.components.feature.wall.BrowserAnimatedVisual.6e4616d039` — Claude
+- `auto.components.feature.wall.ReviewNotesAnimatedVisual.5dbd27c4c2` — Codex
+- `auto.components.feature.wall.ReviewNotesAnimatedVisual.09094f25e2` — Claude Code
+- `auto.components.feature.wall.review.animated.visual.shared.e7894927a2` — Codex
+- `auto.components.feature.wall.review.animated.visual.shared.9deecb021c` — Claude
+- `auto.components.feature.wall.agents.orchestration.UsagePage.6a4b1d3c38` — Codex
+- `auto.components.editor.RichMarkdownCodeBlock.74eab1d9b2` — YAML
+- `auto.components.editor.RichMarkdownCodeBlock.88d777bc07` — TypeScript
+- `auto.components.editor.RichMarkdownCodeBlock.9e384d48dc` — Swift
+- `auto.components.editor.RichMarkdownCodeBlock.e72e6b03f4` — Rust
+- `auto.components.editor.RichMarkdownCodeBlock.96182a2f64` — Ruby
+- `auto.components.editor.RichMarkdownCodeBlock.2391f9cda9` — Python
+- `auto.components.editor.RichMarkdownCodeBlock.89d6cc14fb` — Mermaid
+- `auto.components.editor.RichMarkdownCodeBlock.bcb236e2d8` — Kotlin
+- `auto.components.editor.RichMarkdownCodeBlock.78eba32de4` — JSON
+- `auto.components.editor.RichMarkdownCodeBlock.a209c57063` — JavaScript
+- `auto.components.editor.RichMarkdownCodeBlock.36536ad539` — Java
+- `auto.components.editor.RichMarkdownCodeBlock.8c4a3fa02d` — HTML
+- `auto.components.editor.RichMarkdownCodeBlock.edfcc64182` — Go
+- `auto.components.editor.RichMarkdownCodeBlock.026653f21f` — CSS
+- `auto.components.editor.RichMarkdownCodeBlock.4daed43ae3` — C++
+- `auto.components.crash.report.CrashReportDialog.835037edc9` — Orca
+- `auto.components.browser.pane.GrabConfirmationSheet.7d1480fbf1` — HTML
+- `auto.components.jira.connect.dialog.7b3967c12f` — Atlassian API token
+- `auto.components.jira.connect.dialog.3d81bf3ab3` — API token
+- `auto.components.jira.connect.dialog.17787d6e4b` — Atlassian Cloud
+- `auto.components.artifacts.typeHtml` — HTML
+- `auto.components.UnexpectedSignoutCard.6e3f1a9c5b` — Orca Relay
+- `auto.i18n.hostedReview.copy.c7d1e5f9a8` — GitHub
+- `auto.i18n.hostedReview.copy.91b5c8d7e6` — GitLab
+- `components.onboarding.flow.stepTooltip.windowsTerminal` — Windows Terminal
+- `components.native-chat.agentMessage.goToAgent` — Go to agent
+- `components.native-chat.sessionOptionErrors.modelRejected` — Claude kept the current model.
+- `components.workspace.cleanup.browse.ticket.linear` — Linear
+- `sourceControl.createReviewFailure.stacked.stackGithubComOnly` — GitHub stacked pull requests are available only on GitHub.com.
+- `sourceControl.createReviewFailure.stacked.stacksUnavailable` — GitHub stacked pull requests are not available for this repository.
+- `sourceControl.createReviewFailure.stacked.stackParentUnverified` — Orca could not verify the parent pull request. Retry in a moment.
+- `sourceControl.textGeneration.errors.openCodeInvalidEvents` — OpenCode returned invalid JSON events.
+- `sourceControl.textGeneration.errors.antigravityInvalidEvents` — Antigravity returned invalid JSON events.
+- `sourceControl.textGeneration.errors.antigravityInvalidResult` — Antigravity returned an invalid result.
+- `sourceControl.textGeneration.errors.antigravityNoFinalResult` — Antigravity returned no final result.
+- `sourceControl.textGeneration.errors.kimiUnreadableOutput` — Kimi returned output Orca couldn't read. Try again.
+- `sourceControl.textGeneration.errors.kimiSessionOccupied` — Kimi couldn't use this session because it is active in another client. Stop the session there or exit that client, then try again.
+- `sourceControl.textGeneration.errors.kimiInterrupted` — Kimi was interrupted before it finished generating text. Try again.
+- `sourceControl.textGeneration.errors.kimiFailed` — Kimi couldn't finish generating text. Open Kimi on the execution host to check the failure before retrying.
+- `sourceControl.textGeneration.errors.kimiAgentOptionsConflict` — Kimi received conflicting or repeated agent options. Keep a single --agent or --agent-file option in the generation recipe or CLI arguments, then retry.
+- `sourceControl.textGeneration.errors.kimiOptionRejected` — Kimi rejected an option or argument. Correct the generation recipe or CLI arguments, then retry.
+- `sourceControl.textGeneration.errors.kimiSessionNotFound` — Kimi couldn't find the requested session. Use an existing session or start a new one.
+- `sourceControl.textGeneration.errors.kimiCredentialVariableMissing` — Kimi is missing a configured credential environment variable. Set it on the execution host before retrying.
+- `sourceControl.textGeneration.errors.kimiCredentialsRequired` — Kimi needs provider credentials. Open Kimi on the execution host to configure a provider or sign in, then retry.
+- `sourceControl.textGeneration.errors.kimiModelMissing` — Kimi has no usable model configured. Open Kimi on the execution host to configure or select a model, then retry.
+- `sourceControl.textGeneration.errors.kimiCancelled` — Kimi cancelled the request before it finished generating text. Try again.
+- `sourceControl.textGeneration.errors.kimiEmptyPrompt` — Kimi received an empty prompt. Correct that input in the generation recipe or CLI arguments, then retry.
+- `sourceControl.textGeneration.errors.kimiEmptyModel` — Kimi received an empty model. Correct that input in the generation recipe or CLI arguments, then retry.
+- `sourceControl.textGeneration.errors.kimiEmptyAgent` — Kimi received an empty agent. Correct that input in the generation recipe or CLI arguments, then retry.
+- `sourceControl.textGeneration.errors.kimiEmptyAgentFilePath` — Kimi received an empty agent file path. Correct that input in the generation recipe or CLI arguments, then retry.
+- `sourceControl.textGeneration.errors.kimiOutputFormatInvalid` — Kimi output format requires prompt mode and a supported text or stream-json value. Correct the generation recipe or CLI arguments before retrying.
+- `sourceControl.textGeneration.errors.kimiSessionIdRequired` — Kimi needs a session id to resume in prompt mode. Correct the generation recipe or CLI arguments, then retry.
+- `sourceControl.textGeneration.errors.kimiAgentChangeOnResume` — Kimi cannot change the agent when resuming a session. Remove the agent override or start a new session in the generation recipe or CLI arguments.
+- `sourceControl.textGeneration.errors.kimiResponseBlocked` — Kimi could not return a response because it was blocked. Revise the prompt or model configuration before retrying.
+- `sourceControl.textGeneration.errors.kimiAuthFailed` — Kimi could not authenticate. Sign in or correct provider credentials on the execution host, then retry.
+- `sourceControl.textGeneration.errors.kimiConnectionFailed` — Kimi could not connect to its provider. Check the network on the execution host, then retry.
+- `sourceControl.textGeneration.errors.kimiProviderLimited` — Kimi reached a provider limit or the provider is busy. Wait before retrying or reduce request frequency.
+- `sourceControl.textGeneration.errors.kimiContextOverflow` — Kimi ran out of context. Shorten the prompt or start a new session, then retry.
+- `sourceControl.textGeneration.errors.kimiConfigInvalid` — Kimi has invalid configuration. Check the model and provider configuration on the execution host before retrying.
+- `sourceControl.textGeneration.errors.kimiContinueSessionConflict` — Kimi received conflicting options: --continue, --session. Correct the generation recipe or CLI arguments before retrying.
+- `aiVault.scanIssues.wslTranscriptFsSlow` — WSL transcript files are temporarily unavailable because filesystem access is taking too long. Try again shortly or restart Orca if the issue continues.
+- `aiVault.scanIssues.wslTranscriptFsCapacity` — WSL transcript discovery is temporarily unavailable because too many filesystem requests are already waiting. Try again shortly or restart Orca if the issue continues.
+- `accounts.antigravity.title` — Antigravity
+- `tabHoverCard.namingFailure.errors.agentNotRun` — Orca could not run the chat-name agent.
+- `tabHoverCard.namingFailure.errors.grokFailed` — Grok could not name this chat. Try generating the name again.
+- `tabHoverCard.namingFailure.errors.antigravityFailed` — Antigravity could not name this chat. Try generating the name again.
+- `updates.failure.linuxPackageReadFailed` — Orca could not read the downloaded package. Download the update again, or get it from the official release page.
+- `updates.failure.linuxPackageMarkerUnusable` — Orca could not verify the installed Linux package format, so it will not install this update automatically. Download the update from the official release page and install it manually.
+- `updates.failure.rateLimitedSoon` — GitHub rate limit reached. Try again in a few minutes.
+- `updates.failure.rateLimitedSoonSignedOut` — GitHub rate limit reached. Try again in a few minutes, or run `gh auth login` so Orca can use your account's higher limit.
+- `updates.failure.rateLimitedInMinute` — GitHub rate limit reached. Try again in about a minute.
+- `updates.failure.rateLimitedInMinuteSignedOut` — GitHub rate limit reached. Try again in about a minute, or run `gh auth login` so Orca can use your account's higher limit.
+- `profileState.startupFailure.sqliteUnreadable` — Orca cannot safely open the active profile because its SQLite state is unreadable.
+- `wslDriveUnc.failed` — Orca could not convert this project.
+- `wslDriveUnc.pauseFailed` — Orca could not pause this project’s terminals, so nothing changed.
+- `wslDriveUnc.blocker.pending` — Orca is already converting a project. It finishes when Orca restarts.
+- `wslDriveUnc.blocker.state` — Orca found saved state for this project it can’t convert safely, so nothing changed.
+- `runtime.remoteServerPairingErrors.hostSaveFailed` — Orca verified the host but could not save it. Check local settings storage and try again.
+- `runtime.remoteServerPairingErrors.repairSaveFailed` — Orca verified the server but could not save the new pairing. Check local settings storage and try again.
+- `native.dialog.spaceTitle` — Orca Space Beta
+- `native.dialog.dashboardTitle` — Orca Agent Dashboard
+- `automations.runFailures.unevaluableSchedule` — Orca could not evaluate this automation and skipped the occurrence.
+- `automations.runFailures.watchTimedOut` — Orca stopped watching this run after 6h without a completion signal.
+- `codeHost.errors.github.stackAutoMergeUnsupported` — GitHub does not support auto-merge for stacked pull requests.
+- `codeHost.errors.github.stackMergeInvalidResponse` — GitHub returned an invalid stack merge response.
+- `codeHost.errors.github.stackMergePending` — GitHub is still merging this stack. Refresh to check its status.
+- `codeHost.errors.github.rateLimited` — GitHub rate limit hit. Try again in a few minutes.
+- `codeHost.errors.github.rerunTargetNotFound` — GitHub resource to rerun was not found — it may have expired or been deleted.
+- `codeHost.errors.gitlab.rateLimited` — GitLab rate limit hit. Try again in a few minutes.
+- `codeHost.bitbucketConnect.rejected` — Bitbucket rejected these credentials. Check the email and token, then try again.
+- `featureWall.workflows.workspaces.lede` — Orca splits each task into an isolated workspace so agents can run in parallel.
+- `featureWall.tiles.tile02.title` — Ghostty-class terminal
+- `featureWall.tiles.tile03.title` — GitHub & Linear, native
+- `featureWall.tiles.tile09.title` — Orca CLI
+- `setupScriptPrompt.candidateLabels.codexEnvironment` — Codex environment
+- `emulator.errors.simulatorToolsUnavailable` — Xcode Simulator tools are unavailable. Install full Xcode, open it once, then select it with `sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer`.
+- `emulator.errors.requiresMacosXcode` — iOS Simulator requires macOS with Xcode Command Line Tools.
+- `emulator.errors.androidSdkMissing` — Android SDK not found. Install Android Studio and set ANDROID_HOME.
+- `installDirAcl.cause` — Windows permissions on Orca's install folder are blocking its own sandboxed processes from reading the files it shipped with.
+- `installDirAcl.repaired` — Orca repaired the permissions. Reload to use them.
+- `installDirAcl.repairing` — Orca is repairing the permissions now.
+- `installDirAcl.repairFailed` — Orca could not repair them, which usually means the folder needs an administrator.
+
+## Token đơn không dấu cách — khả năng cao là keyword/identifier — 444 key
+
+- `sidebar.agentSummary.state.waiting` — waiting
+- `sidebar.agentSummary.state.interrupted` — interrupted
+- `sidebar.agentSummary.state.working` — working
+- `sidebar.agentSummary.state.monitoring` — monitoring
+- `sidebar.agentSummary.state.unconfirmed` — unconfirmed
+- `settings.chat.names.searchAgent` — agent
+- `settings.chat.providers.searchAgents` — agents
+- `settings.chat.providers.searchCli` — CLI
+- `settings.chat.providers.searchTerminal` — terminal
+- `settings.terminal.windows.keywordUac` — uac
+- `settings.terminal.limit.retry` — Retry
+- `settings.terminal.limit.unit` — terminals
+- `settings.appearance.chat.title` — Chat
+- `settings.appearance.chat.pixels` — px
+- `settings.browser.profileScope.keywordRepo` — repo
+- `settings.browser.extensions.keywordExtension` — extension
+- `settings.browser.extensions.keywordChrome` — chrome
+- `settings.agents.defaultOpensAsChat` — Chat
+- `settings.agents.defaultOpensAsCli` — CLI
+- `settings.agents.permissionMixed` — Mixed
+- `settings.followSymlinkedDirectoriesKeywords.symlink` — symlink
+- `settings.sourceControl.actionModel.effort` — Effort
+- `settings.mcp.workspace` — Workspace
+- `settings.general.openInMenu.keyword.windsurf` — windsurf
+- `settings.general.openInMenu.keyword.devin` — devin
+- `worktreeJumpPalette.matchLabel.issue` — Issue
+- `worktreeJumpPalette.matchLabel.mr` — MR
+- `worktreeJumpPalette.matchLabel.port` — Port
+- `worktreeJumpPalette.matchLabel.pr` — PR
+- `worktreeJumpPalette.matchLabel.task` — Task
+- `auto.store.slices.worktrees.localBaseRefUnshallow` — Unshallow
+- `auto.lib.agent.catalog.5dff448636` — OpenClaw
+- `auto.lib.agent.catalog.739a930554` — Droid
+- `auto.lib.agent.catalog.9e2a9bb87b` — Continue
+- `auto.lib.agent.catalog.4238b771b5` — Codebuff
+- `auto.lib.agent.catalog.freebuff_label` — Freebuff
+- `auto.lib.agent.catalog.cbaf0c2e0b` — Cline
+- `auto.lib.agent.catalog.5e8eff11b3` — Auggie
+- `auto.lib.agent.catalog.9477377a2a` — Charm
+- `auto.lib.agent.catalog.e0247254f2` — Kiro
+- `auto.lib.agent.catalog.918ba4ffed` — Kilocode
+- `auto.lib.agent.catalog.c73c573939` — Amp
+- `auto.lib.agent.catalog.8da11d876c` — Goose
+- `auto.lib.agent.catalog.b32627f09b` — Aider
+- `auto.lib.agent.catalog.09973b4d84` — OMP
+- `auto.lib.agent.catalog.302934c5d9` — Pi
+- `auto.lib.agent.catalog.a5fc0cb622` — OpenClaude
+- `auto.lib.agent.catalog.da41abbdd4` — Ante
+- `auto.lib.agent.catalog.060d152fb5` — Trae
+- `auto.lib.agent.catalog.muse_label` — Muse
+- `auto.lib.agent.catalog.codebuddy_label` — CodeBuddy
+- `auto.lib.agent.catalog.jcode_label` — Jcode
+- `auto.lib.remotePairingCopy.loopback` — Loopback
+- `auto.hooks.useSettingsNavigationMetadata.40d80bad8a` — Beta
+- `auto.hooks.useSettingsNavigationMetadata.a9fb10afca` — Terminal
+- `auto.hooks.useSettingsNavigationMetadata.devBadge` — Dev
+- `auto.hooks.useSettingsNavigationMetadata.devSearchKeywordDev` — dev
+- `auto.hooks.useSettingsNavigationMetadata.devSearchKeywordToast` — toast
+- `auto.components.GitHubItemDialog.2e4d806c92` — Workspace
+- `auto.components.GitHubItemDialog.3e544d966d` — Issue
+- `auto.components.GitHubItemDialog.6e43a16435` — Inline
+- `auto.components.GitLabItemDialog.ceb08a733d` — File
+- `auto.components.GitLabItemDialog.02cbe2de44` — Pipeline
+- `auto.components.Landing.6ca6ff404e` — ORCA
+- `auto.components.LinearIssueMarkdownDescriptionEditor.d9c47069ef` — Markdown
+- `auto.components.LinearIssueMarkdownDescriptionEditor.e2a0267c8c` — Checklist
+- `auto.components.LinearIssueWorkspace.workspaceSection` — Workspace
+- `auto.components.NewWorkspaceComposerCard.23bb365554` — orca.yaml
+- `auto.components.PullRequestPage.e5f4a24f78` — Inline
+- `auto.components.TaskPage.a98cbe7664` — Team
+- `auto.components.TaskPage.b1eaa18ace` — Issue
+- `auto.components.TaskPage.37e7ee311e` — Key
+- `auto.components.TaskPage.eb10c32872` — ID
+- `auto.components.TaskPage.e224d76876` — MR
+- `auto.components.TaskPage.jiraColumnSprint` — Sprint
+- `auto.components.TerminalSearch.42e466b9f1` — Regex
+- `auto.components.WorktreeJumpPalette.worktreesHeader` — Workspaces
+- `auto.components.github.project.ProjectCell.c5f949e489` — Issue
+- `auto.components.github.project.ProjectCell.d0d0e13a5a` — PR
+- `auto.components.github.project.slug.dialog.Comments.fd5cccd138` — Comment
+- `auto.components.github.IssueSourceSelector.51d1608920` — Origin
+- `auto.components.github.IssueSourceSelector.30b2c9df91` — Upstream
+- `auto.components.github.github.rate.limit.display.1daf0f22a9` — GraphQL
+- `auto.components.github.github.rate.limit.display.bb227706a6` — REST
+- `auto.components.linear.api.key.dialog.edec49dfae` — lin_api_...
+- `auto.components.linear.project.view.surfaces.backlog` — Backlog
+- `auto.components.linear.scope.selector.05baa5ae90` — Workspace
+- `auto.components.notification.sound.options.e38b0a2e68` — Beep
+- `auto.components.notification.sound.options.0acd3d384e` — Clack
+- `auto.components.notification.sound.options.79919c832d` — Ding
+- `auto.components.notification.sound.options.2b44847d8d` — Blop
+- `auto.components.notification.sound.options.020826ef17` — Sonar
+- `auto.components.notification.sound.options.588c90487d` — Blip
+- `auto.components.notification.sound.options.1e4b81d892` — Thump
+- `auto.components.notification.sound.options.86af8d938c` — Bong
+- `auto.components.workspace.cleanup.WorkspaceCleanupDialog.0b1766738a` — Repo
+- `auto.components.workspace.cleanup.candidateRow.gitLabel` — Git
+- `auto.components.workspace.cleanup.candidateRow.commitsLabel` — Commits
+- `auto.components.ui.color.picker.faa855a582` — Hex
+- `auto.components.terminal.quick.commands.TerminalQuickCommandActionToggle.terminal_short` — Terminal
+- `auto.components.terminal.quick.commands.TerminalQuickCommandActionToggle.agent_short` — Agent
+- `auto.components.terminal.quick.commands.TerminalQuickCommandDialog.0adba8fa0c` — Agent
+- `auto.components.terminal.quick.commands.TerminalQuickCommandDialog.dc921c17ee` — Prompt
+- `auto.components.tab.bar.TabBar.2148f65e04` — PowerShell
+- `auto.components.tab.bar.tab.create.menu.options.5501c2fb7a` — terminal
+- `auto.components.tab.bar.tab.create.menu.options.9630dd5494` — shell
+- `auto.components.tab.bar.tab.create.menu.options.cce7ef1d2c` — web
+- `auto.components.tab.bar.tab.create.menu.options.5f17fb9d0c` — markdown
+- `auto.components.tab.bar.tab.create.menu.options.44caaf7b36` — md
+- `auto.components.tab.bar.tab.create.menu.options.b330f72434` — mark
+- `auto.components.tab.bar.tab.create.menu.options.3784b83bd4` — emulator
+- `auto.components.tab.bar.tab.create.menu.options.a63847a742` — simulator
+- `auto.components.tab.bar.tab.create.menu.options.8a580f88cf` — iphone
+- `auto.components.tab.bar.tab.create.menu.options.7ecdc5ef08` — ipad
+- `auto.components.status.bar.PetStatusSegment.c6aa805b1b` — px
+- `auto.components.status.bar.PetStatusSegment.petFallbackLabel` — Pet
+- `auto.components.status.bar.ResourceUsageStatusSegment.d406915b78` — Renderer
+- `auto.components.status.bar.ResourceUsageStatusSegment.81cd37af99` — Main
+- `auto.components.status.bar.StatusBar.5c938d39ac` — wk
+- `auto.components.status.bar.StatusBar.54e8d6bb2d` — Fable
+- `auto.components.status.bar.StatusBar.a79c64f87e` — Fable
+- `auto.components.status.bar.WorkspaceSpaceCompactPanel.c361440dc0` — Beta
+- `auto.components.status.bar.WorkspaceSpaceManagerPanel.e4aebea158` — Workspace
+- `auto.components.status.bar.WorkspaceSpaceManagerPanel.9155381019` — Sparse
+- `auto.components.status.bar.WorkspaceSpaceManagerPanel.66870929fb` — Issue
+- `auto.components.status.bar.tooltip.a79c64f87e` — Fable
+- `auto.components.status.bar.workspaceSpaceFormat.detached` — detached
+- `auto.components.status.bar.PluginsStatusSegment.label` — Plugins
+- `auto.components.stats.ClaudeUsageDailyChart.7d2efeff5e` — Output
+- `auto.components.stats.ClaudeUsageDailyChart.d7fb787e6b` — Input
+- `auto.components.stats.ClaudeUsageDailyChart.a7902d3c1d` — tokens
+- `auto.components.stats.ClaudeUsagePane.21ea00bfa8` — Cache
+- `auto.components.stats.ClaudeUsagePane.a8b7487ff7` — Output
+- `auto.components.stats.ClaudeUsagePane.faf3444859` — Input
+- `auto.components.stats.ClaudeUsagePane.1afc25eb06` — Model
+- `auto.components.stats.CodexUsageDailyChart.1e6f62d7e3` — Reasoning
+- `auto.components.stats.CodexUsageDailyChart.7b596a88b2` — Output
+- `auto.components.stats.CodexUsageDailyChart.99a91d3143` — Input
+- `auto.components.stats.CodexUsageDailyChart.e4bdcf0071` — tokens
+- `auto.components.stats.CodexUsagePane.bbd20344b8` — Output
+- `auto.components.stats.CodexUsagePane.3acc582214` — Input
+- `auto.components.stats.CodexUsagePane.c2478bcc3c` — Model
+- `auto.components.stats.OpenCodeUsagePane.dfc4513657` — Output
+- `auto.components.stats.OpenCodeUsagePane.0f2f266c9d` — Input
+- `auto.components.stats.OpenCodeUsagePane.08c78441b7` — Model
+- `auto.components.stats.share.card.utils.d864fc5f98` — output
+- `auto.components.stats.share.card.utils.5d66fdd7c2` — input
+- `auto.components.stats.share.card.utils.7080aeaebb` — Reasoning
+- `auto.components.stats.share.card.utils.33d38e2177` — Output
+- `auto.components.stats.share.card.utils.c2d7b23d57` — Input
+- `auto.components.stats.usage.overview.sections.e65084cb4b` — reasoning
+- `auto.components.stats.usage.overview.sections.0015facc1f` — Cache
+- `auto.components.stats.usage.overview.sections.7f270458af` — Output
+- `auto.components.skills.SkillInstallTargetFields.0e5b43a9e3` — Workspace
+- `auto.components.skills.SkillShareReviewContent.b3b1d4b911` — SHA-256
+- `auto.components.skills.sourceKind.workspace` — Workspace
+- `auto.components.skills.sourceKind.plugin` — Plugin
+- `auto.components.skills.share.fileExecutable` — executable
+- `auto.components.skills.share.fileScript` — script
+- `auto.components.skills.install.fileBinary` — binary
+- `auto.components.skills.install.fileRunnable` — runnable
+- `auto.components.sidebar.AddRepoCreateStep.0ae45b8238` — my-project
+- `auto.components.sidebar.AddRepoHostSelector.host` — Host
+- `auto.components.sidebar.AddRepoSteps.32a7256d85` — Clone
+- `auto.components.sidebar.SidebarSettingsHelpMenu.c4f8e1b72a` — X
+- `auto.components.sidebar.SidebarWorkspaceOptionsMenu.host` — Host
+- `auto.components.sidebar.SidebarWorkspaceOptionsMenu.0f9b959b31` — PR
+- `auto.components.sidebar.WorktreeCard.4f964d5e8c` — sparse
+- `auto.components.sidebar.WorktreeCardAgents.sendingTarget` — Sending...
+- `auto.components.sidebar.WorktreeContextMenu.workspaceSection` — Workspace
+- `auto.components.sidebar.workspace.status.409528031f` — Review
+- `auto.components.sidebar.AddRemoteHostDialog.usernamePlaceholder` — deploy
+- `auto.components.sidebar.AddRemoteHostDialog.port` — Port
+- `auto.components.sidebar.WorktreeVisibilitySourceList.gsd` — GSD
+- `auto.components.sidebar.AddWslHostFormPanel.distro` — Distro
+- `auto.components.settings.AppearancePane.terminalTitle` — Terminal
+- `auto.components.settings.AutoRenameBranchFromWorkSetting.1626524572` — Nautilus
+- `auto.components.settings.BaseRefPicker.915ad97875` — upstream
+- `auto.components.settings.BrowserPane.5e19a692f7` — Host
+- `auto.components.settings.CommitMessageAiPane.4ec89c319e` — agent
+- `auto.components.settings.CommitMessageAiPane.0b7eafe55f` — ai
+- `auto.components.settings.CommitMessageAiPane.02bab6542c` — pr
+- `auto.components.settings.CommitMessageAiPane.fc1a525fa5` — placeholder
+- `auto.components.settings.CommitMessageAiPane.a69e1fe91a` — prompt
+- `auto.components.settings.CommitMessageAiPane.1df7d71313` — binary
+- `auto.components.settings.CommitMessageAiPane.407d28bde6` — cli
+- `auto.components.settings.DeveloperPermissionsPane.b2210b1b4f` — Bluetooth
+- `auto.components.settings.DeveloperPermissionsPane.e5b5f3d6b9` — Camera
+- `auto.components.settings.DeveloperPermissionsPane.connectionTestHost` — Host
+- `auto.components.settings.DeveloperPermissionsPane.connectionTestPort` — Port
+- `auto.components.settings.ExperimentalPane.dd6f0a1d45` — Pet
+- `auto.components.settings.GeneralEditorSettingsSection.6690b1ffb9` — Minimap
+- `auto.components.settings.GeneralEditorSettingsSection.a5db1d3975` — ms
+- `auto.components.settings.GeneralEditorSettingsSection.fc5c5306ff` — ms.
+- `auto.components.settings.GeneralWorkspaceSettingsSection.7511097c5d` — Workspace
+- `auto.components.settings.GitPane.895d3f70b8` — gh
+- `auto.components.settings.GitPane.32dca11189` — github
+- `auto.components.settings.GitPane.3072428ac7` — glab
+- `auto.components.settings.GitPane.8a527d48e3` — gitlab
+- `auto.components.settings.GitPane.2cde9044a8` — graphql
+- `auto.components.settings.McpConfigSection.9ee215caf6` — .mcp.json
+- `auto.components.settings.OpenAiTranscriptionKeyDialog.c3380e4ca5` — sk-...
+- `auto.components.settings.OpenInMenuSetting.810ef39b56` — cursor
+- `auto.components.settings.OrchestrationPane.chatErrorEscalationKeywordChat` — chat
+- `auto.components.settings.OrchestrationPane.heartbeatKeywordHeartbeat` — heartbeat
+- `auto.components.settings.QuickCommandsPane.4ccc63da87` — Agent
+- `auto.components.settings.RepositoryHooksSection.39da2ae12f` — orca.yaml
+- `auto.components.settings.RepositoryHooksSection.2d03a514db` — local
+- `auto.components.settings.RepositoryHooksSection.95a0411b3e` — template
+- `auto.components.settings.RepositoryHooksSection.fac13f8c1e` — authoritative
+- `auto.components.settings.RepositoryIconPicker.cc1286e263` — Favicon
+- `auto.components.settings.RepositoryIconPicker.03ca1a4e9b` — example.com
+- `auto.components.settings.RepositoryIconPicker.c490787d24` — Emoji
+- `auto.components.settings.RepositoryPane.cloneHost` — Clone
+- `auto.components.settings.RepositoryPane.setupHostLabel` — Host
+- `auto.components.settings.RepositorySourceControlAiActionRows.f4310cf63f` — Agent
+- `auto.components.settings.Settings.3de4bbb841` — Terminal
+- `auto.components.settings.Settings.8afa676615` — Agents
+- `auto.components.settings.ShortcutsPane.cb02e00202` — Terminal
+- `auto.components.settings.SourceControlAiActionRecipeDefaults.2576299196` — args
+- `auto.components.settings.SourceControlAiActionRecipeDefaults.06a9dab64d` — checks
+- `auto.components.settings.SourceControlAiActionRecipeDefaults.673369fe0c` — cli
+- `auto.components.settings.SourceControlAiActionRecipeDefaults.926d58e87f` — agent
+- `auto.components.settings.SshTargetForm.11bcb4507a` — bastion.example.com
+- `auto.components.settings.SshTargetForm.c94cfa634c` — Port
+- `auto.components.settings.SshTargetForm.47e082bc17` — deploy
+- `auto.components.settings.TerminalFontSizeSetting.9b5252c85a` — px
+- `auto.components.settings.TerminalPane.eb7fc4d98a` — PowerShell
+- `auto.components.settings.TerminalPane.scrollSpeed.tui` — TUI
+- `auto.components.settings.TerminalPane.c2ddb189e7` — rcfile
+- `auto.components.settings.TerminalPane.73c211e979` — wrapper
+- `auto.components.settings.TerminalPane.44f8a56f66` — args
+- `auto.components.settings.TerminalPane.d469840b75` — nushell
+- `auto.components.settings.TerminalPane.81694f1584` — terminal
+- `auto.components.settings.TerminalPane.a909136b3f` — shell
+- `auto.components.settings.TerminalWindowSection.fb8bb4eb1f` — Cyan
+- `auto.components.settings.TerminalWindowSection.d5e92fcd94` — Magenta
+- `auto.components.settings.cli.source.control.integration.cards.a47f71e357` — CLI.
+- `auto.components.settings.cli.source.control.integration.cards.2a6b359e75` — glab
+- `auto.components.settings.cli.source.control.integration.cards.6b2cfb52b4` — gh
+- `auto.components.settings.token.source.control.integration.cards.709057ad91` — ORCA_GITEA_API_BASE_URL
+- `auto.components.settings.token.source.control.integration.cards.6d5c2a3005` — ORCA_GITEA_TOKEN
+- `auto.components.settings.token.source.control.integration.cards.186a6689df` — ORCA_AZURE_DEVOPS_API_BASE_URL
+- `auto.components.settings.token.source.control.integration.cards.fbfd237f5e` — ORCA_AZURE_DEVOPS_ACCESS_TOKEN
+- `auto.components.settings.token.source.control.integration.cards.48842720d2` — ORCA_AZURE_DEVOPS_TOKEN
+- `auto.components.settings.SourceControlActionRepoOverrideNote.agent` — Agent
+- `auto.components.settings.SourceControlActionRepoOverrideNote.recipe` — Recipe
+- `auto.components.settings.MobilePairingConnectionOptions.localTitle` — LAN
+- `auto.components.settings.ReleaseBuildPicker.build` — Build
+- `auto.components.settings.artifacts.keywordMarkdown` — Markdown
+- `auto.components.settings.orcaAccount.keywordRelay` — relay
+- `auto.components.settings.automations.keywordAgent` — agent
+- `auto.components.settings.AgentAwakeSetting.auto` — Agent
+- `auto.components.settings.shareSkills.keywordBundle` — bundle
+- `auto.components.settings.SettingsHostScopePicker.label` — Host
+- `auto.components.settings.wslHostsExperimental.keywordWsl` — wsl
+- `auto.components.settings.wslHostsExperimental.keywordLinux` — linux
+- `auto.components.settings.wslHostsExperimental.keywordDistro` — distro
+- `auto.components.settings.recoverServer.host` — Host
+- `auto.components.settings.AppearanceInterfaceSection.pluginIconTheme.builtIn` — Built-in
+- `auto.components.right.sidebar.PortsPanel.4eb801ce93` — dev-server
+- `auto.components.right.sidebar.PortsPanel.17bea6e391` — localhost
+- `auto.components.right.sidebar.PortsPanel.c7b4702b7b` — Workspace
+- `auto.components.right.sidebar.PortsPanel.57d930fa45` — PID
+- `auto.components.right.sidebar.PortsPanel.0f1d8cd324` — Bind
+- `auto.components.right.sidebar.PortsPanel.d41a8241ec` — Port
+- `auto.components.right.sidebar.SourceControl.e64a632456` — main
+- `auto.components.right.sidebar.SourceControl.94c42b252e` — MD
+- `auto.components.right.sidebar.SourceControl.e8a1c4b203` — vs
+- `auto.components.right.sidebar.SourceControlAgentActionDialogForm.15c5d85706` — Agent
+- `auto.components.right.sidebar.SourceControlTextGenerationDialogForm.9c14186dd2` — Agent
+- `auto.components.right.sidebar.checks.panel.content.2ba0a32bdd` — bot
+- `auto.components.right.sidebar.index.8bc2bbc3a0` — Explorer
+- `auto.components.right.sidebar.source.control.dropdown.items.fastForward` — Fast-forward
+- `auto.components.right.sidebar.source.control.branch.line.total.chip.7a04c6f8b3` — Generated
+- `auto.components.right.sidebar.source.control.content.status.8deb86bbec` — base
+- `auto.components.right.sidebar.AiVaultPanelControls.agent` — Agent
+- `auto.components.right.sidebar.AiVaultPanelControls.workspaceScope` — Workspace
+- `auto.components.right.sidebar.AiVaultPanelControls.host` — Host
+- `auto.components.right.sidebar.AiVaultSessionDetails.agentRole` — Agent
+- `auto.components.right.sidebar.AiVaultSessionDetails.worktree` — Worktree
+- `auto.components.right.sidebar.AiVaultSessionDetails.prompt` — Prompt
+- `auto.components.right.sidebar.AiVaultSessionRow.agentRole` — Agent
+- `auto.components.repo.repo.icon.b1b8d99fc4` — AI
+- `auto.components.repo.repo.icon.b5fac337aa` — Compute
+- `auto.components.repo.repo.icon.d37b4e2641` — Server
+- `auto.components.repo.repo.icon.3c5a593bc8` — Web
+- `auto.components.repo.repo.icon.07012dc113` — Agent
+- `auto.components.repo.repo.icon.3eba7387ab` — Terminal
+- `auto.components.pet.pet.models.7433516faf` — Gremlin
+- `auto.components.pet.pet.models.2528586aa7` — Claudino
+- `auto.components.onboarding.WindowsTerminalStep.powerShell` — PowerShell
+- `auto.components.new.workspace.SmartWorkspaceNameField.b3c60c2b7c` — Smart
+- `auto.components.new.workspace.SmartWorkspaceNameField.emoji` — Emoji
+- `auto.components.mobile.slides.HomeSlide.a7d9e2c44d` — 7d
+- `auto.components.mobile.slides.HomeSlide.a3d5476811` — 5h
+- `auto.components.mobile.slides.TerminalSlide.1d448b69f7` — PASS
+- `auto.components.mobile.slides.TerminalSlide.21b67dfc92` — Bash
+- `auto.components.mobile.slides.TerminalSlide.6d4ebd5833` — Edit
+- `auto.components.mobile.slides.TerminalSlide.80cc356591` — Read
+- `auto.components.mobile.slides.TerminalSlide.2c10d43745` — claude
+- `auto.components.mobile.slides.TerminalSlide.da121ba48d` — PLAN.md
+- `auto.components.mobile.slides.TerminalSlide.e4befee569` — shell
+- `auto.components.mobile.slides.WorktreeListSlide.22971156df` — Repo
+- `auto.components.feature.wall.AiCommitPrSettingsCard.29d119fe95` — Agent
+- `auto.components.feature.wall.BrowserAnimatedVisual.25f15c2219` — Pro
+- `auto.components.feature.wall.BrowserAnimatedVisual.59ae327405` — Starter
+- `auto.components.feature.wall.FeatureWallRail.7593d15f94` — Workflows
+- `auto.components.feature.wall.ReviewPRViewAnimatedVisual.c2062da7ec` — stderr
+- `auto.components.feature.wall.ReviewPRViewAnimatedVisual.25f6838e43` — lint
+- `auto.components.feature.wall.ReviewPRViewAnimatedVisual.2ef0b97954` — typecheck
+- `auto.components.feature.wall.ReviewPRViewAnimatedVisual.d340c052fb` — verify
+- `auto.components.feature.wall.ReviewPRViewAnimatedVisual.6e3f5223c5` — Explorer
+- `auto.components.feature.wall.ReviewPRViewAnimatedVisual.ab2901bce6` — Checks
+- `auto.components.feature.wall.ReviewShipAnimatedVisual.3b9b96d6a6` — main
+- `auto.components.feature.wall.WorkbenchAnimatedVisual.99f5224f1e` — Edit
+- `auto.components.feature.wall.WorkbenchAnimatedVisual.17cfdc3344` — Grep
+- `auto.components.feature.wall.WorkbenchAnimatedVisual.9923847785` — Read
+- `auto.components.feature.wall.WorkbenchAnimatedVisual.000106adfe` — claude
+- `auto.components.feature.wall.WorkbenchAnimatedVisual.623881d72e` — checkout.spec.ts
+- `auto.components.feature.wall.WorkbenchAnimatedVisual.defe550fe2` — login.spec.ts
+- `auto.components.feature.tips.FeatureTipsModal.298301b7a0` — worktree
+- `auto.components.editor.EditorViewToggle.b3410cd5e0` — Notebook
+- `auto.components.editor.IpynbViewer.3e4cbf15ea` — Raw
+- `auto.components.editor.IpynbViewer.1833dbbc43` — Markdown
+- `auto.components.editor.IpynbViewer.7005960d73` — Code
+- `auto.components.editor.MarkdownTemplatePicker.22cd94426f` — untitled.md
+- `auto.components.editor.RichMarkdownCodeBlock.5ef5605cb7` — XML
+- `auto.components.editor.RichMarkdownCodeBlock.3009f722b9` — SQL
+- `auto.components.editor.RichMarkdownCodeBlock.d01f55be57` — Shell
+- `auto.components.editor.RichMarkdownCodeBlock.5af8251002` — SCSS
+- `auto.components.editor.RichMarkdownCodeBlock.983b9576b4` — Markdown
+- `auto.components.editor.RichMarkdownCodeBlock.706fd85738` — GraphQL
+- `auto.components.editor.RichMarkdownCodeBlock.4227cf50fe` — Bash
+- `auto.components.editor.RichMarkdownSlashMenu.groupMedia` — Media
+- `auto.components.editor.RichMarkdownToolbar.f97031be09` — Checklist
+- `auto.components.editor.UntitledFileRenameDialog.2d7d39dc63` — .md
+- `auto.components.editor.rich.markdown.slash.commands.8a30cbaeca` — Emoji
+- `auto.components.editor.PluginBytesCustomEditorSurface.retry` — Retry
+- `auto.components.browser.pane.BrowserPane.devToolsTitle` — DevTools
+- `auto.components.browser.webauthn.account.fallback` — Passkey
+- `auto.components.automations.AutomationDetail.host` — Host
+- `auto.components.automations.AutomationDetail.2df8970cd5` — Agent
+- `auto.components.automations.AutomationDetail.e353ab9516` — Precheck
+- `auto.components.automations.AutomationDetail.620b22145e` — Grace
+- `auto.components.automations.AutomationDetail.18763ded26` — Schedule
+- `auto.components.automations.AutomationEditorDialog.57b722cbba` — Agent
+- `auto.components.automations.AutomationEditorDialog.a2e688226d` — Worktree
+- `auto.components.automations.AutomationEditorDialog.b28b140eaf` — Workspace
+- `auto.components.automations.AutomationEditorDialog.058c23cb3f` — Prompt
+- `auto.components.automations.AutomationEditorDialog.c4b19094c2` — Schedule
+- `auto.components.automations.AutomationMissedRunGraceField.fc089e5fde` — Grace
+- `auto.components.automations.AutomationPrecheckFields.c2a762a180` — Precheck
+- `auto.components.automations.AutomationRunHistory.149c0b49c7` — Workspace
+- `auto.components.automations.AutomationsPage.tableHost` — Host
+- `auto.components.automations.ExternalAutomationManagers.5524365227` — OpenClaw
+- `auto.components.automations.AutomationListFilterMenu.agent` — Agent
+- `auto.components.automations.createDestination.label` — Host
+- `auto.components.automations.AutomationRunsDashboard.host` — Host
+- `auto.components.automations.AutomationRunsDashboard.local` — Local
+- `auto.components.automations.AutomationRunsDashboard.remote` — Remote
+- `auto.components.automations.externalDisplay.local` — Local
+- `auto.components.activity.ActivityPrototypePage.f6396e1f85` — Agent
+- `auto.components.activity.ActivityPrototypePage.b29191b3e0` — Worktree
+- `auto.components.activity.ActivityTitlebarControls.d6a8de3934` — agents
+- `auto.components.activity.ActivityThreadHoverCard.workspace` — Workspace
+- `auto.components.activity.ActivityThreadContextMenu.agentSection` — Agent
+- `auto.components.jira.connect.dialog.bc7a831773` — Self-hosted
+- `auto.components.jira.connect.dialog.be9eba0a1b` — username
+- `auto.components.pluginCatalog.PluginCatalogLayout.updates` — Updates
+- `auto.components.pluginCatalog.PluginListRow.official` — Official
+- `auto.components.artifacts.typeMarkdown` — Markdown
+- `auto.components.browserPane.sitePermission.label.camera` — Camera
+- `auto.components.TaskPageJiraSavedFilters.42ce360813` — JQL
+- `auto.components.plugins.PluginCatalogLinkDialog.cancel` — Cancel
+- `auto.i18n.hostedReview.copy.f0a4b8c2d1` — PR
+- `auto.i18n.hostedReview.copy.c4e8f1a2b9` — MR
+- `auto.main.window.editableContextMenu.checklist` — Checklist
+- `components.native-chat.composer.skillScopePlugin` — Plugin
+- `components.native-chat.composer.model` — Model
+- `components.native-chat.composer.optionValueShort.minimal` — Min
+- `components.native-chat.composer.optionValueShort.medium` — Med
+- `components.native-chat.composer.optionValueShort.xhigh` — XHigh
+- `components.native-chat.tool.row.subagent` — Subagent
+- `components.native-chat.backgroundTasks.groupShell` — Shell
+- `components.native-chat.subagents.unnamed` — Subagent
+- `components.native-chat.rewind.confirm` — Rewind
+- `components.native-chat.contextUsage.title` — Context
+- `components.native-chat.githubPeek.retry` — Retry
+- `components.workspace.cleanup.browse.facet.git` — Git
+- `components.workspace.cleanup.browse.facet.agent` — Agent
+- `components.workspace.cleanup.browse.reviewProvider` — Provider
+- `components.workspace.cleanup.browse.host` — Host
+- `components.workspace.cleanup.browse.sort.host` — Host
+- `components.workspace.cleanup.browse.sort.agent` — Agent
+- `components.workspace.cleanup.browse.sort.git` — Git
+- `components.workspace.cleanup.browse.sort.ticket` — Ticket
+- `components.workspace.cleanup.browse.ticket.issue` — Issue
+- `components.workspace.cleanup.browse.chip.kind.agent` — Agent
+- `components.workspace.cleanup.browse.chip.kind.git` — Git
+- `components.workspace.cleanup.browse.chip.kind.reviewProvider` — Provider
+- `components.workspace.cleanup.browse.chip.kind.ticket` — Ticket
+- `components.workspace.cleanup.browse.chip.kind.host` — Host
+- `components.workspace.cleanup.browse.chip.kind.repo` — Repo
+- `components.workspace.cleanup.browse.chip.kind.blocker` — Blocker
+- `components.workspace.cleanup.candidateRow.gitChip.clean` — Clean
+- `components.workspace.cleanup.candidateRow.gitChip.dirty` — Dirty
+- `components.workspace.cleanup.candidateRow.gitChip.unpushed` — Unpushed
+- `components.agentSessionContinuation.agent` — Agent
+- `components.settings.nativeChat.shellEnvSearchPath` — PATH
+- `components.settings.nativeChat.shellEnvSearchProxy` — proxy
+- `components.settings.nativeChat.linkPreviewsSearchUnfurl` — unfurl
+- `components.RepositoryJiraProjectSection.keywordJira` — jira
+- `dashboardPopout.title` — Agents
+- `featureTips.eyebrowTip` — Tip
+- `notifications.workspaceFallback` — workspace
+- `terminal.codexSharedSettingsNotice.dismiss` — Dismiss
+- `accounts.antigravity.keyword.antigravity` — antigravity
+- `accounts.antigravity.keyword.agy` — agy
+- `accounts.antigravity.keyword.google` — google
+- `workspace.links.terminal` — Terminal
+- `tabHoverCard.terminal` — Terminal
+- `resourceManager.pty.incarnation` — Incarnation
+- `resourceManager.pty.workspace` — Workspace
+- `resourceManager.pty.pid` — PID
+- `resourceManager.ptys` — PTYs
+- `keybindings.group.chat` — Chat
+- `profileState.writeFailure.okButton` — OK
+- `wslDriveProject.label` — Git
+- `wslDriveUnc.label` — Location
+- `wslDriveUnc.cancel` — Cancel
+- `runtime.health.local` — Local
+- `featureWall.workflows.workspaces.title` — Workspaces
+- `featureWall.workflows.tasks.title` — Tasks
+- `featureWall.workflows.agents.title` — Agents
+- `featureWall.workflows.workbench.title` — Workbench
+- `featureWall.steps.statuses.name` — Visibility
+- `featureWall.steps.orchestration.name` — Orchestration
+- `featureWall.steps.usage.name` — Usage
+- `featureWall.steps.terminal.name` — Terminal
+- `featureWall.steps.editor.name` — Editor
+- `featureWall.steps.browser.name` — Browser
+- `featureWall.steps.notes.name` — Notes
+- `featureWall.tiles.tile10.title` — Keyboard-native
+
+## Một từ — xem xét từng key (nhiều cái là keyword/enum) — 41 key
+
+- `browser.viewport.laptop` — Laptop — 1024 × 768
+- `auto.web.WebConnect.4a4c017be1` — Endpoint:
+- `auto.store.slices.store.test.helpers.b9a8117c33` — Terminal 1
+- `auto.components.GitHubItemDialog.f41ec96c13` — + Label
+- `auto.components.GitHubItemDialog.485609c4f2` — check #
+- `auto.components.NewWorkspaceComposerCard.branchNamePlaceholder` — feature/my-branch
+- `auto.components.PullRequestPage.bc215fea4d` — + Label
+- `auto.components.PullRequestPage.f01bf79a79` — check #
+- `auto.components.stats.ClaudeUsagePane.7765a4c3e1` — n/a
+- `auto.components.stats.share.card.utils.19f4b4dc75` — github.com/stablyai/orca
+- `auto.components.stats.UsageBreakdownSection.7765a4c3e1` — n/a
+- `auto.components.skills.SkillInstallManagementDialog.176fef9516` — · SSH
+- `auto.components.skills.SkillInstallTargetFields.85d85880df` — · SSH
+- `auto.components.sidebar.AddRemoteHostDialog.sshHostPlaceholder` — deploy@server:22
+- `auto.components.settings.AccountsPane.ae3b21eb6c` — opencode.ai/workspace/wrk_…/go
+- `auto.components.settings.BaseRefPicker.b468f46726` — upstream/main
+- `auto.components.settings.McpConfigFileRow.b145eb6009` — env:
+- `auto.components.settings.TerminalPane.96be03b8eb` — PowerShell 7+
+- `auto.components.settings.bitbucket.credentials.dialog.emailPlaceholder` — you@example.com
+- `auto.components.right.sidebar.checks.panel.content.2dd5ddabc4` — workflow #
+- `auto.components.right.sidebar.checks.panel.content.aa8494ae3c` — check #
+- `auto.components.right.sidebar.AiVaultSessionRow.subagentCountSingular` — 1 subagent
+- `auto.components.mobile.slides.HomeSlide.25d6e8a491` — feat/mobile-page
+- `auto.components.mobile.slides.TerminalSlide.4b3666f9a9` — src/cache/worktree-cache.test.ts
+- `auto.components.mobile.slides.TerminalSlide.d39445686a` — src/transport/host-store.test.ts
+- `auto.components.mobile.slides.TerminalSlide.336c0e070e` — mobile/orca-mobile-sidebar-mock-v3.html
+- `auto.components.mobile.slides.TerminalSlide.e0f98be657` — orca/feat-mobile-page
+- `auto.components.mobile.slides.TerminalSlide.2defc05141` — dev@mac
+- `auto.components.mobile.slides.TerminalSlide.8432787c4e` — feat/mobile-page
+- `auto.components.feature.wall.BrowserAnimatedVisual.7da6eed7bf` — localhost:3000
+- `auto.components.feature.wall.BrowserAnimatedVisual.04096318ab` — Terminal 1
+- `auto.components.feature.wall.WorkbenchAnimatedVisual.b85eab49dd` — src/auth/session.ts
+- `auto.components.feature.wall.agents.orchestration.StatusesPage.2f549fc0ba` — src/auth/session.test.ts
+- `auto.components.editor.CheckRunDetailsPanel.aa8494ae3c` — check #
+- `auto.components.editor.CheckRunDetailsPanel.2dd5ddabc4` — workflow #
+- `auto.components.browser.pane.GrabConfirmationSheet.d053db279d` — role=
+- `auto.components.automations.AutomationRunHistory.a00e38d1a3` — n/a
+- `auto.components.automations.usage.costUnavailable` — n/a
+- `auto.components.jira.connect.dialog.e91b9a4073` — you@example.com
+- `components.native-chat.githubPeek.oneComment` — 1 comment
+- `aiVault.antigravity2ToCli` — 2.0 → CLI
+
+## Hai từ — xem xét từng key — 123 key
+
+- `sidebar.agentSummary.state.notReporting` — not reporting
+- `sidebar.agentSummary.state.needsAttention` — needs attention
+- `browser.viewport.laptop-l` — Laptop L — 1440 × 900
+- `browser.cookieImport.errors.notAuthorized` — Not authorized
+- `settings.appearance.menuBarIcon.keyword.statusItem` — status item
+- `settings.followSymlinkedDirectoriesKeywords.quickOpen` — quick open
+- `settings.followSymlinkedDirectoriesKeywords.fileExplorer` — file explorer
+- `settings.general.openInMenu.keyword.devinDesktop` — devin desktop
+- `auto.lib.agent.catalog.4e63c7b956` — Rovo Dev
+- `auto.lib.agent.catalog.bee242fe3d` — Qwen Code
+- `auto.lib.agent.catalog.ca73055bd0` — Mistral Vibe
+- `auto.lib.agent.catalog.1f8a19e9ad` — Autohand Code
+- `auto.lib.agent.catalog.dsh_label` — DeepSeek Harness
+- `auto.lib.agent.catalog.d443a47995` — Prime Agent
+- `auto.lib.agent.catalog.mimo_code_label` — MiMo Code
+- `auto.lib.ensure.simulator.tab.372d21d428` — Mobile Emulator
+- `auto.lib.codex.session.restart.4bd4a3a9c7` — System default
+- `auto.hooks.useSettingsNavigationMetadata.1e761cff2b` — Mobile Emulator
+- `auto.hooks.useSettingsNavigationMetadata.b35e92364b` — Computer Use
+- `auto.components.GitHubItemDialog.a2495e4784` — Pull request
+- `auto.components.GitHubItemDialog.bd7be7b1fd` — comment L
+- `auto.components.GitLabItemDialog.3c0b6ccca7` — bug, backend
+- `auto.components.GitLabItemDialog.3a051b8ade` — Work item
+- `auto.components.JiraIssueWorkspace.0f3c07a901` — backend, bug
+- `auto.components.NewWorkspaceComposerCard.326a578923` — orca.yaml + local
+- `auto.components.PullRequestPage.1939d0f663` — Pull request
+- `auto.components.notification.sound.options.80f7cc95b3` — Two Tone
+- `auto.components.tab.bar.tab.create.menu.options.bbaf4f85a4` — mobile emulator
+- `auto.components.tab.bar.tab.create.menu.options.1baeb07c17` — ios simulator
+- `auto.components.status.bar.StatusBar.d1e1a7a6bf` — Resource Manager
+- `auto.components.status.bar.StatusBar.c676918adc` — System default
+- `auto.components.stats.ClaudeUsageDailyChart.2a6360c7cb` — Cache write
+- `auto.components.stats.ClaudeUsageDailyChart.61c58f8976` — Cache read
+- `auto.components.stats.ClaudeUsagePane.b786fb4a70` — Cache write
+- `auto.components.stats.ClaudeUsagePane.268cf0af51` — Cache read
+- `auto.components.stats.CodexUsageDailyChart.c646e1783c` — Cached input
+- `auto.components.stats.CodexUsagePane.6e18146e9b` — Reasoning output
+- `auto.components.stats.CodexUsagePane.a9ac0f423a` — Cached input
+- `auto.components.stats.OpenCodeUsagePane.5a65d68b77` — Reasoning output
+- `auto.components.stats.OpenCodeUsagePane.603504ee3b` — Cached input
+- `auto.components.stats.share.card.utils.4ee864629a` — Cached input
+- `auto.components.stats.share.card.utils.9d166247ee` — Cache write
+- `auto.components.stats.share.card.utils.cc28cb965e` — Cache read
+- `auto.components.sidebar.OrcaYamlTrustDialog.vmRecipe` — VM recipe
+- `auto.components.sidebar.WorktreeDeveloperMenu.parkTerminal` — Park terminal
+- `auto.components.settings.AccountsPane.f2a265f8c7` — System default
+- `auto.components.settings.AppearancePane.d496901cd0` — File Explorer
+- `auto.components.settings.BrowserPane.2d66a6efb5` — Session & Cookies
+- `auto.components.settings.BrowserPane.113cd2dc9b` — Session & Cookies
+- `auto.components.settings.CommitMessageAiPane.fdee745b87` — merge request
+- `auto.components.settings.CommitMessageAiPane.b388463881` — pull request
+- `auto.components.settings.CommitMessageAiPane.19e10a12bb` — hosted review
+- `auto.components.settings.AdvancedNetworkSettingsSection.3e431564b5` — localhost, 127.0.0.1, *.internal
+- `auto.components.settings.ManageSessionsSection.d1b80fd5cd` — Manage Sessions
+- `auto.components.settings.Settings.c9841721cb` — Computer Use
+- `auto.components.settings.SourceControlAiActionRecipeDefaults.7ab1437a12` — pull request
+- `auto.components.settings.TerminalPane.f58cb71f53` — --rcfile /path/to/rcfile
+- `auto.components.settings.MobilePairingConnectionOptions.relayCell` — Relay cell
+- `auto.components.settings.bitbucket.credentials.dialog.modeToken` — Access token
+- `auto.components.settings.bitbucket.credentials.dialog.accessToken` — Access token
+- `auto.components.settings.bitbucket.integration.card.authModeToken` — Access token
+- `auto.components.settings.AppearanceInterfaceSection.pluginIconTheme.title` — Icon theme
+- `auto.components.settings.AppearanceInterfaceSection.lightTheme` — Light theme
+- `auto.components.settings.AppearanceInterfaceSection.darkTheme` — Dark theme
+- `auto.components.right.sidebar.SourceControlTextGenerationDialogForm.551ffd111b` — --model sonnet
+- `auto.components.right.sidebar.index.0314901467` — Source Control
+- `auto.components.mobile.slides.HomeSlide.d33d7a9c29` — orca  ·  feat/mobile-page
+- `auto.components.mobile.slides.HomeSlide.19c212e25e` — MacBook Pro
+- `auto.components.mobile.slides.WorktreeListSlide.b4271864bd` — MacBook Pro
+- `auto.components.gitlab.gitlab.rate.limit.display.0a891e8935` — REST API
+- `auto.components.feature.wall.AgentCapabilitiesSetupAction.362a07517d` — Computer Use
+- `auto.components.feature.wall.AgentCapabilitiesSetupAction.ac07f8887f` — Agent Orchestration
+- `auto.components.feature.wall.BrowserAnimatedVisual.051c97d15a` — .pp-card[data-card="starter"] .pp-cta
+- `auto.components.feature.wall.EditorAnimatedVisual.cda56c5915` — notes / launch-plan.md
+- `auto.components.feature.wall.ReviewPRViewAnimatedVisual.d7f80060ca` — Source Control
+- `auto.components.feature.wall.WorkbenchAnimatedVisual.0d93c298a7` — throw src/auth
+- `auto.components.feature.wall.agents.orchestration.UsagePage.64265cb295` — 29% used 5h
+- `auto.components.editor.ConflictComponents.28e7db4a90` — Source Control
+- `auto.components.editor.EditorContent.e4b074749d` — Front Matter
+- `auto.components.editor.EditorViewToggle.aff15f94f5` — Rich Editor
+- `auto.components.editor.MarkdownPreview.2b2b31382c` — Front Matter
+- `auto.components.editor.PluginFileTypeSuggestion.view` — View plugin
+- `auto.components.editor.PluginFileTypeSuggestion.notNow` — Not now
+- `auto.components.editor.PluginCustomEditorFrame.loading` — Loading editor…
+- `auto.components.cmd.j.quick.actions.verbs.browserRight` — browser right
+- `auto.components.cmd.j.quick.actions.verbs.splitBrowser` — split browser
+- `auto.components.cmd.j.quick.actions.verbs.browserSplit` — browser split
+- `auto.components.browser.pane.annotate.browser.page.annotation.tray.copyFeedback` — Copy feedback
+- `auto.components.pluginCatalog.PluginCatalogLayout.clearSearch` — Clear search
+- `auto.components.pluginCatalog.PluginCatalogLayout.notInstalled` — Not installed
+- `auto.components.plugins.PluginCatalogLinkDialog.add` — Add catalog
+- `auto.i18n.hostedReview.copy.e9f3a7b1c0` — pull request
+- `auto.i18n.hostedReview.copy.d8e2f6a0b9` — Pull Request
+- `auto.i18n.hostedReview.copy.b3d7e0f1a8` — merge request
+- `auto.i18n.hostedReview.copy.a2c6d9e0f7` — Merge Request
+- `components.native-chat.backgroundTasks.agent` — Background agent
+- `components.native-chat.backgroundTasks.workflow` — Background workflow
+- `components.native-chat.backgroundTasks.command` — Background command
+- `components.native-chat.backgroundTasks.monitor` — Background monitor
+- `components.native-chat.backgroundTasks.task` — Background task
+- `components.native-chat.agentMessage.showMore` — Show more
+- `components.native-chat.githubPeek.unavailable` — Preview unavailable.
+- `components.workspace.cleanup.browse.reviewPresence` — PR / MR
+- `components.workspace.cleanup.browse.ticket.workItem` — Work item
+- `components.settings.nativeChat.linkPreviewsTitle` — Link previews
+- `components.settings.nativeChat.linkPreviewsSearchHover` — hover card
+- `featureTips.gotIt` — Got it
+- `aiVault.antigravityIdeToCli` — IDE → CLI
+- `accounts.claude.systemDefault` — System default
+- `accounts.managedData.system` — System default
+- `workspace.branchChoice.automaticName` — Automatic name
+- `keybindings.title.viewPlugins` — Open Plugins
+- `keybindings.group.fileExplorer` — File Explorer
+- `featureWall.workflows.review.title` — Code Review
+- `featureWall.steps.statuses.subtitle` — Agent Visibility
+- `featureWall.steps.notes.subtitle` — Notes & diffs
+- `featureWall.steps.prView.name` — PR checks
+- `featureWall.tiles.tile06.title` — Remote workspaces
+- `setupScriptPrompt.candidateLabels.packageManager` — package manager
+- `ephemeralVm.errors.provisionCancelled` — Provisioning cancelled.
+- `ephemeralVm.errors.destroyFailed` — Destroy failed.
+- `pet.defaultLabels.image` — Custom pet
+- `pet.defaultLabels.bundle` — Pet bundle
+
+## CHƯA PHÂN LOẠI — cần con người quyết: dịch hay bổ sung rule vào dump-untranslated.mjs — 366 key
+
+- `csv.error.binaryData` — This file contains binary data.
+- `csv.error.cellMissing` — The selected CSV row or column no longer exists.
+- `csv.error.rowMissing` — The selected CSV row no longer exists.
+- `csv.error.tableEditBudget` — Table edits must stay below 1 MiB. Use Source for larger changes.
+- `csv.error.pasteExceedsTable` — Paste exceeds the table. Add rows or columns first.
+- `sidebar.createProject.errors.nameEmpty` — Name cannot be empty
+- `sidebar.createProject.errors.nameInvalid` — Name cannot contain slashes or be "." / ".."
+- `sidebar.createProject.errors.parentRequired` — Parent directory is required
+- `sidebar.createProject.errors.parentNotAbsolute` — Parent directory must be an absolute path
+- `sidebar.createProject.errors.gitIdentityMissing` — Git author identity is not configured. Run `git config --global user.name "Your Name"` and `git config --global user.email "you@example.com"`, then try again.
+- `sidebar.wslHosts.statusDetails.guestUnanswered` — The distro is running but didn’t answer Orca’s check.
+- `sidebar.wslHosts.statusDetails.serviceUnconfirmed` — The WSL service did not confirm whether the distro runs.
+- `browser.cookieImport.errors.profileNotFound` — Session profile not found.
+- `browser.cookieImport.errors.invalidBrowserProfile` — Invalid browser profile name.
+- `browser.cookieImport.errors.browserNotFound` — Browser not found on this system.
+- `browser.cookieImport.errors.fileUnreadable` — Could not read the selected file.
+- `browser.cookieImport.errors.fileInvalidJson` — File is not valid JSON.
+- `browser.cookieImport.errors.fileNotArray` — Expected a JSON array of cookie objects.
+- `browser.cookieImport.errors.fileEmpty` — Cookie file is empty.
+- `browser.cookieImport.errors.connectionEnded` — The connection to this server ended during the import. Reconnect and try again.
+- `browser.cookieImport.errors.serverRepaired` — This server was re-paired during the import. Try again.
+- `editor.pdfExport.errors.noContent` — No content to export
+- `settings.chat.names.useChatAgent` — Use chat agent
+- `settings.chat.names.configuredCliAgentUnknown` — Use configured CLI agent
+- `settings.chat.names.clearCliArguments` — Clear CLI arguments to use each chat’s agent.
+- `settings.chat.names.cliArgumentsPlaceholder` — Optional arguments for a configured CLI naming agent
+- `settings.terminal.limit.label` — Maximum running terminals
+- `settings.terminal.limit.description` — Limits your running terminals across projects on this host.
+- `settings.terminal.limit.shared` — Shared with other terminal apps. This is total capacity, not free slots.
+- `settings.terminal.limit.disconnected` — This host is disconnected. Reconnect to view or change its terminal limit.
+- `settings.terminal.limit.unsupported` — This host’s terminal service does not support changing this limit yet.
+- `settings.terminal.limit.environment` — This Orca instance has a terminal limit set by its environment. Remove the override on this host to edit it here.
+- `settings.terminal.limit.failed` — Couldn’t confirm the terminal limit. Try again.
+- `settings.agents.codexHistorySharing.title` — Share Codex history across accounts
+- `settings.agents.codexHistorySharing.description` — Lets each Codex account, and your own ~/.codex, resume conversations started on the others. Turn off to keep every account's history separate. Turning it off removes nothing already shared.
+- `settings.shortcuts.validation.invalidFormat` — Use a shortcut like Ctrl+Shift+P or Cmd+K.
+- `settings.shortcuts.validation.mixedModifiers` — Use either Mod or a platform-specific modifier, not both.
+- `settings.shortcuts.validation.modifierRequired` — Include at least one modifier key.
+- `settings.shortcuts.validation.digitKeyRequired` — Pick a number key 1–9 with a modifier, like Cmd+1 or Ctrl+1.
+- `settings.shortcuts.validation.modifierOnly` — Press a key, not only a modifier.
+- `settings.shortcuts.validation.invalidBindingValue` — Use a string, string array, null, or false.
+- `settings.shortcuts.validation.stringArrayRequired` — Use a string array.
+- `settings.shortcuts.validation.fileNotObject` — Keybindings file must contain a JSON object.
+- `settings.shortcuts.diagnostics.platformsNotObject` — platforms must be an object with darwin, linux, or win32 sections.
+- `settings.network.proxyUrlErrors.tooLong` — Proxy URL is too long.
+- `settings.network.proxyUrlErrors.unsupportedProtocol` — Use an http, https, socks, socks4, or socks5 proxy URL.
+- `settings.network.proxyUrlErrors.missingHost` — Proxy URL must include a host.
+- `settings.voice.modelDescriptions.parakeetV3` — Highest accuracy for 25 European languages. Punctuation, capitalization, and word-level timestamps.
+- `settings.voice.modelDescriptions.zipformerBilingual` — Chinese + English with code-switching. Low-latency real-time streaming.
+- `settings.voice.modelDescriptions.zipformerStreamingZh` — Chinese only. Ultra-lightweight 14M-param model, ideal for low-resource devices.
+- `settings.voice.modelDescriptions.zipformerStreamingKo` — Korean only. Low-latency real-time streaming.
+- `settings.voice.modelDescriptions.parakeetJa` — Japanese only. Trained on 35k+ hours of natural speech. Punctuation included.
+- `settings.voice.modelDescriptions.whisperTiny` — 90+ languages. Lower accuracy than Parakeet but broadest language coverage.
+- `settings.voice.modelDescriptions.senseVoice` — Chinese, English, Japanese, Korean, and Cantonese with automatic language detection.
+- `settings.voice.modelDescriptions.gpt4oMiniTranscribe` — Cloud transcription with strong accuracy and low cost. Requires an OpenAI API key.
+- `settings.voice.modelDescriptions.gpt4oTranscribe` — Cloud transcription with higher accuracy. Requires an OpenAI API key.
+- `settings.diagnostics.errors.creatingDisabled` — creating review files is disabled
+- `settings.diagnostics.errors.sendingDisabled` — sending diagnostics is disabled
+- `settings.diagnostics.errors.sendingNotConfigured` — sending diagnostics is not configured for this build
+- `settings.diagnostics.errors.previewNotOpened` — open the review file before sending
+- `settings.diagnostics.errors.previewOpenFailed` — could not open review file
+- `settings.diagnostics.errors.deleteNotConfigured` — diagnostic upload endpoint is not configured for this build
+- `settings.diagnostics.errors.createFailed` — Could not create review file
+- `settings.diagnostics.errors.openFailed` — Could not open review file
+- `settings.diagnostics.errors.sendFailed` — Could not send diagnostics
+- `settings.diagnostics.errors.discardFailed` — Could not discard review file
+- `settings.diagnostics.errors.deleteFailed` — Could not delete sent diagnostics
+- `settings.repository.iconPickErrors.notPng` — Repo icons must be PNG files.
+- `settings.repository.iconPickErrors.tooLarge` — Repo icon image must be 256KB or smaller.
+- `auto.store.pluginNewFile.failed` — Couldn't create the file.
+- `auto.store.pluginInstallLink.invalid` — That plugin link isn’t valid.
+- `auto.lib.claudeAgentRowView.openParentConversation` — Open parent conversation
+- `auto.components.NewWorkspaceComposerCard.openExistingWorkspace` — Open existing workspace
+- `auto.components.workspace.cleanup.candidateRow.volatileLocalContextBlocker` — Volatile local context
+- `auto.components.sidebar.RepoScanUnavailableIndicator.wslRetained` — Showing the worktrees Orca already knew about. They refresh when Orca sees the distro running.
+- `auto.components.sidebar.RepoScanUnavailableIndicator.wslStartAndScan` — Start distro and scan
+- `auto.components.sidebar.RepoScanUnavailableIndicator.wslStartAndScanHint` — Click the icon to start the distro and scan again.
+- `auto.components.settings.RepositorySourceControlAiSection.71b003b62b` — Source Control AI
+- `auto.components.settings.SshTargetForm.2ee9bcd2e8` — server, deploy@server:2222, ssh://server
+- `auto.components.settings.AppearanceInterfaceSection.pluginIconTheme.description` — File and folder icons from an enabled plugin.
+- `auto.components.settings.AppearanceInterfaceSection.themeSlot.description` — App colors for this mode.
+- `auto.components.mobile.slides.HomeSlide.091355da3d` — M1 Mini · home
+- `auto.components.feature.wall.AgentCapabilitiesSetupAction.e638da007a` — Agent Browser Use
+- `auto.components.feature.wall.agents.orchestration.OrchestrationPage.childPr1Name` — PR 1/2: migrate users.sql
+- `auto.components.feature.wall.agents.orchestration.OrchestrationPage.childPr2Name` — PR 2/2: withSession middleware
+- `auto.components.feature.wall.FullDiskAccessSetupPrompt.c566bca278` — Full Disk Access
+- `auto.components.editor.RichMarkdownEmojiMenu.chooseEmoji` — Choose an emoji
+- `auto.components.editor.editor.save.bytesUpdateRequired` — Saving binary files here requires a newer Orca server. Update the Orca server and try again.
+- `auto.components.editor.PluginCustomEditorFrame.largeFile` — Large file — may take a moment.
+- `auto.components.editor.richMarkdownBlobImagePaste.saveFailed` — Couldn't save a pasted image beside the document. It may not load after Orca restarts.
+- `auto.components.cmd.j.quick.actions.newBrowserTabSplitRight` — New Browser Tab in Right Split
+- `auto.components.cmd.j.quick.actions.newBrowserTabSplitRightDescription` — Open a browser tab in a new split to the right.
+- `auto.components.browser.pane.annotate.browser.page.annotation.tray.includePageDetails` — Include page details
+- `auto.components.browser.pane.annotate.browser.page.annotation.tray.copyFeedbackWithPageDetails` — Copy feedback with page details
+- `auto.components.plugins.PluginCatalogLinkDialog.failed` — Couldn’t add this catalog.
+- `auto.components.plugins.list.PluginsSectionDescription.openWith` — Open anytime with
+- `components.native-chat.agentMessage.messageFromCoordinator` — Message from coordinator
+- `components.native-chat.agentMessage.taskFromCoordinator` — Task from coordinator
+- `components.native-chat.agentMessage.updateFromWorker` — Update from worker
+- `components.native-chat.sessionOptionErrors.startOnly` — This option can only be set when the session starts.
+- `components.native-chat.sessionOptionErrors.agentPickerOnly` — This option must be changed in the agent picker.
+- `components.native-chat.sessionOptionErrors.afterStartOnly` — This option is only available after the session starts.
+- `components.native-chat.sessionOptionErrors.valueRequired` — This option requires a value.
+- `components.native-chat.composerErrors.goalObjectiveMissing` — Describe the goal after /goal.
+- `components.native-chat.composerErrors.modelPickerFailed` — Could not open the model picker.
+- `components.native-chat.composerErrors.effortPickerFailed` — Could not open the effort picker.
+- `components.native-chat.webPeek.unavailable` — No preview for this page.
+- `components.settings.nativeChat.linkPreviewsToggleLabel` — Toggle link previews
+- `components.settings.nativeChat.linkPreviewsCopy` — Hovering a web link shows a preview card. Orca fetches the page to build it, so the site can see the request.
+- `featureTips.voice.title` — Dictate into any pane
+- `featureTips.voice.description` — Start voice dictation in any focused pane, then use the shortcut again to stop.
+- `featureTips.sessionSearch.title` — Search every agent session
+- `featureTips.sessionSearch.description` — Find any past conversation by what was said in it, then pick up where the agent left off.
+- `featureTips.sessionSearch.cta` — Turn on session search
+- `featureTips.orcaCli.title` — Let agents drive Orca with the Orca CLI
+- `featureTips.orcaCli.description` — Enable agents to coordinate child worktrees and communicate between worktrees.
+- `featureTips.orcaCli.cta` — Install CLI & Skills
+- `featureTips.cmdJPalette.title` — Jump to a worktree with <shortcut>
+- `featureTips.cmdJPalette.description` — Search worktrees, switch tabs, tweak settings, or spin up a new worktree, all without leaving the keyboard.
+- `sourceControl.createReviewFailure.stacked.stackGithubOnly` — Stacked pull request creation is available only for GitHub repositories.
+- `sourceControl.createReviewFailure.stacked.stackSameParent` — Choose a different parent branch before creating a stacked pull request.
+- `sourceControl.createReviewFailure.stacked.stackParentMultipleStacks` — The selected parent pull request belongs to multiple stacks.
+- `sourceControl.createReviewFailure.stacked.stackParentClosed` — The selected parent belongs to a closed stack.
+- `sourceControl.createReviewFailure.stacked.stackParentNotTop` — Choose the top pull request in the stack as the base branch before adding another layer.
+- `sourceControl.createReviewFailure.stacked.stackConflict` — The pull request already belongs to a different GitHub stack.
+- `sourceControl.createReviewFailure.stacked.stackExistingReviewOtherBase` — An open pull request already exists for this branch but does not target the selected parent branch.
+- `sourceControl.createReviewFailure.stacked.stackCreationUnconfirmed` — Pull request creation may have completed. Retry to finish stack registration.
+- `sourceControl.createReviewFailure.stacked.stackRegistrationUnavailable` — The pull request was created, but GitHub stacks are not available for this repository.
+- `sourceControl.createReviewFailure.stacked.stackRegistrationFailed` — The pull request was created, but GitHub could not add it to the stack. Retry to finish stack registration.
+- `sourceControl.createReviewFailure.baseHeadTitleRequired` — base branch, head branch, and title are required.
+- `sourceControl.textGeneration.errors.commitMessageUnparseable` — Generated commit message could not be parsed.
+- `sourceControl.textGeneration.errors.jiraSummaryEmptyAfterSanitization` — Generated summary was empty after sanitization.
+- `sourceControl.textGeneration.errors.jiraDescriptionRequired` — Description is required.
+- `sourceControl.textGeneration.errors.jiraAccountDisconnected` — Reconnect the selected Jira account on this host.
+- `sourceControl.textGeneration.errors.jiraSummaryBusyInOtherDraft` — A Jira title is already being generated in another draft.
+- `sourceControl.textGeneration.errors.stagedChangesReadFailed` — Failed to read staged changes.
+- `sourceControl.textGeneration.errors.noStagedChanges` — No staged changes to summarize.
+- `sourceControl.textGeneration.errors.noBranchChanges` — No branch changes to summarize.
+- `sourceControl.textGeneration.errors.sourceControlCustomCommandEmpty` — Custom command is empty. Add one in Settings -> Git -> Source Control AI.
+- `sourceControl.textGeneration.errors.chatNameCustomCommandEmpty` — Custom command is empty. Add one in Settings -> Chat -> Chat names.
+- `sourceControl.textGeneration.errors.planCustomCommandEmpty` — Custom command is empty. Add one in Settings → Git → AI Commit Messages.
+- `sourceControl.textGeneration.errors.kimiSessionOtherDirectory` — This Kimi session belongs to another directory. Resume it there or use a session created for this workspace.
+- `sourceControl.textGeneration.errors.kimiPromptHookBlocked` — A Kimi prompt hook blocked the request or the turn couldn't start. Review Kimi hooks and configuration before retrying.
+- `sourceControl.textGeneration.enableSourceControlAi` — Enable Source Control AI in Settings -> Git.
+- `sourceControl.textGeneration.chooseBaseBranch` — Choose a base branch before generating.
+- `sourceControl.textGeneration.savedCommitRecipeRepo` — Saved commit-message recipe for this repository.
+- `sourceControl.textGeneration.savedCommitRecipeGlobal` — Saved commit-message recipe as a global default.
+- `sourceControl.textGeneration.savedReviewRecipeRepo` — Saved hosted-review recipe for this repository.
+- `sourceControl.textGeneration.savedReviewRecipeGlobal` — Saved hosted-review recipe as a global default.
+- `sourceControl.textGeneration.savedBranchRecipeRepo` — Saved branch-name recipe for this repository.
+- `sourceControl.textGeneration.savedBranchRecipeGlobal` — Saved branch-name recipe as a global default.
+- `sourceControl.remoteError.submodule.remoteChanged` — A submodule has remote changes. Pull inside the submodule, then try again.
+- `sourceControl.remoteError.submodule.pushFailed` — A submodule could not be pushed. Resolve the submodule push error, then try again.
+- `sourceControl.remoteError.hookBlocked.lint.publish` — Publish Branch blocked — lint failed during push.
+- `sourceControl.remoteError.hookBlocked.lint.sync` — Sync blocked — lint failed during push.
+- `sourceControl.remoteError.hookBlocked.lint.forcePush` — Force Push blocked — lint failed during push.
+- `sourceControl.remoteError.hookBlocked.lint.push` — Push blocked — lint failed during push.
+- `sourceControl.remoteError.hookBlocked.prePush.publish` — Publish Branch blocked — pre-push hook failed.
+- `sourceControl.remoteError.hookBlocked.prePush.sync` — Sync blocked — pre-push hook failed.
+- `sourceControl.remoteError.hookBlocked.prePush.forcePush` — Force Push blocked — pre-push hook failed.
+- `sourceControl.remoteError.hookBlocked.prePush.push` — Push blocked — pre-push hook failed.
+- `sourceControl.remoteError.publishFailed` — Publish Branch failed. Check your remote access and try again.
+- `sourceControl.remoteError.syncFailed` — Sync failed. Check your connection and try again.
+- `sourceControl.remoteError.forcePushFailed` — Force Push failed. Check your connection and try again.
+- `sourceControl.remoteError.pushFailed` — Push failed. Check your connection and try again.
+- `sourceControl.remoteError.localChangesBlocked.rebase` — Rebase blocked — commit or stash your local changes first.
+- `sourceControl.remoteError.localChangesBlocked.fastForward` — Fast-forward blocked — commit or stash your local changes first.
+- `sourceControl.remoteError.localChangesBlocked.pull` — Pull blocked — commit or stash your local changes first.
+- `sourceControl.remoteError.operationFailed` — Remote operation failed
+- `sourceControl.remoteError.unconcludedMerge.rebase` — Rebase blocked — resolve existing conflicts first.
+- `sourceControl.remoteError.unconcludedMerge.sync` — Sync blocked — resolve existing merge conflicts first.
+- `sourceControl.remoteError.unconcludedMerge.pull` — Pull blocked — resolve existing merge conflicts first.
+- `sourceControl.remoteError.mergeConflicts.rebase` — Rebase stopped with conflicts. Resolve them in Source Control, then continue the rebase.
+- `sourceControl.remoteError.mergeConflicts.sync` — Sync stopped with merge conflicts. Resolve them in Source Control, then commit the merge.
+- `sourceControl.remoteError.mergeConflicts.pull` — Pull stopped with merge conflicts. Resolve them in Source Control, then commit the merge.
+- `sourceControl.remoteError.syncRemoteMoved` — Sync failed — remote moved while syncing. Try again.
+- `sourceControl.remoteError.forcePushRejected` — Force push rejected — remote changed since last fetch. Fetch first, then try again.
+- `sourceControl.remoteError.pushRejected` — Push rejected — remote has changes. Pull first, then try again.
+- `sourceControl.remoteError.untrackedFilesBlocked.rebase` — Rebase blocked — move, remove, or add untracked files first.
+- `sourceControl.remoteError.untrackedFilesBlocked.fastForward` — Fast-forward blocked — move, remove, or add untracked files first.
+- `sourceControl.remoteError.untrackedFilesBlocked.pull` — Pull blocked — move, remove, or add untracked files first.
+- `sourceControl.remoteError.authenticationFailed` — Authentication failed. Check your remote credentials.
+- `sourceControl.submodule.worktreeOnlyLabel` — Stage inside submodule
+- `sourceControl.submodule.loading` — Loading submodule changes…
+- `sourceControl.submodule.empty` — No changes in submodule
+- `sourceControl.submodule.loadFailed` — Failed to load submodule changes
+- `aiVault.scanIssues.issuesOmitted` — Additional scan issues were omitted.
+- `aiVault.scanIssues.sessionMetadataUnreadable` — Session metadata could not be read this scan.
+- `aiVault.scanIssues.openCodeWslReaderPreparing` — Preparing the WSL SQLite reader. Refresh Vault after setup finishes.
+- `aiVault.scanIssues.openCodeWslReaderNotPrepared` — The WSL SQLite reader is not prepared. Refresh Vault to retry.
+- `aiVault.scanIssues.scannerPaused` — Session scanning paused after repeated failures. Refresh to try again.
+- `aiVault.scanIssues.scannerBusy` — Too many session scans in flight. Wait a moment, then refresh.
+- `aiVault.scanIssues.scannerMissing` — The session scanner is missing from this Orca install. Reinstalling Orca restores it.
+- `aiVault.scanIssues.scannerStopped` — The session scanner stopped unexpectedly. Refresh to try again.
+- `accounts.antigravity.windowsChanged` — The host default account changed. Select a saved account to apply it again.
+- `accounts.antigravity.windowsSessions` — Select applies and verifies the host default agy credential. Command choices and later account changes are handled by agy. Existing sessions may keep their previous account.
+- `accounts.hostSignIn.errors.ownerSilent` — The device that started this sign-in stopped answering.
+- `accounts.hostSignIn.errors.superseded` — An account change on this host stopped the sign-in. Start it again.
+- `accounts.hostSignIn.errors.failed` — Sign-in failed. Try again.
+- `workspace.branchChoice.title` — Branch for this worktree
+- `workspace.branchChoice.existingHint` — New commits go on this branch.
+- `workspace.branchChoice.newName` — New branch name
+- `tabHoverCard.namingFailure.errors.noName` — The chat-name agent returned no name.
+- `tabHoverCard.namingFailure.errors.noAgentAvailable` — No chat-name agent can run in this workspace.
+- `updates.failure.releaseNotReady` — A newer release isn't available for this device yet. Check again later.
+- `updates.failure.updateServerUnreachable` — Couldn't reach the update server. Try again in a few minutes.
+- `updates.failure.linuxPackageMissing` — The downloaded package is no longer in the update cache. Download the update again, or get it from the official release page.
+- `updates.failure.linuxPackageNotRegular` — The downloaded package is no longer a valid file in the update cache. Download the update again, or get it from the official release page.
+- `updates.failure.linuxPackageHashMismatch` — The downloaded package no longer matches the verified release, so Orca will not hand it to a package manager. Download the update again, or get it from the official release page.
+- `updates.failure.linuxPackageNoSudo` — No sudo command was found in the system directories, so Orca cannot build a safe install command. Show the package and install it with your package manager.
+- `updates.failure.linuxPackageNoPackageManager` — No supported package manager was found in the system directories, so Orca cannot build a safe install command. Show the package and install it with your package manager.
+- `updates.failure.linuxPackageInvalidPath` — The downloaded package is not at a usable path, so Orca cannot build a safe install command. Show the package and install it with your package manager.
+- `updates.failure.linuxPackageExternallyManaged` — This copy of Orca is managed by your system package manager, so Orca cannot install updates itself. Update Orca through your distribution instead.
+- `updates.failure.linuxPackageManualInstall` — Quit Orca before running the system package install command.
+- `updates.failure.linuxPackageMetadataUnusable` — The downloaded package metadata could not be verified. Quit Orca before downloading and installing the update from the official release page.
+- `keybindings.title.tabNewBrowserSplitRight` — New browser tab in right split
+- `profileState.startupFailure.retainedBackups` — Retained SQLite backups:
+- `profileState.startupFailure.retainedExports` — Retained JSON exports:
+- `profileState.startupFailure.authorityCopyFirst` — Stop Orca and copy the profile directory before choosing which state to keep.
+- `profileState.startupFailure.newerSchema` — This profile was saved by a newer version of Orca. Open it with that version or a newer release. Your profile has not been changed.
+- `profileState.startupFailure.revisionConflict` — The active profile changed while Orca was starting. Close other Orca processes using this profile, then restart Orca.
+- `profileState.startupFailure.publicationNeedsHardLinks` — This location must support hard links, and Orca needs permission to create them.
+- `profileState.startupFailure.publicationMoveData` — Close Orca and orcad before checking folder permissions or moving the complete Orca data directory to a writable local filesystem that supports hard links, such as APFS, NTFS, or ext4.
+- `profileState.startupFailure.publicationKeepFiles` — Keep the original directory and all recovery files.
+- `wslDriveUnc.confirm` — Restart and convert
+- `wslDriveUnc.restarting` — Restarting Orca to convert this project…
+- `wslDriveUnc.terminalsBusy` — Some terminals in this project are busy. Let them finish or close them, then try again.
+- `wslDriveUnc.blocker.mixed` — Some of this project’s folders are inside WSL, not on a Windows drive.
+- `wslDriveUnc.blocker.overlap` — This project shares folders with a project Orca can’t convert, so they would split.
+- `wslDriveUnc.blocker.notConvertible` — This project isn’t on a Windows drive on this computer.
+- `wslDriveUnc.blocker.projectSplit` — This project also holds a repository that isn’t converting, so nothing changed.
+- `runtime.remoteServerPairingErrors.invalidPairingCode` — Invalid pairing code. Expected an orca://pair?... URL or bare pairing payload.
+- `runtime.remoteServerPairingErrors.selfPairingCode` — This pairing code is for this Orca itself. Generate the code on the other computer instead.
+- `runtime.remoteServerPairingErrors.sshAccessChangePending` — This server's SSH access change didn't finish. Retry or cancel it under Settings > Remote Orca Servers > SSH access for paired servers before replacing its pairing or removing it.
+- `runtime.remoteServerPairingErrors.sshAccessLinked` — Unlink this server's SSH access under Settings > Remote Orca Servers > SSH access for paired servers before replacing its pairing or removing it.
+- `runtime.remoteServerPairingErrors.idNeedsNewerOrca` — A server with this id already exists in a format that needs a newer version of Orca.
+- `runtime.remoteServerPairingErrors.repairCloudWorkspace` — This server belongs to a cloud workspace, which pairs it again when it resumes.
+- `automations.runFailures.noDispatchHost` — No Orca window was available to launch the automation.
+- `automations.runFailures.noRunnableHost` — This automation has no host to run on.
+- `automations.runFailures.wslMoveInProgress` — This automation's project is moving to its WSL host, so Orca skipped this run. Runs resume when the move finishes.
+- `automations.runFailures.wslMoveOwnedByHost` — This automation's project now runs on its WSL host, which runs this automation there. Orca no longer runs this local copy.
+- `automations.runFailures.missedGraceWindow` — This run was past its missed-run grace window when Orca next checked.
+- `automations.runFailures.targetMissing` — The automation host is no longer registered, so this automation has nowhere to run.
+- `automations.runFailures.targetReplaced` — The automation host was removed and re-registered, so this automation must be re-adopted before it can run.
+- `automations.runFailures.workspaceHostAmbiguous` — The automation workspace spans more than one host, so Orca cannot tell which one to run it on.
+- `automations.runFailures.legacyTwinHosts` — This automation was saved before Orca tracked which host it runs on, and its project is on more than one host. Open the automation and pick the host it should run on.
+- `automations.runFailures.targetUnavailable` — Automation run target is no longer available.
+- `automations.runFailures.remoteSchedulingUnavailable` — Remote-server automation scheduling is not available from this Orca client yet. Run this automation on the remote server or update Orca when durable remote scheduling is available.
+- `automations.runFailures.projectSetupMissing` — Project is not set up on the selected automation host anymore.
+- `automations.runFailures.targetSetupMismatch` — Automation run target no longer matches the selected project host setup.
+- `automations.runFailures.repoUnavailable` — Repository for the selected automation host is no longer available.
+- `automations.runFailures.repoDetached` — Repository is no longer attached to the selected automation host.
+- `automations.runFailures.projectPathChanged` — Project path for the selected automation host has changed.
+- `automations.runFailures.automationChanged` — The automation changed before this run could launch.
+- `automations.runFailures.destinationChanged` — The automation destination changed before this run could launch.
+- `automations.runFailures.agentNeverStarted` — Automation agent never started after the prompt was submitted.
+- `automations.runFailures.agentNoCompletion` — Automation agent did not report completion.
+- `automations.runFailures.projectSetupState.notSetUp` — The project is not set up on the selected automation host.
+- `automations.runFailures.projectSetupState.settingUp` — The project is still being set up on the selected automation host.
+- `automations.runFailures.projectSetupState.error` — Project setup failed on the selected automation host.
+- `automations.runFailures.projectSetupState.unsupported` — The selected automation host does not support this project.
+- `automations.extraAgentArgs.errors.tooLarge` — Extra arguments must be 4 KB or less.
+- `automations.extraAgentArgs.errors.controlCharacters` — Extra arguments cannot contain control characters or line breaks.
+- `automations.extraAgentArgs.errors.terminator` — "--" isn't allowed in extra arguments.
+- `automations.extraAgentArgs.hostUpdateRequired` — Update Orca on this host to use extra arguments.
+- `codeHost.errors.titleRequired` — Title is required
+- `codeHost.errors.networkError` — Network error — check your connection.
+- `codeHost.errors.issueNotFound` — Issue not found — it may have been deleted.
+- `codeHost.errors.github.repoUnresolved` — Could not resolve GitHub owner/repo for this repository
+- `codeHost.errors.github.unexpectedResponse` — Unexpected response from GitHub
+- `codeHost.errors.github.pullRequestIdUnresolved` — Could not resolve GitHub pull request ID
+- `codeHost.errors.github.autoMergeAlreadyMergeable` — This pull request can already be merged. Use Merge instead of auto-merge.
+- `codeHost.errors.github.noFailedChecks` — No failed GitHub Actions checks to rerun.
+- `codeHost.errors.github.noRerunnableChecks` — No rerunnable checks found.
+- `codeHost.errors.github.issuePermissionDenied` — You don't have permission to edit this issue. Check your GitHub token scopes.
+- `codeHost.errors.github.issuesDisabled` — Issues are disabled on this repository.
+- `codeHost.errors.github.pullRequestPermissionDenied` — You don't have permission to edit this pull request. Check your GitHub token scopes.
+- `codeHost.errors.github.pullRequestNotFound` — Pull request not found — it may have been deleted.
+- `codeHost.errors.github.rerunPermissionDenied` — You don't have permission to rerun checks on this repository. Check your GitHub token scopes.
+- `codeHost.errors.gitlab.projectUnresolved` — Could not resolve GitLab project for this repository
+- `codeHost.errors.gitlab.unexpectedResponse` — Unexpected response from GitLab
+- `codeHost.errors.gitlab.commentBodyRequired` — Comment body is required
+- `codeHost.errors.gitlab.discussionIdRequired` — Discussion id is required
+- `codeHost.errors.gitlab.readyTitleConflict` — Cannot update the title while marking a merge request ready
+- `codeHost.errors.gitlab.mergeRequestTitleUnreadable` — Could not read the current merge request title
+- `codeHost.errors.gitlab.issuePermissionDenied` — You don't have permission to edit this issue. Check your GitLab token scopes.
+- `codeHost.errors.gitlab.jobLogPermissionDenied` — You don't have permission to read this job's log. Check your GitLab token scopes.
+- `codeHost.errors.gitlab.jobProjectNotFound` — Could not find this job's GitLab project.
+- `codeHost.startPoint.repoNotFound` — Repo not found
+- `codeHost.startPoint.folderUnsupported` — Folder mode does not support creating worktrees.
+- `codeHost.startPoint.gitlab.projectNotFound` — No GitLab project found for this repository.
+- `codeHost.bitbucketConnect.invalidInput` — Invalid Bitbucket credentials
+- `codeHost.bitbucketConnect.unreachable` — Could not reach Bitbucket. Check your connection or the API base URL, then try again.
+- `featureWall.workflows.tasks.lede` — Start work directly from GitHub or Linear.
+- `featureWall.workflows.agents.lede` — Run several agents at once, track their progress, and let automation drive Orca when it helps.
+- `featureWall.workflows.workbench.lede` — Bring your terminal setup into Orca, then split panes to keep servers, tests, logs, and agents running side by side.
+- `featureWall.workflows.review.lede` — Review what changed, leave focused feedback, and send it back to the agent.
+- `featureWall.steps.statuses.description` — Know which agents are working, waiting, live, or blocked.
+- `featureWall.steps.orchestration.description` — Enable agents to manage and coordinate Orca workspaces to execute larger tasks.
+- `featureWall.steps.usage.description` — Watch your usage and rate limits across every connected account, so you know when to switch.
+- `featureWall.steps.terminal.description` — Keep your agents, tests, and dev logs visible at once.
+- `featureWall.steps.editor.description` — Use our Notion-style markdown editor to write notes without leaving Orca.
+- `featureWall.steps.browser.description` — Run your app in Orca's browser, send selected UI elements to agents, and let your agents interact with your webpage.
+- `featureWall.steps.notes.description` — Send focused review notes to an agent.
+- `featureWall.steps.prView.subtitle` — PR checks & comments
+- `featureWall.steps.prView.description` — See PR status in the Checks tab.
+- `featureWall.steps.ship.name` — Ship with AI
+- `featureWall.steps.ship.description` — Let AI prepare commit and PR drafts for you.
+- `featureWall.tiles.tile01.title` — Parallel workspace orchestration
+- `featureWall.tiles.tile04.title` — Supported CLI agents
+- `featureWall.tiles.tile05.title` — Embedded browser + Design Mode
+- `featureWall.tiles.tile07.title` — Monaco editor, drag-to-agent
+- `featureWall.tiles.tile08.title` — Inline review, back to the agent
+- `featureWall.tiles.tile11.title` — Usage & rate-limit aware
+- `featureWall.tiles.tile12.title` — PDFs, images, CSV, Markdown
+- `emulator.errors.disabled` — Mobile Emulator is disabled in Settings.
+- `emulator.errors.notAvailable` — Mobile Emulator is not available.
+- `emulator.errors.noSession` — No emulator session is active
+- `emulator.errors.noDeviceSpecified` — No emulator device specified. Choose a default device in Settings > Mobile Emulator or pass a device.
+- `emulator.errors.workspaceChanged` — The workspace changed while the emulator was starting. Reattach the emulator.
+- `emulator.errors.noIosSimulators` — No iOS simulators found. Add one in Xcode Settings > Platforms.
+- `emulator.errors.simctlUnavailable` — xcrun simctl is unavailable.
+- `emulator.errors.serveSimUnavailable` — serve-sim is unavailable.
+- `emulator.errors.serveSimNoEndpoints` — serve-sim did not return stream endpoints.
+- `emulator.errors.serveSimEndpointUnreachable` — serve-sim started but its stream endpoint is not reachable.
+- `emulator.errors.adbUnavailable` — adb is unavailable.
+- `emulator.errors.noAndroidDevices` — No Android devices or AVDs found. Create one in Android Studio.
+- `emulator.errors.scrcpyServerInvalid` — Downloaded scrcpy server was invalid or truncated.
+- `emulator.pane.listDevicesFailed` — Could not list emulator devices.
+- `emulator.pane.noDevices` — No emulator devices found. Add an iOS Simulator in Xcode, or an Android Virtual Device in Android Studio.
+- `emulator.pane.shutdownFailed` — Could not shut down the emulator. Try again, or stop it from your emulator manager.
+- `emulator.settings.availabilityCheckFailed` — Could not check emulator availability.
+- `ephemeralVm.errors.remoteRepoUnsupported` — Ephemeral VM recipes run on the local desktop host in v1.
+- `ephemeralVm.errors.defaultStartRefUnresolved` — Could not resolve a default provisioned-root start ref.
+- `ephemeralVm.errors.recipeResultMissing` — Recipe produced no JSON result.
+- `ephemeralVm.errors.recipeResultNotJsonObject` — Recipe stdout must be one JSON object.
+- `ephemeralVm.errors.recipeResultPairingCodeInvalid` — Recipe result pairingCode is not a valid Orca pairing code.
+- `ephemeralVm.errors.recipeResultProjectRootNotAbsolute` — Recipe result projectRoot must be an absolute runtime path.
+- `ephemeralVm.errors.provisionedRootResultRequired` — Provisioned-root recipes must return schemaVersion 2 with checkoutMode "provisioned-root".
+- `ephemeralVm.errors.provisionedRootNotConfigured` — Recipe result requests provisioned-root checkout, but the recipe is not configured for it.
+- `ephemeralVm.errors.destroyDisabled` — Destroy is disabled for this recipe.
+- `ephemeralVm.errors.cleanupStopped` — Cleanup stopped by user.
+- `ephemeralVm.errors.cleanupInterrupted` — Cleanup was interrupted. Retry cleanup to continue.
+- `ephemeralVm.errors.recipeExitedWithoutCode` — Recipe exited with code unknown.
+- `ephemeralVm.errors.destroyExitedWithoutCode` — Destroy exited with code unknown.
+- `installDirAcl.runCommands` — Run these in an Administrator Command Prompt, then relaunch Orca:
+- `pet.importErrors.unsupportedFile` — Unsupported file. Pick a PNG, APNG, JPG, GIF, WebP, or SVG.
+- `pet.importErrors.fileUnreadable` — Could not read the selected file.
+- `pet.importErrors.notAFile` — Selected path is not a file
+- `pet.importErrors.saveFailed` — Could not save the pet.
+- `pet.importErrors.pathUnreadable` — Could not read the selected path.
+- `pet.importErrors.manifestMissing` — Bundle is missing pet.json.
+- `pet.importErrors.manifestInvalid` — pet.json is invalid.
+- `pet.importErrors.manifestSymlink` — pet.json must not be a symlink.
+- `pet.importErrors.bundleSaveFailed` — Could not save the pet bundle.
+- `pet.importErrors.sheetPathNotRelative` — spritesheetPath must be relative to the bundle.
+- `pet.importErrors.sheetPathIsRoot` — spritesheetPath must point to a file, not the bundle root.
+- `pet.importErrors.sheetPathEscapes` — spritesheetPath escapes the bundle.
+- `pet.importErrors.sheetSymlink` — spritesheet must not be a symlink.
+- `pet.importErrors.sheetUnsupportedType` — Spritesheet must be a PNG, APNG, JPG, GIF, or WebP.
+- `pet.importErrors.sheetNotFound` — Spritesheet file not found.
+- `pet.importErrors.sheetNotAFile` — Spritesheet path is not a file.
+- `pet.importErrors.sheetSizeLimitExceeded` — Spritesheet exceeded the size limit.
+- `pet.importErrors.sheetUndecodable` — Could not decode the spritesheet image.
+- `agentSendTargets.disabledReason.needsPermission` — Agent needs permission
+- `agentSendTargets.disabledReason.statusStale` — Agent status is stale
+

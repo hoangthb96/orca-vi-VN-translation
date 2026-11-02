@@ -14,6 +14,7 @@
 
 ## Phải làm
 
+- Trước khi dịch key còn thiếu, đọc `docs/no-translate.md` (ADR các nhóm quyết định không dịch: protected plugin copy, search keyword, enum status, proper noun, code/lệnh mẫu, placeholder-only…) và `docs/untranslated-keys.generated.md` (danh sách hiện tại theo nhóm). Key không thuộc nhóm nào nằm ở mục "CHƯA PHÂN LOẠI" — dịch hoặc bổ sung matcher vào `tools/dump-untranslated.mjs`.
 - Nhãn/nút: động từ hoặc cụm ngắn, không chấm cuối — `Lưu`, `Hủy`, `Phím tắt`. Mô tả: câu đầy đủ, có chấm.
 - `_one`/`_other` dịch giống nhau (tiếng Việt không chia số nhiều): cả hai `{{count}} phiên`.
 - Xưng hô "bạn"; giọng trung tính, không kính ngữ.

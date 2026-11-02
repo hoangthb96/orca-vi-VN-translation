@@ -48,8 +48,11 @@ locales/vi.json         # catalog tiếng Việt (sparse)
 reference/en.json       # snapshot en.json upstream (nguồn dịch)
 docs/glossary.md        # thuật ngữ & style chuẩn
 docs/roadmap.md         # tiến độ dịch theo màn hình
+docs/no-translate.md    # ADR — các nhóm key quyết định không dịch
+docs/en-sync-changelog.md # log đồng bộ en.json upstream (sinh bởi resync-en)
 tools/check-catalog.mjs # validator — port rule fail-closed của Orca + so key với en.json
 tools/resync-en.mjs     # đồng bộ en.json theo tag release + ghi docs/en-sync-changelog.md
+tools/dump-untranslated.mjs # sinh docs/untranslated-keys.generated.md — key chưa dịch theo nhóm
 tools/find-mixed.mjs    # quét value lẫn EN+VI
 tools/merge-stage.mjs   # merge file stage vào vi.json
 tools/serve.mjs         # workbench dịch (hot reload)
