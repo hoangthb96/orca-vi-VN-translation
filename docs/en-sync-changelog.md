@@ -1,0 +1,1567 @@
+# en.json upstream sync log
+
+Log tự động của `tools/resync-en.mjs` — mỗi lần đồng bộ `reference/en.json` với upstream.
+
+## 2026-10-31 — v1.4.245
+
+Snapshot 17308 → 18316 keys (**+1135** / **−127** / **~60**).
+vi.json lúc sync: 49 dead key (đã prune), 1135 key mới chưa dịch, 0 key lệch placeholder do upstream đổi.
+
+### +1135 key mới (cần dịch)
+
+| Nhóm | Số |
+|---|---:|
+| `auto.components` | 327 |
+| `sourceControl.textGeneration` | 86 |
+| `sidebar.agentSummary` | 59 |
+| `sourceControl.remoteError` | 49 |
+| `codeHost.errors` | 40 |
+| `components.native-chat` | 37 |
+| `browser.cookieImport` | 29 |
+| `updates.failure` | 28 |
+| `automations.runFailures` | 28 |
+| `pet.importErrors` | 26 |
+| `aiVault.scanIssues` | 25 |
+| `profileState.startupFailure` | 24 |
+| `csv.error` | 23 |
+| `ephemeralVm.errors` | 23 |
+| `featureWall.steps` | 21 |
+| `emulator.errors` | 21 |
+| `runtime.remoteServerPairingErrors` | 18 |
+| `sourceControl.createReviewFailure` | 17 |
+| `settings.terminal` | 16 |
+| `settings.shortcuts` | 15 |
+| `sidebar.createProject` | 13 |
+| `sidebar.wslHosts` | 13 |
+| `settings.diagnostics` | 13 |
+| `settings.voice` | 12 |
+| `automations.extraAgentArgs` | 12 |
+| `codeHost.startPoint` | 12 |
+| `featureWall.tiles` | 12 |
+| `featureWall.workflows` | 10 |
+| `wslDriveUnc.blocker` | 9 |
+| `settings.agents` | 7 |
+| `workspace.branchChoice` | 7 |
+| `settings.chat` | 5 |
+| `auto.store` | 5 |
+| `components.workspace` | 5 |
+| `components.settings` | 5 |
+| `sourceControl.submodule` | 5 |
+| `tabHoverCard.namingFailure` | 5 |
+| `codeHost.bitbucketConnect` | 5 |
+| `settings.network` | 4 |
+| `auto.lib` | 4 |
+| `emulator.pane` | 4 |
+| `featureTips.voice` | 3 |
+| `featureTips.sessionSearch` | 3 |
+| `featureTips.orcaCli` | 3 |
+| `accounts.hostSignIn` | 3 |
+| `editor.pdfExport` | 2 |
+| `settings.repository` | 2 |
+| `worktreeJumpPalette.filter` | 2 |
+| `featureTips.cmdJPalette` | 2 |
+| `sourceControl.discard` | 2 |
+| `accounts.antigravity` | 2 |
+| `keybindings.title` | 2 |
+| `setupScriptPrompt.candidateLabels` | 2 |
+| `pet.defaultLabels` | 2 |
+| `agentSendTargets.disabledReason` | 2 |
+| `settings.sourceControl` | 1 |
+| `featureTips.eyebrowNew` | 1 |
+| `featureTips.eyebrowTip` | 1 |
+| `featureTips.gotIt` | 1 |
+| `terminal.codexSharedSettingsNotice` | 1 |
+| `startupFailure.finishFailed` | 1 |
+| `wslDriveUnc.label` | 1 |
+| `wslDriveUnc.description` | 1 |
+| `wslDriveUnc.convert` | 1 |
+| `wslDriveUnc.review` | 1 |
+| `wslDriveUnc.cancel` | 1 |
+| `wslDriveUnc.confirm` | 1 |
+| `wslDriveUnc.failed` | 1 |
+| `wslDriveUnc.restarting` | 1 |
+| `wslDriveUnc.terminalsBusy` | 1 |
+| `wslDriveUnc.pauseFailed` | 1 |
+| `emulator.settings` | 1 |
+| `installDirAcl.cause` | 1 |
+| `installDirAcl.repaired` | 1 |
+| `installDirAcl.repairing` | 1 |
+| `installDirAcl.repairFailed` | 1 |
+| `installDirAcl.runCommands` | 1 |
+| `diffComments.lineRangeMeta` | 1 |
+| `diffComments.lineMeta` | 1 |
+
+<details><summary>Danh sách đầy đủ</summary>
+
+- `csv.error.tooManyCells` — CSV contains too many cells to preview safely.
+- `csv.error.recordTooLarge` — CSV record is too large to preview safely.
+- `csv.error.tooManyPages` — CSV has too many pages to preview safely.
+- `csv.error.previewRecordLimit` — CSV record exceeds the 1 MB preview limit.
+- `csv.error.binaryData` — This file contains binary data.
+- `csv.error.previewColumnLimit` — CSV exceeds the 4,096 column preview limit.
+- `csv.error.changedOnDisk` — CSV changed on disk. Reload the file to refresh the preview.
+- `csv.error.pageBoundaryMismatch` — CSV page boundary mismatch. Reload the preview.
+- `csv.error.canceled` — CSV preview was canceled
+- `csv.error.workerFailed` — CSV preview worker failed. Reload the file to retry.
+- `csv.error.workerUnreadableResponse` — CSV preview worker returned an unreadable response.
+- `csv.error.cellMissing` — The selected CSV row or column no longer exists.
+- `csv.error.rowMissing` — The selected CSV row no longer exists.
+- `csv.error.columnLimit` — CSV exceeds the 4,096 column limit.
+- `csv.error.recordLimit` — CSV record exceeds the 1 MB limit.
+- `csv.error.tableEditBudget` — Table edits must stay below 1 MiB. Use Source for larger changes.
+- `csv.error.editConflict` — CSV changed while this cell was being edited. Cancel and try again.
+- `csv.error.saveFailed` — CSV could not be saved. Your edits remain in the draft.
+- `csv.error.pasteConflict` — CSV changed before paste completed. Try again.
+- `csv.error.copyTooManyCells` — Select fewer cells to copy at once.
+- `csv.error.copyTooLarge` — Selected cells are too large to copy safely.
+- `csv.error.pasteExceedsTable` — Paste exceeds the table. Add rows or columns first.
+- `csv.error.pasteTooManyCells` — Select fewer cells to paste at once.
+- `sidebar.createProject.errors.nameEmpty` — Name cannot be empty
+- `sidebar.createProject.errors.nameInvalid` — Name cannot contain slashes or be "." / ".."
+- `sidebar.createProject.errors.parentRequired` — Parent directory is required
+- `sidebar.createProject.errors.parentNotAbsolute` — Parent directory must be an absolute path
+- `sidebar.createProject.errors.targetInaccessible` — Cannot access target path: {{detail}}
+- `sidebar.createProject.errors.targetNotEmpty` — "{{name}}" already exists at this location and is not empty.
+- `sidebar.createProject.errors.targetNotFolder` — "{{name}}" already exists at this location and is not a folder.
+- `sidebar.createProject.errors.readDirectoryFailed` — Failed to read directory: {{detail}}
+- `sidebar.createProject.errors.createDirectoryFailed` — Failed to create directory: {{detail}}
+- `sidebar.createProject.errors.prepareDirectoryFailed` — Failed to prepare directory: {{detail}}
+- `sidebar.createProject.errors.gitIdentityMissing` — Git author identity is not configured. Run `git config --global user.name "Your Name"` and `git config --global user.email "you@example.com"`, then try again.
+- `sidebar.createProject.errors.gitInitFailed` — Failed to initialize git repository: {{detail}}
+- `sidebar.createProject.errors.initialCommitFailed` — Failed to create initial commit: {{detail}}
+- `sidebar.wslHosts.addErrors.alreadyAdded` — {{distro}} is already a host.
+- `sidebar.wslHosts.addErrors.distroStopped` — {{distro}} stopped since the list was read. Choose Start and add to start it.
+- `sidebar.wslHosts.addErrors.wsl1` — {{distro}} runs WSL 1, which Orca no longer supports. Convert it to WSL 2 in a Windows terminal with: {{command}}
+- `sidebar.wslHosts.addErrors.notRegistered` — {{distro}} is not an installed WSL distro. Run {{command}} in a Windows terminal to see the installed ones, or reinstall it and try again.
+- `sidebar.wslHosts.addErrors.sshManaged` — {{distro}} already runs the Orca server for “{{server}}”, which this computer reaches over SSH. Remove that server first; moving it to a WSL host isn’t supported yet.
+- `sidebar.wslHosts.statusDetails.runningListUnavailable` — Windows didn’t report whether the distro is running.
+- `sidebar.wslHosts.statusDetails.guestUnanswered` — The distro is running but didn’t answer Orca’s check.
+- `sidebar.wslHosts.statusDetails.orcadUnanswered` — Orca’s server in the distro didn’t answer.
+- `sidebar.wslHosts.statusDetails.restartGaveUp_one` — Could not restart the Orca server in {{distro}} after {{count}} attempt
+- `sidebar.wslHosts.statusDetails.restartGaveUp_other` — Could not restart the Orca server in {{distro}} after {{count}} attempts
+- `sidebar.wslHosts.statusDetails.serviceUnconfirmed` — The WSL service did not confirm whether the distro runs.
+- `sidebar.wslHosts.statusDetails.peerCheckFailed` — Orca couldn’t ask the WSL host whether another Orca on this computer still uses it: {{detail}}
+- `sidebar.wslHosts.statusDetails.removalUnrecorded` — Orca couldn’t record what this Remove left running: {{detail}}
+- `sidebar.agentSummary.state.waiting` — waiting
+- `sidebar.agentSummary.state.blocked` — blocked
+- `sidebar.agentSummary.state.interrupted` — interrupted
+- `sidebar.agentSummary.state.failed` — failed
+- `sidebar.agentSummary.state.working` — working
+- `sidebar.agentSummary.state.monitoring` — monitoring
+- `sidebar.agentSummary.state.done` — done
+- `sidebar.agentSummary.state.idle` — idle
+- `sidebar.agentSummary.state.notReporting` — not reporting
+- `sidebar.agentSummary.state.unconfirmed` — unconfirmed
+- `sidebar.agentSummary.state.needsAttention` — needs attention
+- `sidebar.agentSummary.mixedStates` — {{subject}}: {{states}}
+- `sidebar.agentSummary.agentIdentityState` — {{agent}} {{status}}
+- `sidebar.agentSummary.agentCount_one` — {{count}} agent
+- `sidebar.agentSummary.agentCount_other` — {{count}} agents
+- `sidebar.agentSummary.stateCount.waiting_one` — {{count}} waiting
+- `sidebar.agentSummary.stateCount.waiting_other` — {{count}} waiting
+- `sidebar.agentSummary.stateCount.blocked_one` — {{count}} blocked
+- `sidebar.agentSummary.stateCount.blocked_other` — {{count}} blocked
+- `sidebar.agentSummary.stateCount.interrupted_one` — {{count}} interrupted
+- `sidebar.agentSummary.stateCount.interrupted_other` — {{count}} interrupted
+- `sidebar.agentSummary.stateCount.failed_one` — {{count}} failed
+- `sidebar.agentSummary.stateCount.failed_other` — {{count}} failed
+- `sidebar.agentSummary.stateCount.working_one` — {{count}} working
+- `sidebar.agentSummary.stateCount.working_other` — {{count}} working
+- `sidebar.agentSummary.stateCount.monitoring_one` — {{count}} monitoring
+- `sidebar.agentSummary.stateCount.monitoring_other` — {{count}} monitoring
+- `sidebar.agentSummary.stateCount.done_one` — {{count}} done
+- `sidebar.agentSummary.stateCount.done_other` — {{count}} done
+- `sidebar.agentSummary.stateCount.idle_one` — {{count}} idle
+- `sidebar.agentSummary.stateCount.idle_other` — {{count}} idle
+- `sidebar.agentSummary.stateCount.notReporting_one` — {{count}} not reporting
+- `sidebar.agentSummary.stateCount.notReporting_other` — {{count}} not reporting
+- `sidebar.agentSummary.stateCount.unconfirmed_one` — {{count}} unconfirmed
+- `sidebar.agentSummary.stateCount.unconfirmed_other` — {{count}} unconfirmed
+- `sidebar.agentSummary.stateCount.needsAttention_one` — {{count}} needs attention
+- `sidebar.agentSummary.stateCount.needsAttention_other` — {{count}} needs attention
+- `sidebar.agentSummary.allInState.waiting_one` — {{count}} agent waiting
+- `sidebar.agentSummary.allInState.waiting_other` — All {{count}} agents waiting
+- `sidebar.agentSummary.allInState.blocked_one` — {{count}} agent blocked
+- `sidebar.agentSummary.allInState.blocked_other` — All {{count}} agents blocked
+- `sidebar.agentSummary.allInState.interrupted_one` — {{count}} agent interrupted
+- `sidebar.agentSummary.allInState.interrupted_other` — All {{count}} agents interrupted
+- `sidebar.agentSummary.allInState.failed_one` — {{count}} agent failed
+- `sidebar.agentSummary.allInState.failed_other` — All {{count}} agents failed
+- `sidebar.agentSummary.allInState.working_one` — {{count}} agent working
+- `sidebar.agentSummary.allInState.working_other` — All {{count}} agents working
+- `sidebar.agentSummary.allInState.monitoring_one` — {{count}} agent monitoring
+- `sidebar.agentSummary.allInState.monitoring_other` — All {{count}} agents monitoring
+- `sidebar.agentSummary.allInState.done_one` — {{count}} agent done
+- `sidebar.agentSummary.allInState.done_other` — All {{count}} agents done
+- `sidebar.agentSummary.allInState.idle_one` — {{count}} agent idle
+- `sidebar.agentSummary.allInState.idle_other` — All {{count}} agents idle
+- `sidebar.agentSummary.allInState.notReporting_one` — {{count}} agent not reporting
+- `sidebar.agentSummary.allInState.notReporting_other` — All {{count}} agents not reporting
+- `sidebar.agentSummary.allInState.unconfirmed_one` — {{count}} agent unconfirmed
+- `sidebar.agentSummary.allInState.unconfirmed_other` — All {{count}} agents unconfirmed
+- `sidebar.agentSummary.allInState.needsAttention_one` — {{count}} agent needs attention
+- `sidebar.agentSummary.allInState.needsAttention_other` — All {{count}} agents needs attention
+- `browser.cookieImport.errors.notAuthorized` — Not authorized
+- `browser.cookieImport.errors.profileNotFound` — Session profile not found.
+- `browser.cookieImport.errors.invalidBrowserProfile` — Invalid browser profile name.
+- `browser.cookieImport.errors.browserNotFound` — Browser not found on this system.
+- `browser.cookieImport.errors.browserProfileDatabaseMissing` — No cookies database found for profile "{{profile}}".
+- `browser.cookieImport.errors.fileUnreadable` — Could not read the selected file.
+- `browser.cookieImport.errors.fileInvalidJson` — File is not valid JSON.
+- `browser.cookieImport.errors.fileNotArray` — Expected a JSON array of cookie objects.
+- `browser.cookieImport.errors.fileEmpty` — Cookie file is empty.
+- `browser.cookieImport.errors.fileNoValidCookies_one` — No valid cookies found. {{count}} entry was skipped due to missing or invalid fields.
+- `browser.cookieImport.errors.fileNoValidCookies_other` — No valid cookies found. {{count}} entries were skipped due to missing or invalid fields.
+- `browser.cookieImport.errors.databaseNotFound` — {{browser}} cookies database not found.
+- `browser.cookieImport.errors.databaseCopyFailed` — Could not copy {{browser}} cookies database. Try closing {{browser}} first.
+- `browser.cookieImport.errors.noCookies` — No cookies found in {{browser}}.
+- `browser.cookieImport.errors.noValidCookies` — No valid cookies found in {{browser}}.
+- `browser.cookieImport.errors.allCookiesExpired` — All {{browser}} cookies are expired.
+- `browser.cookieImport.errors.encryptionKeyDenied` — Could not access {{browser}} encryption key. The OS may have denied access.
+- `browser.cookieImport.errors.readFailed` — Could not read {{browser}} cookies.
+- `browser.cookieImport.errors.importFailed` — Could not import cookies from {{browser}}.
+- `browser.cookieImport.errors.importFailedTryClosing` — Could not import cookies from {{browser}}. Try closing {{browser}} first.
+- `browser.cookieImport.errors.importFailedWithLog` — Could not import cookies from {{browser}}: {{detail}}. Details were written to {{logPath}}.
+- `browser.cookieImport.errors.safariFullDiskAccess` — macOS denied access to Safari cookies. Grant Full Disk Access to Orca in System Settings → Privacy & Security → Full Disk Access.
+- `browser.cookieImport.errors.connectionEnded` — The connection to this server ended during the import. Reconnect and try again.
+- `browser.cookieImport.errors.serverRepaired` — This server was re-paired during the import. Try again.
+- `browser.cookieImport.notice.importedMore_one` — Imported {{count}} cookie for {{domains}} +{{more}} more. Reload the page to use them.
+- `browser.cookieImport.notice.importedMore_other` — Imported {{count}} cookies for {{domains}} +{{more}} more. Reload the page to use them.
+- `browser.cookieImport.notice.imported_one` — Imported {{count}} cookie for {{domains}}. Reload the page to use them.
+- `browser.cookieImport.notice.imported_other` — Imported {{count}} cookies for {{domains}}. Reload the page to use them.
+- `browser.cookieImport.notice.failed` — Cookie import failed: {{reason}}
+- `editor.pdfExport.errors.noContent` — No content to export
+- `editor.pdfExport.errors.timedOut` — Export timed out
+- `settings.chat.names.useChatAgent` — Use chat agent
+- `settings.chat.names.configuredCliAgent` — Use configured CLI agent ({{agent}})
+- `settings.chat.names.configuredCliAgentUnknown` — Use configured CLI agent
+- `settings.chat.names.clearCliArguments` — Clear CLI arguments to use each chat’s agent.
+- `settings.chat.names.cliArgumentsPlaceholder` — Optional arguments for a configured CLI naming agent
+- `settings.terminal.limit.label` — Maximum running terminals
+- `settings.terminal.limit.description` — Limits your running terminals across projects on this host.
+- `settings.terminal.limit.system` — System PTY limit: {{value}}
+- `settings.terminal.limit.unknown` — Unavailable
+- `settings.terminal.limit.shared` — Shared with other terminal apps. This is total capacity, not free slots.
+- `settings.terminal.limit.disconnected` — This host is disconnected. Reconnect to view or change its terminal limit.
+- `settings.terminal.limit.unsupported` — This host’s terminal service does not support changing this limit yet.
+- `settings.terminal.limit.environment` — This Orca instance has a terminal limit set by its environment. Remove the override on this host to edit it here.
+- `settings.terminal.limit.savedUnreadable` — Couldn’t read this host’s saved terminal limit. Using {{value}}. Enter a value and press Enter to replace it.
+- `settings.terminal.limit.failed` — Couldn’t confirm the terminal limit. Try again.
+- `settings.terminal.limit.retry` — Retry
+- `settings.terminal.limit.unit` — terminals
+- `settings.terminal.limit.search.limit` — limit
+- `settings.terminal.limit.search.maximum` — maximum
+- `settings.terminal.limit.search.pty` — pty
+- `settings.terminal.limit.search.capacity` — capacity
+- `settings.agents.permissionMixed` — Mixed
+- `settings.agents.choiceChipRemove` — Remove {{flag}}
+- `settings.agents.choiceChipTooltip` — Added by {{choice}}. Remove it to use the default.
+- `settings.agents.codexHistorySharing.title` — Share Codex history across accounts
+- `settings.agents.codexHistorySharing.description` — Lets each Codex account, and your own ~/.codex, resume conversations started on the others. Turn off to keep every account's history separate. Turning it off removes nothing already shared.
+- `settings.agents.codexHistorySharing.unsupported` — Update Orca on {{host}} to change this setting there.
+- `settings.agents.codexHistorySharing.updateFailed` — Could not update the setting on {{host}}.
+- `settings.sourceControl.actionModel.effort` — Effort
+- `settings.shortcuts.validation.invalidFormat` — Use a shortcut like Ctrl+Shift+P or Cmd+K.
+- `settings.shortcuts.validation.mixedModifiers` — Use either Mod or a platform-specific modifier, not both.
+- `settings.shortcuts.validation.modifierRequired` — Include at least one modifier key.
+- `settings.shortcuts.validation.digitKeyRequired` — Pick a number key 1–9 with a modifier, like Cmd+1 or Ctrl+1.
+- `settings.shortcuts.validation.modifierOnly` — Press a key, not only a modifier.
+- `settings.shortcuts.validation.invalidBindingValue` — Use a string, string array, null, or false.
+- `settings.shortcuts.validation.stringArrayRequired` — Use a string array.
+- `settings.shortcuts.validation.fileNotObject` — Keybindings file must contain a JSON object.
+- `settings.shortcuts.diagnostics.sectionNotObject` — {{section}} must be an object.
+- `settings.shortcuts.diagnostics.unknownAction` — Unknown keybinding action "{{actionId}}" was ignored.
+- `settings.shortcuts.diagnostics.shortcutIgnored` — Shortcut for "{{actionId}}" was ignored: {{reason}}
+- `settings.shortcuts.diagnostics.platformsNotObject` — platforms must be an object with darwin, linux, or win32 sections.
+- `settings.shortcuts.diagnostics.unknownPlatform` — Unknown platform "{{platform}}" was ignored.
+- `settings.shortcuts.diagnostics.conflictingOverrides` — Conflicting custom shortcuts were ignored: {{actions}}.
+- `settings.shortcuts.diagnostics.readFailed` — Could not read keybindings file: {{reason}}
+- `settings.network.proxyUrlErrors.tooLong` — Proxy URL is too long.
+- `settings.network.proxyUrlErrors.invalid` — Enter a valid proxy URL.
+- `settings.network.proxyUrlErrors.unsupportedProtocol` — Use an http, https, socks, socks4, or socks5 proxy URL.
+- `settings.network.proxyUrlErrors.missingHost` — Proxy URL must include a host.
+- `settings.voice.modelDescriptions.parakeetV3` — Highest accuracy for 25 European languages. Punctuation, capitalization, and word-level timestamps.
+- `settings.voice.modelDescriptions.parakeetV2` — English only. Faster than v3 with similar accuracy. Punctuation and capitalization.
+- `settings.voice.modelDescriptions.zipformerBilingual` — Chinese + English with code-switching. Low-latency real-time streaming.
+- `settings.voice.modelDescriptions.paraformerBilingual` — Chinese (Mandarin + dialects) + English. Strong on accented and regional Chinese.
+- `settings.voice.modelDescriptions.zipformerStreamingEn` — English only. Lightweight 20M-param model, good balance of speed and size.
+- `settings.voice.modelDescriptions.zipformerStreamingZh` — Chinese only. Ultra-lightweight 14M-param model, ideal for low-resource devices.
+- `settings.voice.modelDescriptions.zipformerStreamingKo` — Korean only. Low-latency real-time streaming.
+- `settings.voice.modelDescriptions.parakeetJa` — Japanese only. Trained on 35k+ hours of natural speech. Punctuation included.
+- `settings.voice.modelDescriptions.whisperTiny` — 90+ languages. Lower accuracy than Parakeet but broadest language coverage.
+- `settings.voice.modelDescriptions.senseVoice` — Chinese, English, Japanese, Korean, and Cantonese with automatic language detection.
+- `settings.voice.modelDescriptions.gpt4oMiniTranscribe` — Cloud transcription with strong accuracy and low cost. Requires an OpenAI API key.
+- `settings.voice.modelDescriptions.gpt4oTranscribe` — Cloud transcription with higher accuracy. Requires an OpenAI API key.
+- `settings.diagnostics.errors.creatingDisabled` — creating review files is disabled
+- `settings.diagnostics.errors.sendingDisabled` — sending diagnostics is disabled
+- `settings.diagnostics.errors.sendingNotConfigured` — sending diagnostics is not configured for this build
+- `settings.diagnostics.errors.expiredBeforeSending` — review file has expired; create a new one before sending
+- `settings.diagnostics.errors.expiredBeforeOpening` — review file has expired; create a new one before opening
+- `settings.diagnostics.errors.previewNotOpened` — open the review file before sending
+- `settings.diagnostics.errors.previewOpenFailed` — could not open review file
+- `settings.diagnostics.errors.deleteNotConfigured` — diagnostic upload endpoint is not configured for this build
+- `settings.diagnostics.errors.createFailed` — Could not create review file
+- `settings.diagnostics.errors.openFailed` — Could not open review file
+- `settings.diagnostics.errors.sendFailed` — Could not send diagnostics
+- `settings.diagnostics.errors.discardFailed` — Could not discard review file
+- `settings.diagnostics.errors.deleteFailed` — Could not delete sent diagnostics
+- `settings.repository.iconPickErrors.notPng` — Repo icons must be PNG files.
+- `settings.repository.iconPickErrors.tooLarge` — Repo icon image must be 256KB or smaller.
+- `worktreeJumpPalette.filter.ariaActiveCount_one` — Filter: {{count}} active.
+- `worktreeJumpPalette.filter.ariaActiveCount_other` — Filter: {{count}} active.
+- `auto.store.pluginAutoUpdates.one` — {{value0}} updated to {{value1}}
+- `auto.store.pluginAutoUpdates.many` — {{value0}} plugins updated
+- `auto.store.pluginNewFile.unavailable` — {{value0}} is no longer available. Turn its plugin back on.
+- `auto.store.pluginNewFile.failed` — Couldn't create the file.
+- `auto.store.pluginInstallLink.invalid` — That plugin link isn’t valid.
+- `auto.lib.claudeAgentRowView.openParentConversation` — Open parent conversation
+- `auto.lib.claudeAgentRowView.parentViewFailed` — Claude could not open the parent conversation. Try again in the Claude pane.
+- `auto.lib.claudeAgentRowView.childViewFailed` — Claude could not open this agent. Try again in the Claude pane.
+- `auto.lib.claudeAgentRowView.parentNavigationSetup` — Claude could not open the parent conversation. Enable subagent navigation in Settings → Agents, then restart Claude in this pane.
+- `auto.components.NewWorkspaceComposerCard.openExistingWorkspace` — Open existing workspace
+- `auto.components.github.project.ProjectCell.linkedPullRequestsOverflow` — +{{count}} more
+- `auto.components.status.bar.PetStatusSegment.petFallbackLabel` — Pet
+- `auto.components.status.bar.PetStatusSegment.petHiddenLabel` — {{pet}} hidden
+- `auto.components.status.bar.PluginsStatusSegment.label` — Plugins
+- `auto.components.skills.SkillFreshnessNudge.title_one` — {{count}} installed Orca skill is out of date
+- `auto.components.skills.SkillFreshnessUpdateDialog.upToDate_one` — {{count}} skill is up to date.
+- `auto.components.skills.SkillDelete.nothing_one` — The {{count}} selected skill cannot be deleted from here.
+- `auto.components.sidebar.NonGitFolderDialog.sshConnectionUnavailable` — SSH connection "{{connection}}" not found or not connected
+- `auto.components.sidebar.RemoveFolderDialog.openTerminalWarning_one` — {{count}} open terminal in this project will be closed.
+- `auto.components.sidebar.RemoveFolderDialog.openTerminalWarning_other` — {{count}} open terminals in this project will be closed.
+- `auto.components.sidebar.SidebarRepositoryFilterSection.selectedProjects_one` — {{count}} project
+- `auto.components.sidebar.SidebarRepositoryFilterSection.selectedProjects_other` — {{count}} projects
+- `auto.components.sidebar.sidebarHostOptions.visibleHosts_one` — {{count}} host
+- `auto.components.sidebar.SidebarWorkspaceOptionsMenu.optionsActiveFilters_one` — Workspace options ({{count}} filter active)
+- `auto.components.sidebar.SidebarWorkspaceOptionsMenu.optionsActiveFilters_other` — Workspace options ({{count}} filters active)
+- `auto.components.sidebar.SidebarWorkspaceOptionsMenu.optionsFilterCount_one` — Workspace options ({{count}} filter)
+- `auto.components.sidebar.SidebarWorkspaceOptionsMenu.optionsFilterCount_other` — Workspace options ({{count}} filters)
+- `auto.components.sidebar.WorktreeCardAgents.sendingTarget` — Sending...
+- `auto.components.sidebar.RepoScanUnavailableIndicator.wslStoppedTitle` — WSL distro {{value0}} is stopped
+- `auto.components.sidebar.RepoScanUnavailableIndicator.wslUnverifiableTitle` — Couldn't confirm WSL distro {{value0}} is running
+- `auto.components.sidebar.RepoScanUnavailableIndicator.wslRetained` — Showing the worktrees Orca already knew about. They refresh when Orca sees the distro running.
+- `auto.components.sidebar.RepoScanUnavailableIndicator.wslStartAndScan` — Start distro and scan
+- `auto.components.sidebar.RepoScanUnavailableIndicator.wslStartAndScanHint` — Click the icon to start the distro and scan again.
+- `auto.components.settings.ComputerUsePane.794807aa21` — Queued macOS Privacy & Security; a newer request or a reset may replace it
+- `auto.components.settings.RepositoryHooksSection.issueCommandWslStopped` — WSL distro {{distro}} is stopped. Open a terminal in it to see or edit this command.
+- `auto.components.settings.PluginConsentDialog.capability.agentsRead` — Get notified when agent status changes
+- `auto.components.settings.PluginConsentDialog.capability.terminalRun` — Run commands in your terminals, including SSH
+- `auto.components.settings.PluginConsentDialog.fullAccessWarning` — Full access: runs as a normal program and can read your files, use the network and run other programs.
+- `auto.components.settings.PluginConsentDialog.uiWarning` — Runs the publisher's code inside Orca to draw its view. Orca shows what it can access and asks before enabling it.
+- `auto.components.settings.PluginDevelopmentSection.dialogTitle` — Development folders
+- `auto.components.settings.PluginDevelopmentSection.reviewHelp` — Reviewed once. Later code edits run without asking.
+- `auto.components.settings.PluginRollbackDialog.descriptionVersion` — Restores version {{value0}}.
+- `auto.components.settings.PluginsSettingsSection.alpha` — Alpha
+- `auto.components.settings.PluginsSettingsSection.fileTypeSuggestionsLabel` — Suggest plugins for unknown files
+- `auto.components.settings.PluginsSettingsSection.restartFailed` — Couldn't restart {{value0}}.
+- `auto.components.settings.PluginSettingsRow.syntaxFailed` — Highlighting stopped: this grammar failed.
+- `auto.components.settings.pluginError.installedManifestUnloadable` — This version can't load in this Orca. Update or reinstall it.
+- `auto.components.settings.plugins.search.aliases` — plugins mods extensions
+- `auto.components.settings.AppearanceInterfaceSection.pluginIconTheme.title` — Icon theme
+- `auto.components.settings.AppearanceInterfaceSection.pluginIconTheme.description` — File and folder icons from an enabled plugin.
+- `auto.components.settings.AppearanceInterfaceSection.pluginIconTheme.builtIn` — Built-in
+- `auto.components.settings.AppearanceInterfaceSection.lightTheme` — Light theme
+- `auto.components.settings.AppearanceInterfaceSection.darkTheme` — Dark theme
+- `auto.components.settings.AppearanceInterfaceSection.themeSlot.description` — App colors for this mode.
+- `auto.components.settings.PluginAddMenu.add` — Add plugin
+- `auto.components.settings.PluginAddMenu.folder` — From a folder…
+- `auto.components.settings.PluginAddMenu.git` — From a Git URL…
+- `auto.components.settings.PluginAddMenu.sources` — Catalog sources…
+- `auto.components.settings.PluginManager.verified` — verified
+- `auto.components.settings.PluginManager.unverified` — unverified
+- `auto.components.settings.PluginManager.catalogLoading` — Catalog
+- `auto.components.settings.PluginManager.catalogFailedTitle` — Couldn’t load the plugin catalog.
+- `auto.components.settings.PluginManager.catalogFailedBody` — Your installed plugins keep working.
+- `auto.components.settings.PluginManager.retry` — Retry
+- `auto.components.settings.PluginManager.sourceFailedTitle` — Couldn’t load this catalog.
+- `auto.components.settings.PluginManager.sourceFailedBody` — Your installed plugins keep working.
+- `auto.components.settings.PluginManager.sources` — Sources…
+- `auto.components.settings.PluginManager.sourceStaleTitle` — Couldn’t refresh this catalog.
+- `auto.components.settings.PluginManager.sourceStaleBody` — Showing the copy from {{value0}}.
+- `auto.components.settings.PluginManager.shownOf` — {{value0}} of {{value1}}
+- `auto.components.settings.PluginManager.installed` — Installed
+- `auto.components.settings.PluginManager.installedFailedTitle` — Couldn’t read your installed plugins.
+- `auto.components.settings.PluginManager.updatesTitle` — Updates
+- `auto.components.settings.PluginManager.refreshLabel` — Refresh catalogs
+- `auto.components.settings.PluginManager.noResultsTitle` — No plugins match “{{value0}}”
+- `auto.components.settings.PluginManager.noneInstalledTitle` — No plugins installed
+- `auto.components.settings.PluginManager.browseAll` — Browse all plugins
+- `auto.components.settings.PluginManager.resultCount` — {{value0}} plugins match
+- `auto.components.settings.PluginManager.resultCountOne` — 1 plugin matches
+- `auto.components.settings.PluginManager.updateAll` — Update all…
+- `auto.components.settings.PluginManager.notFromCatalog` — not from a catalog
+- `auto.components.settings.PluginManager.allInstalledTitle` — Every catalog plugin is installed
+- `auto.components.settings.PluginManager.showInstalled` — Show installed plugins
+- `auto.components.settings.PluginDetailPage.bundled` — Bundled with Orca
+- `auto.components.settings.PluginDetailPage.localFolder` — Local folder
+- `auto.components.settings.PluginDetailPage.gitUrl` — Git URL
+- `auto.components.settings.PluginDetailPage.stoppedTitle` — Stopped after an error
+- `auto.components.settings.PluginDetailPage.stoppedBody` — It kept crashing. Restart to try again.
+- `auto.components.settings.PluginDetailPage.invalidTitle` — Orca can’t load this plugin
+- `auto.components.settings.PluginDetailPage.needsOrcaTitle` — Needs Orca {{value0}} or later
+- `auto.components.settings.PluginDetailPage.needsOrcaBody` — You have Orca {{value0}}.
+- `auto.components.settings.PluginDetailPage.back` — Plugins
+- `auto.components.settings.PluginDetailPage.info` — Info
+- `auto.components.settings.PluginDetailPage.version` — Version
+- `auto.components.settings.PluginDetailPage.latest` — Latest
+- `auto.components.settings.PluginDetailPage.requires` — Requires
+- `auto.components.settings.PluginDetailPage.requiresValue` — Orca {{value0}} or later
+- `auto.components.settings.PluginDetailPage.categories` — Categories
+- `auto.components.settings.PluginDetailPage.pluginId` — Plugin ID
+- `auto.components.settings.PluginDetailPage.repository` — Repository
+- `auto.components.settings.PluginDetailPage.newerTitle` — Newer version available
+- `auto.components.settings.PluginDetailPage.newerBody` — The catalog changed while you were here.
+- `auto.components.settings.PluginDetailPage.showNewer` — Show newer
+- `auto.components.settings.PluginDetailPage.stoppedDataBody` — Couldn’t load its files. Restart to try again.
+- `auto.components.settings.PluginDetailPage.alsoListedBy` — Also listed by {{value0}}. Updates come only from the catalog it was installed from; to switch, remove it and install it again.
+- `auto.components.settings.PluginDetailSections.typeLanguagePack` — Interface language
+- `auto.components.settings.PluginDetailSections.typeAppTheme` — App theme
+- `auto.components.settings.PluginDetailSections.typeTerminalTheme` — Terminal theme
+- `auto.components.settings.PluginDetailSections.typeIconTheme` — File icon theme
+- `auto.components.settings.PluginDetailSections.typeSyntax` — Syntax highlighting
+- `auto.components.settings.PluginDetailSections.typeInstructions` — Agent instructions
+- `auto.components.settings.PluginDetailSections.typePanel` — Sidebar panel
+- `auto.components.settings.PluginDetailSections.typeWorker` — Background code
+- `auto.components.settings.PluginDetailSections.adds` — Adds to Orca
+- `auto.components.settings.PluginDetailSections.replaces` — Replaces your shortcut for {{value0}}
+- `auto.components.settings.PluginDetailSections.changeShortcuts` — Change in Shortcuts
+- `auto.components.settings.PluginDetailSections.command` — Command
+- `auto.components.settings.PluginDetailSections.panel` — Sidebar panel
+- `auto.components.settings.PluginDetailSections.recipe` — Machine recipe
+- `auto.components.settings.PluginDetailSections.access` — Can access
+- `auto.components.settings.PluginDetailSections.accessLoading` — Reading the plugin…
+- `auto.components.settings.PluginDetailSections.logs` — Logs
+- `auto.components.settings.PluginDetailSections.copyLogs` — Copy
+- `auto.components.settings.PluginDetailSections.accessFailed` — Couldn’t read its access
+- `auto.components.settings.PluginDetailSections.retry` — Retry
+- `auto.components.settings.PluginDetailSections.noAccessReach` — Nothing outside its own files
+- `auto.components.settings.PluginDetailSections.customEditor` — Editor
+- `auto.components.settings.PluginManagerRows.reinstall` — Reinstall
+- `auto.components.settings.PluginManagerRows.crashedCount` — Crashed {{value0}} times in a row
+- `auto.components.settings.PluginManagerRows.crashed` — Crashed while starting
+- `auto.components.settings.PluginManagerRows.remove` — Remove…
+- `auto.components.settings.PluginManagerRows.review` — Review
+- `auto.components.settings.PluginManagerRows.restart` — Restart
+- `auto.components.settings.PluginManagerRows.viewError` — View error
+- `auto.components.settings.PluginManagerRows.copyId` — Copy plugin ID
+- `auto.components.settings.PluginManagerRows.checkUpdate` — Check for update
+- `auto.components.settings.PluginManagerRows.bundledWithOrca` — Bundled with Orca
+- `auto.components.settings.PluginManagerRows.installName` — Install {{value0}}
+- `auto.components.settings.PluginManagerRows.copied` — Plugin ID copied
+- `auto.components.settings.PluginManagerRows.copyFailed` — Couldn't copy the plugin ID.
+- `auto.components.settings.PluginManagerRows.details` — Details
+- `auto.components.settings.PluginManagerRows.unverified` — Unverified
+- `auto.components.settings.PluginManagerRows.crashedOnce` — Crashed once
+- `auto.components.settings.PluginManagerRows.updateAvailable` — update {{value0}} available
+- `auto.components.settings.PluginManagerRows.updateLabel` — Update {{value0}} to {{value1}}
+- `auto.components.settings.PluginManagerRows.update` — Update {{value0}}
+- `auto.components.settings.PluginManagerRows.needsOrca` — Needs Orca {{value0}}
+- `auto.components.settings.PluginManagerRows.rollbackTo` — Roll back to {{value0}}…
+- `auto.components.settings.PluginManagerRows.copyContentHash` — Copy content hash
+- `auto.components.settings.PluginManagerRows.reviewUpdate` — Review update
+- `auto.components.settings.PluginManagerRows.updateNeedsReview` — update {{value0}} needs review
+- `auto.components.settings.PluginManagerRows.updatedTo` — updated to {{value0}}
+- `auto.components.settings.PluginManagerRows.dataLoadFailed` — Couldn’t load its files
+- `auto.components.settings.PluginSettingsOverview.offTitle` — Plugins are off
+- `auto.components.settings.PluginFilterPopover.kind` — Category
+- `auto.components.settings.PluginFilterPopover.catalog` — Catalog
+- `auto.components.settings.PluginFilterPopover.clear` — Clear filters
+- `auto.components.settings.PluginFilterPopover.themes` — Themes
+- `auto.components.settings.PluginFilterPopover.languages` — Languages
+- `auto.components.settings.PluginFilterPopover.icons` — Icons
+- `auto.components.settings.PluginFilterPopover.commands` — Commands & panels
+- `auto.components.settings.PluginFilterPopover.catalogLabel` — Filter by catalog
+- `auto.components.settings.PluginFilterPopover.editors` — Editors
+- `auto.components.settings.PluginFilterPopover.remoteVms` — Remote/VMs
+- `auto.components.settings.PluginUpdateAllDialog.previewError` — Couldn’t read this update
+- `auto.components.settings.PluginUpdateAllDialog.newAccess` — New: {{value0}}
+- `auto.components.settings.PluginUpdateAllDialog.failed` — Couldn’t update {{value0}}. The others were updated.
+- `auto.components.settings.PluginUpdateAllDialog.cancel` — Cancel
+- `auto.components.settings.PluginUpdateAllDialog.updateOne` — Update 1 plugin
+- `auto.components.settings.PluginUpdateAllDialog.updateMany` — Update {{value0}} plugins
+- `auto.components.settings.PluginUpdateAllDialog.failedAll` — Couldn’t update {{value0}}. Nothing was updated.
+- `auto.components.settings.PluginUpdateAllDialog.close` — Close
+- `auto.components.settings.PluginUpdateAllDialog.retry` — Try again
+- `auto.components.settings.PluginUpdateAllDialog.updated` — Updated
+- `auto.components.settings.PluginUpdateAllDialog.needsOrca` — Needs Orca {{value0}} or later
+- `auto.components.settings.PluginUpdateAllDialog.current` — Already installed
+- `auto.components.settings.PluginUpdateAllDialog.sourceMoved` — New source: {{value0}} (was {{value1}})
+- `auto.components.settings.PluginUpdateAllDialog.newShortcuts` — Keyboard shortcuts
+- `auto.components.settings.PluginUpdateAllDialog.newCommands` — Commands
+- `auto.components.settings.PluginUpdateAllDialog.newPanels` — Panels
+- `auto.components.settings.PluginUpdateAllDialog.newEvents` — More events
+- `auto.components.settings.PluginUpdateAllDialog.newRecipes` — Machine recipes
+- `auto.components.settings.PluginUpdateAllDialog.newContributions` — Features that act for you
+- `auto.components.settings.PluginUpdateAllDialog.allAccess` — See all access
+- `auto.components.settings.PluginUpdateAllDialog.update` — Update
+- `auto.components.settings.PluginDetailInfo.previous` — Previous
+- `auto.components.settings.PluginDetailInfo.updated` — Updated
+- `auto.components.settings.PluginDetailInfo.license` — License
+- `auto.components.settings.PluginDetailInfo.homepage` — Homepage
+- `auto.components.settings.PluginDetailInfo.whatsNew` — What’s new
+- `auto.components.settings.PluginDetailInfo.hashCopied` — Content hash copied
+- `auto.components.settings.PluginDetailInfo.hashCopyFailed` — Couldn't copy the hash.
+- `auto.components.settings.PluginListEmptyStates.noFilterMatches` — No plugins match these filters
+- `auto.components.settings.PluginListEmptyStates.clearBoth` — Clear search and filters
+- `auto.components.settings.PluginListEmptyStates.pageGone` — This plugin is no longer installed or listed.
+- `auto.components.settings.pluginContributions.dark` — Dark
+- `auto.components.settings.pluginContributions.light` — Light
+- `auto.components.settings.pluginContributions.languageIncomplete` — {{value0}}% translated, too incomplete to use as Orca’s language
+- `auto.components.settings.pluginContributions.languageCoverage` — Interface language · {{value0}}% translated
+- `auto.components.settings.pluginContributions.newFileMenu` — Adds to the + menu
+- `auto.components.settings.PluginCardAction.installed` — Installed
+- `auto.components.settings.PluginCardAction.installing` — Installing…
+- `auto.components.settings.PluginCardAction.reviewLabel` — Review and install {{value0}}
+- `auto.components.settings.PluginCardAction.review` — Review & install
+- `auto.components.settings.PluginCardAction.retry` — Try again
+- `auto.components.settings.PluginInstallConsent.install` — Install & enable
+- `auto.components.settings.PluginInstallConsent.noOtherAccess` — No other access
+- `auto.components.settings.PluginInstallConsent.keepOff` — Keep off
+- `auto.components.settings.PluginInstallConsent.replacesShortcut` — {{value0}} ({{value1}}) replaces your shortcut for {{value2}}.
+- `auto.components.settings.PluginInstallConsent.updatesKeepApproval` — Updates ask again only for new access
+- `auto.components.settings.PluginInstallConsent.fullAccessUpdates` — Updates can change its code without asking
+- `auto.components.settings.PluginInstallConsent.editsFileTypes` — Opens and edits {{value0}} files in Orca. It can read the files it opens.
+- `auto.components.settings.PluginPageAction.failedTitle` — Couldn’t install {{value0}}
+- `auto.components.settings.PluginPageAction.contentOnly` — Content only
+- `auto.components.settings.PluginSettingsMenu.label` — Plugin settings
+- `auto.components.settings.PluginSettingsMenu.development` — Development folders…
+- `auto.components.settings.PluginSettingsMenu.autoUpdateLabel` — Update plugins automatically
+- `auto.components.settings.PluginSettingsMenu.autoUpdateHint` — Asks again only for new access
+- `auto.components.settings.PluginThemeUseNow.label` — Use now:
+- `auto.components.settings.PluginThemeUseNow.useName` — Use now: {{value0}}
+- `auto.components.settings.PluginThemeUseNow.useForLight` — Use for light:
+- `auto.components.settings.PluginThemeUseNow.useForDark` — Use for dark:
+- `auto.components.settings.PluginPageHero.screenshots` — Screenshots
+- `auto.components.settings.PluginPageHero.openScreenshot` — Open screenshot: {{value0}}
+- `auto.components.settings.PluginPageHero.position` — {{value0}} of {{value1}}
+- `auto.components.settings.PluginPageHero.previous` — Previous screenshot
+- `auto.components.settings.PluginPageHero.next` — Next screenshot
+- `auto.components.settings.pluginConsentCopy.addsCommands` — Adds commands
+- `auto.components.settings.pluginConsentCopy.addsPanel` — Adds a panel
+- `auto.components.settings.pluginConsentCopy.contentOnly` — Content only
+- `auto.components.settings.pluginConsentCopy.fullAccess` — Full access
+- `auto.components.settings.pluginConsentCopy.addsVmRecipes` — Adds VM recipes
+- `auto.components.settings.pluginConsentCopy.opensAndEditsFiles` — Opens and edits files
+- `auto.components.settings.pluginConsentCopy.runsPluginCode` — Runs plugin code
+- `auto.components.settings.PluginContributionActionCommand.run` — Run
+- `auto.components.settings.PluginContributionActionCommand.runName` — Run {{value0}}
+- `auto.components.settings.PluginContributionActionCommand.ran` — Ran {{value0}}
+- `auto.components.settings.PluginContributionActionCommand.failed` — {{value0}} failed
+- `auto.components.settings.PluginContributionActionCommand.seeLogs` — See Logs below
+- `auto.components.settings.PluginContributionActionCommand.needsWorkspace` — Needs an open workspace
+- `auto.components.settings.PluginContributionActionPanel.open` — Open panel
+- `auto.components.settings.PluginContributionActionPanel.openName` — Open panel: {{value0}}
+- `auto.components.settings.PluginContributionActionPanel.needsWorkspace` — Needs an open workspace
+- `auto.components.settings.PluginContributionActionLanguage.switch` — Switch language
+- `auto.components.settings.PluginContributionActionLanguage.switchTo` — Switch language to {{value0}}
+- `auto.components.settings.PluginContributionActionLanguage.switchBack` — Switch back
+- `auto.components.settings.PluginContributionActionLanguage.switchBackFrom` — Switch back from {{value0}}
+- `auto.components.settings.PluginContributionActionLanguage.failed` — Could not switch language
+- `auto.components.settings.PluginContributionActionSyntax.openExtension` — Open any {{value0}} file
+- `auto.components.settings.PluginContributionActionSyntax.openFilename` — Open {{value0}}
+- `auto.components.settings.PluginContributionActionEvents.worktreeCreated` — When a workspace is created
+- `auto.components.settings.PluginContributionActionEvents.worktreeRemoved` — When a workspace is removed
+- `auto.components.settings.PluginContributionActionEvents.agentStatusChanged` — When an agent’s status changes
+- `auto.components.settings.PluginContributionActionEvents.detail` — Background code runs
+- `auto.components.settings.pluginInstallAction.installed` — {{value0}} installed
+- `auto.components.settings.pluginInstallAction.tryIt` — Try it
+- `auto.components.settings.pluginInstallAction.mismatch` — Download didn’t match the catalog. Nothing installed.
+- `auto.components.settings.pluginInstallAction.catalogChanged` — The catalog changed. Refresh and try again.
+- `auto.components.settings.pluginInstallAction.blocked` — Orca’s safety list blocks this plugin.
+- `auto.components.settings.pluginInstallAction.downloadFailed` — Couldn’t download. Check your connection.
+- `auto.components.settings.pluginThemeApply.nowUsing` — Now using {{value0}}
+- `auto.components.settings.pluginThemeApply.switchBack` — Switch back
+- `auto.components.settings.PluginChips.updateNeedsReview` — Update needs review
+- `auto.components.settings.PluginChips.updatedTo` — Updated to {{value0}}
+- `auto.components.settings.PluginChips.devUnverified` — Dev · unverified
+- `auto.components.settings.PluginInUseAction.inUseDark` — In use · Dark
+- `auto.components.settings.PluginInUseAction.inUseLight` — In use · Light
+- `auto.components.settings.PluginInUseAction.inUse` — In use
+- `auto.components.settings.PluginInUseAction.useName` — Use {{value0}}
+- `auto.components.settings.PluginInUseAction.use` — Use
+- `auto.components.settings.PluginsAlphaNotice.label` — Alpha:
+- `auto.components.settings.PluginsAlphaNotice.body` — The plugin interface may change. Expect nuances.
+- `auto.components.settings.PluginsAlphaNotice.dismiss` — Dismiss Alpha notice
+- `auto.components.settings.PluginStatus.needsReview` — Needs review
+- `auto.components.settings.PluginStatus.restarting` — Restarting
+- `auto.components.settings.PluginStatus.stopped` — Stopped
+- `auto.components.settings.PluginStatus.cantLoad` — Can’t load
+- `auto.components.settings.PluginStatus.off` — Off
+- `auto.components.settings.PluginStatus.running` — Running
+- `auto.components.settings.PluginStatus.on` — On
+- `auto.components.settings.PluginStatus.blocked` — Blocked
+- `auto.components.settings.PluginContributionActionNewFile.create` — Create
+- `auto.components.settings.pluginTryAction.incompleteLanguage` — This language pack is too incomplete to switch to.
+- `auto.components.right.sidebar.useFileDeletion.deleteItems_one` — Delete {{count}} item?
+- `auto.components.right.sidebar.useFileDeletion.permanentlyDeleteItems_one` — Permanently delete {{count}} item?
+- `auto.components.mobile.relayClockSkewMessage.message` — Your computer's clock is off by about {{seconds}} seconds. Turn on automatic time, then retry.
+- `auto.components.editor.RichMarkdownEmojiMenu.chooseEmoji` — Choose an emoji
+- `auto.components.editor.editor.save.bytesUpdateRequired` — Saving binary files here requires a newer Orca server. Update the Orca server and try again.
+- `auto.components.editor.PluginFileTypeSuggestion.message` — A plugin can open .{{value0}} files: {{value1}}
+- `auto.components.editor.PluginFileTypeSuggestion.view` — View plugin
+- `auto.components.editor.PluginFileTypeSuggestion.notNow` — Not now
+- `auto.components.editor.PluginFileTypeSuggestion.never` — Don't suggest for .{{value0}}
+- `auto.components.editor.PluginFileTypeSuggestion.editorMessage` — A plugin adds an editor for .{{value0}} files: {{value1}}
+- `auto.components.editor.PluginCustomEditorFrame.loading` — Loading editor…
+- `auto.components.editor.PluginCustomEditorFrame.unresponsive` — {{value0}} stopped responding. Switch to Source to keep editing.
+- `auto.components.editor.PluginCustomEditorFrame.loadFailed` — {{value0}} could not be loaded. Switch to Source to edit this file.
+- `auto.components.editor.PluginCustomEditorFrame.editTooLarge` — This file is too large for {{value0}} to save changes. Use Source instead.
+- `auto.components.editor.PluginCustomEditorFrame.saveBlocked` — Couldn't save the latest changes from {{value0}}.
+- `auto.components.editor.PluginCustomEditorFrame.editsHeld` — {{value0}} is sending changes too quickly; Orca applies the latest one shortly.
+- `auto.components.editor.PluginCustomEditorFrame.largeFile` — Large file — may take a moment.
+- `auto.components.editor.PluginBytesCustomEditorSurface.retry` — Retry
+- `auto.components.editor.PluginBytesCustomEditorSurface.tooLarge` — {{value0}} is too large to open in {{value1}} ({{value2}}; the limit is {{value3}}).
+- `auto.components.editor.PluginBytesCustomEditorSurface.unsupported` — {{value0}} can't read this file from where it is stored. Update the Orca server that hosts it, or switch to Source.
+- `auto.components.editor.PluginBytesCustomEditorSurface.readFailed` — {{value0}} couldn't be read for {{value1}}. {{value2}}
+- `auto.components.editor.richMarkdownBlobImagePaste.saveFailed` — Couldn't save a pasted image beside the document. It may not load after Orca restarts.
+- `auto.components.cmd.j.quick.actions.verbs.browserRight` — browser right
+- `auto.components.cmd.j.quick.actions.verbs.splitBrowser` — split browser
+- `auto.components.cmd.j.quick.actions.verbs.browserSplit` — browser split
+- `auto.components.cmd.j.quick.actions.newBrowserTabSplitRight` — New Browser Tab in Right Split
+- `auto.components.cmd.j.quick.actions.newBrowserTabSplitRightDescription` — Open a browser tab in a new split to the right.
+- `auto.components.cmd.j.pluginQuickActions.newFileDescription` — Create an untitled {{value0}} file in the active workspace.
+- `auto.components.browser.pane.annotate.use.browser.page.grab.annotations.limitReached` — Limit of {{limit}} annotations reached. Send, delete or clear some to add more.
+- `auto.components.browser.pane.annotate.browser.page.annotation.tray.includePageDetails` — Include page details
+- `auto.components.browser.pane.annotate.browser.page.annotation.tray.copyFeedback` — Copy feedback
+- `auto.components.browser.pane.annotate.browser.page.annotation.tray.copyFeedbackWithPageDetails` — Copy feedback with page details
+- `auto.components.automations.AutomationRunsDashboard.historyUnavailable_one` — Run history is unavailable for {{count}} automation. Counts include available history only.
+- `auto.components.automations.AutomationRunsDashboard.historyUnavailable_other` — Run history is unavailable for {{count}} automations. Counts include available history only.
+- `auto.components.automations.usage.costUnavailable` — n/a
+- `auto.components.automations.hostSummary.partialFailureOfHosts_one` — {{failed}} of {{count}} host could not be loaded
+- `auto.components.automations.hostSummary.partialFailureOfHosts_other` — {{failed}} of {{count}} hosts could not be loaded
+- `auto.components.activity.ActivityPrototypePage.threadListOptionsActiveFilters_one` — Thread list options ({{count}} filter active)
+- `auto.components.activity.ActivityPrototypePage.threadListOptionsActiveFilters_other` — Thread list options ({{count}} filters active)
+- `auto.components.activity.ActivityPrototypePage.activityOptionsFilterCount_one` — Activity options ({{count}} filter)
+- `auto.components.activity.ActivityPrototypePage.activityOptionsFilterCount_other` — Activity options ({{count}} filters)
+- `auto.components.pluginCatalog.PluginCatalogLayout.updates` — Updates
+- `auto.components.pluginCatalog.PluginCatalogLayout.clearSearch` — Clear search
+- `auto.components.pluginCatalog.PluginCatalogLayout.notInstalled` — Not installed
+- `auto.components.pluginCatalog.PluginListGroup.showAll` — Show {{value0}} more
+- `auto.components.pluginCatalog.PluginListGroup.showAllTotal` — Show all {{value0}} plugins
+- `auto.components.pluginCatalog.PluginListRow.official` — Official
+- `auto.components.plugins.PluginCatalogLinkDialog.failed` — Couldn’t add this catalog.
+- `auto.components.plugins.PluginCatalogLinkDialog.title` — Add catalog {{value0}}?
+- `auto.components.plugins.PluginCatalogLinkDialog.cancel` — Cancel
+- `auto.components.plugins.PluginCatalogLinkDialog.add` — Add catalog
+- `auto.components.plugins.PluginCatalogLinkDialog.body` — A link asked to show {{value0}} from this catalog. Add catalogs only from people you trust.
+- `auto.components.plugins.list.PluginsSectionDescription.openWith` — Open anytime with
+- `components.native-chat.failureWords.cliMissingInWslDistro` — {{agent}} isn't installed in the WSL distro {{distro}}. Install it inside {{distro}}, or check its Command in Settings → Agents.
+- `components.native-chat.failureWords.modelUnavailable` — {{agent}} couldn't use {{detail}}. Pick another model and send again.
+- `components.native-chat.tool.runBrowser_one` — Used the browser {{count}} time
+- `components.native-chat.tool.runPlan_one` — Updated the plan {{count}} time
+- `components.native-chat.tool.runLiveBrowser_one` — Using the browser {{count}} time
+- `components.native-chat.tool.runLivePlan_one` — Updating the plan {{count}} time
+- `components.native-chat.agentMessage.goToAgent` — Go to agent
+- `components.native-chat.agentMessage.messageFromCoordinator` — Message from coordinator
+- `components.native-chat.agentMessage.showMore` — Show more
+- `components.native-chat.agentMessage.taskFromCoordinator` — Task from coordinator
+- `components.native-chat.agentMessage.updateFromWorker` — Update from worker
+- `components.native-chat.hostOutage.startFailed` — Couldn’t start {{distro}}. Check it in Settings → Remote Orca Servers.
+- `components.native-chat.hostOutage.unverifiable` — Orca couldn't check whether {{distro}} is running
+- `components.native-chat.hostOutage.startToSend` — Start {{distro}} to send.
+- `components.native-chat.sessionOptionErrors.startOnly` — This option can only be set when the session starts.
+- `components.native-chat.sessionOptionErrors.modelRejected` — Claude kept the current model.
+- `components.native-chat.sessionOptionErrors.modelUnverified` — Could not verify the model change; open the terminal to check.
+- `components.native-chat.sessionOptionErrors.unknownOption` — Unknown session option: {{id}}
+- `components.native-chat.sessionOptionErrors.agentPickerOnly` — This option must be changed in the agent picker.
+- `components.native-chat.sessionOptionErrors.toggleBaselineUnknown` — Current value is unknown; use the Toggle action instead.
+- `components.native-chat.sessionOptionErrors.afterStartOnly` — This option is only available after the session starts.
+- `components.native-chat.sessionOptionErrors.valueRequired` — This option requires a value.
+- `components.native-chat.sessionOptionErrors.toggleValueKnown` — This option has a known value; choose On or Off instead.
+- `components.native-chat.composerErrors.goalObjectiveMissing` — Describe the goal after /goal.
+- `components.native-chat.composerErrors.commandUnavailable` — /{{name}} is not available in chat sessions. Use the slash menu to see available commands.
+- `components.native-chat.composerErrors.commandTakesNoArguments` — Use /{{name}} without arguments.
+- `components.native-chat.composerErrors.commandUnsupportedByHost` — /{{name}} is not supported by this chat host.
+- `components.native-chat.composerErrors.modelPickerFailed` — Could not open the model picker.
+- `components.native-chat.composerErrors.effortPickerFailed` — Could not open the effort picker.
+- `components.native-chat.composerErrors.modelApplyFailed` — Could not apply model {{value}}.
+- `components.native-chat.composerErrors.effortApplyFailed` — Could not apply effort {{value}}.
+- `components.native-chat.githubPeek.updated` — updated {{time}}
+- `components.native-chat.githubPeek.oneComment` — 1 comment
+- `components.native-chat.githubPeek.comments` — {{count}} comments
+- `components.native-chat.githubPeek.unavailable` — Preview unavailable.
+- `components.native-chat.githubPeek.retry` — Retry
+- `components.native-chat.webPeek.unavailable` — No preview for this page.
+- `components.workspace.cleanup.browse.lastActive` — Last active {{value0}}
+- `components.workspace.cleanup.candidateRow.gitChip.clean` — Clean
+- `components.workspace.cleanup.candidateRow.gitChip.dirty` — Dirty
+- `components.workspace.cleanup.candidateRow.gitChip.unpushed` — Unpushed
+- `components.workspace.cleanup.candidateRow.gitChip.unknown` — Unknown
+- `components.settings.nativeChat.linkPreviewsToggleLabel` — Toggle link previews
+- `components.settings.nativeChat.linkPreviewsTitle` — Link previews
+- `components.settings.nativeChat.linkPreviewsCopy` — Hovering a web link shows a preview card. Orca fetches the page to build it, so the site can see the request.
+- `components.settings.nativeChat.linkPreviewsSearchUnfurl` — unfurl
+- `components.settings.nativeChat.linkPreviewsSearchHover` — hover card
+- `featureTips.voice.title` — Dictate into any pane
+- `featureTips.voice.description` — Start voice dictation in any focused pane, then use the shortcut again to stop.
+- `featureTips.voice.cta` — Set up voice dictation
+- `featureTips.sessionSearch.title` — Search every agent session
+- `featureTips.sessionSearch.description` — Find any past conversation by what was said in it, then pick up where the agent left off.
+- `featureTips.sessionSearch.cta` — Turn on session search
+- `featureTips.eyebrowNew` — New
+- `featureTips.eyebrowTip` — Tip
+- `featureTips.orcaCli.title` — Let agents drive Orca with the Orca CLI
+- `featureTips.orcaCli.description` — Enable agents to coordinate child worktrees and communicate between worktrees.
+- `featureTips.orcaCli.cta` — Install CLI & Skills
+- `featureTips.cmdJPalette.title` — Jump to a worktree with <shortcut>
+- `featureTips.cmdJPalette.description` — Search worktrees, switch tabs, tweak settings, or spin up a new worktree, all without leaving the keyboard.
+- `featureTips.gotIt` — Got it
+- `sourceControl.discard.deleteUntrackedFilesDescription_one` — This will permanently delete {{count}} untracked file. This cannot be undone.
+- `sourceControl.discard.unstagedFilesIncludingUntrackedDescription_one` — This will revert unstaged changes and permanently delete any untracked files among {{count}} file. This cannot be undone.
+- `sourceControl.createReviewFailure.stacked.stackGithubOnly` — Stacked pull request creation is available only for GitHub repositories.
+- `sourceControl.createReviewFailure.stacked.stackGithubComOnly` — GitHub stacked pull requests are available only on GitHub.com.
+- `sourceControl.createReviewFailure.stacked.stackSameParent` — Choose a different parent branch before creating a stacked pull request.
+- `sourceControl.createReviewFailure.stacked.stackParentWithoutReview` — The parent branch {{base}} does not have an open pull request. Create that pull request first.
+- `sourceControl.createReviewFailure.stacked.stackParentAmbiguous` — Orca found multiple open pull requests for the parent branch {{base}}.
+- `sourceControl.createReviewFailure.stacked.stackHeadAmbiguous` — Orca found multiple open pull requests for the current branch {{head}}.
+- `sourceControl.createReviewFailure.stacked.stackParentMultipleStacks` — The selected parent pull request belongs to multiple stacks.
+- `sourceControl.createReviewFailure.stacked.stackParentClosed` — The selected parent belongs to a closed stack.
+- `sourceControl.createReviewFailure.stacked.stackParentNotTop` — Choose the top pull request in the stack as the base branch before adding another layer.
+- `sourceControl.createReviewFailure.stacked.stackConflict` — The pull request already belongs to a different GitHub stack.
+- `sourceControl.createReviewFailure.stacked.stacksUnavailable` — GitHub stacked pull requests are not available for this repository.
+- `sourceControl.createReviewFailure.stacked.stackParentUnverified` — Orca could not verify the parent pull request. Retry in a moment.
+- `sourceControl.createReviewFailure.stacked.stackExistingReviewOtherBase` — An open pull request already exists for this branch but does not target the selected parent branch.
+- `sourceControl.createReviewFailure.stacked.stackCreationUnconfirmed` — Pull request creation may have completed. Retry to finish stack registration.
+- `sourceControl.createReviewFailure.stacked.stackRegistrationUnavailable` — The pull request was created, but GitHub stacks are not available for this repository.
+- `sourceControl.createReviewFailure.stacked.stackRegistrationFailed` — The pull request was created, but GitHub could not add it to the stack. Retry to finish stack registration.
+- `sourceControl.createReviewFailure.baseHeadTitleRequired` — base branch, head branch, and title are required.
+- `sourceControl.textGeneration.errors.promptTooLargeForWindows` — {{label}} prompt is too large for the Windows command line. Stage fewer changes and try again.
+- `sourceControl.textGeneration.errors.promptTooLargeForArgument` — {{label}} prompt is too large to pass as a single command-line argument. Stage fewer changes and try again.
+- `sourceControl.textGeneration.errors.agentCouldNotStart` — {{label}} could not be started. Check the agent command in Settings and try again.
+- `sourceControl.textGeneration.errors.agentFailedToStart` — {{label}} failed to start. Check the agent command in Settings and try again.
+- `sourceControl.textGeneration.errors.agentBinaryNotFound` — {{binary}} not found on PATH. Install {{label}} to use AI commit messages.
+- `sourceControl.textGeneration.errors.timedOut` — Generation timed out after {{seconds}}s.
+- `sourceControl.textGeneration.errors.outputTooLarge` — {{label}} CLI command produced too much output. Check the agent CLI configuration and try again.
+- `sourceControl.textGeneration.errors.windowsBatchUnsafeArguments` — {{label}} runs through a Windows batch script that cannot take the multi-line prompt as an argument. Point Settings at the agent's executable, or use a custom command without {prompt} so Orca sends the prompt on stdin.
+- `sourceControl.textGeneration.errors.cliTerminated` — {{label}} CLI command was terminated before exiting.
+- `sourceControl.textGeneration.errors.cliTerminatedWithDetail` — {{label}} CLI command was terminated before exiting: {{detail}}
+- `sourceControl.textGeneration.errors.cliFailed` — {{label}} CLI command failed with code {{exitCode}}.
+- `sourceControl.textGeneration.errors.cliFailedWithDetail` — {{label}} CLI command failed with code {{exitCode}}: {{detail}}
+- `sourceControl.textGeneration.errors.agentReportedError` — {{label}} reported an error.
+- `sourceControl.textGeneration.errors.emptyCommitMessage` — {{label}} returned an empty message.
+- `sourceControl.textGeneration.errors.emptyCommitMessageWithDetail` — {{label}} returned an empty message. CLI output: {{detail}}
+- `sourceControl.textGeneration.errors.emptyPullRequestDetails` — {{label}} returned an empty details.
+- `sourceControl.textGeneration.errors.emptyPullRequestDetailsWithDetail` — {{label}} returned an empty details. CLI output: {{detail}}
+- `sourceControl.textGeneration.errors.emptyJiraSummary` — {{label}} returned an empty summary.
+- `sourceControl.textGeneration.errors.emptyJiraSummaryWithDetail` — {{label}} returned an empty summary. CLI output: {{detail}}
+- `sourceControl.textGeneration.errors.commitMessageUnparseable` — Generated commit message could not be parsed.
+- `sourceControl.textGeneration.errors.pullRequestDetailsUnparseable` — Generated pull request details could not be parsed.
+- `sourceControl.textGeneration.errors.jiraSummaryEmptyAfterSanitization` — Generated summary was empty after sanitization.
+- `sourceControl.textGeneration.errors.jiraDescriptionRequired` — Description is required.
+- `sourceControl.textGeneration.errors.jiraAccountDisconnected` — Reconnect the selected Jira account on this host.
+- `sourceControl.textGeneration.errors.jiraSummaryBusyInOtherDraft` — A Jira title is already being generated in another draft.
+- `sourceControl.textGeneration.errors.stagedChangesReadFailed` — Failed to read staged changes.
+- `sourceControl.textGeneration.errors.noStagedChanges` — No staged changes to summarize.
+- `sourceControl.textGeneration.errors.noBranchChanges` — No branch changes to summarize.
+- `sourceControl.textGeneration.errors.commandTemplateEmptyCommitMessage` — Command template is empty for commit messages.
+- `sourceControl.textGeneration.errors.commandTemplateEmptyPullRequest` — Command template is empty for pull request details.
+- `sourceControl.textGeneration.errors.commandTemplateEmptyBranchName` — Command template is empty for branch names.
+- `sourceControl.textGeneration.errors.commandTemplateEmptyChatName` — Command template is empty for chat names.
+- `sourceControl.textGeneration.errors.sourceControlAgentUnsupported` — Choose a supported Source Control AI agent for this action in Settings -> Git -> Source Control AI. Supported agents: {{agents}}, or Custom command.
+- `sourceControl.textGeneration.errors.chatNameAgentUnsupported` — Choose a supported chat name agent for this action in Settings -> Chat -> Chat names. Supported agents: {{agents}}, or Custom command.
+- `sourceControl.textGeneration.errors.sourceControlCustomCommandEmpty` — Custom command is empty. Add one in Settings -> Git -> Source Control AI.
+- `sourceControl.textGeneration.errors.chatNameCustomCommandEmpty` — Custom command is empty. Add one in Settings -> Chat -> Chat names.
+- `sourceControl.textGeneration.errors.agentCannotGenerateCommitMessage` — Agent "{{agent}}" does not support Source Control AI commit messages. Supported agents: {{agents}}, or Custom command.
+- `sourceControl.textGeneration.errors.agentCannotGeneratePullRequest` — Agent "{{agent}}" does not support Source Control AI pull request details. Supported agents: {{agents}}, or Custom command.
+- `sourceControl.textGeneration.errors.agentCannotGenerateBranchName` — Agent "{{agent}}" does not support Source Control AI branch names. Supported agents: {{agents}}, or Custom command.
+- `sourceControl.textGeneration.errors.agentCannotGenerateChatName` — Agent "{{agent}}" does not support chat names. Supported agents: {{agents}}, or Custom command.
+- `sourceControl.textGeneration.errors.noModelForAgent` — No model is available for {{label}}.
+- `sourceControl.textGeneration.errors.planCustomCommandEmpty` — Custom command is empty. Add one in Settings → Git → AI Commit Messages.
+- `sourceControl.textGeneration.errors.planAgentUnsupported` — Agent "{{agent}}" does not support AI commit messages.
+- `sourceControl.textGeneration.errors.planModelUnavailable` — Model "{{model}}" is not available for {{label}}.
+- `sourceControl.textGeneration.errors.planModelWithoutThinking` — Model "{{model}}" does not support a thinking effort level.
+- `sourceControl.textGeneration.errors.planThinkingLevelInvalid` — Thinking level "{{level}}" is not valid for {{model}}.
+- `sourceControl.textGeneration.errors.openCodeInvalidEvents` — OpenCode returned invalid JSON events.
+- `sourceControl.textGeneration.errors.antigravityInvalidEvents` — Antigravity returned invalid JSON events.
+- `sourceControl.textGeneration.errors.antigravityInvalidResult` — Antigravity returned an invalid result.
+- `sourceControl.textGeneration.errors.antigravityNoFinalResult` — Antigravity returned no final result.
+- `sourceControl.textGeneration.errors.kimiUnreadableOutput` — Kimi returned output Orca couldn't read. Try again.
+- `sourceControl.textGeneration.errors.kimiSessionOccupied` — Kimi couldn't use this session because it is active in another client. Stop the session there or exit that client, then try again.
+- `sourceControl.textGeneration.errors.kimiInterrupted` — Kimi was interrupted before it finished generating text. Try again.
+- `sourceControl.textGeneration.errors.kimiFailed` — Kimi couldn't finish generating text. Open Kimi on the execution host to check the failure before retrying.
+- `sourceControl.textGeneration.errors.kimiAgentOptionsConflict` — Kimi received conflicting or repeated agent options. Keep a single --agent or --agent-file option in the generation recipe or CLI arguments, then retry.
+- `sourceControl.textGeneration.errors.kimiOptionRejected` — Kimi rejected an option or argument. Correct the generation recipe or CLI arguments, then retry.
+- `sourceControl.textGeneration.errors.kimiSessionNotFound` — Kimi couldn't find the requested session. Use an existing session or start a new one.
+- `sourceControl.textGeneration.errors.kimiSessionOtherDirectory` — This Kimi session belongs to another directory. Resume it there or use a session created for this workspace.
+- `sourceControl.textGeneration.errors.kimiCredentialVariableMissing` — Kimi is missing a configured credential environment variable. Set it on the execution host before retrying.
+- `sourceControl.textGeneration.errors.kimiCredentialsRequired` — Kimi needs provider credentials. Open Kimi on the execution host to configure a provider or sign in, then retry.
+- `sourceControl.textGeneration.errors.kimiModelMissing` — Kimi has no usable model configured. Open Kimi on the execution host to configure or select a model, then retry.
+- `sourceControl.textGeneration.errors.kimiPromptHookBlocked` — A Kimi prompt hook blocked the request or the turn couldn't start. Review Kimi hooks and configuration before retrying.
+- `sourceControl.textGeneration.errors.kimiCancelled` — Kimi cancelled the request before it finished generating text. Try again.
+- `sourceControl.textGeneration.errors.kimiEmptyPrompt` — Kimi received an empty prompt. Correct that input in the generation recipe or CLI arguments, then retry.
+- `sourceControl.textGeneration.errors.kimiEmptyModel` — Kimi received an empty model. Correct that input in the generation recipe or CLI arguments, then retry.
+- `sourceControl.textGeneration.errors.kimiEmptyAgent` — Kimi received an empty agent. Correct that input in the generation recipe or CLI arguments, then retry.
+- `sourceControl.textGeneration.errors.kimiEmptyAgentFilePath` — Kimi received an empty agent file path. Correct that input in the generation recipe or CLI arguments, then retry.
+- `sourceControl.textGeneration.errors.kimiOutputFormatInvalid` — Kimi output format requires prompt mode and a supported text or stream-json value. Correct the generation recipe or CLI arguments before retrying.
+- `sourceControl.textGeneration.errors.kimiSessionIdRequired` — Kimi needs a session id to resume in prompt mode. Correct the generation recipe or CLI arguments, then retry.
+- `sourceControl.textGeneration.errors.kimiConflictingOptions` — Kimi received conflicting options: {{option}} with {{otherOption}}. Correct the generation recipe or CLI arguments before retrying.
+- `sourceControl.textGeneration.errors.kimiAgentChangeOnResume` — Kimi cannot change the agent when resuming a session. Remove the agent override or start a new session in the generation recipe or CLI arguments.
+- `sourceControl.textGeneration.errors.kimiResponseBlocked` — Kimi could not return a response because it was blocked. Revise the prompt or model configuration before retrying.
+- `sourceControl.textGeneration.errors.kimiAuthFailed` — Kimi could not authenticate. Sign in or correct provider credentials on the execution host, then retry.
+- `sourceControl.textGeneration.errors.kimiConnectionFailed` — Kimi could not connect to its provider. Check the network on the execution host, then retry.
+- `sourceControl.textGeneration.errors.kimiProviderLimited` — Kimi reached a provider limit or the provider is busy. Wait before retrying or reduce request frequency.
+- `sourceControl.textGeneration.errors.kimiContextOverflow` — Kimi ran out of context. Shorten the prompt or start a new session, then retry.
+- `sourceControl.textGeneration.errors.kimiConfigInvalid` — Kimi has invalid configuration. Check the model and provider configuration on the execution host before retrying.
+- `sourceControl.textGeneration.errors.kimiContinueSessionConflict` — Kimi received conflicting options: --continue, --session. Correct the generation recipe or CLI arguments before retrying.
+- `sourceControl.textGeneration.enableSourceControlAi` — Enable Source Control AI in Settings -> Git.
+- `sourceControl.textGeneration.chooseBaseBranch` — Choose a base branch before generating.
+- `sourceControl.textGeneration.savedCommitRecipeRepo` — Saved commit-message recipe for this repository.
+- `sourceControl.textGeneration.savedCommitRecipeGlobal` — Saved commit-message recipe as a global default.
+- `sourceControl.textGeneration.savedReviewRecipeRepo` — Saved hosted-review recipe for this repository.
+- `sourceControl.textGeneration.savedReviewRecipeGlobal` — Saved hosted-review recipe as a global default.
+- `sourceControl.textGeneration.savedBranchRecipeRepo` — Saved branch-name recipe for this repository.
+- `sourceControl.textGeneration.savedBranchRecipeGlobal` — Saved branch-name recipe as a global default.
+- `sourceControl.remoteError.submodule.namedRemoteChanged` — Submodule '{{name}}' has remote changes. Pull inside the submodule, then try again.
+- `sourceControl.remoteError.submodule.remoteChanged` — A submodule has remote changes. Pull inside the submodule, then try again.
+- `sourceControl.remoteError.submodule.namedPushFailed` — Submodule '{{name}}' could not be pushed. Resolve the submodule push error, then try again.
+- `sourceControl.remoteError.submodule.pushFailed` — A submodule could not be pushed. Resolve the submodule push error, then try again.
+- `sourceControl.remoteError.failedWithDetail.publish` — Publish Branch failed. {{detail}}
+- `sourceControl.remoteError.failedWithDetail.sync` — Sync failed. {{detail}}
+- `sourceControl.remoteError.failedWithDetail.forcePush` — Force Push failed. {{detail}}
+- `sourceControl.remoteError.failedWithDetail.push` — Push failed. {{detail}}
+- `sourceControl.remoteError.failedWithDetail.fetch` — Fetch failed. {{detail}}
+- `sourceControl.remoteError.failedWithDetail.fastForward` — Fast-forward failed. {{detail}}
+- `sourceControl.remoteError.failedWithDetail.rebase` — Rebase failed. {{detail}}
+- `sourceControl.remoteError.failedWithDetail.pull` — Pull failed. {{detail}}
+- `sourceControl.remoteError.hookBlocked.lint.publish` — Publish Branch blocked — lint failed during push.
+- `sourceControl.remoteError.hookBlocked.lint.sync` — Sync blocked — lint failed during push.
+- `sourceControl.remoteError.hookBlocked.lint.forcePush` — Force Push blocked — lint failed during push.
+- `sourceControl.remoteError.hookBlocked.lint.push` — Push blocked — lint failed during push.
+- `sourceControl.remoteError.hookBlocked.prePush.publish` — Publish Branch blocked — pre-push hook failed.
+- `sourceControl.remoteError.hookBlocked.prePush.sync` — Sync blocked — pre-push hook failed.
+- `sourceControl.remoteError.hookBlocked.prePush.forcePush` — Force Push blocked — pre-push hook failed.
+- `sourceControl.remoteError.hookBlocked.prePush.push` — Push blocked — pre-push hook failed.
+- `sourceControl.remoteError.hookBlocked.detail.publish` — Publish Branch blocked — {{detail}}
+- `sourceControl.remoteError.hookBlocked.detail.sync` — Sync blocked — {{detail}}
+- `sourceControl.remoteError.hookBlocked.detail.forcePush` — Force Push blocked — {{detail}}
+- `sourceControl.remoteError.hookBlocked.detail.push` — Push blocked — {{detail}}
+- `sourceControl.remoteError.remoteAccessWithDetail.publish` — Publish Branch failed. {{detail}}. Check your remote access and try again.
+- `sourceControl.remoteError.remoteAccessWithDetail.sync` — Sync failed. {{detail}}. Check your remote access and try again.
+- `sourceControl.remoteError.remoteAccessWithDetail.forcePush` — Force Push failed. {{detail}}. Check your remote access and try again.
+- `sourceControl.remoteError.remoteAccessWithDetail.push` — Push failed. {{detail}}. Check your remote access and try again.
+- `sourceControl.remoteError.publishFailed` — Publish Branch failed. Check your remote access and try again.
+- `sourceControl.remoteError.syncFailed` — Sync failed. Check your connection and try again.
+- `sourceControl.remoteError.forcePushFailed` — Force Push failed. Check your connection and try again.
+- `sourceControl.remoteError.pushFailed` — Push failed. Check your connection and try again.
+- `sourceControl.remoteError.localChangesBlocked.rebase` — Rebase blocked — commit or stash your local changes first.
+- `sourceControl.remoteError.localChangesBlocked.fastForward` — Fast-forward blocked — commit or stash your local changes first.
+- `sourceControl.remoteError.localChangesBlocked.pull` — Pull blocked — commit or stash your local changes first.
+- `sourceControl.remoteError.operationFailed` — Remote operation failed
+- `sourceControl.remoteError.unconcludedMerge.rebase` — Rebase blocked — resolve existing conflicts first.
+- `sourceControl.remoteError.unconcludedMerge.sync` — Sync blocked — resolve existing merge conflicts first.
+- `sourceControl.remoteError.unconcludedMerge.pull` — Pull blocked — resolve existing merge conflicts first.
+- `sourceControl.remoteError.mergeConflicts.rebase` — Rebase stopped with conflicts. Resolve them in Source Control, then continue the rebase.
+- `sourceControl.remoteError.mergeConflicts.sync` — Sync stopped with merge conflicts. Resolve them in Source Control, then commit the merge.
+- `sourceControl.remoteError.mergeConflicts.pull` — Pull stopped with merge conflicts. Resolve them in Source Control, then commit the merge.
+- `sourceControl.remoteError.syncRemoteMoved` — Sync failed — remote moved while syncing. Try again.
+- `sourceControl.remoteError.forcePushRejected` — Force push rejected — remote changed since last fetch. Fetch first, then try again.
+- `sourceControl.remoteError.pushRejected` — Push rejected — remote has changes. Pull first, then try again.
+- `sourceControl.remoteError.untrackedFilesBlocked.rebase` — Rebase blocked — move, remove, or add untracked files first.
+- `sourceControl.remoteError.untrackedFilesBlocked.fastForward` — Fast-forward blocked — move, remove, or add untracked files first.
+- `sourceControl.remoteError.untrackedFilesBlocked.pull` — Pull blocked — move, remove, or add untracked files first.
+- `sourceControl.remoteError.authenticationFailed` — Authentication failed. Check your remote credentials.
+- `sourceControl.submodule.worktreeOnlyLabel` — Stage inside submodule
+- `sourceControl.submodule.worktreeOnlyTooltip` — The parent repo (including Stage All) cannot stage file changes inside a submodule
+- `sourceControl.submodule.loading` — Loading submodule changes…
+- `sourceControl.submodule.empty` — No changes in submodule
+- `sourceControl.submodule.loadFailed` — Failed to load submodule changes
+- `aiVault.scanIssues.issuesOmitted` — Additional scan issues were omitted.
+- `aiVault.scanIssues.sessionMetadataUnreadable` — Session metadata could not be read this scan.
+- `aiVault.scanIssues.openCodeScannerUnavailable` — OpenCode history was skipped because its background scanner could not start; the app remains responsive.
+- `aiVault.scanIssues.openCodeScanIncomplete` — OpenCode history scan did not complete: {{detail}}
+- `aiVault.scanIssues.openCodeWslReaderPreparing` — Preparing the WSL SQLite reader. Refresh Vault after setup finishes.
+- `aiVault.scanIssues.openCodeWslReaderNotPrepared` — The WSL SQLite reader is not prepared. Refresh Vault to retry.
+- `aiVault.scanIssues.openCodeDatabaseBusy` — {{label}} is writing to {{name}} right now, so its history was skipped. It is read again on the next refresh.
+- `aiVault.scanIssues.openCodeDatabaseUnreadable` — {{label}} history in {{name}} could not be read: {{detail}}
+- `aiVault.scanIssues.openCodeWslDatabaseUnsupported` — {{label}} sessions inside WSL can't be searched from Windows yet.
+- `aiVault.scanIssues.openCodeWriteAheadLogUnreadable` — {{label}} history in {{name}} could not be read. Its write-ahead log cannot be opened read-only on this filesystem. Exit {{label}} cleanly to flush the log.
+- `aiVault.scanIssues.wslTranscriptFsSlow` — WSL transcript files are temporarily unavailable because filesystem access is taking too long. Try again shortly or restart Orca if the issue continues.
+- `aiVault.scanIssues.wslTranscriptFsCapacity` — WSL transcript discovery is temporarily unavailable because too many filesystem requests are already waiting. Try again shortly or restart Orca if the issue continues.
+- `aiVault.scanIssues.wslTranscriptFsProcessFailed` — WSL transcript files are temporarily unavailable because the filesystem helper process failed ({{detail}}). Try again shortly or restart Orca if the issue continues.
+- `aiVault.scanIssues.wslDistroNotRunning` — WSL transcript files are unavailable because WSL distro '{{distro}}' is not running. Open a terminal in it to start it.
+- `aiVault.scanIssues.wslDistroUnverifiable` — WSL transcript files are unavailable because WSL didn't answer whether '{{distro}}' is running. Try again shortly.
+- `aiVault.scanIssues.wslSessionsFromLastScan` — WSL could not be checked; its sessions are from the last scan.
+- `aiVault.scanIssues.scopePathsTruncated` — Only the first {{limit}} project paths were scanned.
+- `aiVault.scanIssues.invalidResultsSkipped_one` — Skipped {{count}} invalid Agent Session History result entry.
+- `aiVault.scanIssues.invalidResultsSkipped_other` — Skipped {{count}} invalid Agent Session History result entries.
+- `aiVault.scanIssues.scanTimedOutOnSshHost` — Session scan timed out after {{seconds}}s on this SSH host. Refresh to try again.
+- `aiVault.scanIssues.scanTimedOut` — Session scan timed out after {{seconds}}s — the machine may be busy. Refresh to try again.
+- `aiVault.scanIssues.scannerPaused` — Session scanning paused after repeated failures. Refresh to try again.
+- `aiVault.scanIssues.scannerBusy` — Too many session scans in flight. Wait a moment, then refresh.
+- `aiVault.scanIssues.scannerMissing` — The session scanner is missing from this Orca install. Reinstalling Orca restores it.
+- `aiVault.scanIssues.scannerStopped` — The session scanner stopped unexpectedly. Refresh to try again.
+- `terminal.codexSharedSettingsNotice.dismiss` — Dismiss
+- `accounts.antigravity.windowsChanged` — The host default account changed. Select a saved account to apply it again.
+- `accounts.antigravity.windowsSessions` — Select applies and verifies the host default agy credential. Command choices and later account changes are handled by agy. Existing sessions may keep their previous account.
+- `accounts.hostSignIn.errors.ownerSilent` — The device that started this sign-in stopped answering.
+- `accounts.hostSignIn.errors.superseded` — An account change on this host stopped the sign-in. Start it again.
+- `accounts.hostSignIn.errors.failed` — Sign-in failed. Try again.
+- `workspace.branchChoice.title` — Branch for this worktree
+- `workspace.branchChoice.existing` — Existing branch
+- `workspace.branchChoice.existingHint` — New commits go on this branch.
+- `workspace.branchChoice.new` — New branch
+- `workspace.branchChoice.newHint` — Create a new local branch
+- `workspace.branchChoice.newName` — New branch name
+- `workspace.branchChoice.automaticName` — Automatic name
+- `tabHoverCard.namingFailure.errors.noName` — The chat-name agent returned no name.
+- `tabHoverCard.namingFailure.errors.agentNotRun` — Orca could not run the chat-name agent.
+- `tabHoverCard.namingFailure.errors.noAgentAvailable` — No chat-name agent can run in this workspace.
+- `tabHoverCard.namingFailure.errors.grokFailed` — Grok could not name this chat. Try generating the name again.
+- `tabHoverCard.namingFailure.errors.antigravityFailed` — Antigravity could not name this chat. Try generating the name again.
+- `updates.failure.releaseNotReady` — A newer release isn't available for this device yet. Check again later.
+- `updates.failure.updateServerUnreachable` — Couldn't reach the update server. Try again in a few minutes.
+- `updates.failure.channelUnsupportedPlatform` — {{channel}} builds are produced only for macOS and Windows.
+- `updates.failure.unsignedDevChannel` — {{channel}} builds are unsigned, and this signed build only installs updates signed by Orca's publisher. Download the installer from the release page and run it once — updates work normally from there, including back to Stable.
+- `updates.failure.linuxPackageMissing` — The downloaded package is no longer in the update cache. Download the update again, or get it from the official release page.
+- `updates.failure.linuxPackageNotRegular` — The downloaded package is no longer a valid file in the update cache. Download the update again, or get it from the official release page.
+- `updates.failure.linuxPackageHashMismatch` — The downloaded package no longer matches the verified release, so Orca will not hand it to a package manager. Download the update again, or get it from the official release page.
+- `updates.failure.linuxPackageReadFailed` — Orca could not read the downloaded package. Download the update again, or get it from the official release page.
+- `updates.failure.linuxPackageNoSudo` — No sudo command was found in the system directories, so Orca cannot build a safe install command. Show the package and install it with your package manager.
+- `updates.failure.linuxPackageNoPackageManager` — No supported package manager was found in the system directories, so Orca cannot build a safe install command. Show the package and install it with your package manager.
+- `updates.failure.linuxPackageInvalidPath` — The downloaded package is not at a usable path, so Orca cannot build a safe install command. Show the package and install it with your package manager.
+- `updates.failure.linuxPackageMarkerUnusable` — Orca could not verify the installed Linux package format, so it will not install this update automatically. Download the update from the official release page and install it manually.
+- `updates.failure.linuxPackageExternallyManaged` — This copy of Orca is managed by your system package manager, so Orca cannot install updates itself. Update Orca through your distribution instead.
+- `updates.failure.linuxPackageManualInstall` — Quit Orca before running the system package install command.
+- `updates.failure.linuxPackageMetadataUnusable` — The downloaded package metadata could not be verified. Quit Orca before downloading and installing the update from the official release page.
+- `updates.failure.unknownReleaseChannel` — Unknown release channel "{{channel}}".
+- `updates.failure.invalidReleaseTag` — "{{tag}}" is not a valid release tag.
+- `updates.failure.releaseRepoNotFound` — No releases repository found at {{repo}}.
+- `updates.failure.releaseListFailed` — Could not list {{channel}} builds (HTTP {{status}}).
+- `updates.failure.releaseListUnreadable` — Could not read the {{channel}} release list.
+- `updates.failure.rateLimitedSoon` — GitHub rate limit reached. Try again in a few minutes.
+- `updates.failure.rateLimitedSoonSignedOut` — GitHub rate limit reached. Try again in a few minutes, or run `gh auth login` so Orca can use your account's higher limit.
+- `updates.failure.rateLimitedInMinute` — GitHub rate limit reached. Try again in about a minute.
+- `updates.failure.rateLimitedInMinuteSignedOut` — GitHub rate limit reached. Try again in about a minute, or run `gh auth login` so Orca can use your account's higher limit.
+- `updates.failure.rateLimitedInMinutes_one` — GitHub rate limit reached. Try again in about {{count}} minute.
+- `updates.failure.rateLimitedInMinutes_other` — GitHub rate limit reached. Try again in about {{count}} minutes.
+- `updates.failure.rateLimitedInMinutesSignedOut_one` — GitHub rate limit reached. Try again in about {{count}} minute, or run `gh auth login` so Orca can use your account's higher limit.
+- `updates.failure.rateLimitedInMinutesSignedOut_other` — GitHub rate limit reached. Try again in about {{count}} minutes, or run `gh auth login` so Orca can use your account's higher limit.
+- `keybindings.title.tabNewBrowserSplitRight` — New browser tab in right split
+- `keybindings.title.viewPlugins` — Open Plugins
+- `profileState.startupFailure.noneFound` — (none found)
+- `profileState.startupFailure.sqlitePath` — SQLite path: {{path}}
+- `profileState.startupFailure.sectionsDamaged` — Part of this profile's saved state is damaged: {{sections}}. Everything else is intact.
+- `profileState.startupFailure.repairCommand` — Stop Orca, then run `{{command}}` to replace only the damaged parts from backups and keep everything else. Orca keeps a copy of the damaged file.
+- `profileState.startupFailure.restoreWholeBackup` — To restore a whole backup instead, run `{{exportsCommand}}`, then `{{rollbackCommand}}`.
+- `profileState.startupFailure.sqliteUnreadable` — Orca cannot safely open the active profile because its SQLite state is unreadable.
+- `profileState.startupFailure.legacyJsonPath` — Legacy JSON path: {{path}}
+- `profileState.startupFailure.retainedBackups` — Retained SQLite backups:
+- `profileState.startupFailure.retainedExports` — Retained JSON exports:
+- `profileState.startupFailure.chooseRecoveryArtifact` — Stop Orca, then run `{{command}}` and choose a known-good recovery artifact.
+- `profileState.startupFailure.restoreCommands` — Restore SQLite with `{{backupCommand}}`, or restore a JSON export with `{{revisionCommand}}`.
+- `profileState.startupFailure.authorityAmbiguous` — Orca cannot safely choose a profile-state authority: {{detail}}
+- `profileState.startupFailure.authorityBothPreserved` — An older build may have changed the JSON file. Both copies are preserved; neither is selected automatically.
+- `profileState.startupFailure.authorityCopyFirst` — Stop Orca and copy the profile directory before choosing which state to keep.
+- `profileState.startupFailure.authorityKeepJson` — To keep the current JSON, including edits from an older build, run `{{command}}`. This archives both copies and does not merge their contents.
+- `profileState.startupFailure.authorityInspect` — Run `{{command}}` to inspect retained recovery points.
+- `profileState.startupFailure.authorityRestore` — Use `{{backupCommand}}` or `{{revisionCommand}}` only after selecting the state you want to restore.
+- `profileState.startupFailure.newerSchema` — This profile was saved by a newer version of Orca. Open it with that version or a newer release. Your profile has not been changed.
+- `profileState.startupFailure.revisionConflict` — The active profile changed while Orca was starting. Close other Orca processes using this profile, then restart Orca.
+- `profileState.startupFailure.writerUnavailable` — Orca could not start profile persistence. Restart Orca; if the problem continues, repair or reinstall this build.
+- `profileState.startupFailure.publicationUnavailable` — Orca could not safely publish profile state in {{directory}}.
+- `profileState.startupFailure.publicationNeedsHardLinks` — This location must support hard links, and Orca needs permission to create them.
+- `profileState.startupFailure.publicationMoveData` — Close Orca and orcad before checking folder permissions or moving the complete Orca data directory to a writable local filesystem that supports hard links, such as APFS, NTFS, or ext4.
+- `profileState.startupFailure.publicationKeepFiles` — Keep the original directory and all recovery files.
+- `startupFailure.finishFailed` — Orca could not finish starting: {{detail}}
+- `wslDriveUnc.label` — Location
+- `wslDriveUnc.description` — Orca opens this project through WSL. Open it at {{drivePath}} instead: Git runs on Windows, which is much faster here, and terminals and agents stay in {{distro}}.
+- `wslDriveUnc.convert` — Open at {{drivePath}}
+- `wslDriveUnc.review` — Orca pauses this project’s terminals, restarts, and reopens it at {{drivePath}}. Tabs, terminals with their history, chats and settings come along, and paused terminals pick up where they were.
+- `wslDriveUnc.cancel` — Cancel
+- `wslDriveUnc.confirm` — Restart and convert
+- `wslDriveUnc.failed` — Orca could not convert this project.
+- `wslDriveUnc.restarting` — Restarting Orca to convert this project…
+- `wslDriveUnc.terminalsBusy` — Some terminals in this project are busy. Let them finish or close them, then try again.
+- `wslDriveUnc.pauseFailed` — Orca could not pause this project’s terminals, so nothing changed.
+- `wslDriveUnc.blocker.pending` — Orca is already converting a project. It finishes when Orca restarts.
+- `wslDriveUnc.blocker.state` — Orca found saved state for this project it can’t convert safely, so nothing changed.
+- `wslDriveUnc.blocker.duplicate` — {{drivePath}} is already a project in Orca.
+- `wslDriveUnc.blocker.mixed` — Some of this project’s folders are inside WSL, not on a Windows drive.
+- `wslDriveUnc.blocker.overlap` — This project shares folders with a project Orca can’t convert, so they would split.
+- `wslDriveUnc.blocker.notDriveMount` — In this distro, that folder isn’t {{drivePath}}: it isn’t mounted from that Windows drive.
+- `wslDriveUnc.blocker.notConvertible` — This project isn’t on a Windows drive on this computer.
+- `wslDriveUnc.blocker.differingState` — Orca saved different details for this folder under both its WSL path and {{drivePath}}, so nothing changed.
+- `wslDriveUnc.blocker.projectSplit` — This project also holds a repository that isn’t converting, so nothing changed.
+- `runtime.remoteServerPairingErrors.invalidPairingCode` — Invalid pairing code. Expected an orca://pair?... URL or bare pairing payload.
+- `runtime.remoteServerPairingErrors.selfPairingCode` — This pairing code is for this Orca itself. Generate the code on the other computer instead.
+- `runtime.remoteServerPairingErrors.managedDeployment` — Orca runs this server on an SSH host for you; its pairing cannot be replaced or removed here. To decommission it, run `orca environment stop --environment <name> --yes` or use Settings > Orca on your SSH hosts; for a host that is gone, run `orca environment forget --environment <name> --yes`.
+- `runtime.remoteServerPairingErrors.sshAccessChangePending` — This server's SSH access change didn't finish. Retry or cancel it under Settings > Remote Orca Servers > SSH access for paired servers before replacing its pairing or removing it.
+- `runtime.remoteServerPairingErrors.sshAccessLinked` — Unlink this server's SSH access under Settings > Remote Orca Servers > SSH access for paired servers before replacing its pairing or removing it.
+- `runtime.remoteServerPairingErrors.alreadyPairedCloudWorkspace` — This server is already paired as "{{name}}". It belongs to a cloud workspace, which pairs it again when it resumes.
+- `runtime.remoteServerPairingErrors.alreadyPairedCloudIdentity` — This server is already paired as "{{name}}". The cloud workspace's server reuses that server's identity, so it was not saved.
+- `runtime.remoteServerPairingErrors.alreadyPairedWslHost` — This server is already paired as "{{name}}". Orca manages it as a WSL host, so its pairing cannot be replaced here.
+- `runtime.remoteServerPairingErrors.alreadyPairedManagedDeployment` — This server is already paired as "{{name}}". Orca runs this server on an SSH host for you; its pairing cannot be replaced or removed here. To decommission it, run `orca environment stop --environment <name> --yes` or use Settings > Orca on your SSH hosts; for a host that is gone, run `orca environment forget --environment <name> --yes`.
+- `runtime.remoteServerPairingErrors.alreadyPairedSshAccessChangePending` — This server is already paired as "{{name}}". This server's SSH access change didn't finish. Retry or cancel it under Settings > Remote Orca Servers > SSH access for paired servers before replacing its pairing or removing it.
+- `runtime.remoteServerPairingErrors.alreadyPairedSshAccessLinked` — This server is already paired as "{{name}}". Unlink this server's SSH access under Settings > Remote Orca Servers > SSH access for paired servers before replacing its pairing or removing it.
+- `runtime.remoteServerPairingErrors.alreadyPairedAddAgain` — This server is already paired as "{{name}}". To update its connection, add it again under Settings > Remote Orca Servers.
+- `runtime.remoteServerPairingErrors.alreadyPairedUnreadable` — This server is already paired as "{{name}}", whose saved settings this version of Orca cannot read.
+- `runtime.remoteServerPairingErrors.nameTaken` — A server named "{{name}}" already exists.
+- `runtime.remoteServerPairingErrors.idNeedsNewerOrca` — A server with this id already exists in a format that needs a newer version of Orca.
+- `runtime.remoteServerPairingErrors.hostSaveFailed` — Orca verified the host but could not save it. Check local settings storage and try again.
+- `runtime.remoteServerPairingErrors.repairSaveFailed` — Orca verified the server but could not save the new pairing. Check local settings storage and try again.
+- `runtime.remoteServerPairingErrors.repairCloudWorkspace` — This server belongs to a cloud workspace, which pairs it again when it resumes.
+- `automations.runFailures.noDispatchHost` — No Orca window was available to launch the automation.
+- `automations.runFailures.unevaluableSchedule` — Orca could not evaluate this automation and skipped the occurrence.
+- `automations.runFailures.noRunnableHost` — This automation has no host to run on.
+- `automations.runFailures.wslMoveInProgress` — This automation's project is moving to its WSL host, so Orca skipped this run. Runs resume when the move finishes.
+- `automations.runFailures.wslMoveOwnedByHost` — This automation's project now runs on its WSL host, which runs this automation there. Orca no longer runs this local copy.
+- `automations.runFailures.missedGraceWindow` — This run was past its missed-run grace window when Orca next checked.
+- `automations.runFailures.targetMissing` — The automation host is no longer registered, so this automation has nowhere to run.
+- `automations.runFailures.targetReplaced` — The automation host was removed and re-registered, so this automation must be re-adopted before it can run.
+- `automations.runFailures.workspaceHostAmbiguous` — The automation workspace spans more than one host, so Orca cannot tell which one to run it on.
+- `automations.runFailures.legacyTwinHosts` — This automation was saved before Orca tracked which host it runs on, and its project is on more than one host. Open the automation and pick the host it should run on.
+- `automations.runFailures.targetUnavailable` — Automation run target is no longer available.
+- `automations.runFailures.remoteSchedulingUnavailable` — Remote-server automation scheduling is not available from this Orca client yet. Run this automation on the remote server or update Orca when durable remote scheduling is available.
+- `automations.runFailures.projectSetupMissing` — Project is not set up on the selected automation host anymore.
+- `automations.runFailures.targetSetupMismatch` — Automation run target no longer matches the selected project host setup.
+- `automations.runFailures.repoUnavailable` — Repository for the selected automation host is no longer available.
+- `automations.runFailures.repoDetached` — Repository is no longer attached to the selected automation host.
+- `automations.runFailures.projectPathChanged` — Project path for the selected automation host has changed.
+- `automations.runFailures.automationChanged` — The automation changed before this run could launch.
+- `automations.runFailures.destinationChanged` — The automation destination changed before this run could launch.
+- `automations.runFailures.hooksReviewBlocked` — The agent is waiting for someone to review new or changed hooks ("Hooks need review"). Open this run and trust them, or remove them. Scheduled runs keep going and succeed once nothing needs review.
+- `automations.runFailures.agentNeverStarted` — Automation agent never started after the prompt was submitted.
+- `automations.runFailures.agentNoCompletion` — Automation agent did not report completion.
+- `automations.runFailures.watchTimedOut` — Orca stopped watching this run after 6h without a completion signal.
+- `automations.runFailures.wslDistroStopped` — The WSL distro {{distro}} is stopped, so this scheduled run did not start it. Start the distro or use Run now; later runs go ahead while it runs.
+- `automations.runFailures.projectSetupState.notSetUp` — The project is not set up on the selected automation host.
+- `automations.runFailures.projectSetupState.settingUp` — The project is still being set up on the selected automation host.
+- `automations.runFailures.projectSetupState.error` — Project setup failed on the selected automation host.
+- `automations.runFailures.projectSetupState.unsupported` — The selected automation host does not support this project.
+- `automations.extraAgentArgs.errors.tooLarge` — Extra arguments must be 4 KB or less.
+- `automations.extraAgentArgs.errors.controlCharacters` — Extra arguments cannot contain control characters or line breaks.
+- `automations.extraAgentArgs.errors.invalid` — Extra arguments are invalid: {{detail}}
+- `automations.extraAgentArgs.errors.shellSyntax` — {{text}} uses shell syntax that extra arguments don't allow.
+- `automations.extraAgentArgs.errors.terminator` — "--" isn't allowed in extra arguments.
+- `automations.extraAgentArgs.errors.notAnOption` — "{{token}}" isn't an option. Extra arguments for {{agent}} accept only: {{allowed}}.
+- `automations.extraAgentArgs.errors.optionNotAllowed` — "{{option}}" isn't allowed in extra arguments for {{agent}}. Allowed: {{allowed}}.
+- `automations.extraAgentArgs.errors.missingValue` — "{{option}}" needs a value.
+- `automations.extraAgentArgs.errors.valueNotAllowed` — "{{option}} {{value}}" isn't allowed. {{agent}} extra arguments accept only "{{option}} {{prefix}}<level>".
+- `automations.extraAgentArgs.errors.modelRepeated` — Extra arguments set the model more than once.
+- `automations.extraAgentArgs.errors.effortRepeated` — Extra arguments set the effort more than once.
+- `automations.extraAgentArgs.hostUpdateRequired` — Update Orca on this host to use extra arguments.
+- `codeHost.errors.titleRequired` — Title is required
+- `codeHost.errors.networkError` — Network error — check your connection.
+- `codeHost.errors.invalidUpdate` — Invalid update — {{detail}}
+- `codeHost.errors.invalidRequest` — Invalid request — {{detail}}
+- `codeHost.errors.issueNotFound` — Issue not found — it may have been deleted.
+- `codeHost.errors.issueUpdateFailed` — Failed to update issue: {{detail}}
+- `codeHost.errors.github.repoUnresolved` — Could not resolve GitHub owner/repo for this repository
+- `codeHost.errors.github.unexpectedResponse` — Unexpected response from GitHub
+- `codeHost.errors.github.pullRequestIdUnresolved` — Could not resolve GitHub pull request ID
+- `codeHost.errors.github.reviewerRequired` — Enter at least one reviewer
+- `codeHost.errors.github.stackAutoMergeUnsupported` — GitHub does not support auto-merge for stacked pull requests.
+- `codeHost.errors.github.autoMergeAlreadyMergeable` — This pull request can already be merged. Use Merge instead of auto-merge.
+- `codeHost.errors.github.noFailedChecks` — No failed GitHub Actions checks to rerun.
+- `codeHost.errors.github.noRerunnableChecks` — No rerunnable checks found.
+- `codeHost.errors.github.stackMergeInvalidResponse` — GitHub returned an invalid stack merge response.
+- `codeHost.errors.github.stackMergePending` — GitHub is still merging this stack. Refresh to check its status.
+- `codeHost.errors.github.rateLimited` — GitHub rate limit hit. Try again in a few minutes.
+- `codeHost.errors.github.issuePermissionDenied` — You don't have permission to edit this issue. Check your GitHub token scopes.
+- `codeHost.errors.github.issuesDisabled` — Issues are disabled on this repository.
+- `codeHost.errors.github.pullRequestPermissionDenied` — You don't have permission to edit this pull request. Check your GitHub token scopes.
+- `codeHost.errors.github.pullRequestNotFound` — Pull request not found — it may have been deleted.
+- `codeHost.errors.github.pullRequestUpdateFailed` — Failed to update pull request: {{detail}}
+- `codeHost.errors.github.autoMergeEnableFailed` — Failed to enable auto-merge for pull request: {{detail}}
+- `codeHost.errors.github.autoMergeDisableFailed` — Failed to disable auto-merge for pull request: {{detail}}
+- `codeHost.errors.github.mergeQueueAddFailed` — Failed to add pull request to the merge queue: {{detail}}
+- `codeHost.errors.github.rerunPermissionDenied` — You don't have permission to rerun checks on this repository. Check your GitHub token scopes.
+- `codeHost.errors.github.rerunTargetNotFound` — GitHub resource to rerun was not found — it may have expired or been deleted.
+- `codeHost.errors.github.rerunRejected` — Could not rerun checks — {{detail}}
+- `codeHost.errors.github.rerunFailed` — Failed to rerun checks: {{detail}}
+- `codeHost.errors.gitlab.projectUnresolved` — Could not resolve GitLab project for this repository
+- `codeHost.errors.gitlab.unexpectedResponse` — Unexpected response from GitLab
+- `codeHost.errors.gitlab.commentBodyRequired` — Comment body is required
+- `codeHost.errors.gitlab.discussionIdRequired` — Discussion id is required
+- `codeHost.errors.gitlab.readyTitleConflict` — Cannot update the title while marking a merge request ready
+- `codeHost.errors.gitlab.mergeRequestTitleUnreadable` — Could not read the current merge request title
+- `codeHost.errors.gitlab.rateLimited` — GitLab rate limit hit. Try again in a few minutes.
+- `codeHost.errors.gitlab.issuePermissionDenied` — You don't have permission to edit this issue. Check your GitLab token scopes.
+- `codeHost.errors.gitlab.jobLogPermissionDenied` — You don't have permission to read this job's log. Check your GitLab token scopes.
+- `codeHost.errors.gitlab.jobProjectNotFound` — Could not find this job's GitLab project.
+- `codeHost.errors.gitlab.jobLogFailed` — Failed to load the job log: {{detail}}
+- `codeHost.startPoint.repoNotFound` — Repo not found
+- `codeHost.startPoint.folderUnsupported` — Folder mode does not support creating worktrees.
+- `codeHost.startPoint.fetchFailed` — Failed to fetch {{ref}}: {{detail}}
+- `codeHost.startPoint.remoteRefMissing` — Remote ref {{ref}} does not exist after fetch.
+- `codeHost.startPoint.github.prNotFound` — PR #{{number}} not found.
+- `codeHost.startPoint.github.prHeadBranchMissing` — PR #{{number}} has no head branch.
+- `codeHost.startPoint.github.forkHeadUnresolved` — Could not resolve fork PR #{{number}} head after fetch.
+- `codeHost.startPoint.github.headShaEmpty` — Empty SHA resolving PR #{{number}} head.
+- `codeHost.startPoint.gitlab.projectNotFound` — No GitLab project found for this repository.
+- `codeHost.startPoint.gitlab.mrNotFound` — MR !{{number}} not found.
+- `codeHost.startPoint.gitlab.mrSourceBranchMissing` — MR !{{number}} has no source branch.
+- `codeHost.startPoint.gitlab.forkHeadUnresolved` — Could not resolve fork MR !{{number}} head after fetch.
+- `codeHost.bitbucketConnect.invalidInput` — Invalid Bitbucket credentials
+- `codeHost.bitbucketConnect.accessTokenRequired` — Enter an access token.
+- `codeHost.bitbucketConnect.emailAndApiTokenRequired` — Enter both an email and an API token.
+- `codeHost.bitbucketConnect.rejected` — Bitbucket rejected these credentials. Check the email and token, then try again.
+- `codeHost.bitbucketConnect.unreachable` — Could not reach Bitbucket. Check your connection or the API base URL, then try again.
+- `featureWall.workflows.workspaces.title` — Workspaces
+- `featureWall.workflows.workspaces.lede` — Orca splits each task into an isolated workspace so agents can run in parallel.
+- `featureWall.workflows.tasks.title` — Tasks
+- `featureWall.workflows.tasks.lede` — Start work directly from GitHub or Linear.
+- `featureWall.workflows.agents.title` — Agents
+- `featureWall.workflows.agents.lede` — Run several agents at once, track their progress, and let automation drive Orca when it helps.
+- `featureWall.workflows.workbench.title` — Workbench
+- `featureWall.workflows.workbench.lede` — Bring your terminal setup into Orca, then split panes to keep servers, tests, logs, and agents running side by side.
+- `featureWall.workflows.review.title` — Code Review
+- `featureWall.workflows.review.lede` — Review what changed, leave focused feedback, and send it back to the agent.
+- `featureWall.steps.statuses.name` — Visibility
+- `featureWall.steps.statuses.subtitle` — Agent Visibility
+- `featureWall.steps.statuses.description` — Know which agents are working, waiting, live, or blocked.
+- `featureWall.steps.orchestration.name` — Orchestration
+- `featureWall.steps.orchestration.description` — Enable agents to manage and coordinate Orca workspaces to execute larger tasks.
+- `featureWall.steps.usage.name` — Usage
+- `featureWall.steps.usage.description` — Watch your usage and rate limits across every connected account, so you know when to switch.
+- `featureWall.steps.terminal.name` — Terminal
+- `featureWall.steps.terminal.description` — Keep your agents, tests, and dev logs visible at once.
+- `featureWall.steps.editor.name` — Editor
+- `featureWall.steps.editor.description` — Use our Notion-style markdown editor to write notes without leaving Orca.
+- `featureWall.steps.browser.name` — Browser
+- `featureWall.steps.browser.description` — Run your app in Orca's browser, send selected UI elements to agents, and let your agents interact with your webpage.
+- `featureWall.steps.notes.name` — Notes
+- `featureWall.steps.notes.subtitle` — Notes & diffs
+- `featureWall.steps.notes.description` — Send focused review notes to an agent.
+- `featureWall.steps.prView.name` — PR checks
+- `featureWall.steps.prView.subtitle` — PR checks & comments
+- `featureWall.steps.prView.description` — See PR status in the Checks tab.
+- `featureWall.steps.ship.name` — Ship with AI
+- `featureWall.steps.ship.description` — Let AI prepare commit and PR drafts for you.
+- `featureWall.tiles.tile01.title` — Parallel workspace orchestration
+- `featureWall.tiles.tile02.title` — Ghostty-class terminal
+- `featureWall.tiles.tile03.title` — GitHub & Linear, native
+- `featureWall.tiles.tile04.title` — Supported CLI agents
+- `featureWall.tiles.tile05.title` — Embedded browser + Design Mode
+- `featureWall.tiles.tile06.title` — Remote workspaces
+- `featureWall.tiles.tile07.title` — Monaco editor, drag-to-agent
+- `featureWall.tiles.tile08.title` — Inline review, back to the agent
+- `featureWall.tiles.tile09.title` — Orca CLI
+- `featureWall.tiles.tile10.title` — Keyboard-native
+- `featureWall.tiles.tile11.title` — Usage & rate-limit aware
+- `featureWall.tiles.tile12.title` — PDFs, images, CSV, Markdown
+- `setupScriptPrompt.candidateLabels.codexEnvironment` — Codex environment
+- `setupScriptPrompt.candidateLabels.packageManager` — package manager
+- `emulator.errors.disabled` — Mobile Emulator is disabled in Settings.
+- `emulator.errors.notAvailable` — Mobile Emulator is not available.
+- `emulator.errors.noSession` — No emulator session is active
+- `emulator.errors.noDeviceSpecified` — No emulator device specified. Choose a default device in Settings > Mobile Emulator or pass a device.
+- `emulator.errors.workspaceChanged` — The workspace changed while the emulator was starting. Reattach the emulator.
+- `emulator.errors.noIosSimulators` — No iOS simulators found. Add one in Xcode Settings > Platforms.
+- `emulator.errors.simctlUnavailable` — xcrun simctl is unavailable.
+- `emulator.errors.simulatorToolsUnavailable` — Xcode Simulator tools are unavailable. Install full Xcode, open it once, then select it with `sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer`.
+- `emulator.errors.requiresMacosXcode` — iOS Simulator requires macOS with Xcode Command Line Tools.
+- `emulator.errors.simulatorNotFound` — Simulator {{udid}} not found. Create one via Xcode > Window > Devices and Simulators.
+- `emulator.errors.serveSimUnavailable` — serve-sim is unavailable.
+- `emulator.errors.serveSimNoEndpoints` — serve-sim did not return stream endpoints.
+- `emulator.errors.serveSimEndpointUnreachable` — serve-sim started but its stream endpoint is not reachable.
+- `emulator.errors.androidSdkMissing` — Android SDK not found. Install Android Studio and set ANDROID_HOME.
+- `emulator.errors.adbUnavailable` — adb is unavailable.
+- `emulator.errors.noAndroidDevices` — No Android devices or AVDs found. Create one in Android Studio.
+- `emulator.errors.androidDeviceNotRunning` — Android device "{{device}}" is not running. Boot it first.
+- `emulator.errors.unknownDeviceOrAvd` — "{{device}}" is not a running device or a known AVD.
+- `emulator.errors.avdBootTimeout` — AVD "{{avdName}}" did not finish booting in time.
+- `emulator.errors.scrcpyDownloadFailed` — Could not download scrcpy server: {{detail}}
+- `emulator.errors.scrcpyServerInvalid` — Downloaded scrcpy server was invalid or truncated.
+- `emulator.pane.listDevicesFailed` — Could not list emulator devices.
+- `emulator.pane.noDevices` — No emulator devices found. Add an iOS Simulator in Xcode, or an Android Virtual Device in Android Studio.
+- `emulator.pane.startFailed` — Could not start the emulator. Make sure Xcode (iOS) or Android Studio (Android) is set up, then try another device.
+- `emulator.pane.shutdownFailed` — Could not shut down the emulator. Try again, or stop it from your emulator manager.
+- `emulator.settings.availabilityCheckFailed` — Could not check emulator availability.
+- `ephemeralVm.errors.repoNotFound` — Repo not found: {{repoId}}
+- `ephemeralVm.errors.remoteRepoUnsupported` — Ephemeral VM recipes run on the local desktop host in v1.
+- `ephemeralVm.errors.recipeNotFound` — Recipe not found: {{recipeId}}
+- `ephemeralVm.errors.runtimeNotFound` — Unknown ephemeral VM runtime: {{runtimeId}}
+- `ephemeralVm.errors.runtimeRepoMissing` — Ephemeral VM runtime has no repo id: {{runtimeId}}
+- `ephemeralVm.errors.provisionCancelled` — Provisioning cancelled.
+- `ephemeralVm.errors.startRefUnresolved` — Could not resolve provisioned-root start ref: {{ref}}
+- `ephemeralVm.errors.defaultStartRefUnresolved` — Could not resolve a default provisioned-root start ref.
+- `ephemeralVm.errors.recipeExited` — Recipe exited with code {{exitCode}}.
+- `ephemeralVm.errors.recipeResultMissing` — Recipe produced no JSON result.
+- `ephemeralVm.errors.recipeResultNotJsonObject` — Recipe stdout must be one JSON object.
+- `ephemeralVm.errors.recipeResultPairingCodeInvalid` — Recipe result pairingCode is not a valid Orca pairing code.
+- `ephemeralVm.errors.recipeResultProjectRootNotAbsolute` — Recipe result projectRoot must be an absolute runtime path.
+- `ephemeralVm.errors.provisionedRootResultRequired` — Provisioned-root recipes must return schemaVersion 2 with checkoutMode "provisioned-root".
+- `ephemeralVm.errors.provisionedRootNotConfigured` — Recipe result requests provisioned-root checkout, but the recipe is not configured for it.
+- `ephemeralVm.errors.destroyExited` — Destroy exited with code {{exitCode}}.
+- `ephemeralVm.errors.destroyFailed` — Destroy failed.
+- `ephemeralVm.errors.destroyDisabled` — Destroy is disabled for this recipe.
+- `ephemeralVm.errors.cleanupStopped` — Cleanup stopped by user.
+- `ephemeralVm.errors.cleanupInterrupted` — Cleanup was interrupted. Retry cleanup to continue.
+- `ephemeralVm.errors.sshTargetRemoveFailed` — Failed to remove the hidden SSH target.
+- `ephemeralVm.errors.recipeExitedWithoutCode` — Recipe exited with code unknown.
+- `ephemeralVm.errors.destroyExitedWithoutCode` — Destroy exited with code unknown.
+- `installDirAcl.cause` — Windows permissions on Orca's install folder are blocking its own sandboxed processes from reading the files it shipped with.
+- `installDirAcl.repaired` — Orca repaired the permissions. Reload to use them.
+- `installDirAcl.repairing` — Orca is repairing the permissions now.
+- `installDirAcl.repairFailed` — Orca could not repair them, which usually means the folder needs an administrator.
+- `installDirAcl.runCommands` — Run these in an Administrator Command Prompt, then relaunch Orca:
+- `pet.importErrors.unsupportedFile` — Unsupported file. Pick a PNG, APNG, JPG, GIF, WebP, or SVG.
+- `pet.importErrors.fileUnreadable` — Could not read the selected file.
+- `pet.importErrors.notAFile` — Selected path is not a file
+- `pet.importErrors.fileTooLarge` — File is too large ({{size}} MB). Max is {{max}} MB.
+- `pet.importErrors.saveFailed` — Could not save the pet.
+- `pet.importErrors.pathUnreadable` — Could not read the selected path.
+- `pet.importErrors.manifestMissing` — Bundle is missing pet.json.
+- `pet.importErrors.manifestInvalid` — pet.json is invalid.
+- `pet.importErrors.manifestSymlink` — pet.json must not be a symlink.
+- `pet.importErrors.manifestParseFailed` — Invalid pet.json: {{detail}}
+- `pet.importErrors.bundleSaveFailed` — Could not save the pet bundle.
+- `pet.importErrors.sheetPathNotRelative` — spritesheetPath must be relative to the bundle.
+- `pet.importErrors.sheetPathIsRoot` — spritesheetPath must point to a file, not the bundle root.
+- `pet.importErrors.sheetPathEscapes` — spritesheetPath escapes the bundle.
+- `pet.importErrors.sheetSymlink` — spritesheet must not be a symlink.
+- `pet.importErrors.sheetUnsupportedType` — Spritesheet must be a PNG, APNG, JPG, GIF, or WebP.
+- `pet.importErrors.sheetNotFound` — Spritesheet file not found.
+- `pet.importErrors.sheetNotAFile` — Spritesheet path is not a file.
+- `pet.importErrors.sheetTooLarge` — Spritesheet is too large ({{size}} MB).
+- `pet.importErrors.sheetSizeLimitExceeded` — Spritesheet exceeded the size limit.
+- `pet.importErrors.sheetUndecodable` — Could not decode the spritesheet image.
+- `pet.importErrors.sheetFrameMismatch` — Spritesheet {{sheetWidth}}×{{sheetHeight}} is not a clean multiple of frame {{frameWidth}}×{{frameHeight}}.
+- `pet.importErrors.animationRowOutOfRange` — Animation "{{name}}" references row {{row}} but sheet has {{rows}}.
+- `pet.importErrors.animationTooManyFrames` — Animation "{{name}}" has {{frames}} frames but sheet only has {{columns}} columns.
+- `pet.importErrors.animationDurationMismatch` — Animation "{{name}}" declares {{durations}} frame durations but {{frames}} frames.
+- `pet.importErrors.defaultAnimationMissing` — defaultAnimation "{{name}}" not in animations.
+- `pet.defaultLabels.image` — Custom pet
+- `pet.defaultLabels.bundle` — Pet bundle
+- `diffComments.lineRangeMeta` — lines {{start}}-{{end}}
+- `diffComments.lineMeta` — line {{line}}
+- `agentSendTargets.disabledReason.needsPermission` — Agent needs permission
+- `agentSendTargets.disabledReason.statusStale` — Agent status is stale
+</details>
+
+### −127 key upstream xóa
+
+<details><summary>Danh sách (49 key có bản dịch vi → dead)</summary>
+
+- `settings.agents.autoPermissions` — VI: "Tự động"
+- `settings.agents.permissionOverridesKept` — VI: "{{count}} agent vẫn dùng cài đặt quyền riêng:"
+- `settings.agents.permissionOverridesFollow` — VI: "{{count}} agent giờ theo {{mode}}"
+- `worktreeJumpPalette.filter.ariaActive` — VI: "Bộ lọc: {{value0}} đang bật."
+- `auto.web.web.preload.api.52bee9d8a0` — VI: "Các phím tắt tùy chỉnh bị xung đột đã bị bỏ qua: {{value0}}."
+- `auto.web.web.preload.api.32f15bdb0f` — VI: "Platform không rõ "{{value0}}" đã bị bỏ qua."
+- `auto.web.web.preload.api.0a69fcd8bc` — VI: "platforms phải là object có các mục darwin, linux hoặc win32."
+- `auto.web.web.preload.api.10898045f3` — VI: "Phím tắt cho "{{value0}}" đã bị bỏ qua: hãy dùng mảng chuỗi."
+- `auto.web.web.preload.api.36761d9604` — VI: "Keybinding action không rõ "{{value0}}" đã bị bỏ qua."
+- `auto.web.web.preload.api.d2e43e426a` — VI: "{{value0}} phải là một object."
+- `auto.web.web.preload.api.76122208ca` — VI: "Phím tắt cho "{{value0}}" đã bị bỏ qua: {{value1}}"
+- `auto.lib.claudeAgentRowView.agentUnavailable` — VI: "Claude không mở được agent này. Có thể nó không còn khả dụng."
+- `auto.lib.claudeAgentRowView.closeDialog` — VI: "Claude không chuyển được view. Đóng mọi dialog đang mở rồi thử lại."
+- `auto.lib.claudeAgentRowView.hostUnavailable` — VI: "Điều hướng subagent không khả dụng trên host này. Cập nhật Orca rồi khởi động lại Claude trong pane này."
+- `auto.hooks.useComposerState.dropPartiallyAttached` — VI: "{{failureCount}} trong {{count}} mục không đính kèm được."
+- `auto.hooks.useGlobalFileDrop.nativeDropTempCopyFailed` — VI: "Orca không copy được {{count}} file đã drop."
+- `auto.components.NewWorkspaceComposerCard.reuseExistingBranch` — VI: "Dùng lại branch"
+- `auto.components.NewWorkspaceComposerCard.reuseExistingBranchHint` — VI: "Checkout branch hiện có thay vì tạo branch mới từ nó."
+- `auto.components.workspace.cleanup.WorkspaceCleanupDialog.352f15d6fc` — VI: "Hoạt động lần cuối"
+- `auto.components.sidebar.RemoveFolderDialog.openTerminalWarningOne` — VI: "1 terminal đang mở trong dự án này sẽ bị đóng."
+- `auto.components.sidebar.RemoveFolderDialog.openTerminalWarningMany` — VI: "{{count}} terminal đang mở trong dự án này sẽ bị đóng."
+- `auto.components.sidebar.SidebarRepositoryFilterSection.selectedProjectsCount` — VI: "{{value0}} dự án"
+- `auto.components.sidebar.SidebarWorkspaceOptionsMenu.bc96dbd041` — VI: "Tùy chọn workspace ({{value0}})"
+- `auto.components.sidebar.SidebarWorkspaceOptionsMenu.optionsActiveLabel` — VI: "Tùy chọn workspace ({{value0}} đang dùng)"
+- `auto.components.sidebar.preserved.branch.batch.toast.a3cdd9d9e6` — VI: "Git giữ lại {{count}} branch local vì chúng có thể chứa commit chưa merge. Branch được giữ không giữ thư mục workspace; commit của chúng vẫn còn trong repo. Orca có thể tiếp tục giải phóng dung lượng workspace trong nền."
+- `auto.components.sidebar.preserved.branch.batch.toast.6310412304` — VI: "Xem lại {{count}} branch"
+- `auto.components.sidebar.preserved.branch.batch.toast.cea24c2b7d` — VI: "Đã gỡ {{count}} workspace"
+- `auto.components.sidebar.preserved.branch.batch.toast.0e0379f24a` — VI: "Đã giữ {{count}} branch"
+- `auto.components.sidebar.preserved.branch.batch.toast.d42f1f14e0` — VI: "Thử lại {{count}} branch"
+- `auto.components.sidebar.PreservedBranchBatchReviewDialog.a0f9863597` — VI: "Xóa cưỡng ép {{count}} branch"
+- `auto.components.settings.AgentsPane.agentPermissionsYolo`
+- `auto.components.settings.AgentsPane.agentPermissionsManual`
+- `auto.components.settings.PluginConsentDialog.workerTrust`
+- `auto.components.settings.PluginConsentDialog.instructionalTrust`
+- `auto.components.settings.PluginConsentDialog.declarativeTrust`
+- `auto.components.settings.PluginConsentDialog.panelTrust`
+- `auto.components.settings.PluginConsentDialog.trustShortWorker`
+- `auto.components.settings.PluginConsentDialog.trustShortInstructional`
+- `auto.components.settings.PluginConsentDialog.trustShortPanel`
+- `auto.components.settings.PluginConsentDialog.trustShortDeclarative`
+- `auto.components.settings.PluginConsentDialog.reviewTitle`
+- `auto.components.settings.PluginConsentDialog.title`
+- `auto.components.settings.PluginConsentDialog.mixedTitle`
+- `auto.components.settings.PluginConsentDialog.instructionalTitle`
+- `auto.components.settings.PluginConsentDialog.subtitle`
+- `auto.components.settings.PluginConsentDialog.capabilities`
+- `auto.components.settings.PluginConsentDialog.warning`
+- `auto.components.settings.PluginConsentDialog.panelWarning`
+- `auto.components.settings.PluginConsentDialog.keepDisabled`
+- `auto.components.settings.PluginConsentDialog.capability.terminalSend`
+- `auto.components.settings.PluginConsentDialog.capability.eventsSubscribe`
+- `auto.components.settings.PluginDevelopmentSection.help`
+- `auto.components.settings.PluginKeybindingConsentPreview.heading`
+- `auto.components.settings.PluginKeybindingConsentPreview.global`
+- `auto.components.settings.PluginKeybindingConsentPreview.shadows`
+- `auto.components.settings.PluginMarketplaceBrowser.previewFailed`
+- `auto.components.settings.PluginMarketplaceBrowser.installFailed`
+- `auto.components.settings.PluginMarketplaceBrowser.noSources`
+- `auto.components.settings.PluginMarketplaceListingRow.official`
+- `auto.components.settings.PluginMarketplaceListingRow.installed`
+- `auto.components.settings.PluginMarketplaceListingRow.noDescription`
+- `auto.components.settings.PluginMarketplaceListingRow.blockedAction`
+- `auto.components.settings.PluginMarketplaceListingRow.checkUpdate`
+- `auto.components.settings.PluginMarketplacePreviewDialog.languagePacksOne`
+- `auto.components.settings.PluginMarketplacePreviewDialog.languagePacks`
+- `auto.components.settings.PluginMarketplacePreviewDialog.commandsOne`
+- `auto.components.settings.PluginMarketplacePreviewDialog.commands`
+- `auto.components.settings.PluginMarketplacePreviewDialog.keybindingsOne`
+- `auto.components.settings.PluginMarketplacePreviewDialog.keybindings`
+- `auto.components.settings.PluginMarketplacePreviewDialog.vmRecipesOne`
+- `auto.components.settings.PluginMarketplacePreviewDialog.vmRecipes`
+- `auto.components.settings.PluginMarketplacePreviewDialog.panelsOne`
+- `auto.components.settings.PluginMarketplacePreviewDialog.panels`
+- `auto.components.settings.PluginMarketplacePreviewDialog.eventsOne`
+- `auto.components.settings.PluginMarketplacePreviewDialog.events`
+- `auto.components.settings.PluginMarketplacePreviewDialog.worker`
+- `auto.components.settings.PluginMarketplacePreviewDialog.versionLine`
+- `auto.components.settings.PluginMarketplacePreviewDialog.includes`
+- `auto.components.settings.PluginMarketplacePreviewDialog.noContributions`
+- `auto.components.settings.PluginMarketplacePreviewDialog.capabilities`
+- `auto.components.settings.PluginMarketplacePreviewDialog.workerWarning`
+- `auto.components.settings.PluginMarketplacePreviewDialog.blocked`
+- `auto.components.settings.PluginMarketplacePreviewDialog.current`
+- `auto.components.settings.PluginMarketplacePreviewDialog.close`
+- `auto.components.settings.PluginMarketplacePreviewDialog.cancel`
+- `auto.components.settings.PluginMarketplacePreviewDialog.update`
+- `auto.components.settings.PluginMarketplacePreviewDialog.install`
+- `auto.components.settings.PluginsSettingsSection.systemDescription`
+- `auto.components.settings.PluginsSettingsSection.featureOff`
+- `auto.components.settings.PluginsSettingsSection.experimental`
+- `auto.components.settings.PluginSettingsRow.blocked`
+- `auto.components.settings.PluginSettingsRow.needsReview`
+- `auto.components.settings.PluginSettingsRow.restarting`
+- `auto.components.settings.PluginSettingsRow.invalid`
+- `auto.components.settings.PluginSettingsRow.error`
+- `auto.components.settings.PluginSettingsRow.disabled`
+- `auto.components.settings.PluginSettingsRow.running`
+- `auto.components.settings.PluginSettingsRow.enabled`
+- `auto.components.settings.PluginSettingsRow.reviewAndEnable`
+- `auto.components.settings.PluginSettingsRow.official`
+- `auto.components.settings.PluginSettingsRow.dev`
+- `auto.components.settings.PluginSettingsRow.noDescription`
+- `auto.components.settings.PluginSettingsRow.viewAdvisory`
+- `auto.components.settings.PluginSettingsRow.runtimeError`
+- `auto.components.settings.PluginSettingsRow.restartCount`
+- `auto.components.settings.PluginSettingsRow.hideLogs`
+- `auto.components.settings.PluginSettingsRow.rollback`
+- `auto.components.settings.PluginSettingsRow.remove`
+- `auto.components.settings.sshHostServer.olderTerminals` — VI: "{{count}} terminal do phiên bản Orca cũ khởi động vẫn đang chạy trên host này và chúng không tự dừng. Hãy đóng chúng trong phiên bản Orca đó hoặc kết thúc chúng trên host, rồi kết nối lại."
+- `auto.components.settings.sshHostServer.linkedProjects` — VI: "Server Orca của host này đã có sẵn {{paths}}, nên máy này giờ dùng bản sao của server. Các tab và {{count}} automation của máy này ở đó không được chuyển, và các worktree nó tạo ở đó hiện là worktree ngoài."
+- `auto.components.settings.sshHostServer.automationsLeftDisabled` — VI: "Server Orca của host này đã tiếp quản {{count}} automation nhưng không bật lại được. Hãy bật chúng trong Automations."
+- `auto.components.editor.CombinedDiffViewer.skippedConflictsExcluded` — VI: "{{count}} conflict chưa giải quyết đã bị loại khỏi view diff này."
+- `auto.components.automations.hostSummary.partialFailure` — VI: "Không tải được {{failed}} trên {{total}} host"
+- `auto.components.automations.AutomationRunsDashboard.historyUnavailableOne` — VI: "Lịch sử run không khả dụng cho 1 tự động hóa. Số liệu chỉ tính lịch sử khả dụng."
+- `auto.components.automations.AutomationRunsDashboard.historyUnavailableMany` — VI: "Lịch sử run không khả dụng cho {{count}} tự động hóa. Số liệu chỉ tính lịch sử khả dụng."
+- `auto.components.activity.ActivityPrototypePage.threadListOptionsActive` — VI: "Tùy chọn danh sách thread ({{value0}} đang bật)"
+- `auto.components.activity.ActivityPrototypePage.activityOptionsActive` — VI: "Tùy chọn hoạt động ({{value0}})"
+- `auto.components.activity.ActivityThreadContextMenu.markManyRead` — VI: "Đánh dấu {{count}} agent đã đọc"
+- `auto.components.activity.ActivityThreadContextMenu.markManyUnread` — VI: "Đánh dấu {{count}} agent chưa đọc"
+- `auto.components.activity.ActivityThreadContextMenu.clearMany` — VI: "Xóa {{count}} agent khỏi danh sách"
+- `components.native-chat.queuedMessages.imageCount` — VI: "{{count}} ảnh"
+- `terminal.newerDaemonBanner.reopenTerminal` — VI: "Mở lại {{count}} terminal"
+- `terminal.newerDaemonBanner.reopened` — VI: "Đã mở lại {{count}} terminal"
+- `terminal.newerDaemonBanner.resumed` — VI: "Đã tiếp tục {{count}} phiên agent."
+- `terminal.severedDaemonBanner.count` — VI: "{{count}} terminal đang chạy"
+- `workspaceOptions.activeFilterCount_one` — VI: "{{count}} bộ lọc"
+- `workspaceOptions.activeFilterCount_other` — VI: "{{count}} bộ lọc"
+</details>
+
+### ~60 key upstream đổi value (bản dịch có thể đã cũ)
+
+<details><summary>Danh sách</summary>
+
+- `settings.chat.names.description`
+  - cũ: Use an agent to name new chats from their first message. Until a name is generated, a chat shows its first message.
+  - mới: Use each chat’s agent to name it from its first message. Choose another naming agent in Advanced. Until a name is generated, a chat shows its first message.
+  - VI: Dùng agent đặt tên chat mới từ tin nhắn đầu. Trước khi có tên, chat hiển thị tin nhắn đầu tiên.
+- `settings.agents.autoUnsupported`
+  - cũ: Auto needs a newer Orca on this host.
+  - mới: Approve for me needs a newer Orca on this host.
+  - VI: Auto cần Orca mới hơn trên host này.
+- `settings.agents.permissionsSearchDescription`
+  - cũ: Launch agents with Manual, Auto, or Yolo permissions.
+  - mới: Choose Approve for me, Full access, or each agent’s own permission settings.
+  - VI: Khởi động agent với quyền Manual, Auto hoặc Yolo.
+- `auto.hooks.useSettingsNavigationMetadata.pluginsDescription`
+  - cũ: Install and manage experimental Orca plugins.
+  - mới: Install and manage Orca plugins (Alpha).
+  - VI: Cài đặt và quản lý Orca plugin experimental.
+- `auto.components.settings.BrowserLinkRoutingSetting.description`
+  - cũ: Open http(s) links in Orca's built-in browser — from the terminal, markdown, and the editor. {{shortcut}} always uses your system browser.
+  - mới: Open http(s) links from anywhere in Orca in its built-in browser. Sign-in pages and {{shortcut}} always use your system browser.
+  - VI: Mở link http(s) trong trình duyệt tích hợp của Orca — từ terminal, markdown và editor. {{shortcut}} luôn dùng trình duyệt hệ thống của bạn.
+- `auto.components.settings.BrowserLinkRoutingSetting.descriptionBase`
+  - cũ: Open http(s) links in Orca's built-in browser — from the terminal, markdown, and the editor.
+  - mới: Open http(s) links from anywhere in Orca in its built-in browser. Sign-in pages still open in your system browser.
+  - VI: Mở link http(s) trong trình duyệt tích hợp của Orca — từ terminal, markdown và editor.
+- `auto.components.settings.PluginConsentDialog.reconsent`
+  - cũ: This plugin changed since you approved it. Review it to run it again.
+  - mới: Changed since you approved it
+- `auto.components.settings.PluginConsentDialog.instructionalWarning`
+  - cũ: This plugin has no worker process. Its instructional content can still cause actions when you or an agent use it. Review the instructions and commands below before enabling it.
+  - mới: Its commands can act for you or your agents
+- `auto.components.settings.PluginConsentDialog.declarativeWarning`
+  - cũ: This plugin contributes validated content only. It does not run a background worker or receive access to Orca's API.
+  - mới: Content only. No code runs.
+- `auto.components.settings.PluginConsentDialog.capability.workspaceRead`
+  - cũ: Read the name, branch, and terminal list of your focused worktree
+  - mới: Read workspace names, branches, and terminals
+- `auto.components.settings.PluginConsentDialog.capability.notificationsShow`
+  - cũ: Show desktop notifications labeled with the plugin name
+  - mới: Show desktop notifications
+- `auto.components.settings.PluginConsentDialog.capability.storage`
+  - cũ: Store data in the plugin's own storage folder
+  - mới: Store its own data
+- `auto.components.settings.PluginConsentDialog.capability.secrets`
+  - cũ: Store and read secrets in the plugin's own encrypted vault
+  - mới: Store its own encrypted secrets
+- `auto.components.settings.PluginConsentDialog.capability.settingsOwn`
+  - cũ: Read and change the plugin's own settings
+  - mới: Read and change its own settings
+- `auto.components.settings.PluginDevelopmentSection.placeholder`
+  - cũ: /Users/you/plugins/my-plugin or C:\Users\you\plugins\my-plugin
+  - mới: Path to a plugin folder
+- `auto.components.settings.PluginInstallDialog.gitUrlInvalid`
+  - cũ: Use an HTTPS or SSH Git URL. Executable Git helper protocols are not allowed.
+  - mới: Use an HTTPS or SSH Git URL.
+- `auto.components.settings.PluginInstallDialog.gitRefRequired`
+  - cũ: Add an explicit #ref (tag or commit) so the install is pinned — for example #v0.1.0.
+  - mới: Add a #tag or #commit, like #v0.1.0.
+- `auto.components.settings.PluginInstallDialog.description`
+  - cũ: Installing copies the plugin into Orca and shows its permissions for review. No plugin code runs until you enable it.
+  - mới: Nothing runs until you enable it.
+- `auto.components.settings.PluginInstallDialog.localPlaceholder`
+  - cũ: /Users/you/plugins/my-plugin or C:\Users\you\plugins\my-plugin
+  - mới: Path to a plugin folder
+- `auto.components.settings.PluginInstallDialog.localHelp`
+  - cũ: Full path to a folder containing orca-plugin.json on this computer. The path is used exactly as entered.
+  - mới: The folder with orca-plugin.json
+- `auto.components.settings.PluginInstallDialog.gitLabel`
+  - cũ: Repository URL with #ref
+  - mới: Repository URL
+- `auto.components.settings.PluginInstallDialog.gitHelp`
+  - cũ: Append an explicit #ref — a tag or commit — so the install is pinned. Works with GitHub, GitLab, and any git host.
+  - mới: End with #tag or #commit to pin a version
+- `auto.components.settings.PluginKeybindingConsentPreview.worktree`
+  - cũ: Runs only while a workspace is active.
+  - mới: Only in a workspace
+- `auto.components.settings.PluginMarketplaceBrowser.loadFailed`
+  - cũ: Could not load marketplace plugins.
+  - mới: Could not load catalog plugins.
+- `auto.components.settings.PluginMarketplaceBrowser.refreshFailed`
+  - cũ: Could not refresh marketplaces. Cached listings remain available.
+  - mới: Couldn't refresh catalogs. Try again.
+- `auto.components.settings.PluginMarketplaceBrowser.loading`
+  - cũ: Loading marketplace plugins…
+  - mới: Loading catalog plugins…
+  - VI: Đang tải plugin marketplace…
+- `auto.components.settings.PluginMarketplaceBrowser.noSourcesTitle`
+  - cũ: No marketplaces configured
+  - mới: No catalogs configured
+  - VI: Chưa cấu hình marketplace nào
+- `auto.components.settings.PluginMarketplaceBrowser.addSource`
+  - cũ: Add marketplace
+  - mới: Add catalog
+  - VI: Thêm marketplace
+- `auto.components.settings.PluginMarketplaceBrowser.noResults`
+  - cũ: No marketplace plugins match this search.
+  - mới: No catalog plugins match this search.
+  - VI: Không có plugin marketplace nào khớp tìm kiếm này.
+- `auto.components.settings.PluginMarketplaceBrowser.empty`
+  - cũ: The configured marketplaces do not list any plugins.
+  - mới: The configured catalogs do not list any plugins.
+  - VI: Các marketplace đã cấu hình không liệt kê plugin nào.
+- `auto.components.settings.PluginMarketplaceSourceDialog.addFailed`
+  - cũ: Could not add this marketplace. Check the Git URL, ref, and your Git credentials.
+  - mới: Couldn’t add this catalog. Check the URL and ref.
+- `auto.components.settings.PluginMarketplaceSourceDialog.refreshFailed`
+  - cũ: Could not refresh this marketplace. Its last valid cached index is still available.
+  - mới: Couldn't refresh this catalog. Try again.
+- `auto.components.settings.PluginMarketplaceSourceDialog.removeFailed`
+  - cũ: Could not remove this marketplace.
+  - mới: Could not remove this catalog.
+- `auto.components.settings.PluginMarketplaceSourceDialog.title`
+  - cũ: Marketplace sources
+  - mới: Catalog sources
+- `auto.components.settings.PluginMarketplaceSourceDialog.description`
+  - cũ: Marketplaces are pinned Git repositories. Orca uses your existing system Git credentials for private repositories.
+  - mới: Git repositories that list plugins
+- `auto.components.settings.PluginMarketplaceSourceDialog.urlDescription`
+  - cũ: Use an HTTPS or SSH repository URL containing orca-marketplace.json.
+  - mới: HTTPS or SSH, with an orca-catalog.json
+- `auto.components.settings.PluginMarketplaceSourceDialog.refDescription`
+  - cũ: Choose a branch, tag, or commit. Every fetched index is recorded at an exact commit.
+  - mới: Branch, tag, or commit
+- `auto.components.settings.PluginMarketplaceSourceDialog.configured`
+  - cũ: Configured sources
+  - mới: Sources
+- `auto.components.settings.PluginMarketplaceSourceDialog.empty`
+  - cũ: No marketplace sources configured.
+  - mới: No sources yet
+- `auto.components.settings.PluginMarketplaceSourceDialog.stale`
+  - cũ: Refresh failed. Browsing the last valid cached index.
+  - mới: Couldn’t refresh. May be out of date.
+- `auto.components.settings.PluginRemoveDialog.title`
+  - cũ: Remove plugin?
+  - mới: Remove {{value0}}?
+- `auto.components.settings.PluginRemoveDialog.description`
+  - cũ: This removes {{value0}} and its stored plugin data from this computer. You can install it again later.
+  - mới: Its data is removed too.
+- `auto.components.settings.PluginRemoveDialog.remove`
+  - cũ: Remove plugin
+  - mới: Remove
+- `auto.components.settings.PluginRollbackDialog.title`
+  - cũ: Roll back plugin?
+  - mới: Roll back {{value0}}?
+- `auto.components.settings.PluginRollbackDialog.description`
+  - cũ: This deactivates {{value0}} and restores its previous immutable version. If that version requests different access or instructional content, Orca will require another review.
+  - mới: Restores the previous version.
+- `auto.components.settings.PluginRollbackDialog.confirm`
+  - cũ: Roll back plugin
+  - mới: Roll back
+- `auto.components.settings.PluginsSettingsSection.empty`
+  - cũ: Browse the All tab to install plugins from a marketplace.
+  - mới: Browse the All tab to install plugins from a catalog.
+  - VI: Duyệt tab All để cài plugin từ marketplace.
+- `auto.components.settings.PluginsSettingsSection.description`
+  - cũ: Install and manage Orca plugins. Plugins run on this computer, even for SSH workspaces.
+  - mới: Themes, languages, commands, and more.
+- `auto.components.settings.PluginsSettingsSection.rollbackFailed`
+  - cũ: Could not roll back this plugin. A previous immutable version may not be available.
+  - mới: Couldn't roll back this plugin.
+- `auto.components.settings.PluginSettingsRow.noLogs`
+  - cũ: No log lines recorded.
+  - mới: No logs yet
+- `auto.components.settings.PluginSettingsRow.logCount`
+  - cũ: Last {{value0}} of up to 200 retained lines
+  - mới: Last {{value0}} lines
+- `auto.components.settings.PluginSettingsRow.invalidPluginError`
+  - cũ: The plugin manifest or installed files are invalid. Fix the plugin, then refresh.
+  - mới: This plugin's files are invalid. Fix them, then refresh.
+- `auto.components.settings.pluginError.installGit`
+  - cũ: Orca could not fetch the pinned Git revision. Check the URL, #ref, access, and system Git setup.
+  - mới: Couldn't fetch this Git revision. Check the URL, #ref, and access.
+- `auto.components.settings.pluginError.invalidArtifact`
+  - cũ: A declared worker or panel file is missing or unsafe. Fix the plugin files, then refresh.
+  - mới: A worker or panel file is missing or unsafe. Fix it, then refresh.
+- `auto.components.settings.pluginError.consentChanged`
+  - cũ: The plugin changed while you were reviewing it. Close this dialog and review the updated permissions.
+  - mới: This plugin changed while you were reviewing it. Review it again.
+- `auto.components.settings.plugins.search.description`
+  - cũ: Install and manage experimental Orca plugins.
+  - mới: Install and manage Orca plugins (Alpha).
+  - VI: Cài đặt và quản lý Orca plugin experimental.
+- `auto.components.mobile.MobileHero.e75647ace0`
+  - cũ: Scan the QR with your phone or open the install link to grab Orca Mobile.
+  - mới: Scan this download QR with your phone's camera. Already have Orca Mobile? Continue to step 2 for the pairing QR.
+  - VI: Quét QR bằng điện thoại hoặc mở link cài đặt để tải Orca Mobile.
+- `auto.components.mobile.MobileHero.0d9b33299e`
+  - cũ: Get the app.
+  - mới: Download the app.
+  - VI: Tải app.
+- `auto.components.pluginCatalog.PluginCatalogLayout.searchPlaceholder`
+  - cũ: Search plugins, categories, or publishers
+  - mới: Search plugins
+  - VI: Tìm plugin, danh mục hoặc nhà phát hành
+- `components.native-chat.failureWords.agentCommandNotRunnable`
+  - cũ: {{agent}}'s Command in Settings → Agents must be a program path or name Orca can find, with no arguments or variables. Change it or reset it.
+  - mới: {{agent}}'s Command in Settings → Agents must start with a program Orca can find. Variables, pipes and other shell syntax aren't supported; use the Environment setting for variables. Change it or reset it.
+  - VI: Lệnh của {{agent}} trong Cài đặt → Agents phải là đường dẫn hoặc tên chương trình mà Orca tìm được, không kèm tham số hay biến. Đổi nó hoặc đặt lại.
+</details>

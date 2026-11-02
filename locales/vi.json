@@ -184,10 +184,6 @@
     "unavailableDetail": "Chưa có gì bị dừng. Thử lại khi các terminal đã mở. Nếu một terminal báo được mở ở phiên bản Orca mới hơn, hãy mở lại nó trước. Nếu các terminal đã mở, thoát và mở lại Orca, rồi thử lại.",
     "ok": "Đã hiểu"
   },
-  "workspaceOptions": {
-    "activeFilterCount_one": "{{count}} bộ lọc",
-    "activeFilterCount_other": "{{count}} bộ lọc"
-  },
   "osDocumentOpen": {
     "failed": "Không mở được file."
   },
@@ -545,7 +541,6 @@
       "defaultOpensAsScope": "Áp cho phiên {{value0}} mới khởi động từ máy này, kể cả trên host đã ghép đôi. Khớp với công tắc Providers của nó.",
       "save": "Lưu",
       "clearDefault": "Xóa agent mặc định",
-      "autoPermissions": "Tự động",
       "autoUnsupported": "Auto cần Orca mới hơn trên host này.",
       "permissionsDescription": "Mức agent được làm mà không cần hỏi bạn. Agent có tham số khởi động riêng vẫn giữ chúng.",
       "permissionsAutoDescription": "<agents>Các agent được hỗ trợ</agents> tự phê duyệt hành động an toàn.",
@@ -578,10 +573,8 @@
       "permissionSameAsAll": "Giống mọi agent",
       "permissionChipRemove": "Gỡ {{flag}} và dùng cài đặt riêng của {{agent}}",
       "permissionChipTooltip": "Được thêm bởi Quyền. Gỡ nó để dùng cài đặt riêng của {{agent}}.",
-      "permissionOverridesKept": "{{count}} agent vẫn dùng cài đặt quyền riêng:",
       "permissionOverridesKept_one": "{{count}} agent vẫn dùng cài đặt quyền riêng:",
       "permissionOverridesKept_other": "{{count}} agent vẫn dùng cài đặt quyền riêng:",
-      "permissionOverridesFollow": "{{count}} agent giờ theo {{mode}}",
       "permissionOverridesFollow_one": "{{count}} agent giờ theo {{mode}}",
       "permissionOverridesFollow_other": "{{count}} agent giờ theo {{mode}}",
       "permissionOverrideFollows": "{{agent}} giờ theo {{mode}}",
@@ -717,13 +710,10 @@
       "resumableBody": "Mở lại ở đây để tiếp tục làm việc. Phiên agent sẽ được tiếp tục.",
       "reopening": "Đang mở lại…",
       "tryAgain": "Thử lại",
-      "reopenTerminal": "Mở lại {{count}} terminal",
       "reopenTerminal_one": "Mở lại terminal",
       "reopenTerminal_other": "Mở lại {{count}} terminal",
-      "reopened": "Đã mở lại {{count}} terminal",
       "reopened_one": "Đã mở lại {{count}} terminal",
       "reopened_other": "Đã mở lại {{count}} terminal",
-      "resumed": "Đã tiếp tục {{count}} phiên agent.",
       "resumed_one": "Đã tiếp tục {{count}} phiên agent.",
       "resumed_other": "Đã tiếp tục {{count}} phiên agent."
     },
@@ -734,7 +724,6 @@
     },
     "severedDaemonBanner": {
       "unknownCount": "các terminal đang chạy của nó",
-      "count": "{{count}} terminal đang chạy",
       "unverifiable": "Orca không xác minh được process dịch vụ terminal, nên không có gì bị dừng.",
       "alreadyReplaced": "Dịch vụ terminal đã được thay thế; không có gì bị dừng.",
       "restarted": "Đã khởi động lại dịch vụ terminal.",
@@ -3627,14 +3616,11 @@
           "olderTerminalsUnverifiable": "Orca không xác nhận được các terminal do phiên bản Orca cũ khởi động đã thoát. Kết nối lại để thử lại.",
           "olderTerminals_one": "{{count}} terminal do phiên bản Orca cũ khởi động vẫn đang chạy trên host này và nó không tự dừng. Hãy đóng nó trong phiên bản Orca đó hoặc kết thúc nó trên host, rồi kết nối lại.",
           "olderTerminals_other": "{{count}} terminal do phiên bản Orca cũ khởi động vẫn đang chạy trên host này và chúng không tự dừng. Hãy đóng chúng trong phiên bản Orca đó hoặc kết thúc chúng trên host, rồi kết nối lại.",
-          "olderTerminals": "{{count}} terminal do phiên bản Orca cũ khởi động vẫn đang chạy trên host này và chúng không tự dừng. Hãy đóng chúng trong phiên bản Orca đó hoặc kết thúc chúng trên host, rồi kết nối lại.",
           "linkedProjects_one": "Server Orca của host này đã có sẵn {{paths}}, nên máy này giờ dùng bản sao của server. Các tab và {{count}} automation của máy này ở đó không được chuyển, và các worktree nó tạo ở đó hiện là worktree ngoài.",
           "linkedProjects_other": "Server Orca của host này đã có sẵn {{paths}}, nên máy này giờ dùng bản sao của server. Các tab và {{count}} automation của máy này ở đó không được chuyển, và các worktree nó tạo ở đó hiện là worktree ngoài.",
-          "linkedProjects": "Server Orca của host này đã có sẵn {{paths}}, nên máy này giờ dùng bản sao của server. Các tab và {{count}} automation của máy này ở đó không được chuyển, và các worktree nó tạo ở đó hiện là worktree ngoài.",
           "linkedProjectsNoAutomations": "Server Orca của host này đã có sẵn {{paths}}, nên máy này giờ dùng bản sao của server. Các tab của máy này ở đó không được chuyển, và các worktree nó tạo ở đó hiện là worktree ngoài.",
           "automationsLeftDisabled_one": "Server Orca của host này đã tiếp quản {{count}} automation nhưng không bật lại được. Hãy bật nó trong Automations.",
           "automationsLeftDisabled_other": "Server Orca của host này đã tiếp quản {{count}} automation nhưng không bật lại được. Hãy bật chúng trong Automations.",
-          "automationsLeftDisabled": "Server Orca của host này đã tiếp quản {{count}} automation nhưng không bật lại được. Hãy bật chúng trong Automations.",
           "launchSessionEnded": "Các terminal trên Mac này có thể đã mất truy cập mạng local vì phiên SSH khởi động server Orca của host đã kết thúc. Khởi động lại server Orca để khôi phục.",
           "behindRolledBack": "Đang chạy phiên bản server Orca cũ hơn app này; bản cập nhật gần nhất đã bị rollback. Dùng Cập nhật server để thử lại.",
           "behindNoTemplate": "Đang chạy phiên bản server Orca mà app này không cập nhật được; bản build này không có server cho host này.",
@@ -6038,8 +6024,6 @@
           "7bada3b1ab": "Sắp xếp theo",
           "dc0bb670bc": "Nhóm theo",
           "9919ae1082": "Tùy chọn workspace",
-          "bc96dbd041": "Tùy chọn workspace ({{value0}})",
-          "optionsActiveLabel": "Tùy chọn workspace ({{value0}} đang dùng)",
           "af9249c505": "Hoạt động workspace gần nhất",
           "b451c8b162": "Gần đây",
           "6664282a7b": "Kéo dự án để sắp xếp",
@@ -6139,22 +6123,17 @@
           "branch": {
             "batch": {
               "toast": {
-                "a3cdd9d9e6": "Git giữ lại {{count}} branch local vì chúng có thể chứa commit chưa merge. Branch được giữ không giữ thư mục workspace; commit của chúng vẫn còn trong repo. Orca có thể tiếp tục giải phóng dung lượng workspace trong nền.",
                 "a3cdd9d9e6_one": "Git giữ lại {{count}} branch local vì chúng có thể chứa commit chưa merge. Branch được giữ không giữ thư mục workspace; commit của chúng vẫn còn trong repo. Orca có thể tiếp tục giải phóng dung lượng workspace trong nền.",
                 "a3cdd9d9e6_other": "Git giữ lại {{count}} branch local vì chúng có thể chứa commit chưa merge. Branch được giữ không giữ thư mục workspace; commit của chúng vẫn còn trong repo. Orca có thể tiếp tục giải phóng dung lượng workspace trong nền.",
-                "6310412304": "Xem lại {{count}} branch",
                 "6310412304_one": "Xem lại {{count}} branch",
                 "6310412304_other": "Xem lại {{count}} branch",
-                "cea24c2b7d": "Đã gỡ {{count}} workspace",
                 "cea24c2b7d_one": "Đã gỡ {{count}} workspace",
                 "cea24c2b7d_other": "Đã gỡ {{count}} workspace",
-                "0e0379f24a": "Đã giữ {{count}} branch",
                 "0e0379f24a_one": "Đã giữ {{count}} branch",
                 "0e0379f24a_other": "Đã giữ {{count}} branch",
                 "e61d78054f": "Đang xóa branch local: {{value0}}",
                 "1e1a5f6763": "Đã xóa branch local: {{value0}}",
                 "43d9395605": "{{value0}} đã xóa, {{value1}} chưa xóa",
-                "d42f1f14e0": "Thử lại {{count}} branch",
                 "d42f1f14e0_one": "Thử lại {{count}} branch",
                 "d42f1f14e0_other": "Thử lại {{count}} branch"
               }
@@ -6658,9 +6637,7 @@
           "b79b39d865": "Gỡ dự án",
           "removeDescriptionSsh": "Thao tác này chỉ gỡ {{name}} khỏi Orca. File vẫn nằm trên {{host}} — thêm lại host SSH đó để khôi phục.",
           "removeDescriptionLocal": "Thao tác này chỉ gỡ {{name}} khỏi Orca. Nó vẫn còn trên đĩa của bạn.",
-          "removeDescriptionVmRecipe": "Thao tác này gỡ {{name}} khỏi Orca. VM recipe của nó quyết định môi trường và file có bị xóa vĩnh viễn hay không.",
-          "openTerminalWarningOne": "1 terminal đang mở trong dự án này sẽ bị đóng.",
-          "openTerminalWarningMany": "{{count}} terminal đang mở trong dự án này sẽ bị đóng."
+          "removeDescriptionVmRecipe": "Thao tác này gỡ {{name}} khỏi Orca. VM recipe của nó quyết định môi trường và file có bị xóa vĩnh viễn hay không."
         },
         "ScrollToCurrentWorkspaceToolbarButton": {
           "23989bb663": "Hiện workspace đang hoạt động"
@@ -6728,8 +6705,7 @@
           "5a273fbfce": "Thêm dự án…",
           "4815c70605": "Không có dự án khớp",
           "bbbc6e8e3b": "Không có dự án chưa chọn nào khớp",
-          "allProjects": "Mọi dự án",
-          "selectedProjectsCount": "{{value0}} dự án"
+          "allProjects": "Mọi dự án"
         },
         "SidebarSettingsHelpMenu": {
           "ad3d3ed7f1": "Khởi động lại Orca",
@@ -7160,7 +7136,6 @@
           "ee39e872d5": "Có thể chưa merge",
           "676db406fd": "HEAD không khả dụng",
           "285e1e4882": "Hủy",
-          "a0f9863597": "Xóa cưỡng ép {{count}} branch",
           "a0f9863597_one": "Xóa cưỡng ép {{count}} branch",
           "a0f9863597_other": "Xóa cưỡng ép {{count}} branch"
         },
@@ -9386,7 +9361,6 @@
           "0f806a2ab1": "Hủy",
           "b6c3b84476": "Hiện cây file",
           "39f8007549": "Review conflict",
-          "skippedConflictsExcluded": "{{count}} conflict chưa giải quyết đã bị loại khỏi view diff này.",
           "skippedConflictsExcluded_one": "{{count}} conflict chưa giải quyết đã bị loại khỏi view diff này.",
           "skippedConflictsExcluded_other": "{{count}} conflict chưa giải quyết đã bị loại khỏi view diff này.",
           "820ec01f24": "File có conflict được review riêng",
@@ -12202,9 +12176,6 @@
           "sortedAscending": "{{value0}}, sắp xếp tăng dần",
           "sortedDescending": "{{value0}}, sắp xếp giảm dần"
         },
-        "hostSummary": {
-          "partialFailure": "Không tải được {{failed}} trên {{total}} host"
-        },
         "emptyState": {
           "unknownHost": "host này",
           "hostLoading": "Đang tải host…",
@@ -12313,8 +12284,6 @@
           "failed24h": "Thất bại · 24h",
           "successful7d": "Thành công · 7 ngày",
           "failed7d": "Thất bại · 7 ngày",
-          "historyUnavailableOne": "Lịch sử run không khả dụng cho 1 tự động hóa. Số liệu chỉ tính lịch sử khả dụng.",
-          "historyUnavailableMany": "Lịch sử run không khả dụng cho {{count}} tự động hóa. Số liệu chỉ tính lịch sử khả dụng.",
           "automation": "Tự động hóa",
           "triggered": "Kích hoạt",
           "trigger": "Nguồn kích hoạt",
@@ -13976,7 +13945,6 @@
         "cleanup": {
           "WorkspaceCleanupDialog": {
             "3828408538": "Gỡ {{value0}}",
-            "352f15d6fc": "Hoạt động lần cuối",
             "b6bae1eed1": "Hủy",
             "38ca0b1400": "Việc này xóa vĩnh viễn các file local của chúng. Bạn không thể hoàn tác.",
             "e97e4580c7": "Chưa commit",
@@ -14298,8 +14266,6 @@
           },
           "filtersSection": "Bộ lọc",
           "viewSection": "Hiển thị",
-          "threadListOptionsActive": "Tùy chọn danh sách thread ({{value0}} đang bật)",
-          "activityOptionsActive": "Tùy chọn hoạt động ({{value0}})",
           "8c3b621ddf": "Dự án"
         },
         "clearCompleted": {
@@ -14345,10 +14311,7 @@
           "markManyUnread_one": "Đánh dấu {{count}} agent chưa đọc",
           "markManyUnread_other": "Đánh dấu {{count}} agent chưa đọc",
           "clearMany_one": "Xóa {{count}} agent khỏi danh sách",
-          "clearMany_other": "Xóa {{count}} agent khỏi danh sách",
-          "markManyRead": "Đánh dấu {{count}} agent đã đọc",
-          "markManyUnread": "Đánh dấu {{count}} agent chưa đọc",
-          "clearMany": "Xóa {{count}} agent khỏi danh sách"
+          "clearMany_other": "Xóa {{count}} agent khỏi danh sách"
         }
       },
       "cmd": {
@@ -14576,8 +14539,6 @@
         "1e08a1ec80": "Bắt buộc nhập tiêu đề"
       },
       "NewWorkspaceComposerCard": {
-        "reuseExistingBranch": "Dùng lại branch",
-        "reuseExistingBranchHint": "Checkout branch hiện có thay vì tạo branch mới từ nó.",
         "createMultiple": "Tạo thêm",
         "cbb47ee0dc": "Chỉ khả dụng cho dự án Git local.",
         "090cfedeb4": "Viết ghi chú",
@@ -16092,7 +16053,6 @@
         "folderWorkspaceCreateFailedMessage": "Không tạo được workspace thư mục. Kiểm tra chi tiết lỗi ở trên rồi thử lại.",
         "setupAgentStartupPolicySaveFailed": "Không lưu được hành vi khởi động setup.",
         "5f3d2c8a1b": "Không xác định được MR base.",
-        "dropPartiallyAttached": "{{failureCount}} trong {{count}} mục không đính kèm được.",
         "dropPartiallyAttached_one": "{{failureCount}} trong {{count}} mục không đính kèm được.",
         "dropPartiallyAttached_other": "{{failureCount}} trong {{count}} mục không đính kèm được."
       },
@@ -16109,7 +16069,6 @@
         "workspaceOpenFailed": "Không mở được {{fileName}}. Mở nó từ workspace nguồn rồi thử lại.",
         "nativeDropUnresolvedPathsDescription": "Lưu chúng ra đĩa trước, rồi drop file đã lưu.",
         "nativeDropUnresolvedPaths": "Orca không đọc được đường dẫn của các file đã drop.",
-        "nativeDropTempCopyFailed": "Orca không copy được {{count}} file đã drop.",
         "nativeDropTempCopyFailed_one": "Orca không copy được {{count}} file đã drop.",
         "nativeDropTempCopyFailed_other": "Orca không copy được {{count}} file đã drop."
       },
@@ -16585,10 +16544,7 @@
       },
       "claudeAgentRowView": {
         "subagentNavigationSetup": "Bật điều hướng subagent của Claude trong Cài đặt → Agents, rồi chạy Claude 2.1.300+ trong Orca. Kiểm tra keybindings.json còn bind Ctrl+Alt+G, H hoặc V tới command:orca-agent-view.",
-        "permissionPrompt": "Trả lời prompt quyền của Claude trước khi chuyển agent.",
-        "agentUnavailable": "Claude không mở được agent này. Có thể nó không còn khả dụng.",
-        "closeDialog": "Claude không chuyển được view. Đóng mọi dialog đang mở rồi thử lại.",
-        "hostUnavailable": "Điều hướng subagent không khả dụng trên host này. Cập nhật Orca rồi khởi động lại Claude trong pane này."
+        "permissionPrompt": "Trả lời prompt quyền của Claude trước khi chuyển agent."
       },
       "wslHostWindowsDriveRefusal": {
         "addOnThisComputer": "Thêm trên máy này",
@@ -16844,14 +16800,7 @@
             "b8a1618172": "Tạo chi tiết pull request không khả dụng trong web client.",
             "e57c82d276": "Tìm model commit message không khả dụng trong web client.",
             "9fc90740b6": "Tạo commit message không khả dụng trong web client.",
-            "52bee9d8a0": "Các phím tắt tùy chỉnh bị xung đột đã bị bỏ qua: {{value0}}.",
-            "32f15bdb0f": "Platform không rõ \"{{value0}}\" đã bị bỏ qua.",
-            "0a69fcd8bc": "platforms phải là object có các mục darwin, linux hoặc win32.",
-            "10898045f3": "Phím tắt cho \"{{value0}}\" đã bị bỏ qua: hãy dùng mảng chuỗi.",
-            "36761d9604": "Keybinding action không rõ \"{{value0}}\" đã bị bỏ qua.",
-            "d2e43e426a": "{{value0}} phải là một object.",
-            "fb290366b2": "Không khả dụng trên web.",
-            "76122208ca": "Phím tắt cho \"{{value0}}\" đã bị bỏ qua: {{value1}}"
+            "fb290366b2": "Không khả dụng trên web."
           }
         }
       },
@@ -17348,7 +17297,6 @@
         "editFailed": "Không sửa được tin nhắn này.",
         "editGone": "Tin nhắn này đã được gửi hoặc đã bị xóa. Bản sửa của bạn đang trong ô nhập.",
         "editGonePrompt": "Tin nhắn này đã được gửi hoặc đã bị xóa. Bản sửa của bạn sẽ vào ô nhập sau khi bạn trả lời agent.",
-        "imageCount": "{{count}} ảnh",
         "imageCount_one": "{{count}} ảnh",
         "imageCount_other": "{{count}} ảnh",
         "collapse": "Thu gọn",
@@ -19642,7 +19590,6 @@
       "clearHosts": "Xóa host",
       "clearProjects": "Xóa dự án",
       "back": "Quay lại",
-      "ariaActive": "Bộ lọc: {{value0}} đang bật.",
       "scopedTo": "Giới hạn trong",
       "projects": "Dự án"
     },
