@@ -3,7 +3,7 @@
 Cách chụp before/after: bật `vi`, mở màn hình → chụp; dịch batch → reload → chụp lại.
 Check coverage từng batch: `node tools/check-catalog.mjs --missing`.
 
-## Tiến độ theo key group (v0.1.0 — 15.607/17.308 = **90,2%**; mẫu số hợp lệ ~17.100 sau khi trừ 180 key `settings.plugin*` Orca cấm → **~91%**)
+## Tiến độ theo key group (v0.1.0 — 15.555/18.316 = **85,0%** sau resync upstream v1.4.245; mẫu số hợp lệ ~18.100 sau khi trừ ~180 key `settings.plugin*` Orca cấm → **~86%**. Trước resync: 15.607/17.308 = 90,2%)
 
 > Wave fan-out + tail sweep đã phủ gần như toàn bộ key dịch được. 1.701 key còn lại gần như toàn bộ CỐ Ý giữ EN: 180 key security copy Orca cấm (fail-closed), ~80 enum status khớp `is:` query/badge API, search keyword, tên riêng/proper noun, lệnh git, tên ngôn ngữ (中文/한국어…), URL/path/code mẫu, placeholder thuần. Dịch thêm = vi phạm rule.
 

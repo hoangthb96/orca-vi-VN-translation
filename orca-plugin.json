@@ -1,5 +1,7 @@
 {
-  "manifestVersion": 1,
+  "$schema": "https://raw.githubusercontent.com/stablyai/orca/main/docs/schemas/plugins/orca-plugin.v2.schema.json",
+  "manifestVersion": 2,
+  "execution": "data",
   "id": "vi",
   "publisher": "hoangthb96",
   "name": "Tiếng Việt (Vietnamese)",
@@ -10,16 +12,21 @@
     "url": "https://github.com/hoangthb96"
   },
   "repository": "https://github.com/hoangthb96/orca-vi-VN-translation",
+  "license": "AGPL-3.0-only",
   "engines": {
-    "orca": ">=1.4.0"
+    "orca": ">=1.4.245"
   },
-  "pluginApi": 1,
   "capabilities": [],
+  "cover": {
+    "path": "images/cover.png",
+    "alt": "The text \"Tiếng Việt\" in gray-white type on a dark gray background"
+  },
   "contributes": {
     "languagePacks": [
       {
         "locale": "vi",
-        "path": "locales/vi.json"
+        "path": "locales/vi.json",
+        "displayName": "Tiếng Việt"
       }
     ]
   }

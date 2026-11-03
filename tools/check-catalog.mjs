@@ -251,6 +251,6 @@ if (process.argv.includes('--missing') && !STAGE) {
   for (const [ns, n] of Object.entries(perNs).sort((a, b) => b[1] - a[1])) console.log(`  ${ns}: ${n}`)
 }
 
-const fail = structErr.length || extra.length || dup.length || badPh.length || slop.length || orcaProt.length
+const fail = structErr.length || extra.length || dup.length || badPh.length || sameAsEn.length || slop.length || orcaProt.length
 console.log(fail ? '\n==> FAIL' : '\n==> OK')
 process.exit(fail ? 1 : 0)

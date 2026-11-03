@@ -4,7 +4,7 @@ Language pack tiếng Việt (`vi`) cho [Orca](https://github.com/stablyai/orca)
 
 ## Cài đặt
 
-Yêu cầu Orca ≥ 1.4.0 (theo `engines` trong `orca-plugin.json`). Ba cách:
+Yêu cầu Orca ≥ 1.4.245 (theo `engines` trong `orca-plugin.json` — manifest format 2). Bốn cách:
 
 **1. Dev local (phát triển — hot reload khi sửa `vi.json`)**
 
@@ -28,7 +28,7 @@ Repo đang **public** — ai cũng cài được, không cần tài khoản GitH
 
 **4. Qua marketplace source (xem plugin trong Marketplace browser)**
 
-Repo chứa sẵn `orca-marketplace.json` (catalog tự host). Settings → Plugins → mục marketplace sources → add source bằng Git URL repo này — plugin `hoangthb96.vi` sẽ hiện trong Marketplace để cài một click.
+Repo chứa sẵn `orca-marketplace.json` (catalog v2 tự host — mỗi release pin đúng commit + contentHash, xem mục Phát hành bên dưới). Settings → Plugins → mục marketplace sources → add source bằng Git URL repo này — plugin `hoangthb96.vi` sẽ hiện trong Marketplace để cài một click.
 
 Sau khi cài: **Settings → Appearance → Language** → chọn `Tiếng Việt`.
 
@@ -36,16 +36,17 @@ Sau khi cài: **Settings → Appearance → Language** → chọn `Tiếng Việ
 
 | Phiên bản | Keys | Phạm vi |
 |---|---|---|
-| v0.1.0 | 15.607 / 17.308 (90,2%) | Toàn bộ màn hình chính: Settings, sidebar trái/phải, editor, status bar, terminal, native chat, automations, skills, tasks, GitHub/PR, workspace, accounts, keybindings, browser, mobile, WSL, onboarding… (chi tiết `docs/roadmap.md`) |
+| v0.1.0 | 15.555 / 18.316 (85,0%) — sau resync en.json upstream v1.4.245 (+1.135 key mới) | Toàn bộ màn hình chính: Settings, sidebar trái/phải, editor, status bar, terminal, native chat, automations, skills, tasks, GitHub/PR, workspace, accounts, keybindings, browser, mobile, WSL, onboarding… (chi tiết `docs/roadmap.md`) |
 
-~1.700 key còn lại **cố ý giữ tiếng Anh** (sparse catalog hợp lệ, fallback tự động): security copy `settings.plugin*` Orca cấm override (fail-closed), enum status khớp query `is:`/badge API, search keyword, tên riêng, lệnh git, tên ngôn ngữ, URL/path/code mẫu. Dịch thêm sẽ vi phạm rule — xem `AGENTS.md` và `docs/glossary.md`.
+~2.760 key còn lại **cố ý giữ tiếng Anh** (sparse catalog hợp lệ, fallback tự động): security copy `settings.plugin*` Orca cấm override (fail-closed), enum status khớp query `is:`/badge API, search keyword, tên riêng, lệnh git, tên ngôn ngữ, URL/path/code mẫu. Dịch thêm sẽ vi phạm rule — xem `AGENTS.md` và `docs/glossary.md`.
 
 ## Cấu trúc
 
 ```
-orca-plugin.json        # manifest v1, contributes.languagePacks → locale "vi"
+orca-plugin.json        # manifest v2 (execution: "data"), contributes.languagePacks → locale "vi"
 locales/vi.json         # catalog tiếng Việt (sparse)
 reference/en.json       # snapshot en.json upstream (nguồn dịch)
+images/cover.png        # ảnh banner plugin page (1600×1000)
 docs/glossary.md        # thuật ngữ & style chuẩn
 docs/roadmap.md         # tiến độ dịch theo màn hình
 docs/no-translate.md    # ADR — các nhóm key quyết định không dịch
@@ -55,9 +56,21 @@ tools/resync-en.mjs     # đồng bộ en.json theo tag release + ghi docs/en-sy
 tools/dump-untranslated.mjs # sinh docs/untranslated-keys.generated.md — key chưa dịch theo nhóm
 tools/find-mixed.mjs    # quét value lẫn EN+VI
 tools/merge-stage.mjs   # merge file stage vào vi.json
+tools/publish-catalog.mjs # pin release trong orca-marketplace.json vào commit + contentHash (đúng thuật toán Orca)
+tools/make-images.py      # sinh lại images/cover.png (Pillow, chạy khi muốn chỉnh ảnh)
 tools/serve.mjs         # workbench dịch (hot reload)
 AGENTS.md               # rule dịch cho agent (Rule 0: chất lượng > coverage)
 ```
+
+## Phát hành (marketplace)
+
+`orca-marketplace.json` là catalog v2: mỗi release phải pin `commit` (SHA-1 đầy đủ) + `contentHash` (SHA-256 của toàn bộ file plugin, tính đúng thuật toán Orca — `tools/publish-catalog.mjs` là port của `plugin-content-hash.ts`). Sau khi commit & push thay đổi plugin:
+
+```bash
+node tools/publish-catalog.mjs --ref <tag-hoặc-sha>   # ví dụ: --ref v0.1.1
+```
+
+Lệnh này đọc đúng tree của commit đó (git archive), tính contentHash, rồi ghi vào `releases[0]` của `orca-marketplace.json`. `--worktree` tính từ working tree nhưng chỉ dùng để xem trước — commit vẫn là HEAD cũ, không dùng để phát hành.
 
 ## Dịch tiếp / đóng góp
 

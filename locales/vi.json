@@ -7435,8 +7435,7 @@
             "checking": "Đang kiểm tra {{value0}}",
             "scanned": "Đã quét {{value0}}",
             "agentCheckedCount_one": "{{agent}}: đã kiểm tra {{settled}} trên {{total}} mục lịch sử",
-            "agentCheckedCount_other": "{{agent}}: đã kiểm tra {{settled}} trên {{total}} mục lịch sử",
-            "fileCount_one": "{{value0}} file"
+            "agentCheckedCount_other": "{{agent}}: đã kiểm tra {{settled}} trên {{total}} mục lịch sử"
           },
           "AiVaultSessionLimitMenu": {
             "historyDepth": "Độ sâu lịch sử: {{value0}}",
@@ -7978,8 +7977,7 @@
             "resultsInFiles": "{{results}} trong {{files}}",
             "resultCount_one": "{{count}} kết quả",
             "resultCount_other": "{{count}} kết quả",
-            "fileCount_other": "{{count}} file",
-            "fileCount_one": "{{count}} file"
+            "fileCount_other": "{{count}} file"
           },
           "SearchFilters": {
             "01e4671ccf": "vd: *.min.js, dist/**",
@@ -8261,8 +8259,7 @@
                   "15efa778e3": "Hủy thay đổi",
                   "0d2d88cba5": "Không thể hoàn tác.",
                   "1551c14668": "Hủy thay đổi?",
-                  "fileCount_other": "{{count}} file",
-                  "fileCount_one": "{{count}} file"
+                  "fileCount_other": "{{count}} file"
                 }
               },
               "dropdown": {

@@ -1,4 +1,6 @@
 {
+  "$schema": "https://raw.githubusercontent.com/stablyai/orca/main/docs/schemas/plugins/orca-catalog.v2.schema.json",
+  "catalogVersion": 2,
   "name": "hoangthb96 Orca plugins",
   "owner": "hoangthb96",
   "plugins": [
@@ -7,10 +9,22 @@
       "source": {
         "kind": "git",
         "url": "https://github.com/hoangthb96/orca-vi-VN-translation.git",
-        "ref": "v0.1.0"
+        "ref": "main"
       },
+      "ownerId": 63916135,
       "description": "Vietnamese (Tiếng Việt) language pack for the Orca interface. Untranslated strings fall back to English.",
-      "categories": ["language"]
+      "categories": [
+        "language"
+      ],
+      "releases": [
+        {
+          "version": "0.1.0",
+          "minimumOrca": "1.4.245",
+          "execution": "data",
+          "commit": "70c6a3ec349c253bea4a9f48b70d46c387ec201d",
+          "contentHash": "0233f93e2a2b0aae1253a02d3e90facc6be1bdd8ef553b2209296978fe33c4e0"
+        }
+      ]
     }
   ]
 }

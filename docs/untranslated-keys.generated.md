@@ -1,7 +1,7 @@
 # Untranslated keys — generated report
 
-> GENERATED bởi `tools/dump-untranslated.mjs` (2026-11-02) — KHÔNG sửa tay, chạy lại script sau mỗi lần resync en.json.
-> Quyết định "không dịch" nằm trong `docs/no-translate.md`. Tổng: **2758** key chưa dịch.
+> GENERATED bởi `tools/dump-untranslated.mjs` (2026-11-03) — KHÔNG sửa tay, chạy lại script sau mỗi lần resync en.json.
+> Quyết định "không dịch" nằm trong `docs/no-translate.md`. Tổng: **2761** key chưa dịch.
 
 ## Protected plugin security copy — Orca fail-closed, CẤM dịch — 347 key
 
@@ -353,7 +353,7 @@
 - `auto.components.settings.PluginContributionActionNewFile.create` — Create
 - `auto.components.settings.pluginTryAction.incompleteLanguage` — This language pack is too incomplete to switch to.
 
-## Search keyword trong settings — giữ EN để tìm kiếm khớp — 521 key
+## Search keyword trong settings — giữ EN để tìm kiếm khớp — 522 key
 
 - `settings.terminal.limit.search.limit` — limit
 - `settings.terminal.limit.search.maximum` — maximum
@@ -876,6 +876,7 @@
 - `auto.components.settings.claudeSubagentNavigation.search.subagent` — subagent
 - `auto.components.settings.claudeSubagentNavigation.search.plugin` — plugin
 - `auto.components.settings.claudeSubagentNavigation.search.mod` — mod
+- `auto.components.right.sidebar.Search.fileCount_one` — {{count}} file
 
 ## Value chỉ là placeholder/định dạng — không có chữ để dịch — 19 key
 
@@ -965,7 +966,7 @@
 - `automations.extraAgentArgs.errors.effortRepeated` — Extra arguments set the effort more than once.
 - `ephemeralVm.errors.sshTargetRemoveFailed` — Failed to remove the hidden SSH target.
 
-## Nội dung code/CSS/demo — giữ nguyên — 448 key
+## Nội dung code/CSS/demo — giữ nguyên — 450 key
 
 - `sidebar.createProject.errors.targetInaccessible` — Cannot access target path: {{detail}}
 - `sidebar.createProject.errors.targetNotEmpty` — "{{name}}" already exists at this location and is not empty.
@@ -1146,6 +1147,7 @@
 - `auto.components.right.sidebar.BulkActionBar.stageCount` — Stage ({{count}})
 - `auto.components.right.sidebar.PortsPanel.472054d94c` — Port :{{value0}}
 - `auto.components.right.sidebar.SourceControl.b8c2e1a904` — {{value0}} → {{value1}}
+- `auto.components.right.sidebar.source.control.discard.dialog.fileCount_one` — {{count}} file
 - `auto.components.right.sidebar.source.control.dropdown.items.pushCount_one` — Push {{count}} commit
 - `auto.components.right.sidebar.source.control.dropdown.items.pullCount_one` — Pull {{count}} commit
 - `auto.components.right.sidebar.source.control.dropdown.items.fastForwardCount_one` — Fast-forward {{count}} commit
@@ -1155,6 +1157,7 @@
 - `auto.components.right.sidebar.github.pr.stack.confirmation.mergeConfirm_one` — Merge {{count}} PR
 - `auto.components.right.sidebar.github.pr.stack.confirmation.mergeConfirm_other` — Merge {{count}} PRs
 - `auto.components.right.sidebar.GitHubPRStackMap.e3ee2daa32` — Stack #{{value0}}
+- `auto.components.right.sidebar.AiVaultScanProgressStrip.fileCount_one` — {{value0}} file
 - `auto.components.repo.NestedRepoScanLimitNotice.milliseconds` — {{count}} ms
 - `auto.components.repo.NestedRepoScanLimitNotice.repositories_one` — {{count}} repository
 - `auto.components.mobile.relayClockSkewMessage.message` — Your computer's clock is off by about {{seconds}} seconds. Turn on automatic time, then retry.
