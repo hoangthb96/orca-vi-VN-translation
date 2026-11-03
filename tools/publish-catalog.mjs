@@ -12,10 +12,10 @@
 
 import { createHash } from 'node:crypto'
 import { execFileSync } from 'node:child_process'
-import { cpSync, mkdtempSync, readdirSync, readFileSync, rmSync, statSync, writeFileSync } from 'node:fs'
+import { cpSync, mkdirSync, mkdtempSync, readdirSync, readFileSync, rmSync, statSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { fileURLToPath } from 'node:url'
-import { join, relative } from 'node:path'
+import { dirname, join, relative } from 'node:path'
 
 const ROOT = fileURLToPath(new URL('..', import.meta.url)).replace(/[\\/]$/, '')
 const CATALOG = join(ROOT, 'orca-marketplace.json')
@@ -79,16 +79,33 @@ if (arg === '--help' || !['--ref', '--worktree'].includes(arg)) {
   process.exit(1)
 }
 
+const TAR_CANDIDATES = [] // unused; --ref materializes via git ls-tree + cat-file
+
 let commit, filesRoot
 if (arg === '--ref') {
   const ref = process.argv[3]
   if (!ref) throw new Error('--ref needs a value')
   commit = execFileSync(GIT, ['rev-parse', ref], { cwd: ROOT }).toString().trim()
   filesRoot = mkdtempSync(join(tmpdir(), 'orca-catalog-'))
-  const tarPath = join(filesRoot, 'tree.tar')
-  execFileSync(GIT, ['archive', '--format=tar', '-o', tarPath, ref], { cwd: ROOT })
-  execFileSync('tar', ['-xf', tarPath, '-C', filesRoot])
-  rmSync(tarPath)
+  // Materialize the exact commit tree without tar (msys tar misreads C:\ paths).
+  const listing = execFileSync(GIT, ['ls-tree', '-r', '-z', '--full-tree', ref], {
+    cwd: ROOT,
+    encoding: 'utf8'
+  })
+  const entries = listing.split('\0').filter(Boolean).map((line) => {
+    const [meta, path] = line.split('\t')
+    const [, type, blob] = meta.split(' ')
+    return { type, blob, path }
+  })
+  for (const { type, blob, path } of entries) {
+    const full = join(filesRoot, ...path.split('/'))
+    if (type === 'tree') {
+      mkdirSync(full, { recursive: true })
+    } else if (type === 'blob') {
+      mkdirSync(dirname(full), { recursive: true })
+      writeFileSync(full, execFileSync(GIT, ['cat-file', 'blob', blob], { cwd: ROOT, maxBuffer: 50 * 1024 * 1024 }))
+    }
+  }
 } else {
   commit = execFileSync(GIT, ['rev-parse', 'HEAD'], { cwd: ROOT }).toString().trim()
   filesRoot = mkdtempSync(join(tmpdir(), 'orca-catalog-'))
